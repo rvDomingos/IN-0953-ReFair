@@ -1,0 +1,381 @@
+{
+  "Domains + task Series": [
+    {
+      "Name": "applied psychology",
+      "Tasks Serie 1": "41"
+    },
+    {
+      "Name": "biology",
+      "Tasks Serie 1": "94",
+      "Tasks Serie 2": "98"
+    },
+    {
+      "Name": "cardiology",
+      "Tasks Serie 1": "4",
+      "Tasks Serie 2": "85",
+      "Tasks Serie 3": "86"
+    },
+    {
+      "Name": "computer networks",
+      "Tasks Serie 1": "131"
+    },
+    {
+      "Name": "computer vision",
+      "Tasks Serie 1": "114",
+      "Tasks Serie 2": "118",
+      "Tasks Serie 3": "119",
+      "Tasks Serie 4": "120",
+      "Tasks Serie 5": "121",
+      "Tasks Serie 6": "122",
+      "Tasks Serie 7": "123",
+      "Tasks Serie 8": "139",
+      "Tasks Serie 9": "142",
+      "Tasks Serie 10": "16",
+      "Tasks Serie 11": "164",
+      "Tasks Serie 12": "180",
+      "Tasks Serie 13": "19",
+      "Tasks Serie 14": "20",
+      "Tasks Serie 15": "21",
+      "Tasks Serie 16": "218",
+      "Tasks Serie 17": "22",
+      "Tasks Serie 18": "23",
+      "Tasks Serie 19": "26",
+      "Tasks Serie 20": "64",
+      "Tasks Serie 21": "72",
+      "Tasks Serie 22": "73",
+      "Tasks Serie 23": "8",
+      "Tasks Serie 24": "81",
+      "Tasks Serie 25": "82",
+      "Tasks Serie 26": "83",
+      "Tasks Serie 27": "84",
+      "Tasks Serie 28": "90",
+      "Tasks Serie 29": "93"
+    },
+    {
+      "Name": "critical care medicine",
+      "Tasks Serie 1": "95"
+    },
+    {
+      "Name": "demography",
+      "Tasks Serie 1": "10",
+      "Tasks Serie 2": "171",
+      "Tasks Serie 3": "45",
+      "Tasks Serie 4": "74",
+      "Tasks Serie 5": "76"
+    },
+    {
+      "Name": "dermatology",
+      "Tasks Serie 1": "126",
+      "Tasks Serie 2": "27"
+    },
+    {
+      "Name": "economics",
+      "Tasks Serie 1": "0",
+      "Tasks Serie 2": "170",
+      "Tasks Serie 3": "185",
+      "Tasks Serie 4": "213",
+      "Tasks Serie 5": "28",
+      "Tasks Serie 6": "47",
+      "Tasks Serie 7": "48",
+      "Tasks Serie 8": "92"
+    },
+    {
+      "Name": "education",
+      "Tasks Serie 1": "138",
+      "Tasks Serie 2": "15",
+      "Tasks Serie 3": "161",
+      "Tasks Serie 4": "196",
+      "Tasks Serie 5": "203",
+      "Tasks Serie 6": "212",
+      "Tasks Serie 7": "214",
+      "Tasks Serie 8": "217",
+      "Tasks Serie 9": "68",
+      "Tasks Serie 10": "75",
+      "Tasks Serie 11": "77",
+      "Tasks Serie 12": "80"
+    },
+    {
+      "Name": "endocrinology",
+      "Tasks Serie 1": "130",
+      "Tasks Serie 2": "56"
+    },
+    {
+      "Name": "finance",
+      "Tasks Serie 1": "152",
+      "Tasks Serie 2": "178",
+      "Tasks Serie 3": "43",
+      "Tasks Serie 4": "55",
+      "Tasks Serie 5": "6",
+      "Tasks Serie 6": "61",
+      "Tasks Serie 7": "66",
+      "Tasks Serie 8": "70"
+    },
+    {
+      "Name": "health policy",
+      "Tasks Serie 1": "11",
+      "Tasks Serie 2": "5"
+    },
+    {
+      "Name": "information systems",
+      "Tasks Serie 1": "108",
+      "Tasks Serie 2": "137",
+      "Tasks Serie 3": "141",
+      "Tasks Serie 4": "143",
+      "Tasks Serie 5": "144",
+      "Tasks Serie 6": "157",
+      "Tasks Serie 7": "158",
+      "Tasks Serie 8": "163",
+      "Tasks Serie 9": "167",
+      "Tasks Serie 10": "169",
+      "Tasks Serie 11": "220",
+      "Tasks Serie 12": "223",
+      "Tasks Serie 13": "30",
+      "Tasks Serie 14": "38",
+      "Tasks Serie 15": "46"
+    },
+    {
+      "Name": "law",
+      "Tasks Serie 1": "102",
+      "Tasks Serie 2": "103",
+      "Tasks Serie 3": "172",
+      "Tasks Serie 4": "174",
+      "Tasks Serie 5": "181",
+      "Tasks Serie 6": "2",
+      "Tasks Serie 7": "3",
+      "Tasks Serie 8": "44",
+      "Tasks Serie 9": "57",
+      "Tasks Serie 10": "59",
+      "Tasks Serie 11": "65",
+      "Tasks Serie 12": "67",
+      "Tasks Serie 13": "97"
+    },
+    {
+      "Name": "library and information sciences",
+      "Tasks Serie 1": "111",
+      "Tasks Serie 2": "112",
+      "Tasks Serie 3": "113",
+      "Tasks Serie 4": "129",
+      "Tasks Serie 5": "187",
+      "Tasks Serie 6": "191",
+      "Tasks Serie 7": "99"
+    },
+    {
+      "Name": "linguistics",
+      "Tasks Serie 1": "107",
+      "Tasks Serie 2": "132",
+      "Tasks Serie 3": "140",
+      "Tasks Serie 4": "145",
+      "Tasks Serie 5": "209",
+      "Tasks Serie 6": "219",
+      "Tasks Serie 7": "29",
+      "Tasks Serie 8": "37",
+      "Tasks Serie 9": "40",
+      "Tasks Serie 10": "50",
+      "Tasks Serie 11": "51",
+      "Tasks Serie 12": "52",
+      "Tasks Serie 13": "78",
+      "Tasks Serie 14": "79",
+      "Tasks Serie 15": "87",
+      "Tasks Serie 16": "88",
+      "Tasks Serie 17": "89",
+      "Tasks Serie 18": "9"
+    },
+    {
+      "Name": "literature",
+      "Tasks Serie 1": "117",
+      "Tasks Serie 2": "148",
+      "Tasks Serie 3": "189",
+      "Tasks Serie 4": "201",
+      "Tasks Serie 5": "202"
+    },
+    {
+      "Name": "marketing",
+      "Tasks Serie 1": "125",
+      "Tasks Serie 2": "54",
+      "Tasks Serie 3": "69"
+    },
+    {
+      "Name": "medicine",
+      "Tasks Serie 1": "7"
+    },
+    {
+      "Name": "nephrology",
+      "Tasks Serie 1": "155"
+    },
+    {
+      "Name": "neurology",
+      "Tasks Serie 1": "24"
+    },
+    {
+      "Name": "news",
+      "Tasks Serie 1": "149",
+      "Tasks Serie 2": "159",
+      "Tasks Serie 3": "188",
+      "Tasks Serie 4": "195"
+    },
+    {
+      "Name": "pattern recognition",
+      "Tasks Serie 1": "211"
+    },
+    {
+      "Name": "pediatrics",
+      "Tasks Serie 1": "58"
+    },
+    {
+      "Name": "pharmacology",
+      "Tasks Serie 1": "42"
+    },
+    {
+      "Name": "plant science",
+      "Tasks Serie 1": "12"
+    },
+    {
+      "Name": "political science",
+      "Tasks Serie 1": "127",
+      "Tasks Serie 2": "14",
+      "Tasks Serie 3": "18",
+      "Tasks Serie 4": "190"
+    },
+    {
+      "Name": "public health",
+      "Tasks Serie 1": "151",
+      "Tasks Serie 2": "175",
+      "Tasks Serie 3": "177",
+      "Tasks Serie 4": "198"
+    },
+    {
+      "Name": "radiology",
+      "Tasks Serie 1": "135",
+      "Tasks Serie 2": "179",
+      "Tasks Serie 3": "25"
+    },
+    {
+      "Name": "signal processing",
+      "Tasks Serie 1": "115"
+    },
+    {
+      "Name": "sleep medicine",
+      "Tasks Serie 1": "136"
+    },
+    {
+      "Name": "social media",
+      "Tasks Serie 1": "1",
+      "Tasks Serie 2": "106",
+      "Tasks Serie 3": "116",
+      "Tasks Serie 4": "154",
+      "Tasks Serie 5": "162",
+      "Tasks Serie 6": "165",
+      "Tasks Serie 7": "166",
+      "Tasks Serie 8": "168",
+      "Tasks Serie 9": "183",
+      "Tasks Serie 10": "193",
+      "Tasks Serie 11": "204",
+      "Tasks Serie 12": "31",
+      "Tasks Serie 13": "32",
+      "Tasks Serie 14": "33",
+      "Tasks Serie 15": "34",
+      "Tasks Serie 16": "36",
+      "Tasks Serie 17": "53"
+    },
+    {
+      "Name": "social networks",
+      "Tasks Serie 1": "100",
+      "Tasks Serie 2": "101",
+      "Tasks Serie 3": "109",
+      "Tasks Serie 4": "110",
+      "Tasks Serie 5": "133",
+      "Tasks Serie 6": "156",
+      "Tasks Serie 7": "186"
+    },
+    {
+      "Name": "social work",
+      "Tasks Serie 1": "104",
+      "Tasks Serie 2": "17",
+      "Tasks Serie 3": "182"
+    },
+    {
+      "Name": "sociology",
+      "Tasks Serie 1": "150"
+    },
+    {
+      "Name": "sports",
+      "Tasks Serie 1": "176",
+      "Tasks Serie 2": "215",
+      "Tasks Serie 3": "62"
+    },
+    {
+      "Name": "transportation",
+      "Tasks Serie 1": "13",
+      "Tasks Serie 2": "192",
+      "Tasks Serie 3": "194",
+      "Tasks Serie 4": "210",
+      "Tasks Serie 5": "222",
+      "Tasks Serie 6": "224"
+    },
+    {
+      "Name": "urban studies",
+      "Tasks Serie 1": "39"
+    },
+    {
+      "Name": "N/A",
+      "Tasks Serie 1": "205",
+      "Tasks Serie 2": "206",
+      "Tasks Serie 3": "207",
+      "Tasks Serie 4": "208",
+      "Tasks Serie 5": "49"
+    },
+    {
+      "Name": "computer vision, experimental psychology",
+      "Tasks Serie 1": "225"
+    },
+    {
+      "Name": "information systems, management information systems",
+      "Tasks Serie 1": "146",
+      "Tasks Serie 2": "173",
+      "Tasks Serie 3": "216"
+    },
+    {
+      "Name": "information systems, movies",
+      "Tasks Serie 1": "200",
+      "Tasks Serie 2": "71"
+    },
+    {
+      "Name": "information systems, public health",
+      "Tasks Serie 1": "128"
+    },
+    {
+      "Name": "linguistics, information systems",
+      "Tasks Serie 1": "60"
+    },
+    {
+      "Name": "literature, information systems",
+      "Tasks Serie 1": "96"
+    },
+    {
+      "Name": "music, information systems",
+      "Tasks Serie 1": "160",
+      "Tasks Serie 2": "199",
+      "Tasks Serie 3": "63"
+    },
+    {
+      "Name": "news, information systems",
+      "Tasks Serie 1": "105",
+      "Tasks Serie 2": "184",
+      "Tasks Serie 3": "197"
+    },
+    {
+      "Name": "social media, linguistics",
+      "Tasks Serie 1": "153",
+      "Tasks Serie 2": "221",
+      "Tasks Serie 3": "35"
+    },
+    {
+      "Name": "social work, social networks",
+      "Tasks Serie 1": "134"
+    },
+    {
+      "Name": "sociology, information systems",
+      "Tasks Serie 1": "91"
+    }
+  ]
+}

@@ -1,0 +1,693 @@
+<?xml version="1.0"?>
+    <domains>
+        <!-- appliedpsychology -->
+
+        <domain>
+            <name>applied psychology</name>
+            <investigates>41</investigates>
+        </domain>
+        
+
+
+        <!-- biology -->
+
+        <domain>
+            
+            <name>biology</name>
+            <investigates>94</investigates>
+            <investigates>98</investigates>
+        </domain>
+        
+
+
+        <!-- cardiology -->
+
+        <domain>
+            
+            <name>cardiology</name>
+            <investigates>4</investigates>
+            <investigates>85</investigates>
+            <investigates>86</investigates>
+        </domain>
+        
+
+
+        <!-- computernetworks -->
+
+        <domain>
+            
+            <name>computer networks</name>
+            <investigates>131</investigates>
+        </domain>
+        
+
+
+        <!-- computervision -->
+
+        <domain>
+            
+            <name>computer vision</name>
+            <investigates>114</investigates>
+            <investigates>118</investigates>
+            <investigates>119</investigates>
+            <investigates>120</investigates>
+            <investigates>121</investigates>
+            <investigates>122</investigates>
+            <investigates>123</investigates>
+            <investigates>139</investigates>
+            <investigates>142</investigates>
+            <investigates>16</investigates>
+            <investigates>164</investigates>
+            <investigates>180</investigates>
+            <investigates>19</investigates>
+            <investigates>20</investigates>
+            <investigates>21</investigates>
+            <investigates>218</investigates>
+            <investigates>22</investigates>
+            <investigates>23</investigates>
+            <investigates>26</investigates>
+            <investigates>64</investigates>
+            <investigates>72</investigates>
+            <investigates>73</investigates>
+            <investigates>8</investigates>
+            <investigates>81</investigates>
+            <investigates>82</investigates>
+            <investigates>83</investigates>
+            <investigates>84</investigates>
+            <investigates>90</investigates>
+            <investigates>93</investigates>
+        </domain>
+        
+
+
+        <!-- criticalcaremedicine -->
+
+        <domain>
+            
+            <name>critical care medicine</name>
+            <investigates>95</investigates>
+        </domain>
+        
+
+
+
+        <!-- demography -->
+
+        <domain>
+            
+            <name>demography</name>
+            <investigates>10</investigates>
+            <investigates>171</investigates>
+            <investigates>45</investigates>
+            <investigates>74</investigates>
+            <investigates>76</investigates>
+        </domain>
+        
+
+
+        <!-- dermatology -->
+
+        <domain>
+            
+            <name>dermatology</name>
+            <investigates>126</investigates>
+            <investigates>27</investigates>
+        </domain>
+        
+
+
+        <!-- economics -->
+
+        <domain>
+            
+            <name>economics</name>
+            <investigates>0</investigates>
+            <investigates>170</investigates>
+            <investigates>185</investigates>
+            <investigates>213</investigates>
+            <investigates>28</investigates>
+            <investigates>47</investigates>
+            <investigates>48</investigates>
+            <investigates>92</investigates>
+        </domain>
+        
+
+
+        <!-- education -->
+
+        <domain>
+            
+            <name>education</name>
+            <investigates>138</investigates>
+            <investigates>15</investigates>
+            <investigates>161</investigates>
+            <investigates>196</investigates>
+            <investigates>203</investigates>
+            <investigates>212</investigates>
+            <investigates>214</investigates>
+            <investigates>217</investigates>
+            <investigates>68</investigates>
+            <investigates>75</investigates>
+            <investigates>77</investigates>
+            <investigates>80</investigates>
+        </domain>
+        
+
+
+        <!-- endocrinology -->
+
+        <domain>
+            
+            <name>endocrinology</name>
+            <investigates>130</investigates>
+            <investigates>56</investigates>
+        </domain>
+        
+
+
+        <!-- finance -->
+
+        <domain>
+            
+            <name>finance</name>
+            <investigates>152</investigates>
+            <investigates>178</investigates>
+            <investigates>43</investigates>
+            <investigates>55</investigates>
+            <investigates>6</investigates>
+            <investigates>61</investigates>
+            <investigates>66</investigates>
+            <investigates>70</investigates>
+        </domain>
+        
+
+
+        <!-- healthpolicy -->
+
+        <domain>
+            
+            <name>health policy</name>
+            <investigates>11</investigates>
+            <investigates>5</investigates>
+        </domain>
+        
+
+
+
+        <!-- informationsystems -->
+
+        <domain>
+            
+            <name>information systems</name>
+            <investigates>108</investigates>
+            <investigates>137</investigates>
+            <investigates>141</investigates>
+            <investigates>143</investigates>
+            <investigates>144</investigates>
+            <investigates>157</investigates>
+            <investigates>158</investigates>
+            <investigates>163</investigates>
+            <investigates>167</investigates>
+            <investigates>169</investigates>
+            <investigates>220</investigates>
+            <investigates>223</investigates>
+            <investigates>30</investigates>
+            <investigates>38</investigates>
+            <investigates>46</investigates>
+        </domain>
+        
+
+
+        <!-- law -->
+
+        <domain>
+            
+            <name>law</name>
+            <investigates>102</investigates>
+            <investigates>103</investigates>
+            <investigates>172</investigates>
+            <investigates>174</investigates>
+            <investigates>181</investigates>
+            <investigates>2</investigates>
+            <investigates>3</investigates>
+            <investigates>44</investigates>
+            <investigates>57</investigates>
+            <investigates>59</investigates>
+            <investigates>65</investigates>
+            <investigates>67</investigates>
+            <investigates>97</investigates>
+        </domain>
+        
+
+
+        <!-- libraryandinformationsciences -->
+
+        <domain>
+            
+            <name>library and information sciences</name>
+            <investigates>111</investigates>
+            <investigates>112</investigates>
+            <investigates>113</investigates>
+            <investigates>129</investigates>
+            <investigates>187</investigates>
+            <investigates>191</investigates>
+            <investigates>99</investigates>
+        </domain>
+        
+
+
+        <!-- linguistics -->
+
+        <domain>
+            
+            <name>linguistics</name>
+            <investigates>107</investigates>
+            <investigates>132</investigates>
+            <investigates>140</investigates>
+            <investigates>145</investigates>
+            <investigates>209</investigates>
+            <investigates>219</investigates>
+            <investigates>29</investigates>
+            <investigates>37</investigates>
+            <investigates>40</investigates>
+            <investigates>50</investigates>
+            <investigates>51</investigates>
+            <investigates>52</investigates>
+            <investigates>78</investigates>
+            <investigates>79</investigates>
+            <investigates>87</investigates>
+            <investigates>88</investigates>
+            <investigates>89</investigates>
+            <investigates>9</investigates>
+        </domain>
+        
+
+
+        <!-- literature -->
+
+        <domain>
+            
+            <name>literature</name>
+            <investigates>117</investigates>
+            <investigates>148</investigates>
+            <investigates>189</investigates>
+            <investigates>201</investigates>
+            <investigates>202</investigates>
+        </domain>
+        
+
+
+        <!-- marketing -->
+
+        <domain>
+            
+            <name>marketing</name>
+            <investigates>125</investigates>
+            <investigates>54</investigates>
+            <investigates>69</investigates>
+        </domain>
+        
+
+
+        <!-- medicine -->
+
+        <domain>
+            
+            <name>medicine</name>
+            <investigates>7</investigates>
+        </domain>
+        
+
+
+        <!-- nephrology -->
+
+        <domain>
+            
+            <name>nephrology</name>
+            <investigates>155</investigates>
+        </domain>
+        
+
+
+        <!-- neurology -->
+
+        <domain>
+            
+            <name>neurology</name>
+            <investigates>24</investigates>
+        </domain>
+        
+
+
+        <!-- news -->
+
+        <domain>
+            
+            <name>news</name>
+            <investigates>149</investigates>
+            <investigates>159</investigates>
+            <investigates>188</investigates>
+            <investigates>195</investigates>
+        </domain>
+        
+
+
+        <!-- patternrecognition -->
+
+        <domain>
+            
+            <name>pattern recognition</name>
+            <investigates>211</investigates>
+        </domain>
+        
+
+
+        <!-- pediatrics -->
+
+        <domain>
+            
+            <name>pediatrics</name>
+            <investigates>58</investigates>
+        </domain>
+        
+
+
+        <!-- pharmacology -->
+
+        <domain>
+            
+            <name>pharmacology</name>
+            <investigates>42</investigates>
+        </domain>
+        
+
+
+        <!-- plantscience -->
+
+        <domain>
+            
+            <name>plant science</name>
+            <investigates>12</investigates>
+        </domain>
+        
+
+
+        <!-- politicalscience -->
+
+        <domain>
+            
+            <name>political science</name>
+            <investigates>127</investigates>
+            <investigates>14</investigates>
+            <investigates>18</investigates>
+            <investigates>190</investigates>
+        </domain>
+        
+
+
+        <!-- publichealth -->
+
+        <domain>
+            
+            <name>public health</name>
+            <investigates>151</investigates>
+            <investigates>175</investigates>
+            <investigates>177</investigates>
+            <investigates>198</investigates>
+        </domain>
+        
+
+
+        <!-- radiology -->
+
+        <domain>
+            
+            <name>radiology</name>
+            <investigates>135</investigates>
+            <investigates>179</investigates>
+            <investigates>25</investigates>
+        </domain>
+        
+
+
+        <!-- signalprocessing -->
+
+        <domain>
+            
+            <name>signal processing</name>
+            <investigates>115</investigates>
+        </domain>
+        
+
+
+        <!-- sleepmedicine -->
+
+        <domain>
+            
+            <name>sleep medicine</name>
+            <investigates>136</investigates>
+        </domain>
+        
+
+
+        <!-- socialmedia -->
+
+        <domain>
+            
+            <name>social media</name>
+            <investigates>1</investigates>
+            <investigates>106</investigates>
+            <investigates>116</investigates>
+            <investigates>154</investigates>
+            <investigates>162</investigates>
+            <investigates>165</investigates>
+            <investigates>166</investigates>
+            <investigates>168</investigates>
+            <investigates>183</investigates>
+            <investigates>193</investigates>
+            <investigates>204</investigates>
+            <investigates>31</investigates>
+            <investigates>32</investigates>
+            <investigates>33</investigates>
+            <investigates>34</investigates>
+            <investigates>36</investigates>
+            <investigates>53</investigates>
+        </domain>
+        
+
+
+        <!-- socialnetworks -->
+
+        <domain>
+            
+            <name>social networks</name>
+            <investigates>100</investigates>
+            <investigates>101</investigates>
+            <investigates>109</investigates>
+            <investigates>110</investigates>
+            <investigates>133</investigates>
+            <investigates>156</investigates>
+            <investigates>186</investigates>
+        </domain>
+        
+
+
+        <!-- socialwork -->
+
+        <domain>
+            
+            <name>social work</name>
+            <investigates>104</investigates>
+            <investigates>17</investigates>
+            <investigates>182</investigates>
+        </domain>
+        
+
+
+        <!-- sociology -->
+
+        <domain>
+            
+            <name>sociology</name>
+            <investigates>150</investigates>
+        </domain>
+        
+
+
+        <!-- sports -->
+
+        <domain>
+            
+            <name>sports</name>
+            <investigates>176</investigates>
+            <investigates>215</investigates>
+            <investigates>62</investigates>
+        </domain>
+        
+
+
+        <!-- transportation -->
+
+        <domain>
+            
+            <name>transportation</name>
+            <investigates>13</investigates>
+            <investigates>192</investigates>
+            <investigates>194</investigates>
+            <investigates>210</investigates>
+            <investigates>222</investigates>
+            <investigates>224</investigates>
+        </domain>
+        
+
+
+        <!-- urbanstudies -->
+
+        <domain>
+            
+            <name>urban studies</name>
+            <investigates>39</investigates>
+        </domain>
+
+
+
+
+
+        <!-- N/A -->
+
+        <domain>
+            
+            <name>N/A</name>
+            <investigates>205</investigates>
+            <investigates>206</investigates>
+            <investigates>207</investigates>
+            <investigates>208</investigates>
+            <investigates>49</investigates>
+        </domain>
+        
+
+
+
+
+        <!-- computervision,experimentalpsychology -->
+
+        <domain>
+            
+            <name>computer vision, experimental psychology</name>
+            <investigates>225</investigates>
+        </domain>
+        
+
+
+        <!-- informationsystems,managementinformationsystems -->
+
+        <domain>
+            
+            <name>information systems, management information systems</name>
+            <investigates>146</investigates>
+            <investigates>173</investigates>
+            <investigates>216</investigates>
+        </domain>
+        
+
+
+        <!-- informationsystems,movies -->
+
+        <domain>
+            
+            <name>information systems, movies</name>
+            <investigates>200</investigates>
+            <investigates>71</investigates>
+        </domain>
+        
+
+
+        <!-- informationsystems,publichealth -->
+
+        <domain>
+            
+            <name>information systems, public health</name>
+            <investigates>128</investigates>
+        </domain>
+        
+
+
+        <!-- linguistics,informationsystems -->
+
+        <domain>
+            
+            <name>linguistics, information systems</name>
+            <investigates>60</investigates>
+        </domain>
+        
+
+
+        <!-- literature,informationsystems -->
+
+        <domain>
+            
+            <name>literature, information systems</name>
+            <investigates>96</investigates>
+        </domain>
+        
+
+
+        <!-- music,informationsystems -->
+
+        <domain>
+            
+            <name>music, information systems</name>
+            <investigates>160</investigates>
+            <investigates>199</investigates>
+            <investigates>63</investigates>
+        </domain>
+        
+
+
+        <!-- news,informationsystems -->
+
+        <domain>
+            
+            <name>news, information systems</name>
+            <investigates>105</investigates>
+            <investigates>184</investigates>
+            <investigates>197</investigates>
+        </domain>
+        
+
+
+        <!-- socialmedia,linguistics -->
+
+        <domain>
+            
+            <name>social media, linguistics</name>
+            <investigates>153</investigates>
+            <investigates>221</investigates>
+            <investigates>35</investigates>
+        </domain>
+        
+
+
+        <!-- socialwork,socialnetworks -->
+
+        <domain>
+            
+            <name>social work, social networks</name>
+            <investigates>134</investigates>
+        </domain>
+        
+
+
+        <!-- sociology,informationsystems -->
+
+        <domain>
+            
+            <name>sociology, information systems</name>
+            <investigates>91</investigates>
+        </domain>
+    </domains>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

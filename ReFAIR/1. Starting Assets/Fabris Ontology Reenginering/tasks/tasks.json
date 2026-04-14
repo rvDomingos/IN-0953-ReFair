@@ -1,0 +1,1498 @@
+{
+    "TaskSeries": {
+      "TaskSerie": [
+        {
+          "Number": 0,
+          "Task1": "fairness evaluation",
+          "Reference1": "\\citep{sharma2020:cc,cardoso2019framework,oneto2019taking,friedler2019comparative,chen2018why,lipton2018does, pleiss2017fairness,diciccio2020evaluating,speicher2018unified,feldman2015certifying,maity2021statistical,kim2020fact,liu2019implicit,williamson2019fairness,vonkugelgen2021fairness,ngong2020towards,jabbari2020empirical,huan2020fairness,zliobaite2015relation,islam2021can,segal2021fairness}",    
+          "Task2": "fair classification",
+          "Reference2": "\\citep{he2020geometric,sharma2020data,goel2018nondiscriminatory,raff2018fair,zhang2018mitigating,hu2020fair,celis2019classification,yang2020fairness,cho2020fair,savani2020intraprocessing,wu2019cpfairness,donini2018empirical,quadrianto2017recycling,calmon2017optimized,xu2020algorithmic,zhang2017achieving,yurochkin2021sensei,vargo2021individually,chuang2021fair,roh2021fairbatch,yurochkin2020training,baharlouei2020renyi,lohaus2020too,martinez2020minimax,roh2020frtrain,celis2020data,cotter2019training,gordaliza2019obtaining,wang2019repairing,agarwal2018reductions,creager2021exchanging,delobelle2020ethical,ogura2020convex,feldman2015certifying,zafar2017fairness,fish2015fair,raff2018gradient,mhasawade2021causal,perrone2021fair,shah2021rawslian,sharma2021fairn}",
+          "Task3": "fair clustering",
+          "Reference3": "\\citep{abbasi2021fair,ghadiri2021socially,harb2020kfc,ahmadian2020fair,huang2019coresets,bera2019fair,chierichetti2017fair,brubach2020pairwise,mahabadi2020individual,backurs2019scalable,mary2019fairnessaware,wang2020augmented,berk2017convex,beutel2017data}",
+          "Task4": "fair clustering under unawareness",
+          "Reference4": "\\citep{esmaeili2020probabilistic}",
+          "Task5": "fair active classification",
+          "Reference5":  "\\citep{noriegacampero2019active,bakker2019dadi,bakker2021beyond}",
+          "Task6": "fair preference-based classification",
+          "Reference6":  "\\citep{ali2019loss,ustun2019fairness,mukherjee2020two}",
+          "Task7": "fair classification under unawareness",
+          "Reference7":  "\\citep{lahoti2020fairness,wang2020robust,mozannar2020fair,kilbertus2018blind}",
+          "Task8": "fair anomaly detection",
+          "Reference8":  "\\citep{zhang2021towards,shekhar2021fairod}",
+          "Task9": "fairness evaluation under unawareness",
+          "Reference9":  "\\citep{awasthi2021evaluating}",
+          "Task10": "robust fairness evaluation",
+          "Reference10":  "\\citep{black2021leaveoneout}",
+          "Task11": "data bias evaluation",
+          "Reference11":  "\\citep{beretta2021detecting}",
+          "Task12": "rich-subgroup fairness evaluation",
+          "Reference12":  "\\citep{kearns2019empirical,chouldechova2017fairer}",
+          "Task13": "fair representation learning",
+          "Reference13":  "\\citep{ruoss2020learning,zhao2019inherent,zhao2020conditional,louizos2016variational,quadrianto2019discovering,madras2018learning}",
+          "Task14": "fair multi-stage classification",
+          "Reference14":  "\\citep{hu2020fairmultiple,goel2020importance}",
+          "Task15": "robust fair classification",
+          "Reference15":  "\\citep{mandal2020ensuring,huang2019stable,rezaei2021robust}",
+          "Task16": "dynamical fair classification",
+          "Reference16":  "\\citep{zhang2019group}",
+          "Task17": "fair ranking evaluation",
+          "Reference17":  "\\citep{kallus2019fairness}",
+          "Task18": "fair data summarization",
+          "Reference18":  "\\citep{chiplunkar2020how,jones2020fair,kleindessner2019fair,celis2018fair,halabi2020fairness,belitz2021automating}",
+          "Task19": "fair regression",
+          "Reference19":  "\\citep{agarwal2019fair}",
+          "Task20": "limited-label fair classification",
+          "Reference20":  "\\citep{chzhen2019leveraging,wang2021fair,choi2020group}",
+          "Task21": "limited-label fairness evaluation",
+          "Reference21":  "\\citep{ji2020can}",
+          "Task22": "preference-based fair clustering",
+          "Reference22":  "\\citep{galhotra2021learning}"
+        },
+        {
+          "Number": 1,
+          "Task1": "fair classification",
+          "Reference1":"\\citep{garg2019counterfactual,shah2021rawslian}",
+          "Task2": "fairness evaluation",
+          "Reference2":  "\\citep{dixon2018measuring}"
+        },
+        {
+          "Number": 10,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{agarwal2018reductions,xu2020algorithmic,zhang2017achieving,lohaus2020too}",
+          "Task2": "fairness evaluation",
+          "Reference2":  "\\citep{cardoso2019framework}"
+        },
+        {
+          "Number": 100,
+          "Task1": "fair graph mining evaluation",
+          "Reference1":  "\\citep{kang2020inform}"
+        },
+        {
+          "Number": 101,
+          "Task1": "fair graph mining",
+          "Reference1":  "\\citep{kang2020inform}"
+        },
+        {
+          "Number": 102,
+          "Task1": "fair spatio-temporal process learning",
+          "Reference1":  "\\citep{shang2020listwise}"
+        },
+        {
+          "Number": 103,
+          "Task1": "fair spatio-temporal process learning",
+          "Reference1":  "\\citep{shang2020listwise}"
+        },
+        {
+          "Number": 104,
+          "Task1": "fair spatio-temporal process learning",
+          "Reference1":  "\\citep{shang2020listwise}"
+        },
+        {
+          "Number": 105,
+          "Task1": "fair ranking",
+          "Reference1":  "\\citep{singh2018fairness}"
+        },
+        {
+          "Number": 106,
+          "Task1": "fair toxicity classification",
+          "Reference1":  "\\citep{adragna2020fairness,yurochkin2021sensei,chuang2021fair}",
+          "Task2": "fairness evaluation of selective classification",
+          "Reference2":  "\\citep{jones2021selective}",
+          "Task3": "fair robust toxicity classification",
+          "Reference3":  "\\citep{adragna2020fairness}",
+          "Task4": "fairness evaluation of toxicity classification",
+          "Reference4":  "\\citep{hutchinson2020unintented}",
+          "Task5": "fairness evaluation",
+          "Reference5":  "\\citep{babaeianjelodar2020quantifying}"
+        },
+        {
+          "Number": 107,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{babaeianjelodar2020quantifying,rudinger2017:social}",
+          "Task2": "bias evaluation in language models",
+          "Reference2":  "\\citep{cheng2021fairfil}",
+          "Task3": "fairness evaluation of selective classification",
+          "Reference3":  "\\citep{jones2021selective}"
+        },
+        {
+          "Number": 108,
+          "Task1": "fair ranking",
+          "Reference1":  "\\citep{bower2021individually}"
+        },
+        {
+          "Number": 109,
+          "Task1": "fair graph mining",
+          "Reference1":  "\\citep{li2021on}",
+          "Task2":"fair graph augmentation",
+          "Reference2":  "\\citep{ramachandran2021gaea}"
+        },
+        {
+          "Number": 11,
+          "Task1": "fair multi-stage classification",
+          "Reference1":  "\\citep{madras2018predict}",
+          "Task2": "fair representation learning",
+          "Reference2":  "\\citep{louizos2016variational}",
+          "Task3": "fair classification",
+          "Reference3":  "\\citep{raff2018fair,raff2018gradient}",
+          "Task4": "fair transfer learning",
+          "Reference4":  "\\citep{madras2018learning}",
+          "Task5": "fairness evaluation",
+          "Reference5":  "\\citep{islam2021can}"
+        },
+        {
+          "Number": 110,
+          "Task1": "fair graph mining",
+          "Reference1":  "\\citep{li2021on}"
+        },
+        {
+          "Number": 111,
+          "Task1": ""
+        },
+        {
+          "Number": 112,
+          "Task1": "fair graph mining",
+          "Reference1":  "\\citep{li2021on}"
+        },
+        {
+          "Number": 113,
+          "Task1": "fair graph mining",
+          "Reference1":  "\\citep{li2021on}"
+        },
+        {
+          "Number": 114,
+          "Task1": "fairness evaluation of selective classification",
+          "Reference1":  "\\citep{jones2021selective}"
+        },
+        {
+          "Number": 115,
+          "Task1": "fair federated learning",
+          "Reference1":  "\\citep{li2020fair}"
+        },
+        {
+          "Number": 116,
+          "Task1": "fair federated learning",
+          "Reference1":  "\\citep{li2020fair}"
+        },
+        {
+          "Number": 117,
+          "Task1": "fair federated learning",
+          "Reference1":  "\\citep{li2020fair}"
+        },
+        {
+          "Number": 118,
+          "Task1": "fair few-shot learning",
+          "Reference1":  "\\citep{li2020fair}"
+        },
+        {
+          "Number": 119,
+          "Task1": "fair clustering",
+          "Reference1":  "\\citep{li2020deep}"
+        },
+        {
+          "Number": 12,
+          "Task1": "fair clustering",
+          "Reference1":  "\\citep{chen2019proportionally,abbasi2021fair}"
+        },
+        {
+          "Number": 120,
+          "Task1": "fair clustering",
+          "Reference1":  "\\citep{li2020deep}"
+        },
+        {
+          "Number": 121,
+          "Task1": "fair reinforcement learning",
+          "Reference1":  "\\citep{wang2020mitigating}",
+          "Task2": "fair representation learning",
+          "Reference2":  "\\citep{gong2021mitigating}"
+        },
+        {
+          "Number": 122,
+          "Task1": "fair reinforcement learning",
+          "Reference1":  "\\citep{wang2020mitigating}",
+          "Task2": "fair classification",
+          "Reference2":  "\\citep{xu2021consistent}",
+          "Task3": "fair representation learning",
+          "Reference3":  "\\citep{gong2021mitigating}"
+        },
+        {
+          "Number": 123,
+          "Task1": "bias discovery",
+          "Reference1":  "\\citep{manjunatha2019explicit}"
+        },
+        {
+          "Number": 124,
+          "Task1": "fair data summarization",
+          "Reference1":  "\\citep{chiplunkar2020how}"
+        },
+        {
+          "Number": 125,
+          "Task1": "fair data summarization",
+          "Reference1":  "\\citep{jones2020fair}"
+        },
+        {
+          "Number": 126,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{martinez2020minimax}"
+        },
+        {
+          "Number": 127,
+          "Task1": "limited-label fairness evaluation",
+          "Reference1":  "\\citep{sabato2020bounding}"
+        },
+        {
+          "Number": 128,
+          "Task1": "limited-label fairness evaluation",
+          "Reference1":  "\\citep{sabato2020bounding}"
+        },
+        {
+          "Number": 129,
+          "Task1": "fair graph mining",
+          "Reference1":  "\\citep{buyl2020debayes}"
+        },
+        {
+          "Number": 13,
+          "Task1": "fair matching",
+          "Reference1":  "\\citep{lesmana2019balancing,nanda2020:bt}"
+        },
+        {
+          "Number": 130,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{sharma2020:cc}",
+          "Task2": "fair clustering",
+          "Reference2":  "\\citep{chen2019proportionally}"
+        },
+        {
+          "Number": 131,
+          "Task1": "fair clustering",
+          "Reference1":  "\\citep{chen2019proportionally}"
+        },
+        {
+          "Number": 132,
+          "Task1": "fair entity resolution",
+          "Reference1":  "\\citep{cotter2019training}"
+        },
+        {
+          "Number": 133,
+          "Task1": "fair graph clustering",
+          "Reference1":  "\\citep{kleindessner2019guarantees}"
+        },
+        {
+          "Number": 134,
+          "Task1": "fair graph clustering",
+          "Reference1":  "\\citep{kleindessner2019guarantees}"
+        },
+        {
+          "Number": 135,
+          "Task1": "fair preference-based classification",
+          "Reference1":  "\\citep{ustun2019fairness}"
+        },
+        {
+          "Number": 136,
+          "Task1": "fair preference-based classification",
+          "Reference1":  "\\citep{ustun2019fairness}"
+        },
+        {
+          "Number": 137,
+          "Task1": "fair data summarization",
+          "Reference1":  "\\citep{celis2016fair,celis2018fair}"
+        },
+        {
+          "Number": 138,
+          "Task1": "fair risk assessment",
+          "Reference1":  "\\citep{he2020inherent}"
+        },
+        {
+          "Number": 139,
+          "Task1": "fair representation learning",
+          "Reference1":  "\\citep{david2020debiasing}"
+        },
+        {
+          "Number": 14,
+          "Task1": "data bias evaluation",
+          "Reference1":  "\\citep{coston2021leveraging}",
+          "Task2":" fair clustering",
+          "Reference2":  "\\citep{abbasi2021fair}",
+          "Task3": "fairness evaluation of advertisement",
+          "Reference3":  "\\citep{speicher2018potential}"
+        },
+        {
+          "Number": 140,
+          "Task1": "data bias evaluation",
+          "Reference1":  "\\citep{kocijan2020gap}"
+        },
+        {
+          "Number": 141,
+          "Task1": "fair ranking",
+          "Reference1":  "\\citep{chaudhari2020general}"
+        },
+        {
+          "Number": 142,
+          "Task1": "bias discovery",
+          "Reference1":  "\\citep{tong2020investigating}"
+        },
+        {
+          "Number": 143,
+          "Task1": "fair graph mining",
+          "Reference1":  "\\citep{bose2019compositional}",
+          "Task2": "fairness evaluation in graph mining",
+          "Reference2":  "\\citep{fisher2020measuring}"
+        },
+        {
+          "Number": 144,
+          "Task1": "fairness evaluation in graph mining",
+          "Reference1":  "\\citep{fisher2020measuring}"
+        },
+        {
+          "Number": 145,
+          "Task1": "fairness evaluation in entity recognition",
+          "Reference1":  "\\citep{mishra2020assessing}"
+        },
+        {
+          "Number": 146,
+          "Task1": "fair ranking",
+          "Reference1":  "\\citep{deshpande2020mitigating}"
+        },
+        {
+          "Number": 147,
+          "Task1": "bias discovery",
+          "Reference1": "\\citep{konstantakis2020bias}"
+        },
+        {
+          "Number": 148,
+          "Task1": "data bias evaluation",
+          "Reference1":  "\\citep{leavy2020mitigating}"
+        },
+        {
+          "Number": 149,
+          "Task1": "data bias evaluation",
+          "Reference1":  "\\citep{leavy2020mitigating}"
+        },
+        {
+          "Number": 15,
+          "Task1": "fair regression",
+          "Reference1":  "\\citep{chzhen2020fairwassertein,chzhen2020fair,heidari2019on}",
+          "Task2": "rich-subgroup fairness evaluation",
+          "Reference2":  "\\citep{kearns2019empirical}",
+          "Task3": "fair data summarization",
+          "Reference3":  "\\citep{jones2020fair,belitz2021automating}"
+        },
+        {
+          "Number": 150,
+          "Task1": "fair matching",
+          "Reference1":  "\\citep{zheng2018fairness}",
+          "Task2":"preference-based fair ranking",
+          "Reference2":  "\\citep{paraschakis2020matchmaking}"
+        },
+        {
+          "Number": 151,
+          "Task1": "fair graph diffusion",
+          "Reference1":  "\\citep{farnad2020unifying}"
+        },
+        {
+          "Number": 152,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{li2020fairness}"
+        },
+        {
+          "Number": 153,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{babaeianjelodar2020quantifying}"
+        },
+        {
+          "Number": 154,
+          "Task1": "bias audit",
+          "Reference1":  "\\citep{gordon2020studying}"
+        },
+        {
+          "Number": 155,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{williams2019quantification}"
+        },
+        {
+          "Number": 156,
+          "Task1": "fair graph diffusion",
+          "Reference1":  "\\citep{ali2019fairness}"
+        },
+        {
+          "Number": 157,
+          "Task1": "fair ranking",
+          "Reference1":  "\\citep{patro2019incremental}"
+        },
+        {
+          "Number": 158,
+          "Task1": "fair ranking",
+          "Reference1":  "\\citep{patro2019incremental}"
+        },
+        {
+          "Number": 159,
+          "Task1": "data bias evaluation",
+          "Reference1":  "\\citep{florez2019unintended}"
+        },
+        {
+          "Number": 16,
+          "Task1": "fair data summarization",
+          "Reference1":  "\\citep{samadi2018price}",
+          "Task2": "fair clustering",
+          "Reference2":  "\\citep{ghadiri2021socially}",
+          "Task3": "robust fairness evaluation",
+          "Reference3":  "\\citep{black2021leaveoneout}",
+          "Task4":"fairness evaluation",
+          "Reference4":  "\\citep{segal2021fairness}"
+        },
+        {
+          "Number": 160,
+          "Task1": "dynamical evaluation of fair ranking",
+          "Reference1":  "\\citep{ferraro2019artist}"
+        },
+        {
+          "Number": 161,
+          "Task1": "fair ranking",
+          "Reference1":  "\\citep{celis2020interventions}"
+        },
+        {
+          "Number": 162,
+          "Task1": "fairness evaluation of sentiment analysis",
+          "Reference1":  "\\citep{shen2018darling}"
+        },
+        {
+          "Number": 163,
+          "Task1": "fair ranking",
+          "Reference1":  "\\citep{karako2018using}"
+        },
+        {
+          "Number": 164,
+          "Task1": "fair representation learning",
+          "Reference1":  "\\citep{david2020debiasing}",
+          "Task2": "fair classification",
+          "Reference2":  "\\citep{hendricks2018women}"
+        },
+        {
+          "Number": 165,
+          "Task1": "fair advertising",
+          "Reference1":  "\\citep{riederer2017price}"
+        },
+        {
+          "Number": 166,
+          "Task1": "fair ranking",
+          "Reference1":  "\\citep{zhu2018fairnessaware}"
+        },
+        {
+          "Number": 167,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{hannak2017bias}"
+        },
+        {
+          "Number": 168,
+          "Task1": "social media"
+        },
+        {
+          "Number": 169,
+          "Task1": "fair ranking evaluation",
+          "Reference1":  "\\citep{mehrotra2017auditing}"
+        },
+        {
+          "Number": 17,
+          "Task1": "fairness evaluation of risk assessment",
+          "Reference1":  "\\citep{coston2020counterfactual}",
+          "Task2": "fair risk assessment",
+          "Reference2":  "\\citep{mishler2021fairness}"
+        },
+        {
+          "Number": 170,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{luong2016classification}"
+        },
+        {
+          "Number": 171,
+          "Task1": "fairness evaluation of private resource allocation",
+          "Reference1":  "\\citep{pujol2020fair}"
+        },
+        {
+          "Number": 172,
+          "Task1": "limited-label fair classification",
+          "Reference1":  "\\citep{wang2020augmented}"
+        },
+        {
+          "Number": 173,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{wilson2021building}"
+        },
+        {
+          "Number": 174,
+          "Task1": "fairness evaluation of multi-stage classification",
+          "Reference1":  "\\citep{green2019disparate}"
+        },
+        {
+          "Number": 175,
+          "Task1": "fairness matching evaluation",
+          "Reference1":  "\\citep{mattei2018fairness}"
+        },
+        {
+          "Number": 176,
+          "Task1": "fairness evaluation under unawareness",
+          "Reference1":  "\\citep{awasthi2021evaluating}"
+        },
+        {
+          "Number": 177,
+          "Task1": "fair pricing evaluation",
+          "Reference1":  "\\citep{kallus2021fairness}"
+        },
+        {
+          "Number": 178,
+          "Task1": "fair pricing evaluation",
+          "Reference1":  "\\citep{kallus2021fairness}"
+        },
+        {
+          "Number": 179,
+          "Task1": "fairness evaluation of private classification",
+          "Reference1":  "\\citep{cheng2021can}"
+        },
+        {
+          "Number": 18,
+          "Task1": "fair districting for electoral precincts",
+          "Reference1":  "\\citep{schutzman2020:to}"
+        },
+        {
+          "Number": 180,
+          "Task1": "fairness evaluation of learnt representations",
+          "Reference1":  "\\citep{steed2021image}"
+        },
+        {
+          "Number": 181,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{rodolfa2020case}"
+        },
+        {
+          "Number": 182,
+          "Task1": "fair graph diffusion",
+          "Reference1":  "\\citep{rahmattalabi2019exploring}"
+        },
+        {
+          "Number": 183,
+          "Task1": "fair ranking",
+          "Reference1":  "\\citep{chakraborty2019equality}"
+        },
+        {
+          "Number": 184,
+          "Task1": "fair ranking",
+          "Reference1":  "\\citep{chakraborty2019equality}"
+        },
+        {
+          "Number": 185,
+          "Task1": "fair preferece-based resource allocation",
+          "Reference1":  "\\citep{babaioff2019fair}"
+        },
+        {
+          "Number": 186,
+          "Task1": "fair data summarization",
+          "Reference1":  "\\citep{halabi2020fairness}"
+        },
+        {
+          "Number": 187,
+          "Task1": "fair clustering",
+          "Reference1":  "\\citep{harb2020kfc}"
+        },
+        {
+          "Number": 188,
+          "Task1": "fair clustering",
+          "Reference1":  "\\citep{harb2020kfc}"
+        },
+        {
+          "Number": 189,
+          "Task1": "fair clustering",
+          "Reference1":  "\\citep{harb2020kfc}"
+        },
+        {
+          "Number": 19,
+          "Task1": "fair clustering",
+          "Reference1":  "\\citep{harpeled2019near,li2020deep}",
+          "Task2": "fair anomaly detection",
+          "Reference2":  "\\citep{zhang2021towards}",
+          "Task3": "fair classification",
+          "Reference3":  "\\citep{creager2021exchanging}",
+          "Task4": "fairness evaluation",
+          "Reference4":  "\\citep{segal2021fairness}"
+        },
+        {
+          "Number": 190,
+          "Task1": "fair subset selection",
+          "Reference1":  "\\citep{flanigan2020neutralizing}"
+        },
+        {
+          "Number": 191,
+          "Task1": "fair matching",
+          "Reference1":  "\\citep{kobren2019paper}"
+        },
+        {
+          "Number": 192,
+          "Task1": "fair matching",
+          "Reference1":  "\\citep{suhr2019twosided}"
+        },
+        {
+          "Number": 193,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{xiao2019beyond}"
+        },
+        {
+          "Number": 194,
+          "Task1": "fair routing",
+          "Reference1":  "\\citep{qian2015scram}"
+        },
+        {
+          "Number": 195,
+          "Task1": "bias evaluation in WEs",
+          "Reference1":  "\\citep{brunet2019understanding}"
+        },
+        {
+          "Number": 196,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{lee2020evaluation}"
+        },
+        {
+          "Number": 197,
+          "Task1": "fair ranking evaluation",
+          "Reference1":  "\\citep{gerritse2020effect}"
+        },
+        {
+          "Number": 198,
+          "Task1": "fair matching evaluation",
+          "Reference1":  "\\citep{farnadi2019enhancing}"
+        },
+        {
+          "Number": 199,
+          "Task1": "data bias evaluation",
+          "Reference1":  "\\citep{knees2019towards}"
+        },
+        {
+          "Number": 2,
+          "Task1": "fair truth discovery",
+          "Reference1":  "\\citep{li2020towards}",
+          "Task2": "fair task assignment",
+          "Reference2":  "\\citep{li2020towards,goel2019crowdsourcing}"
+        },
+        {
+          "Number": 20,
+          "Task1": "robust fairness evaluation",
+          "Reference1":  "\\citep{black2021leaveoneout}"
+        },
+        {
+          "Number": 200,
+          "Task1": "fair ranking",
+          "Reference1":  "\\citep{liu2018personalizing}"
+        },
+        {
+          "Number": 201,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{koolen2017:stereotypes}"
+        },
+        {
+          "Number": 202,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{koolen2017:stereotypes}"
+        },
+        {
+          "Number": 203,
+          "Task1": "fair regression evaluation",
+          "Reference1":  "\\citep{madnadi2017:building}"
+        },
+        {
+          "Number": 204,
+          "Task1": "fairness evaluation of speech recognition",
+          "Reference1":  "\\citep{tatman2017:gender}"
+        },
+        {
+          "Number": 205,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{zafar2017fairness,roh2020frtrain}",
+          "Task2": "fair preference-based classification",
+          "Reference2":  "\\citep{zafar2017from,ali2019loss}",
+          "Task3": "fair few-shot learning ",
+          "Reference3":  "\\citep{slack2019fair,slack2020fairness}",
+          "Task4": "fair classification under unawareness",
+          "Reference4":  "\\citep{kilbertus2018blind}"
+        },
+        {
+          "Number": 206,
+          "Task1": "fair ranking",
+          "Reference1":  "\\citep{singh2019policy,bower2021individually}"
+        },
+        {
+          "Number": 207,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{lipton2018does,black2020fliptest}"
+        },
+        {
+          "Number": 208,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{donini2018empirical}",
+          "Task2": "fairness evaluation",
+          "Reference2":  "\\citep{williamson2019fairness}"
+        },
+        {
+          "Number": 209,
+          "Task1": "bias evaluation in WEs",
+          "Reference1":  "\\citep{brunet2019understanding,guo2021detecting}"
+        },
+        {
+          "Number": 21,
+          "Task1": "robust fairness evaluation",
+          "Reference1":  "\\citep{nanda2021fairness}",
+          "Task2": "fairness evaluation of private classification",
+          "Reference2":  "\\citep{bagdasaryan2019differential}",
+          "Task3": "fairness evaluation",
+          "Reference3":  "\\citep{segal2021fairness}",
+          "Task4": "fair classification",
+          "Reference4":  "\\citep{jung2021fair}"
+        },
+        {
+          "Number": 210,
+          "Task1": "fair regression",
+          "Reference1":  "\\citep{diana2021minimax}"
+        },
+        {
+          "Number": 211,
+          "Task1": "fair anomaly detection",
+          "Reference1":  "\\citep{shekhar2021fairod}"
+        },
+        {
+          "Number": 212,
+          "Task1": "fair data summarization",
+          "Reference1":  "\\citep{belitz2021automating}"
+        },
+        {
+          "Number": 213,
+          "Task1": "fair pricing evaluation",
+          "Reference1":  "\\citep{fabris2021algorithmic}"
+        },
+        {
+          "Number": 214,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{jiang2021towards}"
+        },
+        {
+          "Number": 215,
+          "Task1": "fair ranking evaluation",
+          "Reference1":  "\\citep{kuhlman2021measuring}"
+        },
+        {
+          "Number": 216,
+          "Task1": "fair data generation",
+          "Reference1":  "\\citep{liu2021rawlsnet}"
+        },
+        {
+          "Number": 217,
+          "Task1": "fair data generation",
+          "Reference1":  "\\citep{liu2021rawlsnet}"
+        },
+        {
+          "Number": 218,
+          "Task1": "data bias evaluation",
+          "Reference1":  "\\citep{schumann2021step}",
+          "Task2": "fairness evaluation",
+          "Reference2":  "\\citep{aka2021measuring}"
+        },
+        {
+          "Number": 219,
+          "Task1": "fairness evaluation of speech recognition",
+          "Reference1":  "\\citep{segal2021fairness}"
+        },
+        {
+          "Number": 22,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{wang2020towards,jung2021fair}",
+          "Task2": "fair incremental learning",
+          "Reference2":  "\\citep{zhao2020maintaining}",
+          "Task3": "robust fairness evaluation",
+          "Reference3":  "\\citep{nanda2021fairness}"
+        },
+        {
+          "Number": 220,
+          "Task1": "fair ranking evaluation",
+          "Reference1":  "\\citep{suhr2021does}",
+          "Task2": "multi-stage fairness evaluation",
+          "Reference2":  "\\citep{suhr2021does}"
+        },
+        {
+          "Number": 221,
+          "Task1": "bias evaluation in language models",
+          "Reference1":  "\\citep{guo2021detecting}"
+        },
+        {
+          "Number": 222,
+          "Task1": "fair pricing evaluation",
+          "Reference1":  "\\citep{pandey2021disparate}"
+        },
+        {
+          "Number": 223,
+          "Task1": "fair ranking evaluation",
+          "Reference1":  "\\citep{solans2021comparing}"
+        },
+        {
+          "Number": 224,
+          "Task1": "fair graph augmentation",
+          "Reference1":  "\\citep{ramachandran2021gaea}"
+        },
+        {
+          "Number": 225,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{kim2021age}"
+        },
+        {
+          "Number": 23,
+          "Task1": "data bias evaluation",
+          "Reference1":  "\\citep{Buolamwini2018gender}",
+          "Task2": "robust fairness evaluation",
+          "Reference2":  "\\citep{nanda2021fairness}"
+        },
+        {
+          "Number": 24,
+          "Task1": "robust fairness evaluation",
+          "Reference1":  "\\citep{black2021leaveoneout}"
+        },
+        {
+          "Number": 25,
+          "Task1": "fairness evaluation of selective classification",
+          "Reference1":  "\\citep{jones2021selective}",
+          "Task2": "fairness evaluation of private classification",
+          "Reference2":  "\\citep{cheng2021can}"
+        },
+        {
+          "Number": 26,
+          "Task1": "fairness evaluation of private classification",
+          "Reference1":  "\\citep{cheng2021can}"
+        },
+        {
+          "Number": 27,
+          "Task1": "fairness evaluation of private classification",
+          "Reference1":  "\\citep{cheng2021can}"
+        },
+        {
+          "Number": 28,
+          "Task1": "fair subset selection under unawareness",
+          "Reference1":  "\\citep{mehrotra2021mitigating}"
+        },
+        {
+          "Number": 29,
+          "Task1": "fair subset selection under unawareness",
+          "Reference1":  "\\citep{mehrotra2021mitigating}"
+        },
+        {
+          "Number": 3,
+          "Task1": "fair subset selection",
+          "Reference1":  "\\citep{huang2020towards}"
+        },
+        {
+          "Number": 30,
+          "Task1": "fair subset selection under unawareness",
+          "Reference1":  "\\citep{mehrotra2021mitigating}"
+        },
+        {
+          "Number": 31,
+          "Task1": "fairness evaluation of harmful content detection",
+          "Reference1":  "\\citep{ballburack2021differential}"
+        },
+        {
+          "Number": 32,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{ballburack2021differential}",
+          "Task2": "fair multi-stage classification",
+          "Reference2":  "\\citep{keswani2021towards}"
+        },
+        {
+          "Number": 33,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{ballburack2021differential}"
+        },
+        {
+          "Number": 34,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{ballburack2021differential}"
+        },
+        {
+          "Number": 35,
+          "Task1": "fairness evaluation of sentiment analysis",
+          "Reference1":  "\\citep{shen2018darling}",
+          "Task2": "fairness evaluation of private classification",
+          "Reference2":  "\\citep{bagdasaryan2019differential}",
+          "Task3":"fairness evaluation",
+          "Reference3":  "\\citep{ballburack2021differential}",
+          "Task4": "robust fair language model",
+          "Reference4":  "\\citep{hashimoto2018fairness}",
+          "Task5": "fairness evaluation of language identification",
+          "Reference5":  "\\citep{blodgett2017racial}"
+        },
+        {
+          "Number": 36,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{ballburack2021differential}"
+        },
+        {
+          "Number": 37,
+          "Task1": "bias evaluation in language models",
+          "Reference1":  "\\citep{dhamala2021bold}"
+        },
+        {
+          "Number": 38,
+          "Task1": "fair ranking evaluation",
+          "Reference1":  "\\citep{dash2021when}"
+        },
+        {
+          "Number": 39,
+          "Task1": "data bias evaluation",
+          "Reference1":  "\\citep{coston2021leveraging}"
+        },
+        {
+          "Number": 4,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{pleiss2017fairness}",
+          "Task2": "fair active classification",
+          "Reference2":  "\\citep{noriegacampero2019active}"
+        },
+        {
+          "Number": 40,
+          "Task1": "bias evaluation of machine translation",
+          "Reference1":  "\\citep{cho2021towards}"
+        },
+        {
+          "Number": 41,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{donini2018empirical,mary2019fairnessaware}",
+          "Task2": "evaluation of data bias",
+          "Reference2":  "\\citep{beretta2021detecting}",
+          "Task3": "limited-label fair classification",
+          "Reference3":  "\\citep{chzhen2019leveraging}",
+          "Task4": "robust fair classification",
+          "Reference4":  "\\citep{rezaei2021robust}"
+        },
+        {
+          "Number": 42,
+          "Task1": "fairness evaluation under unawareness",
+          "Reference1":  "\\citep{kallus2020assessing}"
+        },
+        {
+          "Number": 43,
+          "Task1": "fairness evaluation under unawareness",
+          "Reference1":  "\\citep{chen2019fairness,kallus2020assessing}"
+        },
+        {
+          "Number": 44,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{black2020fliptest}"
+        },
+        {
+          "Number": 45,
+          "Task1": "fairness evaluation of private resource allocation",
+          "Reference1":  "\\citep{pujol2020fair}"
+        },
+        {
+          "Number": 46,
+          "Task1": "fair ranking",
+          "Reference1":  "\\citep{singh2019policy}"
+        },
+        {
+          "Number": 47,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{noriegacampero2020algorithmic}"
+        },
+        {
+          "Number": 48,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{noriegacampero2020algorithmic}"
+        },
+        {
+          "Number": 49,
+          "Task1": "dynamical fair resource allocation",
+          "Reference1":  "\\citep{atwood2019fair,damour2020fairness}",
+          "Task2":"dynamical fair classification",
+          "Reference2":  "\\citep{damour2020fairness}"
+        },
+        {
+          "Number": 5,
+          "Task1": "fair transfer learning",
+          "Reference1":  "\\citep{coston2019fair}",
+          "Task2": "fair regression",
+          "Reference2":  "\\citep{romano2020achieving}",
+          "Task3": "fairness evaluation",
+          "Reference3":  "\\citep{singh2019understanding}",
+          "Task4": "robust fair classification",
+          "Reference4":  "\\citep{biswas2021ensuring}",
+          "Task5" : "fair classification",
+          "Reference5":  "\\citep{sharma2021fairn}"
+        },
+        {
+          "Number": 50,
+          "Task1": "bias evaluation in WEs",
+          "Reference1":  "\\citep{liang2020artificial,papakyriakopulos2020bias,brunet2019understanding,chen2021gender}"
+        },
+        {
+          "Number": 51,
+          "Task1": "fair sentiment analysis evaluation",
+          "Reference1":  "\\citep{liang2020artificial}"
+        },
+        {
+          "Number": 52,
+          "Task1": "fair sentiment analysis evaluation",
+          "Reference1":  "\\citep{liang2020artificial}"
+        },
+        {
+          "Number": 53,
+          "Task1": "bias evaluation in WEs",
+          "Reference1":  "\\citep{papakyriakopulos2020bias}"
+        },
+        {
+          "Number": 54,
+          "Task1": "fair advertising",
+          "Reference1":  "\\citep{celis2019toward,nasr2020bidding}"
+        },
+        {
+          "Number": 55,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{hardt2016equality}",
+          "Task2": "dynamical fair classification",
+          "Reference2":  "\\citep{liu2020disparate}",
+          "Task3": "dynamical fairness evaluation",
+          "Reference3":  "\\citep{zhang2020how,liu2018delayed,creager2020causal}",
+          "Task4": "fair resource allocation",
+          "Reference4":  "\\citep{goelz2019paradoxes}"
+        },
+        {
+          "Number": 56,
+          "Task1": "fair clustering",
+          "Reference1":  "\\citep{chierichetti2017fair,bera2019fair,backurs2019scalable,mahabadi2020individual,huang2019coresets,bera2019fair}"
+        },
+        {
+          "Number": 57,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{feldman2015certifying,friedler2019comparative}",
+          "Task2": "limited-label fairness evaluation",
+          "Reference2":  "\\citep{ji2020can}"
+        },
+        {
+          "Number": 58,
+          "Task1": "fair risk assessment",
+          "Reference1":  "\\citep{madras2019fairness,yi2019fair}"
+        },
+        {
+          "Number": 59,
+          "Task1": "fair resource allocation",
+          "Reference1":  "\\citep{elzayn2019fair}"
+        },
+        {
+          "Number": 6,
+          "Task1": "fair transfer learning",
+          "Reference1":  "\\citep{coston2019fair}"
+        },
+        {
+          "Number": 60,
+          "Task1": "fairness evaluation",
+          "Reference1":  "\\citep{dearteaga2019bias}",
+          "Task2": "fair classification",
+          "Reference2":  "\\citep{yurochkin2021sensei}"
+        },
+        {
+          "Number": 61,
+          "Task1": "fair ranking",
+          "Reference1":  "\\citep{burke2018balanced,liu2018personalizing,sonboli2020and}",
+          "Task2": "bias discovery",
+          "Reference2":  "\\citep{sonboli2019localized}"
+        },
+        {
+          "Number": 62,
+          "Task1": "fair clustering",
+          "Reference1":  "\\citep{huang2019coresets}"
+        },
+        {
+          "Number": 63,
+          "Task1": "fair ranking evaluation",
+          "Reference1":  "\\citep{ekstrand2018all}"
+        },
+        {
+          "Number": 64,
+          "Task1": "data bias evaluation",
+          "Reference1":  "\\citep{Buolamwini2018gender}"
+        },
+        {
+          "Number": 65,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{he2020geometric,sharma2020data,goel2018nondiscriminatory,oneto2019taking,celis2019classification,canetti2019from,cho2020fair,savani2020intraprocessing,donini2018empirical,heidari2018fairness,russell2017when,quadrianto2017recycling,calmon2017optimized,diciccio2020evaluating,xu2020algorithmic,vargo2021individually,roh2021fairbatch,maity2021statistical,lohaus2020too,roh2020frtrain,celis2020data,cotter2019training,mary2019fairnessaware,wang2019repairing,delobelle2020ethical,ogura2020convex,lum2016statistical,zafar2017fairnessbeyond,berk2017convex,wadsworth2018achieving,diana2021minimax,perrone2021fair,ali2021accounting}",
+          "Task2": "fairness evaluation",
+          "Reference2":  "\\citep{cardoso2019framework,mcnamara2019equalized,kasy2021fairness,taskesen2021statistical,friedler2019comparative,wick2019unlocking,zhang2018equality,pleiss2017fairness,chaibubneto2020causal,speicher2018unified,corbettdavies2017algorithmic,liu2019implicit,agarwal2018reductions,ngong2020towards,jabbari2020empirical,chouldechova2017fair,grgichlaca2016case,islam2021can}",
+          "Task3": "fair risk assessment",
+          "Reference3":  "\\citep{coston2020counterfactual,mishler2021fairness,nabi2019learning}",
+          "Task4": "fair task assignment",
+          "Reference4":  "\\citep{goel2019crowdsourcing}",
+          "Task5": "fair classification under unawareness",
+          "Reference5":  "\\citep{lahoti2020fairness,lamy2019noisetolerant,chzhen2019leveraging,kilbertus2018blind}",
+          "Task6": "data bias evaluation",
+          "Reference6":  "\\citep{beretta2021detecting}",
+          "Task7": "fair representation learning",
+          "Reference7":  "\\citep{ruoss2020learning,zhao2020conditional,bower2018debiasing}",
+          "Task8": "robust fair classification",
+          "Reference8":  "\\citep{mandal2020ensuring,rezaei2021robust,biswas2021ensuring}",
+          "Task9": "dynamical fairness evaluation",
+          "Reference9":  "\\citep{zhang2020how}",
+          "Task10": "fair reinforcement learning",
+          "Reference10":  "\\citep{metevier2019offline}",
+          "Task11": "fair ranking evaluation",
+          "Reference11":  "\\citep{kallus2019fairness,yang2017measuring}",
+          "Task12": "fair multi-stage classification",
+          "Reference12":  "\\citep{madras2018predict}",
+          "Task13": "dynamical fair classification",
+          "Reference13":  "\\citep{valera2018enhancing}",
+          "Task14": "preference-based fair classification",
+          "Reference14":  "\\citep{zafar2017from,ustun2019fairness}",
+          "Task15": "fair regression",
+          "Reference15":  "\\citep{komiyama2018nonconvex}",
+          "Task16": "fair multi-stage classification",
+          "Reference16":  "\\citep{goel2020importance}",
+          "Task17": "limited-label fair classification",
+          "Reference17":  "\\citep{chzhen2019leveraging,wang2021fair,choi2020group}",
+          "Task18": "robust fairness evaluation",
+          "Reference18":  "\\citep{slack2020fairness,slack2019fairness}",
+          "Task19": "rich subgroup fairness evaluation",
+          "Reference19":  "\\citep{chouldechova2017fairer,zhang2017identifying}"
+        },
+        {
+          "Number": 66,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{he2020geometric,sharma2020data,raff2018fair,celis2019classification,yang2020fairness,donini2018empirical,vargo2021individually,baharlouei2020renyi,lohaus2020too,martinez2020minimax,mary2019fairnessaware,delobelle2020ethical,raff2018gradient,perrone2021fair,sharma2021fairn}",
+          "Task2": "fairness evaluation",
+          "Reference2":  "\\citep{friedler2019comparative,feldman2015certifying}",
+          "Task3": "fair active resource allocation",
+          "Reference3":  "\\citep{cai2020:fa}",
+          "Task4": "preference-based fair classification",
+          "Reference4":  "\\citep{zhang2020joint}",
+          "Task5": "fair active classification",
+          "Reference5":  "\\citep{noriegacampero2019active}",
+          "Task6": "fair classification under unawareness",
+          "Reference6":  "\\citep{kilbertus2018blind}",
+          "Task7": "robust fairness evaluation",
+          "Reference7":  "\\citep{black2021leaveoneout}",
+          "Task8": "fair representation learning",
+          "Reference8":  "\\citep{ruoss2020learning,louizos2016variational}",
+          "Task9": "fair reinforcement learning",
+          "Reference9":  "\\citep{metevier2019offline}",
+          "Task10": "fair ranking evaluation",
+          "Reference10":  "\\citep{kallus2019fairness,wu2018discrimination,yang2017measuring}",
+          "Task11": "fair ranking",
+          "Reference11":  "\\citep{singh2019policy,bower2021individually}",
+          "Task12": "fair multi-stage classification",
+          "Reference12":  "\\citep{goel2020importance}",
+          "Task13": "limited-label fair classification",
+          "Reference13":  "\\citep{chzhen2019leveraging,wang2021fair,choi2020group}",
+          "Task14": "limited-label fairness evaluation",
+          "Reference14":  "\\citep{ji2020can}"
+        },
+        {
+          "Number": 67,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{yang2020fairness,Sharifi2019average,heidari2018fairness,lohaus2020too,cotter2019training,creager2019flexibly,cotter2018training}",
+          "Task2": "fair regression evaluation",
+          "Reference2":  "\\citep{heidari2019moral}",
+          "Task3": "fair few-shot learning ",
+          "Reference3":  "\\citep{slack2020fairness,slack2019fair}",
+          "Task4": "rich-subgroup fairness evaluation",
+          "Reference4":  "\\citep{kearns2019empirical}",
+          "Task5": "rich-subgroup fair classification",
+          "Reference5":  "\\citep{kearns2018preventing}",
+          "Task6": "fair regression",
+          "Reference6":  "\\citep{chzhen2020fair,chzhen2020fairwassertein,romano2020achieving,agarwal2019fair,mary2019fairnessaware,komiyama2018nonconvex,ogura2020convex,berk2017convex,diana2021minimax}",
+          "Task7": "fair representation learning",
+          "Reference7":  "\\citep{ruoss2020learning}",
+          "Task8": "robust fair classification",
+          "Reference8":  "\\citep{mandal2020ensuring}",
+          "Task9": "fair private classification",
+          "Reference9":  "\\citep{jagielski2019differentially}",
+          "Task10": "fairness evaluation of transfer learning",
+          "Reference10":  "\\citep{lan2017discriminatory}",
+          "Task11": "preference-based fair clustering",
+          "Reference11":  "\\citep{galhotra2021learning}"
+        },
+        {
+          "Number": 68,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{yang2020fairness,cho2020fair,russell2017when,agarwal2018reductions,berk2017convex}",
+          "Task2": "rich-subgroup fairness evaluation",
+          "Reference2":  "\\citep{kearns2019empirical}",
+          "Task3": "fair classification under unawareness",
+          "Reference3":  "\\citep{lahoti2020fairness,lamy2019noisetolerant}",
+          "Task4": "fairness evaluation",
+          "Reference4":  "\\citep{black2020fliptest,kusner2017counterfactual}",
+          "Task5": "fair regression",
+          "Reference5":  "\\citep{chzhen2020fair,chzhen2020fairwassertein,agarwal2019fair,komiyama2018nonconvex}",
+          "Task6": "fair representation learning",
+          "Reference6":  "\\citep{ruoss2020learning}",
+          "Task7": "robust fair classification",
+          "Reference7":  "\\citep{mandal2020ensuring}",
+          "Task8": "limited-label fair classification",
+          "Reference8":  "\\citep{wang2021fair}"
+        },
+        {
+          "Number": 69,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{savani2020intraprocessing,baharlouei2020renyi,zafar2017fairness,diana2021minimax,shah2021rawslian}",
+          "Task2": "fair clustering",
+          "Reference2":  "\\citep{abbasi2021fair,harb2020kfc,ahmadian2020fair,huang2019coresets,bera2019fair,mahabadi2020individual,backurs2019scalable,chierichetti2017fair}",
+          "Task3": "fair data summarization",
+          "Reference3":  "\\citep{halabi2020fairness}",
+          "Task4": "fair classification under unawareness",
+          "Reference4":  "\\citep{kilbertus2018blind}",
+          "Task5": "fairness evaluation",
+          "Reference5":  "\\citep{lipton2018does,islam2021can}",
+          "Task6": "limited-label fairness evaluation",
+          "Reference6":  "\\citep{ji2020can}",
+          "Task7": "preference-based fair clustering",
+          "Reference7":  "\\citep{galhotra2021learning}"
+        },
+        {
+          "Number": 7,
+          "Task1": "fair risk assessment",
+          "Reference1":  "\\citep{pfohl2019creating}"
+        },
+        {
+          "Number": 70,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{cho2020fair,berk2017convex}",
+          "Task2": "fair clustering",
+          "Reference2":  "\\citep{harb2020kfc,ghadiri2021socially,harb2020kfc,bera2019fair}",
+          "Task3": "fair clustering under unawareness",
+          "Reference3":  "\\citep{esmaeili2020probabilistic}",
+          "Task4": "fair classification under unawareness",
+          "Reference4":  "\\citep{wang2020robust}",
+          "Task5": "fair data summarization",
+          "Reference5":  "\\citep{Tantipongpipat2019multicriteria,samadi2018price}",
+          "Task6": "fairness evaluation",
+          "Reference6":  "\\citep{lipton2018does}",
+          "Task7": "fair anomaly detection",
+          "Reference7":  "\\citep{shekhar2021fairod}"
+        },
+        {
+          "Number": 71,
+          "Task1": "fair ranking ",
+          "Reference1":  "\\citep{burke2018balanced,sonboli2020and,dickens2020hyperfair,farnadi2018fairnessaware,liu2018personalizing}",
+          "Task2": "fair ranking evaluation",
+          "Reference2":  "\\citep{ekstrand2018all,yao2017beyond,yao2017new}",
+          "Task3": "fair data summarization",
+          "Reference3":  "\\citep{halabi2020fairness}",
+          "Task4": "fair representation learning",
+          "Reference4":  "\\citep{oneto2020exploiting,oneto2019learning}",
+          "Task5": "fair graph mining",
+          "Reference5":  "\\citep{buyl2020debayes,bose2019compositional}",
+          "Task6": "fair data generation",
+          "Reference6":  "\\citep{burke2018synthetic}"
+        },
+        {
+          "Number": 72,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{savani2020intraprocessing,kim2019multiaccuracy,chuang2021fair,lohaus2020too,creager2019flexibly,jung2021fair}",
+          "Task2": "fair anomaly detection",
+          "Reference2":  "\\citep{zhang2021towards}",
+          "Task3": "bias discovery",
+          "Reference3":  "\\citep{amini2019uncovering}",
+          "Task5": "fair anomaly detection",
+          "Reference5":  "\\citep{zhang2021towards}",
+          "Task6": "fairness evaluation of private classification",
+          "Reference6":  "\\citep{cheng2021can}",
+          "Task7": "fairness evaluation of selective classification",
+          "Reference7":  "\\citep{jones2021selective}",
+          "Task8": "fairness evaluation",
+          "Reference8":  "\\citep{wang2020towards,segal2021fairness}",
+          "Task9": "fair representation learning",
+          "Reference9":  "\\citep{quadrianto2019discovering}",
+          "Task10": "fair data summarization",
+          "Reference10":  "\\citep{chiplunkar2020how}",
+          "Task11": "fair data generation",
+          "Reference11":  "\\citep{choi2020fair,ramaswamy2021fair}"
+        },
+        {
+          "Number": 73,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{kim2019multiaccuracy,amini2019uncovering}",
+          "Task2": "fairness evaluation",
+          "Reference2":  "\\citep{Buolamwini2018gender,raji2019actionable}",
+          "Task3": "bias discovery",
+          "Reference3":  "\\citep{kim2019multiaccuracy,amini2019uncovering}"
+        },
+        {
+          "Number": 74,
+          "Task1": "fair regression",
+          "Reference1":  "\\citep{komiyama2018nonconvex,chzhen2020fairwassertein,chzhen2020fair}"
+        },
+        {
+          "Number": 75,
+          "Task1": "fair regression",
+          "Reference1":  "\\citep{chzhen2020fairwassertein,chzhen2020fair}",
+          "Task2": "fair representation learning",
+          "Reference2":  "\\citep{oneto2019learning,oneto2020exploiting}"
+        },
+        {
+          "Number": 76,
+          "Task1": "fair clustering",
+          "Reference1":  "\\citep{backurs2019scalable,huang2019coresets,bera2019fair}",
+          "Task2": "fair clustering under unawareness",
+          "Reference2":  "\\citep{esmaeili2020probabilistic}",
+          "Task3": "limited-label fairness evaluation",
+          "Reference3":  "\\citep{sabato2020bounding}"
+        },
+        {
+          "Number": 77,
+          "Task1": "fair representation learning",
+          "Reference1":  "\\citep{oneto2019learning,oneto2020exploiting}"
+        },
+        {
+          "Number": 78,
+          "Task1": "fair entity resolution evaluation",
+          "Reference1":  "\\citep{vig2020investigating}",
+          "Task2": "fairness evaluation in entity recognition",
+          "Reference2":  "\\citep{mishra2020assessing}"
+        },
+        {
+          "Number": 79,
+          "Task1": "fair entity resolution evaluation.",
+          "Reference1":  "\\citep{vig2020investigating}"
+        },
+        {
+          "Number": 8,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{dwork2018decoupled}",
+          "Task2": "bias discovery",
+          "Reference2":  "\\citep{amini2019uncovering}",
+          "Task3": "data bias evaluation",
+          "Reference3":  "\\citep{yang2020towards}",
+          "Task4": "fair incremental learning",
+          "Reference4":  "\\citep{zhao2020maintaining}",
+          "Task5": "fairness evaluation",
+          "Reference5":  "\\citep{dwork2017decoupled}"
+        },
+        {
+          "Number": 80,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{romano2020achieving}"
+        },
+        {
+          "Number": 81,
+          "Task1": "fair representation learning",
+          "Reference1":  "\\citep{locatello2019fairness,creager2019flexibly}"
+        },
+        {
+          "Number": 82,
+          "Task1": "fair representation learning",
+          "Reference1":  "\\citep{locatello2019fairness}"
+        },
+        {
+          "Number": 83,
+          "Task1": "fair representation learning",
+          "Reference1":  "\\citep{locatello2019fairness}"
+        },
+        {
+          "Number": 84,
+          "Task1": "fair representation learning",
+          "Reference1":  "\\citep{locatello2019fairness}",
+          "Task2": "fair data generation",
+          "Reference2": "\\citep{choi2020fair}"
+        },
+        {
+          "Number": 85,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{donini2018empirical,mary2019fairnessaware}",
+          "Task2": "robust fair classification",
+          "Reference2":  "\\citep{rezaei2021robust}",
+          "Task3": "limited-label fair classification",
+          "Reference3":  "\\citep{chzhen2019leveraging}"
+        },
+        {
+          "Number": 86,
+          "Task1": "fair ranking evaluation",
+          "Reference1":  "\\citep{kallus2019fairness}"
+        },
+        {
+          "Number": 87,
+          "Task1": "data bias evaluation",
+          "Reference1":  "\\citep{tan2019assessing}"
+        },
+        {
+          "Number": 88,
+          "Task1": "data bias evaluation",
+          "Reference1":  "\\citep{tan2019assessing}"
+        },
+        {
+          "Number": 89,
+          "Task1": "data bias evaluation",
+          "Reference1":  "\\citep{tan2019assessing}"
+        },
+        {
+          "Number": 9,
+          "Task1": "fair sentiment analysis",
+          "Reference1":  "\\citep{yurochkin2020training,mukherjee2020two}",
+          "Task2": "bias discovery in WEs",
+          "Reference2":  "\\citep{swinger2019what}"
+        },
+        {
+          "Number": 90,
+          "Task1": "fairness evaluation through artificial data generation",
+          "Reference1":  "\\citep{mcduff2019characterizing}"
+        },
+        {
+          "Number": 91,
+          "Task1": "fair matching",
+          "Reference1":  "\\citep{tziavelis2019equitable}"
+        },
+        {
+          "Number": 92,
+          "Task1": "fairness evaluation of risk assessment",
+          "Reference1":  "\\citep{kallus2019assessing}"
+        },
+        {
+          "Number": 93,
+          "Task1": "fair representation learning",
+          "Reference1":  "\\citep{quadrianto2019discovering}",
+          "Task2": "fairness evaluation of private classification",
+          "Reference2":  "\\citep{bagdasaryan2019differential}"
+        },
+        {
+          "Number": 94,
+          "Task1": "fairness evaluation of private classification",
+          "Reference1":  "\\citep{bagdasaryan2019differential}"
+        },
+        {
+          "Number": 95,
+          "Task1": "fair classification",
+          "Reference1":  "\\citep{martinez2020minimax}",
+          "Task2": "fairness evaluation",
+          "Reference2":  "\\citep{chen2018why,zhang2020hurtful}",
+          "Task3": "robust fair classification",
+          "Reference3":  "\\citep{singh2021fairness}"
+        },
+        {
+          "Number": 96,
+          "Task1": "fair ranking evaluation",
+          "Reference1":  "\\citep{raj2020comparing}",
+          "Task2": "fairness evaluation",
+          "Reference2":  "\\citep{chen2018why}"
+        },
+        {
+          "Number": 97,
+          "Task1": "preference-based fair classification",
+          "Reference1":  "\\citep{zafar2017from}",
+          "Task2": "robust fair classification",
+          "Reference2":  "\\citep{kallus2018residual}",
+          "Task3": "fair classification under unawareness",
+          "Reference3":  "\\citep{kilbertus2018blind}",
+          "Task4": "fairness evaluation",
+          "Reference4":  "\\citep{goel2017combatting}",
+          "Task5": "fair classification",
+          "Reference5":  "\\citep{ali2021accounting}"
+        },
+        {
+          "Number": 98,
+          "Task1": "fair graph mining",
+          "Reference1":  "\\citep{kang2020inform}"
+        },
+        {
+          "Number": 99,
+          "Task1": "fair graph mining",
+          "Reference1":  "\\citep{kang2020inform}"
+        }
+      ]
+    }
+  }

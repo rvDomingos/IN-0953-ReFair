@@ -1,0 +1,445 @@
+{
+    "domains": {
+      "domain": [
+        {
+          "name": "applied psychology",
+          "investigates": 41
+        },
+        {
+          "name": "biology",
+          "investigates": [
+            94,
+            98
+          ]
+        },
+        {
+          "name": "cardiology",
+          "investigates": [
+            4,
+            85,
+            86
+          ]
+        },
+        {
+          "name": "computer networks",
+          "investigates": 131
+        },
+        {
+          "name": "computer vision",
+          "investigates": [
+            114,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            139,
+            142,
+            16,
+            164,
+            180,
+            19,
+            20,
+            21,
+            218,
+            22,
+            23,
+            26,
+            64,
+            72,
+            73,
+            8,
+            81,
+            82,
+            83,
+            84,
+            90,
+            93
+          ]
+        },
+        {
+          "name": "critical care medicine",
+          "investigates": 95
+        },
+        {
+          "name": "demography",
+          "investigates": [
+            10,
+            171,
+            45,
+            74,
+            76
+          ]
+        },
+        {
+          "name": "dermatology",
+          "investigates": [
+            126,
+            27
+          ]
+        },
+        {
+          "name": "economics",
+          "investigates": [
+            0,
+            170,
+            185,
+            213,
+            28,
+            47,
+            48,
+            92
+          ]
+        },
+        {
+          "name": "education",
+          "investigates": [
+            138,
+            15,
+            161,
+            196,
+            203,
+            212,
+            214,
+            217,
+            68,
+            75,
+            77,
+            80
+          ]
+        },
+        {
+          "name": "endocrinology",
+          "investigates": [
+            130,
+            56
+          ]
+        },
+        {
+          "name": "finance",
+          "investigates": [
+            152,
+            178,
+            43,
+            55,
+            6,
+            61,
+            66,
+            70
+          ]
+        },
+        {
+          "name": "health policy",
+          "investigates": [
+            11,
+            5
+          ]
+        },
+        {
+          "name": "information systems",
+          "investigates": [
+            108,
+            137,
+            141,
+            143,
+            144,
+            157,
+            158,
+            163,
+            167,
+            169,
+            220,
+            223,
+            30,
+            38,
+            46
+          ]
+        },
+        {
+          "name": "law",
+          "investigates": [
+            102,
+            103,
+            172,
+            174,
+            181,
+            2,
+            3,
+            44,
+            57,
+            59,
+            65,
+            67,
+            97
+          ]
+        },
+        {
+          "name": "library and information sciences",
+          "investigates": [
+            111,
+            112,
+            113,
+            129,
+            187,
+            191,
+            99
+          ]
+        },
+        {
+          "name": "linguistics",
+          "investigates": [
+            107,
+            132,
+            140,
+            145,
+            209,
+            219,
+            29,
+            37,
+            40,
+            50,
+            51,
+            52,
+            78,
+            79,
+            87,
+            88,
+            89,
+            9
+          ]
+        },
+        {
+          "name": "literature",
+          "investigates": [
+            117,
+            148,
+            189,
+            201,
+            202
+          ]
+        },
+        {
+          "name": "marketing",
+          "investigates": [
+            125,
+            54,
+            69
+          ]
+        },
+        {
+          "name": "medicine",
+          "investigates": 7
+        },
+        {
+          "name": "nephrology",
+          "investigates": 155
+        },
+        {
+          "name": "neurology",
+          "investigates": 24
+        },
+        {
+          "name": "news",
+          "investigates": [
+            149,
+            159,
+            188,
+            195
+          ]
+        },
+        {
+          "name": "pattern recognition",
+          "investigates": 211
+        },
+        {
+          "name": "pediatrics",
+          "investigates": 58
+        },
+        {
+          "name": "pharmacology",
+          "investigates": 42
+        },
+        {
+          "name": "plant science",
+          "investigates": 12
+        },
+        {
+          "name": "political science",
+          "investigates": [
+            127,
+            14,
+            18,
+            190
+          ]
+        },
+        {
+          "name": "public health",
+          "investigates": [
+            151,
+            175,
+            177,
+            198
+          ]
+        },
+        {
+          "name": "radiology",
+          "investigates": [
+            135,
+            179,
+            25
+          ]
+        },
+        {
+          "name": "signal processing",
+          "investigates": 115
+        },
+        {
+          "name": "sleep medicine",
+          "investigates": 136
+        },
+        {
+          "name": "social media",
+          "investigates": [
+            1,
+            106,
+            116,
+            154,
+            162,
+            165,
+            166,
+            168,
+            183,
+            193,
+            204,
+            31,
+            32,
+            33,
+            34,
+            36,
+            53
+          ]
+        },
+        {
+          "name": "social networks",
+          "investigates": [
+            100,
+            101,
+            109,
+            110,
+            133,
+            156,
+            186
+          ]
+        },
+        {
+          "name": "social work",
+          "investigates": [
+            104,
+            17,
+            182
+          ]
+        },
+        {
+          "name": "sociology",
+          "investigates": 150
+        },
+        {
+          "name": "sports",
+          "investigates": [
+            176,
+            215,
+            62
+          ]
+        },
+        {
+          "name": "transportation",
+          "investigates": [
+            13,
+            192,
+            194,
+            210,
+            222,
+            224
+          ]
+        },
+        {
+          "name": "urban studies",
+          "investigates": 39
+        },
+        {
+          "name": "N/A",
+          "investigates": [
+            205,
+            206,
+            207,
+            208,
+            49
+          ]
+        },
+        {
+          "name": "computer vision, experimental psychology",
+          "investigates": 225
+        },
+        {
+          "name": "information systems, management information systems",
+          "investigates": [
+            146,
+            173,
+            216
+          ]
+        },
+        {
+          "name": "information systems, movies",
+          "investigates": [
+            200,
+            71
+          ]
+        },
+        {
+          "name": "information systems, public health",
+          "investigates": 128
+        },
+        {
+          "name": "linguistics, information systems",
+          "investigates": 60
+        },
+        {
+          "name": "literature, information systems",
+          "investigates": 96
+        },
+        {
+          "name": "music, information systems",
+          "investigates": [
+            160,
+            199,
+            63
+          ]
+        },
+        {
+          "name": "news, information systems",
+          "investigates": [
+            105,
+            184,
+            197
+          ]
+        },
+        {
+          "name": "social media, linguistics",
+          "investigates": [
+            153,
+            221,
+            35
+          ]
+        },
+        {
+          "name": "social work, social networks",
+          "investigates": 134
+        },
+        {
+          "name": "sociology, information systems",
+          "investigates": 91
+        }
+      ]
+    }
+  }

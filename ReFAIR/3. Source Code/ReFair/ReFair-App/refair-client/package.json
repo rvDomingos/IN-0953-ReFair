@@ -1,0 +1,30 @@
+{
+  "name": "refair-client",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "apexcharts": "^3.42.0",
+    "axios": "^1.3.6",
+    "bootstrap": "^5.3.1",
+    "bootstrap-vue": "^2.23.1",
+    "bootstrap-vue-arsenic": "^0.2.0",
+    "chart.js": "^4.4.0",
+    "downloadjs": "^1.4.7",
+    "export-from-json": "^1.7.3",
+    "mdb-vue-ui-kit": "^4.0.0",
+    "vue": "^3.3.4",
+    "vue-apexcharts": "^1.6.2",
+    "vue-chartjs": "^5.2.0",
+    "vue-router": "^4.1.6",
+    "vue3-apexcharts": "^1.4.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "vite": "^4.1.4"
+  }
+}

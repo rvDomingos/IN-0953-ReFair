@@ -1,0 +1,3 @@
+# Ignore huge models
+word2vec-google-news-300.bin
+glove.6B.100d.txt

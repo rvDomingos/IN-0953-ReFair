@@ -1,0 +1,1272 @@
+<?xml version="1.0"?>
+<Tasks>
+	<!-- 0 -->
+	<Task>
+		<Number>0</Number>
+		<Name>fairness evaluation \citep{sharma2020:cc,cardoso2019framework,oneto2019taking,friedler2019comparative,chen2018why,lipton2018does,pleiss2017fairness,diciccio2020evaluating,speicher2018unified,feldman2015certifying,maity2021statistical,kim2020fact,liu2019implicit,williamson2019fairness,vonkugelgen2021fairness,ngong2020towards,jabbari2020empirical,huan2020fairness,zliobaite2015relation,islam2021can,segal2021fairness}, 
+    fair classification \citep{he2020geometric,sharma2020data,goel2018nondiscriminatory,raff2018fair,zhang2018mitigating,hu2020fair,celis2019classification,yang2020fairness,cho2020fair,savani2020intraprocessing,wu2019cpfairness,donini2018empirical,quadrianto2017recycling,calmon2017optimized,xu2020algorithmic,zhang2017achieving,yurochkin2021sensei,vargo2021individually,chuang2021fair,roh2021fairbatch,yurochkin2020training,baharlouei2020renyi,lohaus2020too,martinez2020minimax,roh2020frtrain,celis2020data,cotter2019training,gordaliza2019obtaining,wang2019repairing,agarwal2018reductions,creager2021exchanging,delobelle2020ethical,ogura2020convex,feldman2015certifying,zafar2017fairness,fish2015fair,raff2018gradient,mhasawade2021causal,perrone2021fair,shah2021rawslian,sharma2021fairn}, 
+    fair clustering \citep{abbasi2021fair,ghadiri2021socially,harb2020kfc,ahmadian2020fair,huang2019coresets,bera2019fair,chierichetti2017fair,brubach2020pairwise,mahabadi2020individual,backurs2019scalable,mary2019fairnessaware,wang2020augmented,berk2017convex,beutel2017data}, 
+    fair clustering under unawareness \citep{esmaeili2020probabilistic},
+    fair active classification \citep{noriegacampero2019active,bakker2019dadi,bakker2021beyond}, 
+    fair preference-based classification \citep{ali2019loss,ustun2019fairness,mukherjee2020two}, 
+    fair classification under unawareness \citep{lahoti2020fairness,wang2020robust,mozannar2020fair,kilbertus2018blind}, 
+    fair anomaly detection \citep{zhang2021towards,shekhar2021fairod},
+    fairness evaluation under unawareness \citep{awasthi2021evaluating},
+    robust fairness evaluation \citep{black2021leaveoneout},
+    data bias evaluation \citep{beretta2021detecting},
+    rich-subgroup fairness evaluation \citep{kearns2019empirical,chouldechova2017fairer},
+    fair representation learning \citep{ruoss2020learning,zhao2019inherent,zhao2020conditional,louizos2016variational,quadrianto2019discovering,madras2018learning},
+    fair multi-stage classification \citep{hu2020fairmultiple,goel2020importance},
+    robust fair classification \citep{mandal2020ensuring,huang2019stable,rezaei2021robust},
+    dynamical fair classification \citep{zhang2019group},
+    fair ranking evaluation \citep{kallus2019fairness},
+    fair data summarization \citep{chiplunkar2020how,jones2020fair,kleindessner2019fair,celis2018fair,halabi2020fairness,belitz2021automating},
+    fair regression \citep{agarwal2019fair},
+    limited-label fair classification \citep{chzhen2019leveraging,wang2021fair,choi2020group},
+    limited-label fairness evaluation \citep{ji2020can}, preference-based fair clustering \citep{galhotra2021learning}</Name>
+	</Task>
+	<!-- 1 -->
+	<Task>
+		<Number>1</Number>
+		<Name>fair classification, \citep{garg2019counterfactual,shah2021rawslian}, fairness evaluation \citep{dixon2018measuring}</Name>
+	</Task>
+	<!-- 10 -->
+	<Task>
+		<Number>10</Number>
+		<Name>fair classification \citep{agarwal2018reductions,xu2020algorithmic,zhang2017achieving,lohaus2020too}, 
+    fairness evaluation \citep{cardoso2019framework}</Name>
+	</Task>
+	<!-- 100 -->
+	<Task>
+		<Number>100</Number>
+		<Name>fair graph mining evaluation \citep{kang2020inform}</Name>
+	</Task>
+	<!-- 101 -->
+	<Task>
+		<Number>101</Number>
+		<Name>fair graph mining \citep{kang2020inform}</Name>
+	</Task>
+	<!-- 102 -->
+	<Task>
+		<Number>102</Number>
+		<Name>fair spatio-temporal process learning \citep{shang2020listwise}</Name>
+	</Task>
+	<!-- 103 -->
+	<Task>
+		<Number>103</Number>
+		<Name>fair spatio-temporal process learning \citep{shang2020listwise}</Name>
+	</Task>
+	<!-- 104 -->
+	<Task>
+		<Number>104</Number>
+		<Name>fair spatio-temporal process learning \citep{shang2020listwise}</Name>
+	</Task>
+	<!-- 105 -->
+	<Task>
+		<Number>105</Number>
+		<Name>fair ranking \citep{singh2018fairness}</Name>
+	</Task>
+	<!-- 106 -->
+	<Task>
+		<Number>106</Number>
+		<Name>fair toxicity classification \citep{adragna2020fairness,yurochkin2021sensei,chuang2021fair},
+    fairness evaluation of selective classification \citep{jones2021selective},
+    fair robust toxicity classification \citep{adragna2020fairness},
+    fairness evaluation of toxicity classification \citep{hutchinson2020unintented}, fairness evaluation \citep{babaeianjelodar2020quantifying}</Name>
+	</Task>
+	<!-- 107 -->
+	<Task>
+		<Number>107</Number>
+		<Name>fairness evaluation \citep{babaeianjelodar2020quantifying,rudinger2017:social}, 
+    bias evaluation in language models \citep{cheng2021fairfil},
+    fairness evaluation of selective classification \citep{jones2021selective}</Name>
+	</Task>
+	<!-- 108 -->
+	<Task>
+		<Number>108</Number>
+		<Name>fair ranking \citep{bower2021individually}</Name>
+	</Task>
+	<!-- 109 -->
+	<Task>
+		<Number>109</Number>
+		<Name>fair graph mining \citep{li2021on}, fair graph augmentation \citep{ramachandran2021gaea}</Name>
+	</Task>
+	<!-- 11 -->
+	<Task>
+		<Number>11</Number>
+		<Name>fair multi-stage classification \citep{madras2018predict}, 
+    fair representation learning \citep{louizos2016variational}, 
+    fair classification \citep{raff2018fair,raff2018gradient},
+    fair transfer learning \citep{madras2018learning}, fairness evaluation \citep{islam2021can}</Name>
+	</Task>
+	<!-- 110 -->
+	<Task>
+		<Number>110</Number>
+		<Name>fair graph mining \citep{li2021on}</Name>
+	</Task>
+	<!-- 111 -->
+	<Task>
+		<Number>111</Number>
+		<Name></Name>
+	</Task>
+	<!-- 112 -->
+	<Task>
+		<Number>112</Number>
+		<Name>fair graph mining \citep{li2021on}</Name>
+	</Task>
+	<!-- 113 -->
+	<Task>
+		<Number>113</Number>
+		<Name>fair graph mining \citep{li2021on}</Name>
+	</Task>
+	<!-- 114 -->
+	<Task>
+		<Number>114</Number>
+		<Name>fairness evaluation of selective classification \citep{jones2021selective}</Name>
+	</Task>
+	<!-- 115 -->
+	<Task>
+		<Number>115</Number>
+		<Name>fair federated learning \citep{li2020fair}</Name>
+	</Task>
+	<!-- 116 -->
+	<Task>
+		<Number>116</Number>
+		<Name>fair federated learning \citep{li2020fair}</Name>
+	</Task>
+	<!-- 117 -->
+	<Task>
+		<Number>117</Number>
+		<Name>fair federated learning \citep{li2020fair}</Name>
+	</Task>
+	<!-- 118 -->
+	<Task>
+		<Number>118</Number>
+		<Name>fair few-shot learning \citep{li2020fair}</Name>
+	</Task>
+	<!-- 119 -->
+	<Task>
+		<Number>119</Number>
+		<Name>fair clustering \citep{li2020deep}</Name>
+	</Task>
+	<!-- 12 -->
+	<Task>
+		<Number>12</Number>
+		<Name>fair clustering \citep{chen2019proportionally,abbasi2021fair}</Name>
+	</Task>
+	<!-- 120 -->
+	<Task>
+		<Number>120</Number>
+		<Name>fair clustering \citep{li2020deep}</Name>
+	</Task>
+	<!-- 121 -->
+	<Task>
+		<Number>121</Number>
+		<Name>fair reinforcement learning \citep{wang2020mitigating}, fair representation learning \citep{gong2021mitigating}</Name>
+	</Task>
+	<!-- 122 -->
+	<Task>
+		<Number>122</Number>
+		<Name>fair reinforcement learning \citep{wang2020mitigating}, fair classification \citep{xu2021consistent}, fair representation learning \citep{gong2021mitigating}</Name>
+	</Task>
+	<!-- 123 -->
+	<Task>
+		<Number>123</Number>
+		<Name>bias discovery \citep{manjunatha2019explicit}</Name>
+	</Task>
+	<!-- 124 -->
+	<Task>
+		<Number>124</Number>
+		<Name>fair data summarization \citep{chiplunkar2020how}</Name>
+	</Task>
+	<!-- 125 -->
+	<Task>
+		<Number>125</Number>
+		<Name>fair data summarization \citep{jones2020fair}</Name>
+	</Task>
+	<!-- 126 -->
+	<Task>
+		<Number>126</Number>
+		<Name>fair classification \citep{martinez2020minimax}</Name>
+	</Task>
+	<!-- 127 -->
+	<Task>
+		<Number>127</Number>
+		<Name>limited-label fairness evaluation \citep{sabato2020bounding}</Name>
+	</Task>
+	<!-- 128 -->
+	<Task>
+		<Number>128</Number>
+		<Name>limited-label fairness evaluation \citep{sabato2020bounding}</Name>
+	</Task>
+	<!-- 129 -->
+	<Task>
+		<Number>129</Number>
+		<Name>fair graph mining \citep{buyl2020debayes}</Name>
+	</Task>
+	<!-- 13 -->
+	<Task>
+		<Number>13</Number>
+		<Name>fair matching \citep{lesmana2019balancing,nanda2020:bt}</Name>
+	</Task>
+	<!-- 130 -->
+	<Task>
+		<Number>130</Number>
+		<Name>fairness evaluation \citep{sharma2020:cc}, fair clustering \citep{chen2019proportionally}</Name>
+	</Task>
+	<!-- 131 -->
+	<Task>
+		<Number>131</Number>
+		<Name>fair clustering \citep{chen2019proportionally}</Name>
+	</Task>
+	<!-- 132 -->
+	<Task>
+		<Number>132</Number>
+		<Name>fair entity resolution \citep{cotter2019training}</Name>
+	</Task>
+	<!-- 133 -->
+	<Task>
+		<Number>133</Number>
+		<Name>fair graph clustering \citep{kleindessner2019guarantees}</Name>
+	</Task>
+	<!-- 134 -->
+	<Task>
+		<Number>134</Number>
+		<Name>fair graph clustering \citep{kleindessner2019guarantees}</Name>
+	</Task>
+	<!-- 135 -->
+	<Task>
+		<Number>135</Number>
+		<Name>fair preference-based classification \citep{ustun2019fairness}</Name>
+	</Task>
+	<!-- 136 -->
+	<Task>
+		<Number>136</Number>
+		<Name>fair preference-based classification \citep{ustun2019fairness}</Name>
+	</Task>
+	<!-- 137 -->
+	<Task>
+		<Number>137</Number>
+		<Name>fair data summarization \citep{celis2016fair,celis2018fair}</Name>
+	</Task>
+	<!-- 138 -->
+	<Task>
+		<Number>138</Number>
+		<Name>fair risk assessment \citep{he2020inherent}</Name>
+	</Task>
+	<!-- 139 -->
+	<Task>
+		<Number>139</Number>
+		<Name>fair representation learning \citep{david2020debiasing}</Name>
+	</Task>
+	<!-- 14 -->
+	<Task>
+		<Number>14</Number>
+		<Name>data bias evaluation \citep{coston2021leveraging}, fair clustering \citep{abbasi2021fair}, fairness evaluation of advertisement \citep{speicher2018potential}</Name>
+	</Task>
+	<!-- 140 -->
+	<Task>
+		<Number>140</Number>
+		<Name>data bias evaluation \citep{kocijan2020gap}</Name>
+	</Task>
+	<!-- 141 -->
+	<Task>
+		<Number>141</Number>
+		<Name>fair ranking \citep{chaudhari2020general}</Name>
+	</Task>
+	<!-- 142 -->
+	<Task>
+		<Number>142</Number>
+		<Name>bias discovery \citep{tong2020investigating}</Name>
+	</Task>
+	<!-- 143 -->
+	<Task>
+		<Number>143</Number>
+		<Name>fair graph mining \citep{bose2019compositional}, fairness evaluation in graph mining \citep{fisher2020measuring}</Name>
+	</Task>
+	<!-- 144 -->
+	<Task>
+		<Number>144</Number>
+		<Name>fairness evaluation in graph mining \citep{fisher2020measuring}</Name>
+	</Task>
+	<!-- 145 -->
+	<Task>
+		<Number>145</Number>
+		<Name>fairness evaluation in entity recognition \citep{mishra2020assessing}</Name>
+	</Task>
+	<!-- 146 -->
+	<Task>
+		<Number>146</Number>
+		<Name>fair ranking \citep{deshpande2020mitigating}</Name>
+	</Task>
+	<!-- 147 -->
+	<Task>
+		<Number>147</Number>
+		<Name>bias discovery\citep{konstantakis2020bias}</Name>
+	</Task>
+	<!-- 148 -->
+	<Task>
+		<Number>148</Number>
+		<Name>data bias evaluation \citep{leavy2020mitigating}</Name>
+	</Task>
+	<!-- 149 -->
+	<Task>
+		<Number>149</Number>
+		<Name>data bias evaluation \citep{leavy2020mitigating}</Name>
+	</Task>
+	<!-- 15 -->
+	<Task>
+		<Number>15</Number>
+		<Name>fair regression \citep{chzhen2020fairwassertein,chzhen2020fair,heidari2019on},
+    rich-subgroup fairness evaluation \citep{kearns2019empirical},
+    fair data summarization \citep{jones2020fair,belitz2021automating}</Name>
+	</Task>
+	<!-- 150 -->
+	<Task>
+		<Number>150</Number>
+		<Name>fair matching \citep{zheng2018fairness}, preference-based fair ranking \citep{paraschakis2020matchmaking}</Name>
+	</Task>
+	<!-- 151 -->
+	<Task>
+		<Number>151</Number>
+		<Name>fair graph diffusion \citep{farnad2020unifying}</Name>
+	</Task>
+	<!-- 152 -->
+	<Task>
+		<Number>152</Number>
+		<Name>fair classification \citep{li2020fairness}</Name>
+	</Task>
+	<!-- 153 -->
+	<Task>
+		<Number>153</Number>
+		<Name>fairness evaluation \citep{babaeianjelodar2020quantifying}</Name>
+	</Task>
+	<!-- 154 -->
+	<Task>
+		<Number>154</Number>
+		<Name>bias audit \citep{gordon2020studying}</Name>
+	</Task>
+	<!-- 155 -->
+	<Task>
+		<Number>155</Number>
+		<Name>fairness evaluation \citep{williams2019quantification}</Name>
+	</Task>
+	<!-- 156 -->
+	<Task>
+		<Number>156</Number>
+		<Name>fair graph diffusion \citep{ali2019fairness}</Name>
+	</Task>
+	<!-- 157 -->
+	<Task>
+		<Number>157</Number>
+		<Name>fair ranking \citep{patro2019incremental}</Name>
+	</Task>
+	<!-- 158 -->
+	<Task>
+		<Number>158</Number>
+		<Name>fair ranking \citep{patro2019incremental}</Name>
+	</Task>
+	<!-- 159 -->
+	<Task>
+		<Number>159</Number>
+		<Name>data bias evaluation \citep{florez2019unintended}</Name>
+	</Task>
+	<!-- 16 -->
+	<Task>
+		<Number>16</Number>
+		<Name>fair data summarization \citep{samadi2018price}, 
+    fair clustering \citep{ghadiri2021socially}, 
+    robust fairness evaluation \citep{black2021leaveoneout}, fairness evaluation \citep{segal2021fairness}</Name>
+	</Task>
+	<!-- 160 -->
+	<Task>
+		<Number>160</Number>
+		<Name>dynamical evaluation of fair ranking \citep{ferraro2019artist}</Name>
+	</Task>
+	<!-- 161 -->
+	<Task>
+		<Number>161</Number>
+		<Name>fair ranking \citep{celis2020interventions}</Name>
+	</Task>
+	<!-- 162 -->
+	<Task>
+		<Number>162</Number>
+		<Name>fairness evaluation of sentiment analysis \citep{shen2018darling}</Name>
+	</Task>
+	<!-- 163 -->
+	<Task>
+		<Number>163</Number>
+		<Name>fair ranking \citep{karako2018using}</Name>
+	</Task>
+	<!-- 164 -->
+	<Task>
+		<Number>164</Number>
+		<Name>fair representation learning \citep{david2020debiasing}, fair classification \citep{hendricks2018women}</Name>
+	</Task>
+	<!-- 165 -->
+	<Task>
+		<Number>165</Number>
+		<Name>fair advertising \citep{riederer2017price}</Name>
+	</Task>
+	<!-- 166 -->
+	<Task>
+		<Number>166</Number>
+		<Name>fair ranking \citep{zhu2018fairnessaware}</Name>
+	</Task>
+	<!-- 167 -->
+	<Task>
+		<Number>167</Number>
+		<Name>fairness evaluation \citep{hannak2017bias}</Name>
+	</Task>
+	<!-- 168 -->
+	<Task>
+		<Number>168</Number>
+		<Name>social media</Name>
+	</Task>
+	<!-- 169 -->
+	<Task>
+		<Number>169</Number>
+		<Name>fair ranking evaluation \citep{mehrotra2017auditing}</Name>
+	</Task>
+	<!-- 17 -->
+	<Task>
+		<Number>17</Number>
+		<Name>fairness evaluation of risk assessment \citep{coston2020counterfactual},
+    fair risk assessment \citep{mishler2021fairness}</Name>
+	</Task>
+	<!-- 170 -->
+	<Task>
+		<Number>170</Number>
+		<Name>fairness evaluation \citep{luong2016classification}</Name>
+	</Task>
+	<!-- 171 -->
+	<Task>
+		<Number>171</Number>
+		<Name>fairness evaluation of private resource allocation \citep{pujol2020fair}</Name>
+	</Task>
+	<!-- 172 -->
+	<Task>
+		<Number>172</Number>
+		<Name>limited-label fair classification \citep{wang2020augmented}</Name>
+	</Task>
+	<!-- 173 -->
+	<Task>
+		<Number>173</Number>
+		<Name>fairness evaluation \citep{wilson2021building}</Name>
+	</Task>
+	<!-- 174 -->
+	<Task>
+		<Number>174</Number>
+		<Name>fairness evaluation of multi-stage classification \citep{green2019disparate}</Name>
+	</Task>
+	<!-- 175 -->
+	<Task>
+		<Number>175</Number>
+		<Name>fairness matching evaluation \citep{mattei2018fairness}</Name>
+	</Task>
+	<!-- 176 -->
+	<Task>
+		<Number>176</Number>
+		<Name>fairness evaluation under unawareness \citep{awasthi2021evaluating}</Name>
+	</Task>
+	<!-- 177 -->
+	<Task>
+		<Number>177</Number>
+		<Name>fair pricing evaluation \citep{kallus2021fairness}</Name>
+	</Task>
+	<!-- 178 -->
+	<Task>
+		<Number>178</Number>
+		<Name>fair pricing evaluation \citep{kallus2021fairness}</Name>
+	</Task>
+	<!-- 179 -->
+	<Task>
+		<Number>179</Number>
+		<Name>fairness evaluation of private classification \citep{cheng2021can}</Name>
+	</Task>
+	<!-- 18 -->
+	<Task>
+		<Number>18</Number>
+		<Name>fair districting for electoral precincts \citep{schutzman2020:to}</Name>
+	</Task>
+	<!-- 180 -->
+	<Task>
+		<Number>180</Number>
+		<Name>fairness evaluation of learnt representations \citep{steed2021image}</Name>
+	</Task>
+	<!-- 181 -->
+	<Task>
+		<Number>181</Number>
+		<Name>fair classification \citep{rodolfa2020case}</Name>
+	</Task>
+	<!-- 182 -->
+	<Task>
+		<Number>182</Number>
+		<Name>fair graph diffusion \citep{rahmattalabi2019exploring}</Name>
+	</Task>
+	<!-- 183 -->
+	<Task>
+		<Number>183</Number>
+		<Name>fair ranking \citep{chakraborty2019equality}</Name>
+	</Task>
+	<!-- 184 -->
+	<Task>
+		<Number>184</Number>
+		<Name>fair ranking \citep{chakraborty2019equality}</Name>
+	</Task>
+	<!-- 185 -->
+	<Task>
+		<Number>185</Number>
+		<Name>fair preferece-based resource allocation \citep{babaioff2019fair}</Name>
+	</Task>
+	<!-- 186 -->
+	<Task>
+		<Number>186</Number>
+		<Name>fair data summarization \citep{halabi2020fairness}</Name>
+	</Task>
+	<!-- 187 -->
+	<Task>
+		<Number>187</Number>
+		<Name>fair clustering \citep{harb2020kfc}</Name>
+	</Task>
+	<!-- 188 -->
+	<Task>
+		<Number>188</Number>
+		<Name>fair clustering \citep{harb2020kfc}</Name>
+	</Task>
+	<!-- 189 -->
+	<Task>
+		<Number>189</Number>
+		<Name>fair clustering \citep{harb2020kfc}</Name>
+	</Task>
+	<!-- 19 -->
+	<Task>
+		<Number>19</Number>
+		<Name>fair clustering \citep{harpeled2019near,li2020deep}, 
+    fair anomaly detection \citep{zhang2021towards},
+    fair classification \citep{creager2021exchanging}, fairness evaluation \citep{segal2021fairness}</Name>
+	</Task>
+	<!-- 190 -->
+	<Task>
+		<Number>190</Number>
+		<Name>fair subset selection \citep{flanigan2020neutralizing}</Name>
+	</Task>
+	<!-- 191 -->
+	<Task>
+		<Number>191</Number>
+		<Name>fair matching \citep{kobren2019paper}</Name>
+	</Task>
+	<!-- 192 -->
+	<Task>
+		<Number>192</Number>
+		<Name>fair matching \citep{suhr2019twosided}</Name>
+	</Task>
+	<!-- 193 -->
+	<Task>
+		<Number>193</Number>
+		<Name>fairness evaluation \citep{xiao2019beyond}</Name>
+	</Task>
+	<!-- 194 -->
+	<Task>
+		<Number>194</Number>
+		<Name>fair routing \citep{qian2015scram}</Name>
+	</Task>
+	<!-- 195 -->
+	<Task>
+		<Number>195</Number>
+		<Name>bias evaluation in WEs \citep{brunet2019understanding}</Name>
+	</Task>
+	<!-- 196 -->
+	<Task>
+		<Number>196</Number>
+		<Name>fairness evaluation \citep{lee2020evaluation}</Name>
+	</Task>
+	<!-- 197 -->
+	<Task>
+		<Number>197</Number>
+		<Name>fair ranking evaluation \citep{gerritse2020effect}</Name>
+	</Task>
+	<!-- 198 -->
+	<Task>
+		<Number>198</Number>
+		<Name>fair matching evaluation \citep{farnadi2019enhancing}</Name>
+	</Task>
+	<!-- 199 -->
+	<Task>
+		<Number>199</Number>
+		<Name>data bias evaluation \citep{knees2019towards}</Name>
+	</Task>
+	<!-- 2 -->
+	<Task>
+		<Number>2</Number>
+		<Name>fair \emph{truth discovery} \citep{li2020towards}, fair \emph{task assignment} \citep{li2020towards,goel2019crowdsourcing} %(for crowdsourced judgements)</Name>
+	</Task>
+	<!-- 20 -->
+	<Task>
+		<Number>20</Number>
+		<Name>robust fairness evaluation \citep{black2021leaveoneout}</Name>
+	</Task>
+	<!-- 200 -->
+	<Task>
+		<Number>200</Number>
+		<Name>fair ranking \citep{liu2018personalizing}</Name>
+	</Task>
+	<!-- 201 -->
+	<Task>
+		<Number>201</Number>
+		<Name>fairness evaluation \citep{koolen2017:stereotypes}</Name>
+	</Task>
+	<!-- 202 -->
+	<Task>
+		<Number>202</Number>
+		<Name>fairness evaluation \citep{koolen2017:stereotypes}</Name>
+	</Task>
+	<!-- 203 -->
+	<Task>
+		<Number>203</Number>
+		<Name>fair regression evaluation \citep{madnadi2017:building}</Name>
+	</Task>
+	<!-- 204 -->
+	<Task>
+		<Number>204</Number>
+		<Name>fairness evaluation of speech recognition \citep{tatman2017:gender}</Name>
+	</Task>
+	<!-- 205 -->
+	<Task>
+		<Number>205</Number>
+		<Name>fair classification \citep{zafar2017fairness,roh2020frtrain}, fair preference-based classification \citep{zafar2017from,ali2019loss},  fair few-shot learning  \citep{slack2019fair,slack2020fairness}, fair classification under unawareness \citep{kilbertus2018blind}</Name>
+	</Task>
+	<!-- 206 -->
+	<Task>
+		<Number>206</Number>
+		<Name>fair ranking \citep{singh2019policy,bower2021individually}</Name>
+	</Task>
+	<!-- 207 -->
+	<Task>
+		<Number>207</Number>
+		<Name>fairness evaluation \citep{lipton2018does,black2020fliptest}</Name>
+	</Task>
+	<!-- 208 -->
+	<Task>
+		<Number>208</Number>
+		<Name>fair classification \citep{donini2018empirical}, fairness evaluation \citep{williamson2019fairness}</Name>
+	</Task>
+	<!-- 209 -->
+	<Task>
+		<Number>209</Number>
+		<Name>bias evaluation in WEs \citep{brunet2019understanding,guo2021detecting}</Name>
+	</Task>
+	<!-- 21 -->
+	<Task>
+		<Number>21</Number>
+		<Name>robust fairness evaluation \citep{nanda2021fairness}, 
+    fairness evaluation of private classification \citep{bagdasaryan2019differential}, fairness evaluation \citep{segal2021fairness}, fair classification \citep{jung2021fair}</Name>
+	</Task>
+	<!-- 210 -->
+	<Task>
+		<Number>210</Number>
+		<Name>fair regression \citep{diana2021minimax}</Name>
+	</Task>
+	<!-- 211 -->
+	<Task>
+		<Number>211</Number>
+		<Name>fair anomaly detection \citep{shekhar2021fairod}</Name>
+	</Task>
+	<!-- 212 -->
+	<Task>
+		<Number>212</Number>
+		<Name>fair data summarization \citep{belitz2021automating}</Name>
+	</Task>
+	<!-- 213 -->
+	<Task>
+		<Number>213</Number>
+		<Name>fair pricing evaluation \citep{fabris2021algorithmic}</Name>
+	</Task>
+	<!-- 214 -->
+	<Task>
+		<Number>214</Number>
+		<Name>fair classification \citep{jiang2021towards}</Name>
+	</Task>
+	<!-- 215 -->
+	<Task>
+		<Number>215</Number>
+		<Name>fair ranking evaluation \citep{kuhlman2021measuring}</Name>
+	</Task>
+	<!-- 216 -->
+	<Task>
+		<Number>216</Number>
+		<Name>fair data generation \citep{liu2021rawlsnet}</Name>
+	</Task>
+	<!-- 217 -->
+	<Task>
+		<Number>217</Number>
+		<Name>fair data generation \citep{liu2021rawlsnet}</Name>
+	</Task>
+	<!-- 218 -->
+	<Task>
+		<Number>218</Number>
+		<Name>data bias evaluation \citep{schumann2021step}, fairness evaluation \citep{aka2021measuring}</Name>
+	</Task>
+	<!-- 219 -->
+	<Task>
+		<Number>219</Number>
+		<Name>fairness evaluation of speech recognition \citep{segal2021fairness}</Name>
+	</Task>
+	<!-- 22 -->
+	<Task>
+		<Number>22</Number>
+		<Name>fair classification \citep{wang2020towards,jung2021fair}, 
+    fair incremental learning \citep{zhao2020maintaining},
+    robust fairness evaluation \citep{nanda2021fairness}</Name>
+	</Task>
+	<!-- 220 -->
+	<Task>
+		<Number>220</Number>
+		<Name>fair ranking evaluation \citep{suhr2021does}, multi-stage fairness evaluation \citep{suhr2021does}</Name>
+	</Task>
+	<!-- 221 -->
+	<Task>
+		<Number>221</Number>
+		<Name>bias evaluation in language models \citep{guo2021detecting}</Name>
+	</Task>
+	<!-- 222 -->
+	<Task>
+		<Number>222</Number>
+		<Name>fair pricing evaluation \citep{pandey2021disparate}</Name>
+	</Task>
+	<!-- 223 -->
+	<Task>
+		<Number>223</Number>
+		<Name>fair ranking evaluation \citep{solans2021comparing}</Name>
+	</Task>
+	<!-- 224 -->
+	<Task>
+		<Number>224</Number>
+		<Name>fair graph augmentation \citep{ramachandran2021gaea}</Name>
+	</Task>
+	<!-- 225 -->
+	<Task>
+		<Number>225</Number>
+		<Name>fairness evaluation \citep{kim2021age}</Name>
+	</Task>
+	<!-- 23 -->
+	<Task>
+		<Number>23</Number>
+		<Name>data bias evaluation \citep{Buolamwini2018gender},
+    robust fairness evaluation \citep{nanda2021fairness}</Name>
+	</Task>
+	<!-- 24 -->
+	<Task>
+		<Number>24</Number>
+		<Name>robust fairness evaluation \citep{black2021leaveoneout}</Name>
+	</Task>
+	<!-- 25 -->
+	<Task>
+		<Number>25</Number>
+		<Name>fairness evaluation of selective classification \citep{jones2021selective}, fairness evaluation of private classification \citep{cheng2021can}</Name>
+	</Task>
+	<!-- 26 -->
+	<Task>
+		<Number>26</Number>
+		<Name>fairness evaluation of private classification \citep{cheng2021can}</Name>
+	</Task>
+	<!-- 27 -->
+	<Task>
+		<Number>27</Number>
+		<Name>fairness evaluation of private classification \citep{cheng2021can}</Name>
+	</Task>
+	<!-- 28 -->
+	<Task>
+		<Number>28</Number>
+		<Name>fair subset selection under unawareness \citep{mehrotra2021mitigating}</Name>
+	</Task>
+	<!-- 29 -->
+	<Task>
+		<Number>29</Number>
+		<Name>fair subset selection under unawareness \citep{mehrotra2021mitigating}</Name>
+	</Task>
+	<!-- 3 -->
+	<Task>
+		<Number>3</Number>
+		<Name>fair subset selection \citep{huang2020towards}</Name>
+	</Task>
+	<!-- 30 -->
+	<Task>
+		<Number>30</Number>
+		<Name>fair subset selection under unawareness \citep{mehrotra2021mitigating}</Name>
+	</Task>
+	<!-- 31 -->
+	<Task>
+		<Number>31</Number>
+		<Name>fairness evaluation of harmful content detection \citep{ballburack2021differential}</Name>
+	</Task>
+	<!-- 32 -->
+	<Task>
+		<Number>32</Number>
+		<Name>fairness evaluation \citep{ballburack2021differential}, fair multi-stage classification \citep{keswani2021towards}</Name>
+	</Task>
+	<!-- 33 -->
+	<Task>
+		<Number>33</Number>
+		<Name>fairness evaluation \citep{ballburack2021differential}</Name>
+	</Task>
+	<!-- 34 -->
+	<Task>
+		<Number>34</Number>
+		<Name>fairness evaluation \citep{ballburack2021differential}</Name>
+	</Task>
+	<!-- 35 -->
+	<Task>
+		<Number>35</Number>
+		<Name>fairness evaluation of sentiment analysis \citep{shen2018darling}, 
+    fairness evaluation of private classification \citep{bagdasaryan2019differential}, fairness evaluation \citep{ballburack2021differential},
+    robust fair language model \citep{hashimoto2018fairness},
+    fairness evaluation of language identification \citep{blodgett2017racial}</Name>
+	</Task>
+	<!-- 36 -->
+	<Task>
+		<Number>36</Number>
+		<Name>fairness evaluation \citep{ballburack2021differential}</Name>
+	</Task>
+	<!-- 37 -->
+	<Task>
+		<Number>37</Number>
+		<Name>bias evaluation in language models \citep{dhamala2021bold}</Name>
+	</Task>
+	<!-- 38 -->
+	<Task>
+		<Number>38</Number>
+		<Name>fair ranking evaluation \citep{dash2021when}</Name>
+	</Task>
+	<!-- 39 -->
+	<Task>
+		<Number>39</Number>
+		<Name>data bias evaluation \citep{coston2021leveraging}</Name>
+	</Task>
+	<!-- 4 -->
+	<Task>
+		<Number>4</Number>
+		<Name>fairness evaluation \citep{pleiss2017fairness}, fair active classification \citep{noriegacampero2019active}</Name>
+	</Task>
+	<!-- 40 -->
+	<Task>
+		<Number>40</Number>
+		<Name>bias evaluation of machine translation \citep{cho2021towards}</Name>
+	</Task>
+	<!-- 41 -->
+	<Task>
+		<Number>41</Number>
+		<Name>fair classification \citep{donini2018empirical,mary2019fairnessaware},
+    evaluation of data bias \citep{beretta2021detecting},
+    limited-label fair classification \citep{chzhen2019leveraging},
+    robust fair classification \citep{rezaei2021robust}</Name>
+	</Task>
+	<!-- 42 -->
+	<Task>
+		<Number>42</Number>
+		<Name>fairness evaluation under unawareness \citep{kallus2020assessing}</Name>
+	</Task>
+	<!-- 43 -->
+	<Task>
+		<Number>43</Number>
+		<Name>fairness evaluation under unawareness \citep{chen2019fairness,kallus2020assessing}</Name>
+	</Task>
+	<!-- 44 -->
+	<Task>
+		<Number>44</Number>
+		<Name>fairness evaluation \citep{black2020fliptest}</Name>
+	</Task>
+	<!-- 45 -->
+	<Task>
+		<Number>45</Number>
+		<Name>fairness evaluation of private resource allocation \citep{pujol2020fair}</Name>
+	</Task>
+	<!-- 46 -->
+	<Task>
+		<Number>46</Number>
+		<Name>fair ranking \citep{singh2019policy}</Name>
+	</Task>
+	<!-- 47 -->
+	<Task>
+		<Number>47</Number>
+		<Name>fair classification \citep{noriegacampero2020algorithmic}</Name>
+	</Task>
+	<!-- 48 -->
+	<Task>
+		<Number>48</Number>
+		<Name>fair classification \citep{noriegacampero2020algorithmic}</Name>
+	</Task>
+	<!-- 49 -->
+	<Task>
+		<Number>49</Number>
+		<Name>dynamical fair resource allocation \citep{atwood2019fair,damour2020fairness}, dynamical fair classification \citep{damour2020fairness}</Name>
+	</Task>
+	<!-- 5 -->
+	<Task>
+		<Number>5</Number>
+		<Name>fair transfer learning \citep{coston2019fair}, 
+    fair regression \citep{romano2020achieving}, 
+    fairness evaluation \citep{singh2019understanding}, robust fair classification \citep{biswas2021ensuring}, fair classification \citep{sharma2021fairn}</Name>
+	</Task>
+	<!-- 50 -->
+	<Task>
+		<Number>50</Number>
+		<Name>bias evaluation in WEs \citep{liang2020artificial,papakyriakopulos2020bias,brunet2019understanding,chen2021gender}</Name>
+	</Task>
+	<!-- 51 -->
+	<Task>
+		<Number>51</Number>
+		<Name>fair sentiment analysis evaluation \citep{liang2020artificial}</Name>
+	</Task>
+	<!-- 52 -->
+	<Task>
+		<Number>52</Number>
+		<Name>fair sentiment analysis evaluation \citep{liang2020artificial}</Name>
+	</Task>
+	<!-- 53 -->
+	<Task>
+		<Number>53</Number>
+		<Name>bias evaluation in WEs \citep{papakyriakopulos2020bias}</Name>
+	</Task>
+	<!-- 54 -->
+	<Task>
+		<Number>54</Number>
+		<Name>fair advertising \citep{celis2019toward,nasr2020bidding}</Name>
+	</Task>
+	<!-- 55 -->
+	<Task>
+		<Number>55</Number>
+		<Name>fairness evaluation \citep{hardt2016equality}, 
+    dynamical fair classification \citep{liu2020disparate}, 
+    dynamical fairness evaluation \citep{zhang2020how,liu2018delayed,creager2020causal},
+    fair resource allocation \citep{goelz2019paradoxes}</Name>
+	</Task>
+	<!-- 56 -->
+	<Task>
+		<Number>56</Number>
+		<Name>fair clustering \citep{chierichetti2017fair,bera2019fair,backurs2019scalable,mahabadi2020individual,huang2019coresets,bera2019fair}</Name>
+	</Task>
+	<!-- 57 -->
+	<Task>
+		<Number>57</Number>
+		<Name>fairness evaluation \citep{feldman2015certifying,friedler2019comparative},
+    limited-label fairness evaluation \citep{ji2020can}</Name>
+	</Task>
+	<!-- 58 -->
+	<Task>
+		<Number>58</Number>
+		<Name>fair risk assessment \citep{madras2019fairness,yi2019fair}</Name>
+	</Task>
+	<!-- 59 -->
+	<Task>
+		<Number>59</Number>
+		<Name>fair resource allocation \citep{elzayn2019fair}</Name>
+	</Task>
+	<!-- 6 -->
+	<Task>
+		<Number>6</Number>
+		<Name>fair transfer learning \citep{coston2019fair}</Name>
+	</Task>
+	<!-- 60 -->
+	<Task>
+		<Number>60</Number>
+		<Name>fairness evaluation \citep{dearteaga2019bias}, fair classification \citep{yurochkin2021sensei}</Name>
+	</Task>
+	<!-- 61 -->
+	<Task>
+		<Number>61</Number>
+		<Name>fair ranking \citep{burke2018balanced,liu2018personalizing,sonboli2020and}, bias discovery \citep{sonboli2019localized}</Name>
+	</Task>
+	<!-- 62 -->
+	<Task>
+		<Number>62</Number>
+		<Name>fair clustering \citep{huang2019coresets}</Name>
+	</Task>
+	<!-- 63 -->
+	<Task>
+		<Number>63</Number>
+		<Name>fair ranking evaluation \citep{ekstrand2018all}</Name>
+	</Task>
+	<!-- 64 -->
+	<Task>
+		<Number>64</Number>
+		<Name>data bias evaluation \citep{Buolamwini2018gender}</Name>
+	</Task>
+	<!-- 65 -->
+	<Task>
+		<Number>65</Number>
+		<Name>fair classification \citep{he2020geometric,sharma2020data,goel2018nondiscriminatory,oneto2019taking,celis2019classification,canetti2019from,cho2020fair,savani2020intraprocessing,donini2018empirical,heidari2018fairness,russell2017when,quadrianto2017recycling,calmon2017optimized,diciccio2020evaluating,xu2020algorithmic,vargo2021individually,roh2021fairbatch,maity2021statistical,lohaus2020too,roh2020frtrain,celis2020data,cotter2019training,mary2019fairnessaware,wang2019repairing,delobelle2020ethical,ogura2020convex,lum2016statistical,zafar2017fairnessbeyond,berk2017convex,wadsworth2018achieving,diana2021minimax,perrone2021fair,ali2021accounting}, 
+    fairness evaluation \citep{cardoso2019framework,mcnamara2019equalized,kasy2021fairness,taskesen2021statistical,friedler2019comparative,wick2019unlocking,zhang2018equality,pleiss2017fairness,chaibubneto2020causal,speicher2018unified,corbettdavies2017algorithmic,liu2019implicit,agarwal2018reductions,ngong2020towards,jabbari2020empirical,chouldechova2017fair,grgichlaca2016case,islam2021can},
+    fair risk assessment \citep{coston2020counterfactual,mishler2021fairness,nabi2019learning}, 
+    fair \emph{task assignment} \citep{goel2019crowdsourcing}, %(for crowdsourced judgements)
+    fair classification under unawareness \citep{lahoti2020fairness,lamy2019noisetolerant,chzhen2019leveraging,kilbertus2018blind},
+    data bias evaluation \citep{beretta2021detecting},
+    fair representation learning \citep{ruoss2020learning,zhao2020conditional,bower2018debiasing},
+    robust fair classification \citep{mandal2020ensuring,rezaei2021robust,biswas2021ensuring},
+    dynamical fairness evaluation \citep{zhang2020how},
+    fair reinforcement learning \citep{metevier2019offline},
+    fair ranking evaluation \citep{kallus2019fairness,yang2017measuring},
+    fair multi-stage classification \citep{madras2018predict},
+    dynamical fair classification \citep{valera2018enhancing},
+    preference-based fair classification \citep{zafar2017from,ustun2019fairness},
+    fair regression \citep{komiyama2018nonconvex},
+    fair multi-stage classification \citep{goel2020importance},
+    limited-label fair classification \citep{chzhen2019leveraging,wang2021fair,choi2020group},
+    robust fairness evaluation \citep{slack2020fairness,slack2019fairness},
+    rich subgroup fairness evaluation \citep{chouldechova2017fairer,zhang2017identifying}</Name>
+	</Task>
+	<!-- 66 -->
+	<Task>
+		<Number>66</Number>
+		<Name>fair classification \citep{he2020geometric,sharma2020data,raff2018fair,celis2019classification,yang2020fairness,donini2018empirical,vargo2021individually,baharlouei2020renyi,lohaus2020too,martinez2020minimax,mary2019fairnessaware,delobelle2020ethical,raff2018gradient,perrone2021fair,sharma2021fairn},
+    fairness evaluation \citep{friedler2019comparative,feldman2015certifying},
+    fair active resource allocation \citep{cai2020:fa}, 
+    preference-based fair classification \citep{zhang2020joint}, 
+    fair active classification \citep{noriegacampero2019active}, 
+    fair classification under unawareness \citep{kilbertus2018blind},
+    robust fairness evaluation \citep{black2021leaveoneout},
+    fair representation learning \citep{ruoss2020learning,louizos2016variational},
+    fair reinforcement learning \citep{metevier2019offline},
+    fair ranking evaluation \citep{kallus2019fairness,wu2018discrimination,yang2017measuring},
+    fair ranking \citep{singh2019policy,bower2021individually},
+    fair multi-stage classification \citep{goel2020importance},
+    limited-label fair classification \citep{chzhen2019leveraging,wang2021fair,choi2020group},
+    limited-label fairness evaluation \citep{ji2020can}</Name>
+	</Task>
+	<!-- 67 -->
+	<Task>
+		<Number>67</Number>
+		<Name>fair classification \citep{yang2020fairness,Sharifi2019average,heidari2018fairness,lohaus2020too,cotter2019training,creager2019flexibly,cotter2018training},
+    fair regression evaluation \citep{heidari2019moral}, 
+    fair few-shot learning  \citep{slack2020fairness,slack2019fair},
+    rich-subgroup fairness evaluation \citep{kearns2019empirical},
+    rich-subgroup fair classification \citep{kearns2018preventing},
+    fair regression \citep{chzhen2020fair,chzhen2020fairwassertein,romano2020achieving,agarwal2019fair,mary2019fairnessaware,komiyama2018nonconvex,ogura2020convex,berk2017convex,diana2021minimax},
+    fair representation learning \citep{ruoss2020learning},
+    robust fair classification \citep{mandal2020ensuring},
+    fair private classification \citep{jagielski2019differentially},
+    fairness evaluation of transfer learning \citep{lan2017discriminatory}, preference-based fair clustering \citep{galhotra2021learning}</Name>
+	</Task>
+	<!-- 68 -->
+	<Task>
+		<Number>68</Number>
+		<Name>fair classification \citep{yang2020fairness,cho2020fair,russell2017when,agarwal2018reductions,berk2017convex},
+    rich-subgroup fairness evaluation \citep{kearns2019empirical}, 
+    fair classification under unawareness \citep{lahoti2020fairness,lamy2019noisetolerant}, 
+    fairness evaluation \citep{black2020fliptest,kusner2017counterfactual},
+    fair regression \citep{chzhen2020fair,chzhen2020fairwassertein,agarwal2019fair,komiyama2018nonconvex},
+    fair representation learning \citep{ruoss2020learning},
+    robust fair classification \citep{mandal2020ensuring},
+    limited-label fair classification \citep{wang2021fair}</Name>
+	</Task>
+	<!-- 69 -->
+	<Task>
+		<Number>69</Number>
+		<Name>fair classification \citep{savani2020intraprocessing,baharlouei2020renyi,zafar2017fairness,diana2021minimax,shah2021rawslian},
+    fair clustering \citep{abbasi2021fair,harb2020kfc,ahmadian2020fair,huang2019coresets,bera2019fair,mahabadi2020individual,backurs2019scalable,chierichetti2017fair},
+    fair data summarization \citep{halabi2020fairness},
+    fair classification under unawareness \citep{kilbertus2018blind},
+    fairness evaluation \citep{lipton2018does,islam2021can},
+    limited-label fairness evaluation \citep{ji2020can}, preference-based fair clustering \citep{galhotra2021learning}</Name>
+	</Task>
+	<!-- 7 -->
+	<Task>
+		<Number>7</Number>
+		<Name>fair risk assessment \citep{pfohl2019creating}</Name>
+	</Task>
+	<!-- 70 -->
+	<Task>
+		<Number>70</Number>
+		<Name>fair classification \citep{cho2020fair,berk2017convex}, 
+    fair clustering \citep{harb2020kfc,ghadiri2021socially,harb2020kfc,bera2019fair},
+    fair clustering under unawareness \citep{esmaeili2020probabilistic},
+    fair classification under unawareness \citep{wang2020robust},
+    fair data summarization \citep{Tantipongpipat2019multicriteria,samadi2018price},
+    fairness evaluation \citep{lipton2018does}, fair anomaly detection \citep{shekhar2021fairod}</Name>
+	</Task>
+	<!-- 71 -->
+	<Task>
+		<Number>71</Number>
+		<Name>fair ranking  \citep{burke2018balanced,sonboli2020and,dickens2020hyperfair,farnadi2018fairnessaware,liu2018personalizing}, 
+    fair ranking evaluation \citep{ekstrand2018all,yao2017beyond,yao2017new},
+    fair data summarization \citep{halabi2020fairness},
+    fair representation learning \citep{oneto2020exploiting,oneto2019learning},
+    fair graph mining \citep{buyl2020debayes,bose2019compositional},
+    fair data generation \citep{burke2018synthetic}</Name>
+	</Task>
+	<!-- 72 -->
+	<Task>
+		<Number>72</Number>
+		<Name>fair classification \citep{savani2020intraprocessing,kim2019multiaccuracy,chuang2021fair,lohaus2020too,creager2019flexibly,jung2021fair}, 
+    fair anomaly detection \citep{zhang2021towards}, 
+    bias discovery \citep{amini2019uncovering}
+    fair anomaly detection \citep{zhang2021towards},
+    fairness evaluation of private classification \citep{cheng2021can},
+    fairness evaluation of selective classification \citep{jones2021selective},
+    fairness evaluation \citep{wang2020towards,segal2021fairness},
+    fair representation learning \citep{quadrianto2019discovering},
+    fair data summarization \citep{chiplunkar2020how},
+    fair data generation \citep{choi2020fair,ramaswamy2021fair}</Name>
+	</Task>
+	<!-- 73 -->
+	<Task>
+		<Number>73</Number>
+		<Name>fair classification \citep{kim2019multiaccuracy,amini2019uncovering},
+    fairness evaluation \citep{Buolamwini2018gender,raji2019actionable},
+    bias discovery \citep{kim2019multiaccuracy,amini2019uncovering}</Name>
+	</Task>
+	<!-- 74 -->
+	<Task>
+		<Number>74</Number>
+		<Name>fair regression \citep{komiyama2018nonconvex,chzhen2020fairwassertein,chzhen2020fair}</Name>
+	</Task>
+	<!-- 75 -->
+	<Task>
+		<Number>75</Number>
+		<Name>fair regression \citep{chzhen2020fairwassertein,chzhen2020fair}, fair representation learning \citep{oneto2019learning,oneto2020exploiting}</Name>
+	</Task>
+	<!-- 76 -->
+	<Task>
+		<Number>76</Number>
+		<Name>fair clustering \citep{backurs2019scalable,huang2019coresets,bera2019fair}, 
+    fair clustering under unawareness \citep{esmaeili2020probabilistic},
+    limited-label fairness evaluation \citep{sabato2020bounding}</Name>
+	</Task>
+	<!-- 77 -->
+	<Task>
+		<Number>77</Number>
+		<Name>fair representation learning \citep{oneto2019learning,oneto2020exploiting}</Name>
+	</Task>
+	<!-- 78 -->
+	<Task>
+		<Number>78</Number>
+		<Name>fair entity resolution evaluation \citep{vig2020investigating}, fairness evaluation in entity recognition \citep{mishra2020assessing}</Name>
+	</Task>
+	<!-- 79 -->
+	<Task>
+		<Number>79</Number>
+		<Name>fair entity resolution evaluation. \citep{vig2020investigating}</Name>
+	</Task>
+	<!-- 8 -->
+	<Task>
+		<Number>8</Number>
+		<Name>fair classification \citep{dwork2018decoupled}, 
+    bias discovery \citep{amini2019uncovering},
+    data bias evaluation \citep{yang2020towards},
+    fair incremental learning \citep{zhao2020maintaining},
+    fairness evaluation \citep{dwork2017decoupled}</Name>
+	</Task>
+	<!-- 80 -->
+	<Task>
+		<Number>80</Number>
+		<Name>fair classification \citep{romano2020achieving}</Name>
+	</Task>
+	<!-- 81 -->
+	<Task>
+		<Number>81</Number>
+		<Name>fair representation learning \citep{locatello2019fairness,creager2019flexibly}</Name>
+	</Task>
+	<!-- 82 -->
+	<Task>
+		<Number>82</Number>
+		<Name>fair representation learning \citep{locatello2019fairness}</Name>
+	</Task>
+	<!-- 83 -->
+	<Task>
+		<Number>83</Number>
+		<Name>fair representation learning \citep{locatello2019fairness}</Name>
+	</Task>
+	<!-- 84 -->
+	<Task>
+		<Number>84</Number>
+		<Name>fair representation learning \citep{locatello2019fairness}, fair data generation \citep{choi2020fair}</Name>
+	</Task>
+	<!-- 85 -->
+	<Task>
+		<Number>85</Number>
+		<Name>fair classification \citep{donini2018empirical,mary2019fairnessaware}, 
+    robust fair classification \citep{rezaei2021robust},
+    limited-label fair classification \citep{chzhen2019leveraging}</Name>
+	</Task>
+	<!-- 86 -->
+	<Task>
+		<Number>86</Number>
+		<Name>fair ranking evaluation \citep{kallus2019fairness}</Name>
+	</Task>
+	<!-- 87 -->
+	<Task>
+		<Number>87</Number>
+		<Name>data bias evaluation \citep{tan2019assessing}</Name>
+	</Task>
+	<!-- 88 -->
+	<Task>
+		<Number>88</Number>
+		<Name>data bias evaluation \citep{tan2019assessing}</Name>
+	</Task>
+	<!-- 89 -->
+	<Task>
+		<Number>89</Number>
+		<Name>data bias evaluation \citep{tan2019assessing}</Name>
+	</Task>
+	<!-- 9 -->
+	<Task>
+		<Number>9</Number>
+		<Name>fair sentiment analysis \citep{yurochkin2020training,mukherjee2020two}, bias discovery in WEs \citep{swinger2019what}</Name>
+	</Task>
+	<!-- 90 -->
+	<Task>
+		<Number>90</Number>
+		<Name>fairness evaluation through artificial data generation \citep{mcduff2019characterizing}</Name>
+	</Task>
+	<!-- 91 -->
+	<Task>
+		<Number>91</Number>
+		<Name>fair matching \citep{tziavelis2019equitable}</Name>
+	</Task>
+	<!-- 92 -->
+	<Task>
+		<Number>92</Number>
+		<Name>fairness evaluation of risk assessment \citep{kallus2019assessing}</Name>
+	</Task>
+	<!-- 93 -->
+	<Task>
+		<Number>93</Number>
+		<Name>fair representation learning \citep{quadrianto2019discovering}, 
+    fairness evaluation of private classification \citep{bagdasaryan2019differential}</Name>
+	</Task>
+	<!-- 94 -->
+	<Task>
+		<Number>94</Number>
+		<Name>fairness evaluation of private classification \citep{bagdasaryan2019differential}</Name>
+	</Task>
+	<!-- 95 -->
+	<Task>
+		<Number>95</Number>
+		<Name>fair classification \citep{martinez2020minimax}, 
+    fairness evaluation \citep{chen2018why,zhang2020hurtful},
+    robust fair classification \citep{singh2021fairness}</Name>
+	</Task>
+	<!-- 96 -->
+	<Task>
+		<Number>96</Number>
+		<Name>fair ranking evaluation \citep{raj2020comparing}, fairness evaluation \citep{chen2018why}</Name>
+	</Task>
+	<!-- 97 -->
+	<Task>
+		<Number>97</Number>
+		<Name>preference-based fair classification \citep{zafar2017from}, 
+    robust fair classification \citep{kallus2018residual}, 
+    fair classification under unawareness \citep{kilbertus2018blind},
+    fairness evaluation \citep{goel2017combatting}, fair classification \citep{ali2021accounting}</Name>
+	</Task>
+	<!-- 98 -->
+	<Task>
+		<Number>98</Number>
+		<Name>fair graph mining \citep{kang2020inform}</Name>
+	</Task>
+	<!-- 99 -->
+	<Task>
+		<Number>99</Number>
+		<Name>fair graph mining \citep{kang2020inform}</Name>
+	</Task>
+</Tasks>

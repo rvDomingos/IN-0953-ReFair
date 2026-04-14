@@ -1,0 +1,1582 @@
+[
+    {
+       "domain":"economics",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"economics",
+       "task":"fair classification"
+    },
+    {
+       "domain":"economics",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"economics",
+       "task":"fair clustering under unawareness"
+    },
+    {
+       "domain":"economics",
+       "task":"fair active classification"
+    },
+    {
+       "domain":"economics",
+       "task":"fair preference-based classification"
+    },
+    {
+       "domain":"economics",
+       "task":"fair classification under unawareness"
+    },
+    {
+       "domain":"economics",
+       "task":"fair anomaly detection"
+    },
+    {
+       "domain":"economics",
+       "task":"fairness evaluation under unawareness"
+    },
+    {
+       "domain":"economics",
+       "task":"robust fairness evaluation"
+    },
+    {
+       "domain":"economics",
+       "task":"data bias evaluation"
+    },
+    {
+       "domain":"economics",
+       "task":"rich-subgroup fairness evaluation"
+    },
+    {
+       "domain":"economics",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"economics",
+       "task":"fair multi-stage classification"
+    },
+    {
+       "domain":"economics",
+       "task":"robust fair classification"
+    },
+    {
+       "domain":"economics",
+       "task":"dynamical fair classification"
+    },
+    {
+       "domain":"economics",
+       "task":"fair ranking evaluation"
+    },
+    {
+       "domain":"economics",
+       "task":"fair data summarization"
+    },
+    {
+       "domain":"economics",
+       "task":"fair regression"
+    },
+    {
+       "domain":"economics",
+       "task":"limited-label fair classification"
+    },
+    {
+       "domain":"economics",
+       "task":"limited-label fairness evaluation"
+    },
+    {
+       "domain":"economics",
+       "task":"preference-based fair clustering"
+    },
+    {
+       "domain":"social media",
+       "task":"fair classification"
+    },
+    {
+       "domain":"social media",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"law",
+       "task":"fair truth discovery"
+    },
+    {
+       "domain":"law",
+       "task":"fair task assignment"
+    },
+    {
+       "domain":"law",
+       "task":"fair subset selection"
+    },
+    {
+       "domain":"cardiology",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"cardiology",
+       "task":"fair active classification"
+    },
+    {
+       "domain":"health policy",
+       "task":"fair transfer learning"
+    },
+    {
+       "domain":"health policy",
+       "task":"fair regression"
+    },
+    {
+       "domain":"health policy",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"health policy",
+       "task":"robust fair classification"
+    },
+    {
+       "domain":"health policy",
+       "task":"fair classification"
+    },
+    {
+       "domain":"finance",
+       "task":"fair transfer learning"
+    },
+    {
+       "domain":"medicine",
+       "task":"fair risk assessment"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair classification"
+    },
+    {
+       "domain":"computer vision",
+       "task":"bias discovery"
+    },
+    {
+       "domain":"computer vision",
+       "task":"data bias evaluation"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair incremental learning"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"linguistics",
+       "task":"fair sentiment analysis"
+    },
+    {
+       "domain":"linguistics",
+       "task":"bias discovery in WEs"
+    },
+    {
+       "domain":"demography",
+       "task":"fair classification"
+    },
+    {
+       "domain":"demography",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"health policy",
+       "task":"fair multi-stage classification"
+    },
+    {
+       "domain":"health policy",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"health policy",
+       "task":"fair classification"
+    },
+    {
+       "domain":"health policy",
+       "task":"fair transfer learning"
+    },
+    {
+       "domain":"health policy",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"plant science",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"transportation",
+       "task":"fair matching"
+    },
+    {
+       "domain":"political science",
+       "task":"data bias evaluation"
+    },
+    {
+       "domain":"political science",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"political science",
+       "task":"fairness evaluation of advertisement"
+    },
+    {
+       "domain":"education",
+       "task":"fair regression"
+    },
+    {
+       "domain":"education",
+       "task":"rich-subgroup fairness evaluation"
+    },
+    {
+       "domain":"education",
+       "task":"fair data summarization"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair data summarization"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"computer vision",
+       "task":"robust fairness evaluation"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"social work",
+       "task":"fairness evaluation of risk assessment"
+    },
+    {
+       "domain":"social work",
+       "task":"fair risk assessment"
+    },
+    {
+       "domain":"political science",
+       "task":"fair districting for electoral precincts"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair anomaly detection"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair classification"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"computer vision",
+       "task":"robust fairness evaluation"
+    },
+    {
+       "domain":"computer vision",
+       "task":"robust fairness evaluation"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fairness evaluation of private classification"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair classification"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair classification"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair incremental learning"
+    },
+    {
+       "domain":"computer vision",
+       "task":"robust fairness evaluation"
+    },
+    {
+       "domain":"computer vision",
+       "task":"data bias evaluation"
+    },
+    {
+       "domain":"computer vision",
+       "task":"robust fairness evaluation"
+    },
+    {
+       "domain":"neurology",
+       "task":"robust fairness evaluation"
+    },
+    {
+       "domain":"radiology",
+       "task":"fairness evaluation of selective classification"
+    },
+    {
+       "domain":"radiology",
+       "task":"fairness evaluation of private classification"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fairness evaluation of private classification"
+    },
+    {
+       "domain":"dermatology",
+       "task":"fairness evaluation of private classification"
+    },
+    {
+       "domain":"economics",
+       "task":"fair subset selection under unawareness"
+    },
+    {
+       "domain":"linguistics",
+       "task":"fair subset selection under unawareness"
+    },
+    {
+       "domain":"information systems",
+       "task":"fair subset selection under unawareness"
+    },
+    {
+       "domain":"social media",
+       "task":"fairness evaluation of harmful content detection"
+    },
+    {
+       "domain":"social media",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"social media",
+       "task":"fair multi-stage classification"
+    },
+    {
+       "domain":"social media",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"social media",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"social media, linguistics",
+       "task":"fairness evaluation of sentiment analysis"
+    },
+    {
+       "domain":"social media, linguistics",
+       "task":"fairness evaluation of private classification"
+    },
+    {
+       "domain":"social media, linguistics",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"social media, linguistics",
+       "task":"robust fair language model"
+    },
+    {
+       "domain":"social media, linguistics",
+       "task":"fairness evaluation of language identification"
+    },
+    {
+       "domain":"social media",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"linguistics",
+       "task":"bias evaluation in language models"
+    },
+    {
+       "domain":"information systems",
+       "task":"fair ranking evaluation"
+    },
+    {
+       "domain":"urban studies",
+       "task":"data bias evaluation"
+    },
+    {
+       "domain":"linguistics",
+       "task":"bias evaluation of machine translation"
+    },
+    {
+       "domain":"applied psychology",
+       "task":"fair classification"
+    },
+    {
+       "domain":"applied psychology",
+       "task":"evaluation of data bias"
+    },
+    {
+       "domain":"applied psychology",
+       "task":"limited-label fair classification"
+    },
+    {
+       "domain":"applied psychology",
+       "task":"robust fair classification"
+    },
+    {
+       "domain":"pharmacology",
+       "task":"fairness evaluation under unawareness"
+    },
+    {
+       "domain":"finance",
+       "task":"fairness evaluation under unawareness"
+    },
+    {
+       "domain":"law",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"demography",
+       "task":"fairness evaluation of private resource allocation"
+    },
+    {
+       "domain":"information systems",
+       "task":"fair ranking"
+    },
+    {
+       "domain":"economics",
+       "task":"fair classification"
+    },
+    {
+       "domain":"economics",
+       "task":"fair classification"
+    },
+    {
+       "domain":"linguistics",
+       "task":"bias evaluation in WEs"
+    },
+    {
+       "domain":"linguistics",
+       "task":"fair sentiment analysis evaluation"
+    },
+    {
+       "domain":"linguistics",
+       "task":"fair sentiment analysis evaluation"
+    },
+    {
+       "domain":"social media",
+       "task":"bias evaluation in WEs"
+    },
+    {
+       "domain":"marketing",
+       "task":"fair advertising"
+    },
+    {
+       "domain":"finance",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"finance",
+       "task":"dynamical fair classification"
+    },
+    {
+       "domain":"finance",
+       "task":"dynamical fairness evaluation"
+    },
+    {
+       "domain":"finance",
+       "task":"fair resource allocation"
+    },
+    {
+       "domain":"endocrinology",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"law",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"law",
+       "task":"limited-label fairness evaluation"
+    },
+    {
+       "domain":"pediatrics",
+       "task":"fair risk assessment"
+    },
+    {
+       "domain":"law",
+       "task":"fair resource allocation"
+    },
+    {
+       "domain":"linguistics, information systems",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"linguistics, information systems",
+       "task":"fair classification"
+    },
+    {
+       "domain":"finance",
+       "task":"fair ranking"
+    },
+    {
+       "domain":"finance",
+       "task":"bias discovery"
+    },
+    {
+       "domain":"sports",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"music, information systems",
+       "task":"fair ranking evaluation"
+    },
+    {
+       "domain":"computer vision",
+       "task":"data bias evaluation"
+    },
+    {
+       "domain":"finance",
+       "task":"fair classification"
+    },
+    {
+       "domain":"finance",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"finance",
+       "task":"fair active resource allocation"
+    },
+    {
+       "domain":"finance",
+       "task":"preference-based fair classification"
+    },
+    {
+       "domain":"finance",
+       "task":"fair active classification"
+    },
+    {
+       "domain":"finance",
+       "task":"fair classification under unawareness"
+    },
+    {
+       "domain":"finance",
+       "task":"robust fairness evaluation"
+    },
+    {
+       "domain":"finance",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"finance",
+       "task":"fair reinforcement learning"
+    },
+    {
+       "domain":"finance",
+       "task":"fair ranking evaluation"
+    },
+    {
+       "domain":"finance",
+       "task":"fair ranking"
+    },
+    {
+       "domain":"finance",
+       "task":"fair multi-stage classification"
+    },
+    {
+       "domain":"finance",
+       "task":"limited-label fair classification"
+    },
+    {
+       "domain":"finance",
+       "task":"limited-label fairness evaluation"
+    },
+    {
+       "domain":"law",
+       "task":"fair classification"
+    },
+    {
+       "domain":"law",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"law",
+       "task":"fair risk assessment"
+    },
+    {
+       "domain":"law",
+       "task":"fair task assignment"
+    },
+    {
+       "domain":"law",
+       "task":"fair classification under unawareness"
+    },
+    {
+       "domain":"law",
+       "task":"data bias evaluation"
+    },
+    {
+       "domain":"law",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"law",
+       "task":"robust fair classification"
+    },
+    {
+       "domain":"law",
+       "task":"dynamical fairness evaluation"
+    },
+    {
+       "domain":"law",
+       "task":"fair reinforcement learning"
+    },
+    {
+       "domain":"law",
+       "task":"fair ranking evaluation"
+    },
+    {
+       "domain":"law",
+       "task":"fair multi-stage classification"
+    },
+    {
+       "domain":"law",
+       "task":"dynamical fair classification"
+    },
+    {
+       "domain":"law",
+       "task":"preference-based fair classification"
+    },
+    {
+       "domain":"law",
+       "task":"fair regression"
+    },
+    {
+       "domain":"law",
+       "task":"fair multi-stage classification"
+    },
+    {
+       "domain":"law",
+       "task":"limited-label fair classification"
+    },
+    {
+       "domain":"law",
+       "task":"robust fairness evaluation"
+    },
+    {
+       "domain":"law",
+       "task":"rich subgroup fairness evaluation"
+    },
+    {
+       "domain":"law",
+       "task":"fair classification"
+    },
+    {
+       "domain":"law",
+       "task":"fair regression evaluation"
+    },
+    {
+       "domain":"law",
+       "task":"fair few-shot learning"
+    },
+    {
+       "domain":"law",
+       "task":"rich-subgroup fairness evaluation"
+    },
+    {
+       "domain":"law",
+       "task":"rich-subgroup fair classification"
+    },
+    {
+       "domain":"law",
+       "task":"fair regression"
+    },
+    {
+       "domain":"law",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"law",
+       "task":"robust fair classification"
+    },
+    {
+       "domain":"law",
+       "task":"fair private classification"
+    },
+    {
+       "domain":"law",
+       "task":"fairness evaluation of transfer learning"
+    },
+    {
+       "domain":"law",
+       "task":"preference-based fair clustering"
+    },
+    {
+       "domain":"education",
+       "task":"fair classification"
+    },
+    {
+       "domain":"education",
+       "task":"rich-subgroup fairness evaluation"
+    },
+    {
+       "domain":"education",
+       "task":"fair classification under unawareness"
+    },
+    {
+       "domain":"education",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"education",
+       "task":"fair regression"
+    },
+    {
+       "domain":"education",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"education",
+       "task":"robust fair classification"
+    },
+    {
+       "domain":"education",
+       "task":"limited-label fair classification"
+    },
+    {
+       "domain":"marketing",
+       "task":"fair classification"
+    },
+    {
+       "domain":"marketing",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"marketing",
+       "task":"fair data summarization"
+    },
+    {
+       "domain":"marketing",
+       "task":"fair classification under unawareness"
+    },
+    {
+       "domain":"marketing",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"marketing",
+       "task":"limited-label fairness evaluation"
+    },
+    {
+       "domain":"marketing",
+       "task":"preference-based fair clustering"
+    },
+    {
+       "domain":"finance",
+       "task":"fair classification"
+    },
+    {
+       "domain":"finance",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"finance",
+       "task":"fair clustering under unawareness"
+    },
+    {
+       "domain":"finance",
+       "task":"fair classification under unawareness"
+    },
+    {
+       "domain":"finance",
+       "task":"fair data summarization"
+    },
+    {
+       "domain":"finance",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"finance",
+       "task":"fair anomaly detection"
+    },
+    {
+       "domain":"information systems, movies",
+       "task":"fair ranking"
+    },
+    {
+       "domain":"information systems, movies",
+       "task":"fair ranking evaluation"
+    },
+    {
+       "domain":"information systems, movies",
+       "task":"fair data summarization"
+    },
+    {
+       "domain":"information systems, movies",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"information systems, movies",
+       "task":"fair graph mining"
+    },
+    {
+       "domain":"information systems, movies",
+       "task":"fair data generation"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair classification"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair anomaly detection"
+    },
+    {
+       "domain":"computer vision",
+       "task":"bias discovery"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair anomaly detection"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fairness evaluation of private classification"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fairness evaluation of selective classification"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair data summarization"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair data generation"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair classification"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"computer vision",
+       "task":"bias discovery"
+    },
+    {
+       "domain":"demography",
+       "task":"fair regression"
+    },
+    {
+       "domain":"education",
+       "task":"fair regression"
+    },
+    {
+       "domain":"education",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"demography",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"demography",
+       "task":"fair clustering under unawareness"
+    },
+    {
+       "domain":"demography",
+       "task":"limited-label fairness evaluation"
+    },
+    {
+       "domain":"education",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"linguistics",
+       "task":"fair entity resolution evaluation"
+    },
+    {
+       "domain":"linguistics",
+       "task":"fairness evaluation in entity recognition"
+    },
+    {
+       "domain":"linguistics",
+       "task":"fair entity resolution evaluation"
+    },
+    {
+       "domain":"education",
+       "task":"fair classification"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair data generation"
+    },
+    {
+       "domain":"cardiology",
+       "task":"fair classification"
+    },
+    {
+       "domain":"cardiology",
+       "task":"robust fair classification"
+    },
+    {
+       "domain":"cardiology",
+       "task":"limited-label fair classification"
+    },
+    {
+       "domain":"cardiology",
+       "task":"fair ranking evaluation"
+    },
+    {
+       "domain":"linguistics",
+       "task":"data bias evaluation"
+    },
+    {
+       "domain":"linguistics",
+       "task":"data bias evaluation"
+    },
+    {
+       "domain":"linguistics",
+       "task":"data bias evaluation"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fairness evaluation through artificial data generation"
+    },
+    {
+       "domain":"sociology, information systems",
+       "task":"fair matching"
+    },
+    {
+       "domain":"economics",
+       "task":"fairness evaluation of risk assessment"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fairness evaluation of private classification"
+    },
+    {
+       "domain":"biology",
+       "task":"fairness evaluation of private classification"
+    },
+    {
+       "domain":"critical care medicine",
+       "task":"fair classification"
+    },
+    {
+       "domain":"critical care medicine",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"critical care medicine",
+       "task":"robust fair classification"
+    },
+    {
+       "domain":"literature, information systems",
+       "task":"fair ranking evaluation"
+    },
+    {
+       "domain":"literature, information systems",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"law",
+       "task":"preference-based fair classification"
+    },
+    {
+       "domain":"law",
+       "task":"robust fair classification"
+    },
+    {
+       "domain":"law",
+       "task":"fair classification under unawareness"
+    },
+    {
+       "domain":"law",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"law",
+       "task":"fair classification"
+    },
+    {
+       "domain":"biology",
+       "task":"fair graph mining"
+    },
+    {
+       "domain":"library and information sciences",
+       "task":"fair graph mining"
+    },
+    {
+       "domain":"social networks",
+       "task":"fair graph mining evaluation"
+    },
+    {
+       "domain":"social networks",
+       "task":"fair graph mining"
+    },
+    {
+       "domain":"law",
+       "task":"fair spatio-temporal process learning"
+    },
+    {
+       "domain":"law",
+       "task":"fair spatio-temporal process learning"
+    },
+    {
+       "domain":"social work",
+       "task":"fair spatio-temporal process learning"
+    },
+    {
+       "domain":"news, information systems",
+       "task":"fair ranking"
+    },
+    {
+       "domain":"social media",
+       "task":"fair toxicity classification"
+    },
+    {
+       "domain":"social media",
+       "task":"fairness evaluation of selective classification"
+    },
+    {
+       "domain":"social media",
+       "task":"fair robust toxicity classification"
+    },
+    {
+       "domain":"social media",
+       "task":"fairness evaluation of toxicity classification"
+    },
+    {
+       "domain":"social media",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"linguistics",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"linguistics",
+       "task":"bias evaluation in language models"
+    },
+    {
+       "domain":"linguistics",
+       "task":"fairness evaluation of selective classification"
+    },
+    {
+       "domain":"information systems",
+       "task":"fair ranking"
+    },
+    {
+       "domain":"social networks",
+       "task":"fair graph mining"
+    },
+    {
+       "domain":"social networks",
+       "task":"fair graph augmentation"
+    },
+    {
+       "domain":"social networks",
+       "task":"fair graph mining"
+    },
+    {
+       "domain":"library and information sciences",
+       "task":"fair graph mining"
+    },
+    {
+       "domain":"library and information sciences",
+       "task":"fair graph mining"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fairness evaluation of selective classification"
+    },
+    {
+       "domain":"signal processing",
+       "task":"fair federated learning"
+    },
+    {
+       "domain":"social media",
+       "task":"fair federated learning"
+    },
+    {
+       "domain":"literature",
+       "task":"fair federated learning"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair few-shot learning"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair reinforcement learning"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair reinforcement learning"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair classification"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"computer vision",
+       "task":"bias discovery"
+    },
+    {
+       "domain":"marketing",
+       "task":"fair data summarization"
+    },
+    {
+       "domain":"dermatology",
+       "task":"fair classification"
+    },
+    {
+       "domain":"political science",
+       "task":"limited-label fairness evaluation"
+    },
+    {
+       "domain":"information systems, public health",
+       "task":"limited-label fairness evaluation"
+    },
+    {
+       "domain":"library and information sciences",
+       "task":"fair graph mining"
+    },
+    {
+       "domain":"endocrinology",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"endocrinology",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"computer networks",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"linguistics",
+       "task":"fair entity resolution"
+    },
+    {
+       "domain":"social networks",
+       "task":"fair graph clustering"
+    },
+    {
+       "domain":"social work, social networks",
+       "task":"fair graph clustering"
+    },
+    {
+       "domain":"radiology",
+       "task":"fair preference-based classification"
+    },
+    {
+       "domain":"sleep medicine",
+       "task":"fair preference-based classification"
+    },
+    {
+       "domain":"information systems",
+       "task":"fair data summarization"
+    },
+    {
+       "domain":"education",
+       "task":"fair risk assessment"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"linguistics",
+       "task":"data bias evaluation"
+    },
+    {
+       "domain":"information systems",
+       "task":"fair ranking"
+    },
+    {
+       "domain":"computer vision",
+       "task":"bias discovery"
+    },
+    {
+       "domain":"information systems",
+       "task":"fair graph mining"
+    },
+    {
+       "domain":"information systems",
+       "task":"fairness evaluation in graph mining"
+    },
+    {
+       "domain":"information systems",
+       "task":"fairness evaluation in graph mining"
+    },
+    {
+       "domain":"linguistics",
+       "task":"fairness evaluation in entity recognition"
+    },
+    {
+       "domain":"information systems, management information systems",
+       "task":"fair ranking"
+    },
+    {
+       "domain":"literature",
+       "task":"data bias evaluation"
+    },
+    {
+       "domain":"news",
+       "task":"data bias evaluation"
+    },
+    {
+       "domain":"sociology",
+       "task":"fair matching"
+    },
+    {
+       "domain":"sociology",
+       "task":"preference-based fair ranking"
+    },
+    {
+       "domain":"public health",
+       "task":"fair graph diffusion"
+    },
+    {
+       "domain":"finance",
+       "task":"fair classification"
+    },
+    {
+       "domain":"social media, linguistics",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"social media",
+       "task":"bias audit"
+    },
+    {
+       "domain":"nephrology",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"social networks",
+       "task":"fair graph diffusion"
+    },
+    {
+       "domain":"information systems",
+       "task":"fair ranking"
+    },
+    {
+       "domain":"information systems",
+       "task":"fair ranking"
+    },
+    {
+       "domain":"news",
+       "task":"data bias evaluation"
+    },
+    {
+       "domain":"music, information systems",
+       "task":"dynamical evaluation of fair ranking"
+    },
+    {
+       "domain":"education",
+       "task":"fair ranking"
+    },
+    {
+       "domain":"social media",
+       "task":"fairness evaluation of sentiment analysis"
+    },
+    {
+       "domain":"information systems",
+       "task":"fair ranking"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair representation learning"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fair classification"
+    },
+    {
+       "domain":"social media",
+       "task":"fair advertising"
+    },
+    {
+       "domain":"social media",
+       "task":"fair ranking"
+    },
+    {
+       "domain":"information systems",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"social media",
+       "task":"social media"
+    },
+    {
+       "domain":"information systems",
+       "task":"fair ranking evaluation"
+    },
+    {
+       "domain":"economics",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"demography",
+       "task":"fairness evaluation of private resource allocation"
+    },
+    {
+       "domain":"law",
+       "task":"limited-label fair classification"
+    },
+    {
+       "domain":"information systems, management information systems",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"law",
+       "task":"fairness evaluation of multi-stage classification"
+    },
+    {
+       "domain":"public health",
+       "task":"fairness matching evaluation"
+    },
+    {
+       "domain":"sports",
+       "task":"fairness evaluation under unawareness"
+    },
+    {
+       "domain":"public health",
+       "task":"fair pricing evaluation"
+    },
+    {
+       "domain":"finance",
+       "task":"fair pricing evaluation"
+    },
+    {
+       "domain":"radiology",
+       "task":"fairness evaluation of private classification"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fairness evaluation of learnt representations"
+    },
+    {
+       "domain":"law",
+       "task":"fair classification"
+    },
+    {
+       "domain":"social work",
+       "task":"fair graph diffusion"
+    },
+    {
+       "domain":"social media",
+       "task":"fair ranking"
+    },
+    {
+       "domain":"news, information systems",
+       "task":"fair ranking"
+    },
+    {
+       "domain":"economics",
+       "task":"fair preferece-based resource allocation"
+    },
+    {
+       "domain":"social networks",
+       "task":"fair data summarization"
+    },
+    {
+       "domain":"library and information sciences",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"news",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"literature",
+       "task":"fair clustering"
+    },
+    {
+       "domain":"political science",
+       "task":"fair subset selection"
+    },
+    {
+       "domain":"library and information sciences",
+       "task":"fair matching"
+    },
+    {
+       "domain":"transportation",
+       "task":"fair matching"
+    },
+    {
+       "domain":"social media",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"transportation",
+       "task":"fair routing"
+    },
+    {
+       "domain":"news",
+       "task":"bias evaluation in WEs"
+    },
+    {
+       "domain":"education",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"news, information systems",
+       "task":"fair ranking evaluation"
+    },
+    {
+       "domain":"public health",
+       "task":"fair matching evaluation"
+    },
+    {
+       "domain":"music, information systems",
+       "task":"data bias evaluation"
+    },
+    {
+       "domain":"information systems, movies",
+       "task":"fair ranking"
+    },
+    {
+       "domain":"literature",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"literature",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"education",
+       "task":"fair regression evaluation"
+    },
+    {
+       "domain":"social media",
+       "task":"fairness evaluation of speech recognition"
+    },
+    {
+       "domain":"linguistics",
+       "task":"bias evaluation in WEs"
+    },
+    {
+       "domain":"transportation",
+       "task":"fair regression"
+    },
+    {
+       "domain":"pattern recognition",
+       "task":"fair anomaly detection"
+    },
+    {
+       "domain":"education",
+       "task":"fair data summarization"
+    },
+    {
+       "domain":"economics",
+       "task":"fair pricing evaluation"
+    },
+    {
+       "domain":"education",
+       "task":"fair classification"
+    },
+    {
+       "domain":"sports",
+       "task":"fair ranking evaluation"
+    },
+    {
+       "domain":"information systems, management information systems",
+       "task":"fair data generation"
+    },
+    {
+       "domain":"education",
+       "task":"fair data generation"
+    },
+    {
+       "domain":"computer vision",
+       "task":"data bias evaluation"
+    },
+    {
+       "domain":"computer vision",
+       "task":"fairness evaluation"
+    },
+    {
+       "domain":"linguistics",
+       "task":"fairness evaluation of speech recognition"
+    },
+    {
+       "domain":"information systems",
+       "task":"fair ranking evaluation"
+    },
+    {
+       "domain":"information systems",
+       "task":"multi-stage fairness evaluation"
+    },
+    {
+       "domain":"social media, linguistics",
+       "task":"bias evaluation in language models"
+    },
+    {
+       "domain":"transportation",
+       "task":"fair pricing evaluation"
+    },
+    {
+       "domain":"information systems",
+       "task":"fair ranking evaluation"
+    },
+    {
+       "domain":"transportation",
+       "task":"fair graph augmentation"
+    },
+    {
+       "domain":"computer vision, experimental psychology",
+       "task":"fairness evaluation"
+    }
+ ]
