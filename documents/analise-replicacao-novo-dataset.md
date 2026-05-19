@@ -1,7 +1,7 @@
 # Análise de Viabilidade — Replicação do ReFAIR com Novo Dataset
 
 **Data:** 2026-05-18
-**Contexto:** Reunião com o orientador prevista para amanhã. Objetivo do documento: explicar, com fundamentação técnica, por que o novo dataset (apenas user stories) **não permite uma replicação fiel do ReFAIR** e propor uma alternativa diferente da que a equipe levantou.
+**Contexto:** Reunião com o professor prevista para amanhã. Objetivo do documento: explicar, com fundamentação técnica, por que o novo dataset (apenas user stories) **não permite uma replicação fiel do ReFAIR** e propor uma alternativa diferente da que a equipe levantou.
 
 ---
 
@@ -42,7 +42,7 @@ Por fim, o módulo de _Features Extraction_ consulta o mapping e retorna as sens
 
 ## 3. Por que o novo dataset **não atende aos parâmetros de replicação**
 
-Argumentos a apresentar ao orientador (em ordem de força):
+Argumentos a apresentar ao professor (em ordem de força):
 
 ### 3.1. Ausência do oráculo (ground truth)
 - O oráculo do ReFAIR são os pares `(domínio, task)` atribuídos às US **na geração**.
@@ -88,7 +88,7 @@ Em vez de retreinar o ReFAIR com um dataset inadequado, **usamos o ReFAIR já tr
 
 1. **Entrada:** as US do novo dataset (sem rótulo).
 2. **Saída:** as sensitive features que o ReFAIR recomenda.
-3. **Avaliação:** painel de especialistas (3–5 pessoas da equipe / orientador) avalia, por amostragem, se as recomendações **fazem sentido** para aquele contexto. Métricas qualitativas: precisão percebida, utilidade, falsos positivos.
+3. **Avaliação:** painel de especialistas (3–4 pessoas da equipe / professor) avalia, por amostragem, se as recomendações **fazem sentido** para aquele contexto. Métricas qualitativas: precisão percebida, utilidade, falsos positivos.
 
 **Vantagens:**
 - **Não precisa de oráculo** — a avaliação é human-in-the-loop.
@@ -108,21 +108,77 @@ Como **comparativo extra** (não substitui o ReFAIR), rodar a mesma tarefa com u
 
 Isso dá um segundo eixo de discussão e mostra que **pensamos no problema além da replicação mecânica**.
 
+### 5.3. Extensão metodológica do estudo original (sem depender do dataset novo)
+
+> **Quando essa rota faz sentido:** se decidirmos **não usar o dataset novo** para o experimento principal (porque ele não permite replicação fiel — ver seção 3) e ao invés disso **estender o trabalho original** sobre o dataset sintético já rotulado.
+
+A ideia é manter o pipeline do ReFAIR e **preencher lacunas que os próprios autores deixaram**, propondo combinações de embedding × classificador que não foram avaliadas no paper. É uma contribuição do tipo "ablation / extension study".
+
+#### O que se varia
+
+**Variação 1 — Embeddings não testados pelos autores**
+
+Os autores testaram: `TF-IDF`, `BERT`, `Word2Vec`, `FastText`, `GloVe`. Adicionar:
+
+- **RoBERTa** — versão melhorada do BERT, treinada com mais dados e sem o NSP.
+- **sentence-transformers** (ex.: `all-MiniLM-L6-v2`, `all-mpnet-base-v2`) — desenhados para similaridade semântica de frases, que é exatamente o caso de US.
+- **GPT embeddings** (ex.: `text-embedding-3-small` via API da OpenAI) — estado-da-arte em embeddings, ainda não usado no domínio de fairness requirements.
+
+**Variação 2 — Classificadores de domínio (RQ1)**
+
+Os autores varreram 25 algoritmos via LazyPredict e o XGBoost venceu. Testar alternativas modernas que não estavam no LazyPredict (ou que valem refinamento dedicado):
+
+- **LightGBM** — alternativa direta ao XGBoost, tipicamente mais rápida.
+- **CatBoost** — outro gradient boosting robusto, lida bem com features categóricas.
+
+**Variação 3 — Classificadores de tarefa ML (RQ2)**
+
+A combinação vencedora foi `Label Powerset + GloVe + LSVC` (≈90% F1). Combinações não exploradas:
+
+- **BERT + Label Powerset + LSVC** — os autores testaram BERT e testaram LP+LSVC, mas **não cruzaram** as duas escolhas.
+- **RoBERTa + Label Powerset + Random Forest** — embedding mais forte + classificador multi-label diferente.
+
+#### Por que essa variação é defensável
+
+- **Usa o dataset original rotulado** — não tem o problema do oráculo ausente que afeta o dataset novo (seção 3.1).
+- **Contribuição clara para o paper:** "preenchemos lacunas combinatórias do estudo original, identificando se há combinações superiores às reportadas pelos autores".
+- Mantém RQ1 e RQ2 originais, só amplia o grid de hiperparâmetros/modelos.
+- Resultado é **numérico e comparável** (F1, acurácia) — diferente da abordagem qualitativa da seção 5.1.
+
+#### Limitações honestas
+
+- **Não usa o dataset novo** — se o professor insistir que o dataset novo precisa entrar no experimento, essa rota sozinha não atende.
+- Pode acabar virando um estudo de **engenharia** (rodar mais modelos) em vez de uma **contribuição conceitual** — depende de como narrarmos os resultados.
+- Custo computacional dos embeddings mais pesados (GPT embeddings tem custo de API; RoBERTa exige GPU para tempo aceitável).
+
+#### Combinação possível
+
+A seção 5.1 (estudo de caso com dataset novo) e a seção 5.3 (extensão metodológica com dataset original) **não são mutuamente exclusivas**. Podem virar **duas RQs novas** do nosso trabalho:
+
+- **RQ-nossa-1 (extensão):** combinações não testadas superam o estado-da-arte do paper original no dataset sintético?
+- **RQ-nossa-2 (validade externa):** o ReFAIR generaliza para US fora do domínio de treino (dataset novo)?
+
+Isso fica mais robusto que escolher só um caminho.
+
 ---
 
-## 6. Roteiro sugerido para a conversa com o orientador
+## 6. Roteiro sugerido para a conversa com o professor
 
 1. Mostrar a análise do dataset novo (seção 3) — **fazer o que ele pediu** primeiro.
-2. Concluir, com base em 3 pilares quebrados, que **a replicação não é viável**.
+2. Concluir, com base em 3 pilares quebrados, que **a replicação não é viável** com o dataset novo.
 3. Apresentar a proposta da equipe (seção 4) e ser **honestos** sobre a limitação dela.
-4. Propor o **estudo de caso de validade externa** (seção 5) como caminho cientificamente mais defensável.
-5. Pedir alinhamento: replicação reduzida (proposta da equipe) **ou** estudo de caso (nossa proposta)?
+4. Apresentar **três rotas alternativas** que sustentam um trabalho científico defensável:
+   - **Rota A — Estudo de caso de validade externa (seção 5.1):** ReFAIR já treinado aplicado ao dataset novo, avaliação qualitativa por especialistas.
+   - **Rota B — Baseline LLM zero-shot (seção 5.2):** comparativo extra usando LLM com o mapping como contexto.
+   - **Rota C — Extensão metodológica (seção 5.3):** rodar combinações de embedding × classificador não testadas pelos autores **sobre o dataset original sintético**.
+5. Sugerir, se possível, **combinar Rota A + Rota C** como duas RQs do nosso trabalho (validade externa + extensão metodológica).
+6. Pedir alinhamento do professor sobre o escopo final.
 
 ---
 
 ## 7. Riscos e contingência
 
-- Se o orientador insistir na replicação: aceitar a versão reduzida da equipe **deixando registrado em ata** que o resultado terá validade interna limitada por causa do dataset.
+- Se o professor insistir na replicação: aceitar a versão reduzida da equipe **deixando registrado em ata** que o resultado terá validade interna limitada por causa do dataset.
 - Se ele topar o estudo de caso: já temos como começar — só precisamos do ReFAIR rodando e das US do dataset novo passando pela pipeline.
 
 ---
