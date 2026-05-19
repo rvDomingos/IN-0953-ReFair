@@ -515,45 +515,89 @@ docker compose build
 
 Tempo esperado: 8–15 minutos na primeira vez (instala torch + transformers).
 
-### 6.3. Subir o container interativo
+### 6.3. Subir o container
 
 ```bash
 docker compose up -d
-docker exec -it refair_python bash
 ```
 
-### 6.4. Rodar o CLI
+Isso sobe um container chamado `refair` que **já executa a API Flask automaticamente** em `0.0.0.0:5001` (CMD default do Dockerfile). Não precisa rodar `python app.py` manualmente.
 
-Dentro do container:
+Validar:
 
 ```bash
-python REFAIR.py "As a marketer, I want to use nearest neighbor search to identify customers with similar preferences or behaviors, so that I can provide personalized marketing messages and improve customer engagement."
+docker compose ps           # status STATUS=Up, porta 0.0.0.0:5001->5001
+docker compose logs -f      # acompanhar o boot (carrega GloVe + BERT + pickles, ~15–30s)
+```
+
+Quando os logs mostrarem `Running on http://0.0.0.0:5001`, a API está pronta.
+
+### 6.4. Testar a API Flask
+
+Smoke test direto com `curl` (a partir do host, **sem entrar no container**):
+
+```bash
+curl -sX POST http://localhost:5001/analyzeStory \
+  -F "story=As a marketer, I want to use nearest neighbor search to identify customers with similar preferences or behaviors, so that I can provide personalized marketing messages and improve customer engagement." \
+  | python3 -m json.tool
+```
+
+**Saída validada** (corresponde ao running example da Figura 5 do paper):
+
+```json
+{
+    "domain": "Finance & Marketing",
+    "features_counts": {
+        "age": 3,
+        "gender": 3,
+        "geography": 2,
+        "race": 3,
+        "sex": 3
+    },
+    "tasks": [
+        "anomaly detection",
+        "clustering",
+        "representation learning"
+    ],
+    "tasks_features": {
+        "anomaly detection":      ["age", "gender", "race", "sex"],
+        "clustering":              ["age", "gender", "geography", "race", "sex"],
+        "representation learning": ["age", "gender", "geography", "race", "sex"]
+    }
+}
+```
+
+Endpoints disponíveis:
+
+| Método | Endpoint | Form fields | O que faz |
+|---|---|---|---|
+| POST | `/analyzeStory` | `story` (texto) | Retorna domínio, tasks e features sensíveis. |
+| POST | `/storiesload` | `stories` (arquivo `.xlsx`) | Carrega US de uma planilha (coluna `User Story`). |
+| POST | `/reportStory` | `story` (JSON string) | Devolve análise em formato downloadable. |
+| POST | `/reportStories` | `stories` (JSON array) | Análise em lote. |
+
+### 6.5. Rodar o CLI dentro do container
+
+A imagem tem `WORKDIR /app/ReFair-App/refair-server` por padrão (pra API). Pro CLI, é só voltar para `/app`:
+
+```bash
+docker compose exec refair bash -c \
+  "cd /app && python REFAIR.py 'As a doctor, I want to predict cancer recurrence from patient genomic data.'"
 ```
 
 **Saída esperada:**
 
 ```
 *** REFAIR started ***
-Domain identified: Finance & Marketing
-Machine Learning task identified: ['anomaly detection', 'clustering', 'representation learning']
-Domain: Finance & Marketing - Task: anomaly detection - Sensitive Features: [...]
-Domain: Finance & Marketing - Task: clustering - Sensitive Features: [...]
-Domain: Finance & Marketing - Task: representation learning - Sensitive Features: [...]
+Domain identified: Healthcare
+Machine Learning task(s) identified: ['classification', ...]
+Domain: Healthcare - Task: classification - Sensitive Features: [...]
 *** REFAIR ended ***
 ```
 
-### 6.5. Rodar o App Web (Flask + Vue)
+### 6.6. Rodar o frontend Vue (opcional)
 
-**Backend** (dentro do container, ou em terminal separado se rodar fora):
-
-```bash
-cd ReFair-App/refair-server
-pip install -r requirements.txt
-python app.py
-# Flask agora escuta em http://0.0.0.0:5001
-```
-
-**Frontend** (fora do Docker, no host — precisa Node.js):
+O frontend vive fora do Docker (precisa Node.js no host):
 
 ```bash
 cd "ReFAIR/3. Source Code/ReFair/ReFair-App/refair-client"
@@ -563,6 +607,17 @@ npm run dev
 ```
 
 Abrir `http://localhost:5173` no navegador. Upload de um `.xlsx` com uma coluna `User Story` → clicar **Load** → **Analyze** em uma linha → modal mostra domínio, tasks, features e gráfico de barras.
+
+### 6.7. Comandos úteis do dia a dia
+
+| O que | Comando |
+|---|---|
+| Ver status do container | `docker compose ps` |
+| Logs ao vivo | `docker compose logs -f refair` |
+| Reiniciar (após editar `.py` no host) | `docker compose restart refair` |
+| Abrir shell dentro do container | `docker compose exec refair bash` |
+| Parar | `docker compose down` |
+| Parar + zerar cache HuggingFace | `docker compose down -v` |
 
 ---
 
@@ -613,24 +668,45 @@ npm run dev
 
 ## 8. Teste de fumaça (smoke test)
 
-Para confirmar que tudo está conectado corretamente, rodar **na ordem**:
+Para confirmar que tudo está conectado corretamente, rodar **na ordem**. Os comandos abaixo já foram **validados** no setup Docker desta máquina em 2026-05-19.
 
-1. **CLI isolado** (sem rede após primeira execução):
-   ```bash
-   python REFAIR.py "As a doctor, I want to predict cancer recurrence from patient genomic data."
-   ```
-   Esperado: domínio `oncology`/`healthcare`, tasks incluindo `classification`, features incluindo `age`, `gender`, possivelmente `ethnicity`/`race`.
+### 8.1. API Flask (via Docker, sem entrar no container)
 
-2. **Backend isolado** (curl direto):
-   ```bash
-   curl -X POST http://localhost:5001/analyzeStory \
-     -F "story=As a hiring manager, I want to rank candidates based on their CVs."
-   ```
-   Esperado: JSON com `domain`, `tasks`, `tasks_features`, `features_counts`.
+```bash
+curl -sX POST http://localhost:5001/analyzeStory \
+  -F "story=As a marketer, I want to use nearest neighbor search to identify customers with similar preferences or behaviors, so that I can provide personalized marketing messages and improve customer engagement." \
+  | python3 -m json.tool
+```
 
-3. **Frontend ↔ Backend:** upload de um xlsx com 2–3 stories, clicar em **Analyze** em uma → modal abre com gráfico de barras.
+**Resposta validada:**
 
-4. **Report download:** clicar em **Report** após Load → baixa `report.json` com a análise de todas as stories.
+```json
+{
+    "domain": "Finance & Marketing",
+    "features_counts": {"age": 3, "gender": 3, "geography": 2, "race": 3, "sex": 3},
+    "tasks": ["anomaly detection", "clustering", "representation learning"],
+    "tasks_features": {
+        "anomaly detection":       ["age", "gender", "race", "sex"],
+        "clustering":               ["age", "gender", "geography", "race", "sex"],
+        "representation learning":  ["age", "gender", "geography", "race", "sex"]
+    }
+}
+```
+
+Este resultado bate exatamente com o running example da Figura 5 do paper.
+
+### 8.2. CLI dentro do container
+
+```bash
+docker compose exec refair bash -c \
+  "cd /app && python REFAIR.py 'As a doctor, I want to predict cancer recurrence from patient genomic data.'"
+```
+
+Esperado: domínio em `healthcare`/`oncology`, tasks incluindo `classification`, features incluindo `age`, `gender`, possivelmente `ethnicity`/`race`.
+
+### 8.3. Frontend ↔ Backend (opcional)
+
+Subir o Vue (`npm run dev`) → upload de um xlsx com 2–3 stories → clicar em **Analyze** em uma → modal abre com gráfico de barras. **Report** após Load baixa `report.json` com a análise de todas as stories.
 
 ---
 

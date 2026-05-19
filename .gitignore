@@ -1,0 +1,42 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Node ---
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- ReFAIR large model files (download separately) ---
+**/models/glove.6B.100d.txt
+**/glove.6B*.txt
+**/glove.6B*.zip
+
+# --- HuggingFace cache (if mounted into repo) ---
+.cache/huggingface/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editors ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~

@@ -1,28 +1,42 @@
 FROM python:3.9-slim
 
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    TRANSFORMERS_OFFLINE=0 \
+    HF_HOME=/root/.cache/huggingface
+
 WORKDIR /app
 
-# Instala compiladores essenciais do Linux
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    g++ \
+# Build tools needed for some wheels (xgboost, scipy, fasttext-wheel, etc.)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        build-essential \
+        g++ \
+        curl \
+        unzip \
+        ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-# Copia os requisitos
-COPY requirements.txt .
+# Install Python deps first to leverage Docker layer cache
+COPY requirements.txt ./requirements.txt
+COPY ReFair-App/refair-server/requirements.txt ./refair-server-requirements.txt
 
-# O PULO DO GATO: Lê o requirements.txt e substitui a linha do fasttext 
-# pela versão pré-compilada antes do pip tentar instalar
-RUN sed -i 's/fasttext==0.9.2/fasttext-wheel/g' requirements.txt
+RUN pip install --upgrade pip \
+ && pip install -r requirements.txt \
+ && pip install -r refair-server-requirements.txt
 
-# Atualiza o pip e instala as dependências
-RUN pip install --no-cache-dir --upgrade pip
-RUN pip install --no-cache-dir -r requirements.txt
+# Pre-download the BERT tokenizer used by REFAIR.py so containers run offline-ready
+RUN python -c "from transformers import BertTokenizer; BertTokenizer.from_pretrained('bert-base-uncased')"
 
-# Copia o restante do código
+# Copy source last (changes here don't bust the deps layer)
 COPY . .
 
-# Expõe as portas do Jupyter e do servidor Flask
-EXPOSE 8888 5000
+# Flask API (single-service deployment uses this)
+EXPOSE 5001
+# Optional: Jupyter for the analysis notebooks
+EXPOSE 8888
 
-CMD ["/bin/bash"]
+# Default command: start the Flask API. Override with `docker compose run` to use the CLI.
+WORKDIR /app/ReFair-App/refair-server
+CMD ["python", "app.py"]

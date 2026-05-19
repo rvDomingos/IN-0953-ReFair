@@ -1,14 +1,25 @@
-version: '3.8'
-
 services:
-  refair-env:
-    build: .
-    container_name: refair_python
-    volumes:
-      # Espelha a sua pasta atual do Windows para dentro do Docker
-      - .:/app
+  refair:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: refair:latest
+    container_name: refair
     ports:
-      - "8888:8888"
-      - "5000:5000"
+      - "5001:5001"   # Flask API
+      - "8888:8888"   # Jupyter (optional)
+    volumes:
+      # Live-mount source so edits on the host are picked up without rebuild.
+      - .:/app
+      # Persist Hugging Face cache (BERT) across container restarts.
+      - hf-cache:/root/.cache/huggingface
+    working_dir: /app/ReFair-App/refair-server
     stdin_open: true
     tty: true
+    # `docker compose up` starts the Flask API on http://localhost:5001
+    # CLI use:
+    #   docker compose exec refair bash -c "cd /app && python REFAIR.py 'your user story'"
+    command: ["python", "app.py"]
+
+volumes:
+  hf-cache:

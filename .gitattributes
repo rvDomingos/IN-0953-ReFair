@@ -1,0 +1,20 @@
+# Force LF line endings cross-platform so Python/Bash scripts work on Mac/Linux
+# even when authored on Windows.
+* text=auto eol=lf
+
+# Shell scripts must be LF
+*.sh text eol=lf
+*.py text eol=lf
+
+# Windows-only scripts stay CRLF
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Treat these as binary (never line-ending-converted)
+*.pkl binary
+*.xlsx binary
+*.png binary
+*.jpg binary
+*.pdf binary
+*.zip binary
