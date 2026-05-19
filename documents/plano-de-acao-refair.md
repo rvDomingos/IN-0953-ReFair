@@ -597,16 +597,18 @@ Domain: Healthcare - Task: classification - Sensitive Features: [...]
 
 ### 6.6. Rodar o frontend Vue (opcional)
 
-O frontend vive fora do Docker (precisa Node.js no host):
+O frontend vive fora do Docker (precisa Node.js no host, testado com **Node 22.21.0 / npm 10.9.4**):
 
 ```bash
 cd "ReFAIR/3. Source Code/ReFair/ReFair-App/refair-client"
 npm install
 npm run dev
-# Vite serve em http://localhost:5173
+# Vite serve em http://localhost:5173 (todas as interfaces)
 ```
 
 Abrir `http://localhost:5173` no navegador. Upload de um `.xlsx` com uma coluna `User Story` → clicar **Load** → **Analyze** em uma linha → modal mostra domínio, tasks, features e gráfico de barras.
+
+> **Fix aplicado (2026-05-19) — IPv6-only binding:** o script `dev` em `package.json` foi alterado de `vite` para `vite --host`. Sem o `--host`, o Vite 4 + Node 18+ tende a bindar **só em IPv6** (`[::1]:5173`) em algumas configurações de macOS, o que dá *connection refused* para clientes que tentam IPv4 (`127.0.0.1`) — sintoma visível: página em branco ou "site não pode ser acessado". Com `--host` o servidor escuta em `0.0.0.0` (IPv4 + IPv6).
 
 ### 6.7. Comandos úteis do dia a dia
 
