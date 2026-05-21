@@ -343,7 +343,43 @@ Arquivo: **`documents/datasets/equivalencia-ustai-synthetic.csv`** — 1260 linh
 
 A partir desse CSV é possível gerar o **PDF** e o **Excel** solicitados (mesmo conteúdo, formatos de apresentação).
 
-## 7. Limitações
+## 7. Exemplos de User Stories por domínio equivalente
+
+Para cada um dos **25 domínios equivalentes** identificados, a tabela abaixo traz **uma user story de exemplo extraída do dataset UStAI** (`UStAI-annotated_V2.pdf`). O exemplo mostra como uma história real do UStAI se conecta ao domínio de aplicação do Synthetic User Stories. Sempre que possível, escolheu-se uma user story cujo `role_shorten` é **específico daquele domínio** (papel de domínio único — ver Seção 5.1), tornando a correspondência mais evidente.
+
+> Esses exemplos foram exportados para o arquivo **`documents/datasets/exemplos-us-por-dominio.csv`** (1 linha por domínio · 25 linhas), com as colunas: `equivalent_domain`, `num_user_stories_no_dominio`, `equivalent_ml_task`, `domain_confidence`, `id`, `abstract`, `abstract_theme`, `llm`, `role_shorten`, `user_story`.
+
+| Domínio equivalente | ID (UStAI) | role_shorten | LLM | Exemplo de User Story |
+|---|---|---|---|---|
+| Information Systems | A23US9O1 | competitor in the search engine market | O1_mini | As a competitor in the search engine market, I want to analyze how our ranking algorithms compare to others using PAWS, so that I can identify areas for improvement and differentiation. |
+| Psychology | A2US3Ge | therapist | Gemini_1.5_flash | As a therapist working with aggressive children, I want objective data on their physical activity patterns to track progress in anger management and de-escalation techniques. |
+| Transportation | A1US1Ge | driver | Gemini_1.5_flash | As a driver, I want a car that uses AI and real-time data to react faster than humans in emergency situations, reducing my risk of accidents. |
+| Economics | A15US7O1 | non-profit organization leader | O1_mini | As a nonprofit organization leader, I want to analyze income prediction data, so that I can develop programs that effectively target and alleviate economic disparities within communities. |
+| Finance & Marketing | A19US1Ll | banker | Llama 3.1 70b | As a banker, I want to minimize credit risk and optimize lending decisions, so I need a reliable method to predict credit card default rates using data analytics. |
+| Health | A5US2Ge | lab technician | Gemini_1.5_flash | As a lab technician, I want to easily track the location and status of blood and urine samples using the robot to ensure timely processing. |
+| Computer Vision | A11US2Ge | printing press operator | Gemini_1.5_flash | As a printing press operator, I want the platform to analyze digital templates containing CDPs and predict how they will appear on the final printed product, ensuring accurate replication. |
+| Social Networks | A28US1Ge | single person | Gemini_1.5_flash | As a single person looking for love, I want a dating recommender system that goes beyond self-reported profiles and considers real-life interactions and compatibility. |
+| Cardiology | A9US1O1 | cardiologist | O1_mini | As a cardiologist, I want the system to quickly analyze patient data using incremental Fuzzy SVM, so I can receive timely and accurate heart disease diagnoses. |
+| Computer Networks | A34US1Ge | analyst | Gemini_1.5_flash | As a cybersecurity analyst, I want to utilize a DNN-based IDS that can detect and classify new and unpredictable cyberattacks automatically, ensuring our network remains secure against evolving threats. |
+| Demography | A29US1Ge | economic historian | Gemini_1.5_flash | As an economic historian, I want to analyze the long-term effects of early life conditions on individuals' later life outcomes, but I need a reliable way to track individuals across historical census records. |
+| Endocrinology | A10US6Ge | health insurance provider | Gemini_1.5_flash | As a health insurance provider, I want to see if this model can be used to reduce the risk of complications and hospitalizations for people with diabetes. |
+| Law | A30US3Ge | judge or magistrate | Gemini_1.5_flash | As a judge or magistrate, I want to have access to objective and reliable information about a defendant's risk of re-offending to inform sentencing decisions. |
+| Library | A24US6Ge | research funder | Gemini_1.5_flash | As a research funder, I want to identify promising research areas and researchers for potential funding opportunities. |
+| Linguistics | A32US5Ge | social media moderator | Gemini_1.5_flash | As a social media moderator, I want to prioritize content for review based on the intensity of a user's stance (e.g., strongly against vs. mildly disagreeing). |
+| Medicine | A17US1Ge | sleep specialist | Gemini_1.5_flash | As a sleep specialist, I want to use an advanced prediction system to forecast episodes of apnea and hypopnea, enabling me to tailor treatment plans more effectively for individual patients. |
+| Music | A39US1Ge | music enthusiast | Gemini_1.5_flash | As a music enthusiast, I want a tool that can predict the success of my playlists based on musical characteristics, allowing me to refine my curation and increase engagement. |
+| News | A33US2Ll | news agency | Llama 3.1 70b | As a news agency, I want to be able to search for precise facts described in news articles, so that I can verify information and ensure the accuracy of our reporting. |
+| Pediatrics | A16US1Ge | pediatrician | Gemini_1.5_flash | As a pediatrician, I want a non-invasive tool that can analyze a newborn's cry and help me identify potential health issues early on. |
+| Pharmacology | A13US2Ge | pharmaceutical company scientist | Gemini_1.5_flash | As a pharmaceutical company scientist, I want the platform to predict potential combinations of existing drugs that may have a synergistic effect in treating AD. |
+| Political Science | A4US1Ge | military commander | Gemini_1.5_flash | As a military leader, I want to leverage AI for improved situational awareness and faster decision-making on the battlefield to gain a tactical advantage. |
+| Radiology | A18US1Ge | radiologist | Gemini_1.5_flash | As a radiologist, I want a tool that can assist me in diagnosing TB disease from chest X-rays, improving accuracy and efficiency in my workflow. |
+| Social Media | A3US2Ge | moderator | Gemini_1.5_flash | As a content moderator, I want a tool that identifies potentially aggressive tweets with high accuracy so that I can prioritize them for review and take appropriate action. |
+| Social Work | A12US7O1 | grant writer | O1_mini | As a grant writer, I want to utilize the FVVI's standardized risk assessments, so that I can secure funding for targeted violence prevention programs. |
+| Sport | A37US1Ge | sports fan | Gemini_1.5_flash | As a casual sports fan, I want a platform that uses data and analytics to help me make informed decisions about which players to select for my fantasy team. |
+
+> **Como ler a tabela.** Cada linha é uma user story *real* do UStAI; a coluna **Domínio equivalente** indica o domínio do Synthetic User Stories ao qual aquela história (e todo o seu *abstract*) pertence, conforme a equivalência da Seção 4. O `id` permite localizar a história no dataset completo (`equivalencia-ustai-synthetic.csv`).
+
+## 8. Limitações
 
 - **Domínio fixado por *abstract*.** Como cada *abstract* descreve um só sistema, o domínio é constante entre suas 30 user stories. Eventuais user stories "fora do tema" geradas pelos LLMs (ex.: um *cybersecurity expert* falando de rede em um abstract de saúde) mantêm o domínio do *abstract*.
 - **6 abstracts de baixa confiança** (A4, A12, A21, A22, A31, A38): não há domínio perfeito entre os 34 — ver notas na Seção 4.
