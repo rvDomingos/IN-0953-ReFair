@@ -20,20 +20,26 @@ Os **34 domínios** do Synthetic (ontologia de Fabris et al., reusada pelo ReFAI
 
 `Biology, Cardiology, Computer Networks, Computer Vision, Demography, Dermatology, Economics, Education, Endocrinology, Finance & Marketing, Health, Information Systems, Law, Library, Linguistics, Literature, Medicine, Movies, Music, Nephrology, News, Pediatrics, Pharmacology, Plant Science, Political Science, Psychology, Radiology, Social Media, Social Networks, Social Work, Sociology, Sport, Transportation, Urban Studies`
 
+A classificação de **ML task** no ReFAIR é **multi-label**: cada user story recebe um *conjunto* de tasks. As 367 ML tasks *fine-grained* são, por isso, agregadas em **25 labels de alto nível** pela aba `task augmentation mapping` do mesmo `.xlsx` — esses 25 labels são o alvo real do classificador de tasks (ver Seções 3 e 4):
+
+`Classification, Regression, Ranking, Matching, Risk Assessment, Representation Learning, Clustering, Anomaly Detection, Districting, Task Assignment, Spatio-Temporal Process Learning, Graph Diffusion, Graph Augmentation, Resource Allocation, Subset Selection, Data Summarization, Graph Mining, Pricing, Advertising, Entity Resolution, Sentiment Analysis, Bias Detection in Word Embeddings, Bias Detection in Language Models, Machine Translation, Speech Recognition`
+
 ## 3. Metodologia da equivalência
 
 1. **Extração do UStAI.** As 1260 user stories foram extraídas do PDF (42 *abstracts* × 3 LLMs × 10 US). Cada linha tem `id`, `abstract`, `us_num`, `llm`, `role_shorten` e o texto da `user_story`.
 2. **Âncora = `role_shorten`.** O `role_shorten` é o campo-chave do lado UStAI, como solicitado.
 3. **Desambiguação pelo *abstract*.** Cada *abstract* (A1–A42) descreve **um único sistema de IA** — logo, todas as 30 user stories de um *abstract* compartilham o mesmo domínio de aplicação e a mesma ML task. Papéis genéricos (`researcher`, `developer`, `data scientist`, `manager`, `user`…) aparecem em dezenas de *abstracts*; sozinhos não determinam um domínio. Por isso o domínio é fixado **por *abstract*** (o contexto do sistema), exatamente a desambiguação escolhida. Papéis específicos de domínio (`radiologist`, `cardiologist`, `taxi driver`…) são coerentes com o *abstract* em que ocorrem.
 4. **Domínio de aplicação.** Cada *abstract* foi classificado em 1 dos 34 domínios por análise temática das suas user stories.
-5. **ML task.** Cada *abstract* foi associado a 1 das 367 ML tasks: a técnica nomeada quando o estudo gira em torno dela (ex.: *Fuzzy SVM* → `support vector machine`, *GANs* → `generative adversarial network`), ou o conceito da tarefa quando não há técnica única (ex.: `anomaly detection`, `recommendation system`).
+5. **ML task — classificação multi-label.** No ReFAIR a task de ML **não é rótulo único**: o classificador de tasks é **multi-label** (Linear SVC + Label Powerset — ver `documents/analise-replicacao-novo-dataset.md`, Seção 1). Por isso a equivalência de ML task tem **duas camadas**:
+   - **ML task âncora (fine-grained).** Cada *abstract* foi associado a 1 das 367 tasks do vocabulário controlado: a técnica nomeada quando o estudo gira em torno dela (ex.: *Fuzzy SVM* → `support vector machine`, *GANs* → `generative adversarial network`), ou o conceito da tarefa quando não há técnica única (ex.: `anomaly detection`, `recommendation system`). É a **ponte** para o vocabulário do Synthetic.
+   - **Labels multi-label.** A task âncora é então **expandida** para um **conjunto de labels de alto nível** usando a aba **`task augmentation mapping`** do próprio `Synthetic User Stories.xlsx` — exatamente o mecanismo com que o ReFAIR constrói o *ground truth* multi-label do classificador de tasks. São **25 labels** possíveis; cada *abstract* recebe de 1 a 25 labels (ver Seção 4).
 6. **Confiança.** Cada *abstract* recebe `High`/`Medium`/`Low` para o mapeamento de domínio. `Low` = não há domínio perfeito entre os 34 (ex.: A4 militar, A38 recrutamento).
 
 ## 4. Tabela de equivalência por *abstract* (núcleo da equivalência)
 
-Cada *abstract* = 30 user stories (10 Gemini_1.5_flash + 10 Llama 3.1 70b + 10 O1_mini).
+Cada *abstract* = 30 user stories (10 Gemini_1.5_flash + 10 Llama 3.1 70b + 10 O1_mini). A coluna **ML Task âncora** é a task *fine-grained* (1 das 367) que melhor nomeia a técnica do estudo de origem; ela é expandida para o conjunto **multi-label** de labels de alto nível logo abaixo.
 
-| Abstract | Tema do sistema de IA | Domínio equivalente (Synthetic) | ML Task equivalente (Synthetic) | Confiança |
+| Abstract | Tema do sistema de IA | Domínio equivalente (Synthetic) | ML Task âncora (fine-grained) | Confiança |
 |---|---|---|---|---|
 | A1 | Autonomous vehicles (AI + real-time data for perception & collision avoidance) | Transportation | machine perception | High |
 | A2 | Wearable-based detection of physical aggression in children | Psychology | time-series classification | Medium |
@@ -97,6 +103,93 @@ Cada *abstract* = 30 user stories (10 Gemini_1.5_flash + 10 Llama 3.1 70b + 10 O
 - **A32** (Linguistics): Alternativa: Social Media.
 - **A38** (Psychology): Recrutamento/RH; nao ha dominio de RH nos 34. Alternativa: Economics.
 - **A41** (Computer Vision): Alternativa de task: convolutional neural network.
+
+### Equivalência multi-label das ML Tasks
+
+O classificador de ML tasks do ReFAIR é **multi-label**: para cada user story ele prevê um **conjunto** de tasks, não uma só. O ReFAIR implementa isso com a aba **`task augmentation mapping`** do `Synthetic User Stories.xlsx`, que mapeia cada uma das 367 tasks *fine-grained* para um conjunto de **25 labels de alto nível**:
+
+`Classification, Regression, Ranking, Matching, Risk Assessment, Representation Learning, Clustering, Anomaly Detection, Districting, Task Assignment, Spatio-Temporal Process Learning, Graph Diffusion, Graph Augmentation, Resource Allocation, Subset Selection, Data Summarization, Graph Mining, Pricing, Advertising, Entity Resolution, Sentiment Analysis, Bias Detection in Word Embeddings, Bias Detection in Language Models, Machine Translation, Speech Recognition`
+
+Aplicando esse mapeamento à **ML Task âncora** de cada *abstract*, obtém-se o conjunto multi-label correspondente — o rótulo-alvo real do classificador de tasks do ReFAIR:
+
+| Abstract | ML Task âncora (fine-grained) | Labels multi-label (alvo do classificador ReFAIR) | Nº labels |
+|---|---|---|---|
+| A1 | machine perception | Classification; Regression; Ranking; Representation Learning; Clustering; Anomaly Detection; Spatio-Temporal Process Learning; Graph Mining; Sentiment Analysis; Bias Detection in Word Embeddings; Bias Detection in Language Models; Machine Translation; Speech Recognition | 13 |
+| A2 | time-series classification | Classification; Representation Learning; Clustering; Anomaly Detection; Subset Selection | 5 |
+| A3 | text classification | Sentiment Analysis; Bias Detection in Language Models; Machine Translation; Speech Recognition | 4 |
+| A4 | reinforcement learning | Districting; Task Assignment; Resource Allocation; Pricing; Advertising | 5 |
+| A5 | robot learning | Districting; Task Assignment; Resource Allocation | 3 |
+| A6 | mixture model | Classification; Clustering; Anomaly Detection; Graph Mining | 4 |
+| A7 | classification method | Classification | 1 |
+| A8 | anomaly detection | Anomaly Detection | 1 |
+| A9 | support vector machine | Classification; Regression; Ranking; Anomaly Detection; Entity Resolution; Sentiment Analysis; Bias Detection in Word Embeddings; Bias Detection in Language Models; Machine Translation; Speech Recognition | 10 |
+| A10 | support vector regression | Regression | 1 |
+| A11 | generative adversarial network | Representation Learning; Anomaly Detection; Data Summarization; Entity Resolution; Bias Detection in Language Models | 5 |
+| A12 | gradient boosting | Classification; Regression; Ranking; Representation Learning; Clustering; Anomaly Detection; Districting; Graph Mining; Pricing; Advertising; Entity Resolution; Sentiment Analysis; Bias Detection in Word Embeddings; Bias Detection in Language Models | 14 |
+| A13 | deep learning | Classification; Regression; Ranking; Matching; Risk Assessment; Representation Learning; Clustering; Anomaly Detection; Districting; Task Assignment; Spatio-Temporal Process Learning; Graph Diffusion; Graph Augmentation; Resource Allocation; Subset Selection; Data Summarization; Graph Mining; Pricing; Advertising; Entity Resolution; Sentiment Analysis; Bias Detection in Word Embeddings; Bias Detection in Language Models; Machine Translation; Speech Recognition | 25 |
+| A14 | forecasting algorithms | Regression | 1 |
+| A15 | classification method | Classification | 1 |
+| A16 | classification method | Classification | 1 |
+| A17 | artificial neural network | Classification; Regression; Representation Learning; Clustering; Anomaly Detection; Spatio-Temporal Process Learning; Graph Diffusion; Graph Augmentation; Subset Selection; Data Summarization; Graph Mining; Sentiment Analysis; Bias Detection in Word Embeddings; Bias Detection in Language Models; Machine Translation; Speech Recognition | 16 |
+| A18 | convolutional neural network | Classification; Representation Learning; Clustering; Anomaly Detection; Data Summarization; Graph Mining; Entity Resolution | 7 |
+| A19 | classification method | Classification | 1 |
+| A20 | classification method | Classification | 1 |
+| A21 | data mining | Classification; Regression; Clustering; Anomaly Detection; Data Summarization; Graph Mining; Entity Resolution | 7 |
+| A22 | learning ranking | Ranking; Advertising | 2 |
+| A23 | information retrieval | Ranking; Matching; Pricing; Advertising; Entity Resolution; Sentiment Analysis; Bias Detection in Language Models | 7 |
+| A24 | information retrieval | Ranking; Matching; Pricing; Advertising; Entity Resolution; Sentiment Analysis; Bias Detection in Language Models | 7 |
+| A25 | recommendation system | Ranking | 1 |
+| A26 | natural language generation | Classification; Regression; Representation Learning; Clustering; Sentiment Analysis | 5 |
+| A27 | recommendation system | Ranking | 1 |
+| A28 | recommendation system | Ranking | 1 |
+| A29 | classification method | Classification | 1 |
+| A30 | decision tree | Classification; Regression; Anomaly Detection; Subset Selection; Data Summarization | 5 |
+| A31 | classification method | Classification | 1 |
+| A32 | multi-task learning | Classification; Regression; Ranking; Matching; Risk Assessment; Representation Learning; Anomaly Detection; Task Assignment; Spatio-Temporal Process Learning; Graph Diffusion; Graph Augmentation; Entity Resolution; Sentiment Analysis; Bias Detection in Word Embeddings; Bias Detection in Language Models; Machine Translation; Speech Recognition | 17 |
+| A33 | information retrieval | Ranking; Matching; Pricing; Advertising; Entity Resolution; Sentiment Analysis; Bias Detection in Language Models | 7 |
+| A34 | deep neural network | Classification; Regression; Ranking; Representation Learning; Anomaly Detection; Spatio-Temporal Process Learning; Graph Diffusion; Graph Augmentation; Subset Selection; Data Summarization; Graph Mining; Entity Resolution; Sentiment Analysis; Bias Detection in Word Embeddings; Bias Detection in Language Models; Machine Translation; Speech Recognition | 17 |
+| A35 | time series forecasting | Regression; Anomaly Detection; Spatio-Temporal Process Learning; Graph Diffusion; Resource Allocation; Subset Selection | 6 |
+| A36 | time-series classification | Classification; Representation Learning; Clustering; Anomaly Detection; Subset Selection | 5 |
+| A37 | data mining | Classification; Regression; Clustering; Anomaly Detection; Data Summarization; Graph Mining; Entity Resolution | 7 |
+| A38 | classification method | Classification | 1 |
+| A39 | classification method | Classification | 1 |
+| A40 | anomaly detection | Anomaly Detection | 1 |
+| A41 | attention mechanism | Representation Learning; Sentiment Analysis; Machine Translation; Speech Recognition | 4 |
+| A42 | recommendation system | Ranking | 1 |
+
+> **Leitura.** A task âncora é o termo *fine-grained* do estudo de origem; os **labels multi-label** são o que o classificador do ReFAIR realmente prevê. Técnicas de uso geral expandem para conjuntos amplos — `deep learning` (A13) cobre os 25 labels, `multi-task learning` (A32) e `deep neural network` (A34) cobrem 17, `artificial neural network` (A17) cobre 16. Técnicas específicas expandem para conjuntos enxutos — `support vector regression` (A10) → só `Regression`; `anomaly detection` (A8, A40) → só `Anomaly Detection`. Ver ressalva na Seção 8.
+
+### Distribuição das ML task labels (multi-label) nas 1260 user stories
+
+Como a classificação é multi-label, cada user story recebe **em média 5,3 labels** (1 a 25). A soma das frequências abaixo é **6720** — bem maior que 1260, justamente por ser multi-label.
+
+| Label de ML task (multi-label) | Nº user stories | Nº abstracts |
+|---|---|---|
+| Classification | 720 | 24 |
+| Anomaly Detection | 540 | 18 |
+| Regression | 420 | 14 |
+| Ranking | 420 | 14 |
+| Sentiment Analysis | 390 | 13 |
+| Representation Learning | 360 | 12 |
+| Entity Resolution | 360 | 12 |
+| Bias Detection in Language Models | 360 | 12 |
+| Clustering | 330 | 11 |
+| Graph Mining | 270 | 9 |
+| Data Summarization | 240 | 8 |
+| Machine Translation | 240 | 8 |
+| Speech Recognition | 240 | 8 |
+| Subset Selection | 210 | 7 |
+| Advertising | 210 | 7 |
+| Bias Detection in Word Embeddings | 210 | 7 |
+| Spatio-Temporal Process Learning | 180 | 6 |
+| Pricing | 180 | 6 |
+| Matching | 150 | 5 |
+| Graph Diffusion | 150 | 5 |
+| Districting | 120 | 4 |
+| Task Assignment | 120 | 4 |
+| Graph Augmentation | 120 | 4 |
+| Resource Allocation | 120 | 4 |
+| Risk Assessment | 60 | 2 |
 
 ### Distribuição das 1260 user stories por domínio equivalente
 
@@ -337,7 +430,9 @@ Arquivo: **`documents/datasets/equivalencia-ustai-synthetic.csv`** — 1260 linh
 | `role_shorten` | Papel declarado — eixo de "domínio" do UStAI (âncora) |
 | `user_story` | Texto completo da user story |
 | `equivalent_domain` | Domínio de aplicação equivalente (1 dos 34 do Synthetic) |
-| `equivalent_ml_task` | ML task equivalente (1 das 367 do Synthetic) |
+| `equivalent_ml_task` | ML task **âncora** *fine-grained* (1 das 367 do Synthetic) — a técnica que nomeia o estudo |
+| `equivalent_ml_task_labels` | Conjunto **multi-label** de labels de alto nível (subconjunto dos 25), separados por `; ` — alvo do classificador de tasks do ReFAIR |
+| `num_ml_task_labels` | Quantidade de labels multi-label da user story (1 a 25) |
 | `domain_confidence` | Confiança do mapeamento de domínio (High/Medium/Low) |
 | `mapping_notes` | Observações para mapeamentos de menor confiança |
 
@@ -347,7 +442,7 @@ A partir desse CSV é possível gerar o **PDF** e o **Excel** solicitados (mesmo
 
 Para cada um dos **25 domínios equivalentes** identificados, a tabela abaixo traz **uma user story de exemplo extraída do dataset UStAI** (`UStAI-annotated_V2.pdf`). O exemplo mostra como uma história real do UStAI se conecta ao domínio de aplicação do Synthetic User Stories. Sempre que possível, escolheu-se uma user story cujo `role_shorten` é **específico daquele domínio** (papel de domínio único — ver Seção 5.1), tornando a correspondência mais evidente.
 
-> Esses exemplos foram exportados para o arquivo **`documents/datasets/exemplos-us-por-dominio.csv`** (1 linha por domínio · 25 linhas), com as colunas: `equivalent_domain`, `num_user_stories_no_dominio`, `equivalent_ml_task`, `domain_confidence`, `id`, `abstract`, `abstract_theme`, `llm`, `role_shorten`, `user_story`.
+> Esses exemplos foram exportados para os arquivos **`documents/datasets/exemplos-us-por-dominio.csv`** e **`.xlsx`** (1 linha por domínio · 25 linhas), com as colunas: `equivalent_domain`, `num_user_stories_no_dominio`, `equivalent_ml_task`, `equivalent_ml_task_labels`, `num_ml_task_labels`, `domain_confidence`, `id`, `abstract`, `abstract_theme`, `llm`, `role_shorten`, `user_story`.
 
 | Domínio equivalente | ID (UStAI) | role_shorten | LLM | Exemplo de User Story |
 |---|---|---|---|---|
@@ -383,5 +478,6 @@ Para cada um dos **25 domínios equivalentes** identificados, a tabela abaixo tr
 
 - **Domínio fixado por *abstract*.** Como cada *abstract* descreve um só sistema, o domínio é constante entre suas 30 user stories. Eventuais user stories "fora do tema" geradas pelos LLMs (ex.: um *cybersecurity expert* falando de rede em um abstract de saúde) mantêm o domínio do *abstract*.
 - **6 abstracts de baixa confiança** (A4, A12, A21, A22, A31, A38): não há domínio perfeito entre os 34 — ver notas na Seção 4.
-- **ML task por *abstract*.** Representa a técnica/tarefa central do estudo de origem; user stories individuais podem mencionar tarefas auxiliares.
-- Vocabulário-alvo: 34 domínios e 367 ML tasks extraídos de `Synthetic User Stories.xlsx` (abas *Dataset*, *Domains*, *ML Dictionary*).
+- **ML task multi-label por *abstract*.** Tanto a task âncora quanto o conjunto de labels multi-label são fixados por *abstract* (a técnica central do estudo de origem); user stories individuais podem mencionar tarefas auxiliares. A expansão para os 25 labels usa a aba `task augmentation mapping` do ReFAIR — logo, herda as escolhas dessa tabela.
+- **Abstracts com técnica de uso geral.** Quando a task âncora é uma técnica genérica, o conjunto multi-label fica pouco discriminativo: `deep learning` (A13) expande para os **25** labels; `multi-task learning` (A32) e `deep neural network` (A34) para **17**; `artificial neural network` (A17) para **16**. Nesses casos o conjunto reflete a versatilidade da técnica, não uma restrição forte de task.
+- Vocabulário-alvo: 34 domínios, 367 ML tasks *fine-grained* e 25 labels de ML task multi-label, extraídos de `Synthetic User Stories.xlsx` (abas *Dataset*, *Domains*, *ML Dictionary*, *task augmentation mapping*).
