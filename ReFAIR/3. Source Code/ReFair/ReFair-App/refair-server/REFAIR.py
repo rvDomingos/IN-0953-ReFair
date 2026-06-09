@@ -1,4 +1,6 @@
 import pickle
+import re
+import unicodedata
 from pathlib import Path
 
 import gensim
@@ -40,14 +42,24 @@ def getDomain(user_story):
     return dataset["Domain"].unique()[predict[0]]
 
 
+def _norm_token(word):
+    # normaliza só p/ casar no GloVe (6B é minúsculo, sem acento/pontuacao):
+    # lower + remove acento + tira pontuacao das bordas. Nao altera o texto
+    # original (que tambem alimenta o getDomain/BERT) — so o lookup do GloVe.
+    word = unicodedata.normalize('NFKD', word.lower())
+    word = ''.join(c for c in word if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9']", '', word)
+
+
 def getMLTask(user_story, domain):
     traindata = []
     for msg in [user_story]:
-        words = msg.split()
+        words = msg.replace('-', ' ').replace('/', ' ').split()
         vecs = []
         for word in words:
-            if word in glove_vectors:
-                vecs.append(glove_vectors[word])
+            token = _norm_token(word)
+            if token and token in glove_vectors:
+                vecs.append(glove_vectors[token])
         if vecs:
             vec_avg = sum(vecs) / len(vecs)
         else:
