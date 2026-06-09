@@ -1,0 +1,43 @@
+abstract,dominio_gabarito,confianca,n_stories,dominio_acerto,acerto_pct,dominio_refair_mais_comum,ml_task_vazia
+A1,Transportation,High,30,1/30,3.3,Biology (7),18/30
+A2,Psychology,Medium,30,0/30,0.0,Biology (9),13/30
+A3,Social Media,High,30,5/30,16.7,Biology (7),16/30
+A4,Political Science,Low,30,0/30,0.0,Biology (14),6/30
+A5,Health,High,30,5/30,16.7,Health (5),14/30
+A6,Transportation,High,30,1/30,3.3,Biology (12),12/30
+A7,Psychology,Medium,30,0/30,0.0,Health (8),13/30
+A8,Health,High,30,6/30,20.0,Biology (10),19/30
+A9,Cardiology,High,29,1/29,3.4,Biology (13),11/29
+A10,Endocrinology,High,29,1/29,3.4,Health (9),10/29
+A11,Computer Vision,Medium,30,0/30,0.0,Medicine (7),12/30
+A12,Social Work,Low,30,0/30,0.0,Health (10),13/30
+A13,Pharmacology,High,30,5/30,16.7,Biology (10),16/30
+A14,Transportation,High,30,1/30,3.3,Movies (6),15/30
+A15,Economics,High,30,2/30,6.7,Finance & Marketing (9),11/30
+A16,Pediatrics,High,30,1/30,3.3,Biology (11),15/30
+A17,Medicine,High,30,6/30,20.0,Biology (10),9/30
+A18,Radiology,High,30,5/30,16.7,Health (8),11/30
+A19,Finance & Marketing,High,30,5/30,16.7,Biology (5),10/30
+A20,Psychology,Medium,30,1/30,3.3,Health (12),10/30
+A21,Economics,Low,30,1/30,3.3,Biology (12),14/30
+A22,Economics,Low,30,0/30,0.0,Biology (18),11/30
+A23,Information Systems,Medium,30,0/30,0.0,Biology (9),20/30
+A24,Library,High,30,3/30,10.0,Health (6),11/30
+A25,Information Systems,Medium,30,1/30,3.3,Biology (8),14/30
+A26,Information Systems,Medium,30,0/30,0.0,Biology (9),8/30
+A27,Information Systems,Medium,30,0/30,0.0,Medicine (7),15/30
+A28,Social Networks,Medium,30,0/30,0.0,Transportation (8),19/30
+A29,Demography,High,30,1/30,3.3,Biology (8),9/30
+A30,Law,High,30,1/30,3.3,Biology (13),11/30
+A31,Finance & Marketing,Low,30,2/30,6.7,Literature (7),14/30
+A32,Linguistics,Medium,30,2/30,6.7,Literature (7),10/30
+A33,News,High,30,11/30,36.7,News (11),10/30
+A34,Computer Networks,High,30,2/30,6.7,Biology (17),12/30
+A35,Finance & Marketing,High,30,6/30,20.0,Biology (12),5/30
+A36,Transportation,High,30,2/30,6.7,Biology (11),12/30
+A37,Sport,High,30,4/30,13.3,Cardiology (7),10/30
+A38,Psychology,Low,30,1/30,3.3,Finance & Marketing (5),14/30
+A39,Music,High,30,17/30,56.7,Music (17),16/30
+A40,Social Networks,High,30,8/30,26.7,Biology (11),20/30
+A41,Computer Vision,Medium,30,1/30,3.3,Biology (14),9/30
+A42,Health,High,30,9/30,30.0,Biology (12),17/30

@@ -1,0 +1,1259 @@
+id,dominio,ml_tasks_SEM_patch,ml_tasks_COM_patch,vazio_sem_patch,vazio_com_patch
+A1US1Ge,News,,,Sim,Sim
+A1US2Ge,Movies,representation learning,ranking; representation learning,Não,Não
+A1US3Ge,Health,classification; regression,,Não,Sim
+A1US4Ge,Biology,classification,classification,Não,Não
+A1US5Ge,Education,,data summarization,Sim,Não
+A1US6Ge,Health,,,Sim,Sim
+A1US7Ge,Literature,,clustering; ranking,Sim,Não
+A1US8Ge,Biology,classification,,Não,Sim
+A1US9Ge,Health,classification; regression,,Não,Sim
+A1US10Ge,Plant Science,,,Sim,Sim
+A1US1Ll,Medicine,classification; classification,classification; classification,Não,Não
+A1US2Ll,Education,classification; regression; representation learning,classification; regression; representation learning,Não,Não
+A1US3Ll,Law,,,Sim,Sim
+A1US4Ll,News,clustering,,Não,Sim
+A1US5Ll,Biology,classification,,Não,Sim
+A1US6Ll,Literature,clustering,clustering,Não,Não
+A1US7Ll,Literature,,,Sim,Sim
+A1US8Ll,Medicine,,,Sim,Sim
+A1US9Ll,Biology,classification,,Não,Sim
+A1US10Ll,Biology,,classification,Sim,Não
+A1US1O1,Literature,,,Sim,Sim
+A1US2O1,Literature,ranking,ranking,Não,Não
+A1US3O1,News,bias detection in word embeddings; clustering; ranking,bias detection in word embeddings; clustering; ranking,Não,Não
+A1US4O1,Transportation,regression,,Não,Sim
+A1US5O1,Literature,clustering,,Não,Sim
+A1US6O1,Biology,,classification,Sim,Não
+A1US7O1,Education,classification; representation learning,data summarization,Não,Não
+A1US8O1,Literature,,,Sim,Sim
+A1US9O1,Biology,,,Sim,Sim
+A1US10O1,Computer Networks,,,Sim,Sim
+A2US1Ge,Music,ranking,,Não,Sim
+A2US2Ge,News,,bias detection in word embeddings; clustering; ranking,Sim,Não
+A2US3Ge,Biology,graph mining,,Não,Sim
+A2US4Ge,Health,,,Sim,Sim
+A2US5Ge,Movies,representation learning,representation learning,Não,Não
+A2US6Ge,News,bias detection in word embeddings; clustering,bias detection in word embeddings; clustering,Não,Não
+A2US7Ge,Health,regression,regression,Não,Não
+A2US8Ge,Biology,,,Sim,Sim
+A2US9Ge,Linguistics,,,Sim,Sim
+A2US10Ge,Finance & Marketing,anomaly detection; clustering; data summarization; ranking; representation learning,anomaly detection,Não,Não
+A2US1Ll,Biology,,,Sim,Sim
+A2US2Ll,Music,,,Sim,Sim
+A2US3Ll,Medicine,,classification; classification,Sim,Não
+A2US4Ll,Biology,classification,classification; graph mining,Não,Não
+A2US5Ll,Biology,classification; graph mining,classification; graph mining,Não,Não
+A2US6Ll,Movies,,data summarization; ranking; representation learning,Sim,Não
+A2US7Ll,Biology,classification,classification,Não,Não
+A2US8Ll,Biology,classification,classification,Não,Não
+A2US9Ll,Biology,classification,classification,Não,Não
+A2US10Ll,Biology,,,Sim,Sim
+A2US1O1,Music,,,Sim,Sim
+A2US2O1,News,bias detection in word embeddings; clustering; ranking,bias detection in word embeddings; clustering; ranking,Não,Não
+A2US3O1,Medicine,,,Sim,Sim
+A2US4O1,Medicine,,,Sim,Sim
+A2US5O1,Movies,representation learning,representation learning,Não,Não
+A2US6O1,Health,representation learning,representation learning,Não,Não
+A2US7O1,Health,classification; representation learning,classification; representation learning,Não,Não
+A2US8O1,Music,,,Sim,Sim
+A2US9O1,Medicine,classification; classification,classification; classification,Não,Não
+A2US10O1,Literature,,,Sim,Sim
+A3US1Ge,Social Media,bias detection in language models; bias detection in word embeddings; classification; ranking; sentiment analysis; speech recognition,bias detection in language models; bias detection in word embeddings; classification; ranking; sentiment analysis; speech recognition,Não,Não
+A3US2Ge,Literature,ranking,,Não,Sim
+A3US3Ge,Health,classification,,Não,Sim
+A3US4Ge,Transportation,,,Sim,Sim
+A3US5Ge,Health,representation learning,,Não,Sim
+A3US6Ge,Literature,,,Sim,Sim
+A3US7Ge,News,,,Sim,Sim
+A3US8Ge,Biology,,classification; graph mining,Sim,Não
+A3US9Ge,Biology,classification; graph mining,,Não,Sim
+A3US10Ge,News,clustering,bias detection in word embeddings; clustering; ranking,Não,Não
+A3US1Ll,Social Media,,,Sim,Sim
+A3US2Ll,Biology,classification,classification,Não,Não
+A3US3Ll,Biology,classification,classification,Não,Não
+A3US4Ll,Biology,,,Sim,Sim
+A3US5Ll,Social Media,,,Sim,Sim
+A3US6Ll,Literature,,,Sim,Sim
+A3US7Ll,Medicine,classification; classification,classification; classification,Não,Não
+A3US8Ll,Medicine,,,Sim,Sim
+A3US9Ll,Social Media,,,Sim,Sim
+A3US10Ll,Law,classification; classification; regression; representation learning,classification; classification; regression; representation learning,Não,Não
+A3US1O1,Social Media,bias detection in language models; classification; ranking; sentiment analysis,bias detection in language models; sentiment analysis,Não,Não
+A3US2O1,Literature,,,Sim,Sim
+A3US3O1,Biology,classification,classification,Não,Não
+A3US4O1,Medicine,,,Sim,Sim
+A3US5O1,Transportation,,,Sim,Sim
+A3US6O1,Plant Science,clustering,clustering,Não,Não
+A3US7O1,Medicine,classification; classification,classification; classification,Não,Não
+A3US8O1,Finance & Marketing,data summarization,data summarization,Não,Não
+A3US9O1,Finance & Marketing,anomaly detection; clustering; representation learning,data summarization,Não,Não
+A3US10O1,Biology,classification,classification,Não,Não
+A4US1Ge,Health,classification; regression; representation learning,classification; regression; representation learning,Não,Não
+A4US2Ge,Biology,,classification,Sim,Não
+A4US3Ge,Education,classification; ranking; regression; representation learning,classification; data summarization; ranking; regression; representation learning,Não,Não
+A4US4Ge,Biology,classification; graph mining,classification; graph mining,Não,Não
+A4US5Ge,Biology,,,Sim,Sim
+A4US6Ge,Finance & Marketing,advertising; anomaly detection; classification; classification; clustering; data summarization; pricing; ranking; representation learning; resource allocation,data summarization,Não,Não
+A4US7Ge,Finance & Marketing,anomaly detection; classification; classification; representation learning,anomaly detection; classification; classification; data summarization; ranking; representation learning; resource allocation,Não,Não
+A4US8Ge,Social Networks,clustering; data summarization; graph augmentation; graph diffusion,clustering; data summarization; graph augmentation; graph diffusion,Não,Não
+A4US9Ge,Biology,,classification; graph mining,Sim,Não
+A4US10Ge,Medicine,classification; classification,classification; classification,Não,Não
+A4US1Ll,Biology,classification,,Não,Sim
+A4US2Ll,Finance & Marketing,,anomaly detection; classification; classification; clustering; representation learning,Sim,Não
+A4US3Ll,Biology,classification,classification; graph mining,Não,Não
+A4US4Ll,Health,classification; regression; representation learning,classification; regression; representation learning,Não,Não
+A4US5Ll,Biology,,,Sim,Sim
+A4US6Ll,Biology,classification,,Não,Sim
+A4US7Ll,Finance & Marketing,representation learning,classification; classification,Não,Não
+A4US8Ll,Biology,,classification; graph mining,Sim,Não
+A4US9Ll,Biology,,classification; graph mining,Sim,Não
+A4US10Ll,Law,classification; classification; clustering; regression; representation learning,classification; classification; clustering; regression; representation learning,Não,Não
+A4US1O1,Law,classification; classification; representation learning,classification; classification; ranking; regression; representation learning; resource allocation; spatio-temporal process learning,Não,Não
+A4US2O1,Biology,,classification,Sim,Não
+A4US3O1,Biology,classification,classification,Não,Não
+A4US4O1,Biology,classification,classification,Não,Não
+A4US5O1,Biology,classification; graph mining,classification; graph mining,Não,Não
+A4US6O1,Psychology,classification,classification,Não,Não
+A4US7O1,Literature,,,Sim,Sim
+A4US8O1,Law,clustering,classification; classification; ranking; regression; representation learning; resource allocation; spatio-temporal process learning,Não,Não
+A4US9O1,Urban Studies,,,Sim,Sim
+A4US10O1,Finance & Marketing,anomaly detection; classification; classification; representation learning,anomaly detection; classification; classification; representation learning,Não,Não
+A5US1Ge,Health,,,Sim,Sim
+A5US2Ge,Biology,classification,classification,Não,Não
+A5US3Ge,Movies,,,Sim,Sim
+A5US4Ge,Computer Networks,clustering,,Não,Sim
+A5US5Ge,Music,,,Sim,Sim
+A5US6Ge,Music,,,Sim,Sim
+A5US7Ge,Literature,,,Sim,Sim
+A5US8Ge,Literature,,,Sim,Sim
+A5US9Ge,Literature,,,Sim,Sim
+A5US10Ge,Sport,,,Sim,Sim
+A5US1Ll,Biology,classification,classification,Não,Não
+A5US2Ll,Health,,classification; regression; representation learning,Sim,Não
+A5US3Ll,Literature,clustering,ranking,Não,Não
+A5US4Ll,Health,classification; graph diffusion; matching; pricing; regression; representation learning,,Não,Sim
+A5US5Ll,Finance & Marketing,,data summarization,Sim,Não
+A5US6Ll,Finance & Marketing,anomaly detection,anomaly detection; classification; classification; data summarization,Não,Não
+A5US7Ll,Movies,representation learning,representation learning,Não,Não
+A5US8Ll,Biology,,classification,Sim,Não
+A5US9Ll,Biology,,,Sim,Sim
+A5US10Ll,Health,classification; regression; representation learning,classification; regression; representation learning,Não,Não
+A5US1O1,Biology,,classification,Sim,Não
+A5US2O1,Pediatrics,,,Sim,Sim
+A5US3O1,Literature,,,Sim,Sim
+A5US4O1,Finance & Marketing,anomaly detection; classification; classification; clustering; data summarization; ranking; representation learning,anomaly detection; classification; classification; clustering; data summarization; ranking; representation learning,Não,Não
+A5US5O1,Health,,classification; matching; regression; representation learning,Sim,Não
+A5US6O1,Music,ranking,ranking,Não,Não
+A5US7O1,Plant Science,,,Sim,Sim
+A5US8O1,Finance & Marketing,anomaly detection; classification; classification; clustering; data summarization; ranking; representation learning,anomaly detection; classification; classification; clustering; data summarization; ranking; representation learning,Não,Não
+A5US9O1,News,bias detection in word embeddings; ranking,bias detection in word embeddings; ranking,Não,Não
+A5US10O1,Information Systems,classification; representation learning,classification; representation learning,Não,Não
+A6US1Ge,Biology,,,Sim,Sim
+A6US2Ge,Biology,classification,,Não,Sim
+A6US3Ge,Biology,,,Sim,Sim
+A6US4Ge,Biology,graph mining,classification; graph mining,Não,Não
+A6US5Ge,Biology,graph mining,graph mining,Não,Não
+A6US6Ge,Finance & Marketing,advertising; pricing; resource allocation,advertising; pricing; resource allocation,Não,Não
+A6US7Ge,Biology,,,Sim,Sim
+A6US8Ge,Biology,graph mining,graph mining,Não,Não
+A6US9Ge,Biology,classification,classification; graph mining,Não,Não
+A6US10Ge,Literature,clustering; ranking,clustering; ranking,Não,Não
+A6US1Ll,Education,classification,classification,Não,Não
+A6US2Ll,Biology,classification,,Não,Sim
+A6US3Ll,Biology,,classification,Sim,Não
+A6US4Ll,Music,ranking,ranking,Não,Não
+A6US5Ll,Biology,,classification,Sim,Não
+A6US6Ll,Biology,,classification,Sim,Não
+A6US7Ll,Law,,,Sim,Sim
+A6US8Ll,News,bias detection in word embeddings; clustering; ranking,bias detection in word embeddings; clustering; ranking,Não,Não
+A6US9Ll,Information Systems,,,Sim,Sim
+A6US10Ll,Health,classification; regression,,Não,Sim
+A6US1O1,News,,,Sim,Sim
+A6US2O1,Finance & Marketing,anomaly detection; classification; classification; ranking; representation learning,anomaly detection,Não,Não
+A6US3O1,Literature,clustering; ranking,clustering; ranking,Não,Não
+A6US4O1,Medicine,classification; classification,,Não,Sim
+A6US5O1,Finance & Marketing,,anomaly detection,Sim,Não
+A6US6O1,Transportation,graph augmentation; matching; regression,graph augmentation; matching; regression,Não,Não
+A6US7O1,Sport,,,Sim,Sim
+A6US8O1,Health,,classification; graph diffusion; matching; representation learning,Sim,Não
+A6US9O1,Literature,clustering; ranking,ranking,Não,Não
+A6US10O1,News,,,Sim,Sim
+A7US1Ge,Health,classification,classification,Não,Não
+A7US2Ge,Radiology,,,Sim,Sim
+A7US3Ge,Health,,,Sim,Sim
+A7US4Ge,Finance & Marketing,anomaly detection; clustering; representation learning,anomaly detection; classification; classification; ranking; representation learning,Não,Não
+A7US5Ge,Biology,classification,classification; graph mining,Não,Não
+A7US6Ge,Transportation,regression,,Não,Sim
+A7US7Ge,Medicine,,,Sim,Sim
+A7US8Ge,Health,classification; graph diffusion; matching; pricing; regression; representation learning,,Não,Sim
+A7US9Ge,Biology,,,Sim,Sim
+A7US10Ge,Biology,classification,classification,Não,Não
+A7US1Ll,Health,classification; graph diffusion; matching; pricing; regression; representation learning,classification; graph diffusion; regression; representation learning,Não,Não
+A7US2Ll,Biology,classification,classification,Não,Não
+A7US3Ll,Medicine,classification; classification,,Não,Sim
+A7US4Ll,Health,classification; matching; regression,classification; matching; regression,Não,Não
+A7US5Ll,Health,classification; regression,,Não,Sim
+A7US6Ll,Health,classification; graph diffusion; regression; representation learning,representation learning,Não,Não
+A7US7Ll,Literature,,,Sim,Sim
+A7US8Ll,Movies,data summarization,data summarization; ranking; representation learning,Não,Não
+A7US9Ll,Plant Science,,,Sim,Sim
+A7US10Ll,Finance & Marketing,anomaly detection; classification; classification; data summarization; ranking; representation learning; resource allocation,anomaly detection; classification; classification; clustering; data summarization; ranking; representation learning,Não,Não
+A7US1O1,Plant Science,,clustering,Sim,Não
+A7US2O1,Computer Networks,clustering,,Não,Sim
+A7US3O1,Medicine,classification; classification,classification; classification,Não,Não
+A7US4O1,Movies,data summarization; ranking; representation learning,data summarization; ranking; representation learning,Não,Não
+A7US5O1,Biology,classification,classification; graph mining,Não,Não
+A7US6O1,Medicine,classification; classification,classification; classification,Não,Não
+A7US7O1,Sport,,,Sim,Sim
+A7US8O1,Law,classification; classification; clustering; ranking,classification; classification,Não,Não
+A7US9O1,Health,classification; regression,classification; regression,Não,Não
+A7US10O1,Finance & Marketing,classification; classification; ranking; representation learning,,Não,Sim
+A8US1Ge,Biology,,,Sim,Sim
+A8US2Ge,News,bias detection in word embeddings,bias detection in word embeddings; ranking,Não,Não
+A8US3Ge,Biology,classification,classification; graph mining,Não,Não
+A8US4Ge,Biology,,,Sim,Sim
+A8US5Ge,Biology,,,Sim,Sim
+A8US6Ge,Biology,classification,classification,Não,Não
+A8US7Ge,Health,,,Sim,Sim
+A8US8Ge,Transportation,,,Sim,Sim
+A8US9Ge,Health,,,Sim,Sim
+A8US10Ge,Finance & Marketing,anomaly detection,anomaly detection,Não,Não
+A8US1Ll,Biology,,,Sim,Sim
+A8US2Ll,Health,,classification; regression,Sim,Não
+A8US3Ll,Biology,,,Sim,Sim
+A8US4Ll,Computer Networks,clustering,,Não,Sim
+A8US5Ll,Biology,,,Sim,Sim
+A8US6Ll,Health,,,Sim,Sim
+A8US7Ll,News,bias detection in word embeddings; ranking,,Não,Sim
+A8US8Ll,Biology,,classification,Sim,Não
+A8US9Ll,Medicine,,,Sim,Sim
+A8US10Ll,Biology,,,Sim,Sim
+A8US1O1,Health,classification; regression; representation learning,,Não,Sim
+A8US2O1,Music,,ranking,Sim,Não
+A8US3O1,Information Systems,,data summarization,Sim,Não
+A8US4O1,Law,,classification; classification; representation learning,Sim,Não
+A8US5O1,News,,,Sim,Sim
+A8US6O1,Health,,classification; matching; representation learning,Sim,Não
+A8US7O1,Literature,,clustering,Sim,Não
+A8US8O1,Medicine,,,Sim,Sim
+A8US9O1,Social Networks,,,Sim,Sim
+A8US10O1,Music,,,Sim,Sim
+A9US1Ge,Biology,classification; graph mining,classification; graph mining,Não,Não
+A9US2Ge,Biology,,,Sim,Sim
+A9US3Ge,Health,,,Sim,Sim
+A9US4Ge,Biology,classification; graph mining,graph mining,Não,Não
+A9US5Ge,Biology,classification; graph mining,classification; graph mining,Não,Não
+A9US6Ge,Biology,classification,classification,Não,Não
+A9US7Ge,Health,classification; graph diffusion; matching; pricing; regression; representation learning,classification; regression; representation learning,Não,Não
+A9US8Ge,Information Systems,,classification; data summarization; matching; ranking; representation learning; subset selection,Sim,Não
+A9US9Ge,Transportation,,,Sim,Sim
+A9US10Ge,Biology,classification,classification,Não,Não
+A9US1Ll,Medicine,,,Sim,Sim
+A9US2Ll,Biology,graph mining,classification,Não,Não
+A9US3Ll,Medicine,classification; classification; risk assessment,classification; classification; risk assessment,Não,Não
+A9US4Ll,Biology,classification; graph mining,classification,Não,Não
+A9US5Ll,Biology,classification; graph mining,classification; graph mining,Não,Não
+A9US9Ll,Music,,,Sim,Sim
+A9US7Ll,Biology,classification,classification,Não,Não
+A9US8Ll,Biology,,,Sim,Sim
+A9US10Ll,Biology,classification,classification,Não,Não
+A9US1O1,Cardiology,classification; ranking,classification; ranking,Não,Não
+A9US2O1,Health,classification; regression; representation learning,regression,Não,Não
+A9US3O1,Health,classification; representation learning,classification; representation learning,Não,Não
+A9US4O1,Music,,,Sim,Sim
+A9US5O1,Literature,clustering; ranking,clustering,Não,Não
+A9US6O1,Medicine,classification; classification; risk assessment,,Não,Sim
+A9US7O1,Computer Networks,,,Sim,Sim
+A9US8O1,Information Systems,,,Sim,Sim
+A9US9O1,Biology,,classification,Sim,Não
+A9US10O1,Medicine,,,Sim,Sim
+A10US1Ge,News,,,Sim,Sim
+A10US2Ge,News,bias detection in word embeddings,bias detection in word embeddings,Não,Não
+A10US3Ge,Biology,classification,classification,Não,Não
+A10US4Ge,Health,,classification; regression,Sim,Não
+A10US5Ge,Biology,classification,classification,Não,Não
+A10US6Ge,Health,regression,regression,Não,Não
+A10US7Ge,Finance & Marketing,anomaly detection,anomaly detection,Não,Não
+A10US8Ge,Health,classification; matching; regression; representation learning,representation learning,Não,Não
+A10US10Ge,News,,,Sim,Sim
+A10US1Ll,News,,bias detection in word embeddings; clustering; ranking,Sim,Não
+A10US2Ll,Health,,,Sim,Sim
+A10US3Ll,Biology,classification,classification,Não,Não
+A10US4Ll,News,bias detection in word embeddings; ranking,bias detection in word embeddings; ranking,Não,Não
+A10US5Ll,Health,classification; representation learning,classification; representation learning,Não,Não
+A10US6Ll,Sport,,,Sim,Sim
+A10US7Ll,News,,,Sim,Sim
+A10US8Ll,Health,classification; representation learning,classification; representation learning,Não,Não
+A10US9Ll,Medicine,classification; classification,classification; classification,Não,Não
+A10US10Ll,News,,,Sim,Sim
+A10US1O1,Linguistics,,,Sim,Sim
+A10US2O1,Endocrinology,,,Sim,Sim
+A10US3O1,Health,classification; regression; representation learning,classification; regression; representation learning,Não,Não
+A10US4O1,Psycology,,,Sim,Sim
+A10US5O1,News,,bias detection in word embeddings,Sim,Não
+A10US6O1,Health,,classification; regression; representation learning,Sim,Não
+A10US7O1,Biology,,classification,Sim,Não
+A10US8O1,Health,,graph diffusion; regression,Sim,Não
+A10US9O1,Literature,ranking,clustering,Não,Não
+A10US10O1,Biology,,,Sim,Sim
+A11US1Ge,Biology,,,Sim,Sim
+A11US2Ge,Computer Networks,,,Sim,Sim
+A11US3Ge,Computer Networks,,,Sim,Sim
+A11US4Ge,Medicine,classification; classification,,Não,Sim
+A11US5Ge,Health,classification; regression; representation learning,classification; regression; representation learning,Não,Não
+A11US6Ge,Law,,,Sim,Sim
+A11US7Ge,Finance & Marketing,data summarization,anomaly detection,Não,Não
+A11US8Ge,Medicine,,classification; classification,Sim,Não
+A11US9Ge,Biology,classification; graph mining,,Não,Sim
+A11US10Ge,Finance & Marketing,anomaly detection,anomaly detection; classification; classification; representation learning,Não,Não
+A11US1Ll,Biology,classification,classification,Não,Não
+A11US2Ll,Finance & Marketing,anomaly detection; classification; classification,classification; classification,Não,Não
+A11US3Ll,Medicine,classification; classification,classification; classification,Não,Não
+A11US4Ll,Transportation,,regression,Sim,Não
+A11US5Ll,Biology,classification,,Não,Sim
+A11US6Ll,Medicine,,,Sim,Sim
+A11US7Ll,Finance & Marketing,classification; classification,,Não,Sim
+A11US8Ll,Medicine,,classification; classification,Sim,Não
+A11US9Ll,Medicine,classification; classification,classification; classification,Não,Não
+A11US10Ll,Transportation,,,Sim,Sim
+A11US1O1,Finance & Marketing,anomaly detection; classification; classification; data summarization; ranking; representation learning; resource allocation,anomaly detection; classification; classification; ranking; representation learning,Não,Não
+A11US2O1,Demograpy,clustering,classification; regression,Não,Não
+A11US3O1,Computer Networks,clustering,,Não,Sim
+A11US4O1,Literature,ranking,ranking,Não,Não
+A11US5O1,Biology,classification,classification,Não,Não
+A11US6O1,Law,clustering,regression,Não,Não
+A11US7O1,Medicine,,classification; classification,Sim,Não
+A11US8O1,Law,classification; classification,classification; classification,Não,Não
+A11US9O1,Literature,,,Sim,Sim
+A11US10O1,Finance & Marketing,clustering,anomaly detection; classification; classification; data summarization; ranking; representation learning; resource allocation,Não,Não
+A12US1Ge,Health,classification; regression,classification; regression,Não,Não
+A12US2Ge,Health,,classification; graph diffusion; regression; representation learning,Sim,Não
+A12US3Ge,Movies,,,Sim,Sim
+A12US4Ge,Health,classification; regression,classification,Não,Não
+A12US5Ge,Finance & Marketing,anomaly detection; classification; classification; clustering; data summarization; ranking; representation learning; resource allocation,,Não,Sim
+A12US6Ge,Health,classification; regression,classification; regression; representation learning,Não,Não
+A12US7Ge,Demography,,,Sim,Sim
+A12US8Ge,Health,,,Sim,Sim
+A12US9Ge,Dermatology,,,Sim,Sim
+A12US10Ge,Law,classification; classification; ranking; representation learning,classification; classification; representation learning,Não,Não
+A12US1Ll,Health,classification,classification,Não,Não
+A12US2Ll,Biology,classification,,Não,Sim
+A12US3Ll,Biology,,,Sim,Sim
+A12US4Ll,Biology,,classification,Sim,Não
+A12US5Ll,Computer Networks,,,Sim,Sim
+A12US6Ll,Finance & Marketing,anomaly detection; classification; classification,anomaly detection; classification; classification,Não,Não
+A12US7Ll,Medicine,classification; classification,classification; classification,Não,Não
+A12US8Ll,Movies,data summarization,data summarization,Não,Não
+A12US9Ll,Health,,,Sim,Sim
+A12US10Ll,Biology,,,Sim,Sim
+A12US1O1,Health,classification; representation learning,,Não,Sim
+A12US2O1,Biology,classification; graph mining,classification; graph mining,Não,Não
+A12US3O1,Finance & Marketing,classification; classification,anomaly detection; classification; classification,Não,Não
+A12US4O1,Movies,data summarization; ranking; representation learning,data summarization; ranking; representation learning,Não,Não
+A12US5O1,Health,,classification,Sim,Não
+A12US6O1,Biology,,,Sim,Sim
+A12US7O1,Literature,ranking,,Não,Sim
+A12US8O1,Movies,representation learning,representation learning,Não,Não
+A12US9O1,Biology,,graph mining,Sim,Não
+A12US10O1,Health,classification; regression; representation learning,classification; matching,Não,Não
+A13US1Ge,Literature,,,Sim,Sim
+A13US2Ge,Pharmacology,,,Sim,Sim
+A13US3Ge,Biology,,,Sim,Sim
+A13US4Ge,Biology,classification,,Não,Sim
+A13US5Ge,Health,classification; graph diffusion; matching; pricing; regression; representation learning,representation learning,Não,Não
+A13US6Ge,Health,,classification; regression; representation learning,Sim,Não
+A13US7Ge,Finance & Marketing,anomaly detection; classification; classification; clustering; data summarization; ranking; representation learning,anomaly detection; classification; classification; ranking; representation learning,Não,Não
+A13US8Ge,Law,clustering; representation learning,clustering; representation learning,Não,Não
+A13US9Ge,Literature,ranking,clustering; ranking,Não,Não
+A13US10Ge,Finance & Marketing,resource allocation,resource allocation,Não,Não
+A13US1Ll,Biology,classification,classification,Não,Não
+A13US2Ll,Pharmacology,,,Sim,Sim
+A13US3Ll,Biology,,classification,Sim,Não
+A13US4Ll,Health,classification; regression; representation learning,classification; regression; representation learning,Não,Não
+A13US5Ll,Medicine,classification; classification,classification; classification,Não,Não
+A13US6Ll,Medicine,,,Sim,Sim
+A13US7Ll,Medicine,,,Sim,Sim
+A13US8Ll,Pharmacology,,,Sim,Sim
+A13US9Ll,Biology,classification,,Não,Sim
+A13US10Ll,Health,classification; regression,,Não,Sim
+A13US1O1,Biology,,classification,Sim,Não
+A13US2O1,Pharmacology,,,Sim,Sim
+A13US3O1,Biology,classification,classification,Não,Não
+A13US4O1,Biology,classification,classification,Não,Não
+A13US5O1,Biology,classification,classification,Não,Não
+A13US6O1,Pharmacology,,,Sim,Sim
+A13US7O1,Health,classification; matching; regression; representation learning,,Não,Sim
+A13US8O1,Computer Networks,,,Sim,Sim
+A13US9O1,Medicine,,,Sim,Sim
+A13US10O1,Biology,,,Sim,Sim
+A14US1Ge,Demography,,,Sim,Sim
+A14US2Ge,Movies,ranking; representation learning,data summarization; ranking; representation learning,Não,Não
+A14US3Ge,Computer Networks,,,Sim,Sim
+A14US4Ge,Biology,,classification,Sim,Não
+A14US5Ge,Health,classification,classification,Não,Não
+A14US6Ge,Finance & Marketing,,anomaly detection,Sim,Não
+A14US7Ge,Health,,classification; regression; representation learning,Sim,Não
+A14US8Ge,Movies,,,Sim,Sim
+A14US9Ge,Health,,classification; graph diffusion; regression; representation learning,Sim,Não
+A14US10Ge,Law,,classification; classification; ranking; regression; representation learning,Sim,Não
+A14US1Ll,Movies,ranking; representation learning,representation learning,Não,Não
+A14US2Ll,Biology,classification,classification,Não,Não
+A14US3Ll,Computer Networks,,,Sim,Sim
+A14US4Ll,Plant Science,,,Sim,Sim
+A14US5Ll,Movies,representation learning,,Não,Sim
+A14US6Ll,Health,classification,classification,Não,Não
+A14US7Ll,Plant Science,,,Sim,Sim
+A14US8Ll,Biology,,,Sim,Sim
+A14US9Ll,Biology,classification,,Não,Sim
+A14US10Ll,Movies,representation learning,,Não,Sim
+A14US1O1,Movies,representation learning,,Não,Sim
+A14US2O1,Transportation,matching; regression,regression,Não,Não
+A14US3O1,Computer Networks,,,Sim,Sim
+A14US4O1,Health,classification; representation learning,classification; graph diffusion; pricing; regression; representation learning,Não,Não
+A14US5O1,Plant Science,,,Sim,Sim
+A14US6O1,Biology,classification,classification,Não,Não
+A14US7O1,Social Networks,,graph diffusion,Sim,Não
+A14US8O1,Literature,,,Sim,Sim
+A14US9O1,Literature,,,Sim,Sim
+A14US10O1,Biology,classification,classification,Não,Não
+A15US1Ge,Finance & Marketing,clustering,data summarization,Não,Não
+A15US2Ge,Social Work,,,Sim,Sim
+A15US3Ge,Finance & Marketing,anomaly detection; clustering; data summarization; ranking; representation learning,clustering; data summarization,Não,Não
+A15US4Ge,Psychology,classification,classification,Não,Não
+A15US5Ge,Finance & Marketing,anomaly detection; classification; classification,clustering; data summarization; representation learning,Não,Não
+A15US6Ge,Finance & Marketing,classification; classification; representation learning,,Não,Sim
+A15US7Ge,News,bias detection in word embeddings,bias detection in word embeddings,Não,Não
+A15US8Ge,Health,,,Sim,Sim
+A15US9Ge,Biology,,,Sim,Sim
+A15US10Ge,Library,,,Sim,Sim
+A15US1Ll,Finance & Marketing,anomaly detection; classification; classification; clustering; representation learning,anomaly detection; classification; classification; representation learning,Não,Não
+A15US2Ll,Medicine,classification; classification,classification; classification,Não,Não
+A15US3Ll,Social Work,,,Sim,Sim
+A15US4Ll,Biology,classification,classification,Não,Não
+A15US5Ll,Social Media,classification,classification,Não,Não
+A15US6Ll,Finance & Marketing,clustering,clustering,Não,Não
+A15US7Ll,Biology,classification; graph mining,classification; graph mining,Não,Não
+A15US8Ll,Finance & Marketing,,anomaly detection; classification; classification; representation learning,Sim,Não
+A15US9Ll,Health,classification; regression,classification; graph diffusion; pricing; regression; representation learning,Não,Não
+A15US10Ll,Economics,data summarization,,Não,Sim
+A15US1O1,Endocrinology,,,Sim,Sim
+A15US2O1,Health,classification; regression,classification; regression,Não,Não
+A15US3O1,Economics,anomaly detection; classification; representation learning,anomaly detection; classification; representation learning,Não,Não
+A15US4O1,Social Work,,clustering,Sim,Não
+A15US5O1,Finance & Marketing,anomaly detection; clustering; data summarization; representation learning,,Não,Sim
+A15US6O1,Finance & Marketing,anomaly detection; classification; classification; representation learning,anomaly detection; classification; classification; representation learning,Não,Não
+A15US7O1,Computer Networks,,,Sim,Sim
+A15US8O1,Computer Networks,,,Sim,Sim
+A15US9O1,Biology,,classification,Sim,Não
+A15US10O1,Health,classification; regression; representation learning,classification; regression; representation learning,Não,Não
+A16US1Ge,Pediatrics,,,Sim,Sim
+A16US2Ge,Biology,,,Sim,Sim
+A16US3Ge,Nephrology,,,Sim,Sim
+A16US4Ge,Health,classification,classification,Não,Não
+A16US5Ge,Medicine,classification; classification,,Não,Sim
+A16US6Ge,Health,,,Sim,Sim
+A16US7Ge,Health,classification; regression; representation learning,classification; regression; representation learning,Não,Não
+A16US8Ge,Education,,,Sim,Sim
+A16US9Ge,Finance & Marketing,anomaly detection; classification; classification; data summarization,,Não,Sim
+A16US10Ge,Biology,,,Sim,Sim
+A16US1Ll,Biology,classification,classification,Não,Não
+A16US2Ll,Medicine,,,Sim,Sim
+A16US3Ll,Biology,,,Sim,Sim
+A16US4Ll,Health,,classification; regression; representation learning,Sim,Não
+A16US5Ll,Medicine,,classification; classification,Sim,Não
+A16US6Ll,Medicine,,classification; classification,Sim,Não
+A16US7Ll,Biology,classification,classification,Não,Não
+A16US8Ll,Biology,,classification,Sim,Não
+A16US9Ll,Biology,classification,classification; graph mining,Não,Não
+A16US10Ll,Health,,,Sim,Sim
+A16US1O1,Pharmacology,,,Sim,Sim
+A16US2O1,Biology,,classification,Sim,Não
+A16US3O1,Biology,classification,classification,Não,Não
+A16US4O1,Medicine,,,Sim,Sim
+A16US5O1,Biology,,,Sim,Sim
+A16US6O1,Health,classification; representation learning,classification; representation learning,Não,Não
+A16US7O1,Literature,ranking,ranking,Não,Não
+A16US8O1,Biology,classification; graph mining,classification,Não,Não
+A16US9O1,Plant Science,clustering,,Não,Sim
+A16US10O1,Literature,,ranking,Sim,Não
+A17US1Ge,Law,,regression; resource allocation; spatio-temporal process learning; subset selection; subset selection,Sim,Não
+A17US2Ge,Medicine,,classification; classification,Sim,Não
+A17US3Ge,Biology,,classification,Sim,Não
+A17US4Ge,Health,classification; regression; representation learning,classification,Não,Não
+A17US5Ge,Biology,,classification,Sim,Não
+A17US6Ge,Biology,classification,graph mining,Não,Não
+A17US7Ge,Health,,,Sim,Sim
+A17US8Ge,Biology,graph mining,,Não,Sim
+A17US9Ge,Medicine,,,Sim,Sim
+A17US10Ge,Health,classification; graph diffusion; matching; representation learning,classification; graph diffusion; matching; representation learning,Não,Não
+A17US1Ll,Health,,,Sim,Sim
+A17US2Ll,Biology,classification,classification,Não,Não
+A17US3Ll,Biology,classification; graph mining,classification; graph mining,Não,Não
+A17US4Ll,Health,classification; representation learning,graph diffusion; regression,Não,Não
+A17US5Ll,Medicine,,,Sim,Sim
+A17US6Ll,Health,classification; representation learning,classification; representation learning,Não,Não
+A17US7Ll,Medicine,,,Sim,Sim
+A17US8Ll,Medicine,classification; classification,classification; classification,Não,Não
+A17US9Ll,Law,classification; classification; regression,classification; classification; representation learning,Não,Não
+A17US10Ll,Health,,graph diffusion; regression,Sim,Não
+A17US1O1,Biology,,,Sim,Sim
+A17US2O1,Biology,,classification,Sim,Não
+A17US3O1,Biology,classification,classification; graph mining,Não,Não
+A17US4O1,Finance & Marketing,,anomaly detection; resource allocation,Sim,Não
+A17US5O1,Health,graph diffusion; regression,graph diffusion; regression,Não,Não
+A17US6O1,Medicine,classification; classification,classification; classification,Não,Não
+A17US7O1,Literature,,,Sim,Sim
+A17US8O1,Psychology,,,Sim,Sim
+A17US9O1,Health,classification; matching; regression; representation learning,graph diffusion; regression,Não,Não
+A17US10O1,Biology,,classification,Sim,Não
+A18US1Ge,Radiology,,,Sim,Sim
+A18US2Ge,Finance & Marketing,anomaly detection; classification; classification; ranking; representation learning,anomaly detection; classification; classification,Não,Não
+A18US3Ge,Health,,,Sim,Sim
+A18US4Ge,Medicine,,,Sim,Sim
+A18US5Ge,Cardiology,classification; ranking,,Não,Sim
+A18US6Ge,Health,,classification; regression,Sim,Não
+A18US7Ge,Health,classification; regression,classification; regression; representation learning,Não,Não
+A18US8Ge,Finance & Marketing,classification; classification; ranking; representation learning,data summarization,Não,Não
+A18US9Ge,Urban Studies,,,Sim,Sim
+A18US10Ge,Finance & Marketing,clustering,anomaly detection; classification; classification; representation learning,Não,Não
+A18US1Ll,Radiology,,classification,Sim,Não
+A18US2Ll,Biology,classification,classification,Não,Não
+A18US3Ll,Health,classification; regression,classification; regression,Não,Não
+A18US4Ll,Music,,,Sim,Sim
+A18US5Ll,Radiology,classification,classification,Não,Não
+A18US6Ll,Biology,classification; graph mining,classification; graph mining,Não,Não
+A18US7Ll,Health,classification,classification,Não,Não
+A18US8Ll,Music,,,Sim,Sim
+A18US9Ll,Radiology,classification,,Não,Sim
+A18US10Ll,Health,classification; graph diffusion; regression; representation learning,graph diffusion; regression,Não,Não
+A18US1O1,Radiology,classification,classification,Não,Não
+A18US2O1,Biology,classification,classification; graph mining,Não,Não
+A18US3O1,Health,classification; representation learning,classification; representation learning,Não,Não
+A18US4O1,Literature,,ranking,Sim,Não
+A18US5O1,Health,classification; representation learning,classification; representation learning,Não,Não
+A18US6O1,Medicine,classification; classification,classification; classification,Não,Não
+A18US7O1,Music,ranking,ranking,Não,Não
+A18US8O1,Biology,,,Sim,Sim
+A18US9O1,Transportation,,,Sim,Sim
+A18US10O1,Literature,,,Sim,Sim
+A19US1Ge,Biology,,classification,Sim,Não
+A19US2Ge,News,bias detection in word embeddings,,Não,Sim
+A19US3Ge,Finance & Marketing,,anomaly detection; classification; classification; clustering; data summarization; ranking; representation learning,Sim,Não
+A19US4Ge,Health,classification; regression; representation learning,classification; graph diffusion; regression; representation learning,Não,Não
+A19US5Ge,Medicine,classification; classification,classification; classification,Não,Não
+A19US6Ge,Biology,,,Sim,Sim
+A19US7Ge,Health,classification,classification,Não,Não
+A19US8Ge,News,bias detection in word embeddings; ranking,bias detection in word embeddings; ranking,Não,Não
+A19US9Ge,Biology,classification,classification,Não,Não
+A19US10Ge,Finance & Marketing,,classification; classification,Sim,Não
+A19US1Ll,Library,,,Sim,Sim
+A19US2Ll,Literature,,ranking,Sim,Não
+A19US3Ll,Biology,classification,classification,Não,Não
+A19US4Ll,News,,,Sim,Sim
+A19US5Ll,Medicine,classification; classification,,Não,Sim
+A19US6Ll,Finance & Marketing,classification; classification,classification; classification,Não,Não
+A19US7Ll,Health,classification; matching; regression; representation learning,classification; matching; regression; representation learning,Não,Não
+A19US8Ll,Computer Vision,anomaly detection; classification; representation learning,anomaly detection; classification; representation learning,Não,Não
+A19US9Ll,News,bias detection in word embeddings; ranking,bias detection in word embeddings; ranking,Não,Não
+A19US10Ll,Medicine,,,Sim,Sim
+A19US1O1,Literature,,ranking,Sim,Não
+A19US2O1,Biology,classification,classification,Não,Não
+A19US3O1,News,,,Sim,Sim
+A19US4O1,Literature,ranking,ranking,Não,Não
+A19US5O1,Finance & Marketing,anomaly detection; classification; classification; clustering; ranking,representation learning,Não,Não
+A19US6O1,Plant Science,,,Sim,Sim
+A19US7O1,Finance & Marketing,anomaly detection; classification; classification; ranking; representation learning,anomaly detection; classification; classification; ranking; representation learning,Não,Não
+A19US8O1,Computer Vision,data summarization,data summarization,Não,Não
+A19US9O1,Computer Networks,clustering,,Não,Sim
+A19US10O1,Literature,,,Sim,Sim
+A20US1Ge,Health,classification,classification; matching,Não,Não
+A20US2Ge,Medicine,,,Sim,Sim
+A20US3Ge,Health,classification; representation learning,classification; regression; representation learning,Não,Não
+A20US4Ge,Health,,,Sim,Sim
+A20US5Ge,Social Work,,spatio-temporal process learning,Sim,Não
+A20US6Ge,Plant Science,clustering,,Não,Sim
+A20US7Ge,Health,classification; regression,classification; regression; representation learning,Não,Não
+A20US8Ge,Law,,,Sim,Sim
+A20US9Ge,Finance & Marketing,data summarization,data summarization,Não,Não
+A20US10Ge,Health,representation learning,classification; regression,Não,Não
+A20US1Ll,Medicine,classification; classification,classification; classification,Não,Não
+A20US2Ll,Health,classification; regression,,Não,Sim
+A20US3Ll,Biology,classification,,Não,Sim
+A20US4Ll,Biology,classification,classification,Não,Não
+A20US5Ll,Finance & Marketing,data summarization,anomaly detection; classification; classification; clustering; data summarization; ranking,Não,Não
+A20US6Ll,Biology,classification,classification; graph mining,Não,Não
+A20US7Ll,Social Work,,clustering,Sim,Não
+A20US8Ll,Psychology,,classification,Sim,Não
+A20US9Ll,Health,,classification,Sim,Não
+A20US10Ll,Movies,representation learning,data summarization; ranking; representation learning,Não,Não
+A20US1O1,Health,,classification,Sim,Não
+A20US2O1,Health,classification; regression; representation learning,classification; regression; representation learning,Não,Não
+A20US3O1,Social Work,spatio-temporal process learning,,Não,Sim
+A20US4O1,Finance & Marketing,anomaly detection; classification; classification; clustering; data summarization; ranking; representation learning,anomaly detection; classification; classification; representation learning,Não,Não
+A20US5O1,Health,classification; matching,classification; regression; representation learning,Não,Não
+A20US6O1,Medicine,classification; classification,classification; classification,Não,Não
+A20US7O1,Computer Networks,,,Sim,Sim
+A20US8O1,Computer Networks,clustering,clustering,Não,Não
+A20US9O1,Health,,,Sim,Sim
+A20US10O1,Health,classification; regression,,Não,Sim
+A21US1Ge,Biology,,,Sim,Sim
+A21US2Ge,Biology,classification,,Não,Sim
+A21US3Ge,Biology,classification,,Não,Sim
+A21US4Ge,Biology,,,Sim,Sim
+A21US5Ge,Finance & Marketing,anomaly detection; classification; classification,anomaly detection; classification; classification,Não,Não
+A21US6Ge,Biology,classification,,Não,Sim
+A21US7Ge,Finance & Marketing,anomaly detection; classification; classification; ranking; representation learning,anomaly detection; classification; classification; ranking; representation learning,Não,Não
+A21US8Ge,Health,classification,classification,Não,Não
+A21US9Ge,Finance & Marketing,representation learning,anomaly detection; classification; classification; clustering; representation learning,Não,Não
+A21US10Ge,Law,classification; classification; clustering; regression; representation learning; spatio-temporal process learning; subset selection; subset selection,,Não,Sim
+A21US1Ll,Medicine,,classification; classification,Sim,Não
+A21US2Ll,Health,classification; regression,representation learning,Não,Não
+A21US3Ll,Economics,anomaly detection; classification; ranking; regression; representation learning; risk assessment; subset selection,anomaly detection; classification; representation learning,Não,Não
+A21US4Ll,Medicine,classification; classification,,Não,Sim
+A21US5Ll,Literature,,,Sim,Sim
+A21US6Ll,Biology,,,Sim,Sim
+A21US7Ll,Biology,classification,classification; graph mining,Não,Não
+A21US8Ll,Finance & Marketing,anomaly detection; classification; classification,anomaly detection; classification; classification,Não,Não
+A21US9Ll,Biology,classification,classification,Não,Não
+A21US10Ll,Medicine,,classification; classification,Sim,Não
+A21US1O1,Urban Studies,,,Sim,Sim
+A21US2O1,Biology,classification,,Não,Sim
+A21US3O1,Biology,classification; graph mining,,Não,Sim
+A21US4O1,Finance & Marketing,anomaly detection; classification; classification; representation learning,anomaly detection; classification; classification; clustering; representation learning,Não,Não
+A21US5O1,Biology,classification; graph mining,classification; graph mining,Não,Não
+A21US6O1,Computer Networks,clustering,,Não,Sim
+A21US7O1,Transportation,graph augmentation; matching; pricing; regression,regression,Não,Não
+A21US8O1,Law,,classification; classification,Sim,Não
+A21US9O1,Education,data summarization; representation learning,data summarization; representation learning,Não,Não
+A21US10O1,Biology,,,Sim,Sim
+A22US1Ge,Biology,classification,classification,Não,Não
+A22US2Ge,Biology,classification,,Não,Sim
+A22US3Ge,Biology,,,Sim,Sim
+A22US4Ge,Health,,classification,Sim,Não
+A22US5Ge,Biology,,graph mining,Sim,Não
+A22US6Ge,Finance & Marketing,anomaly detection; classification; classification; ranking; representation learning,anomaly detection,Não,Não
+A22US7Ge,Biology,,,Sim,Sim
+A22US8Ge,Biology,classification,classification,Não,Não
+A22US9Ge,Finance & Marketing,anomaly detection; classification; classification; ranking; representation learning,,Não,Sim
+A22US10Ge,Law,,,Sim,Sim
+A22US1Ll,Music,,ranking,Sim,Não
+A22US2Ll,Music,,,Sim,Sim
+A22US3Ll,Biology,classification,classification,Não,Não
+A22US4Ll,Music,,,Sim,Sim
+A22US5Ll,Information Systems,,subset selection,Sim,Não
+A22US6Ll,Biology,classification,classification,Não,Não
+A22US7Ll,Biology,classification,classification,Não,Não
+A22US8Ll,Biology,classification,classification,Não,Não
+A22US9Ll,Psychology,classification,classification,Não,Não
+A22US10Ll,Biology,classification,classification,Não,Não
+A22US1O1,Biology,classification,classification,Não,Não
+A22US2O1,Biology,classification; graph mining,classification; graph mining,Não,Não
+A22US3O1,Literature,,,Sim,Sim
+A22US4O1,Biology,classification,classification,Não,Não
+A22US5O1,Biology,classification,,Não,Sim
+A22US6O1,Biology,classification,classification,Não,Não
+A22US7O1,Biology,classification,,Não,Sim
+A22US8O1,Biology,,,Sim,Sim
+A22US9O1,Transportation,,graph augmentation; matching; pricing; regression,Sim,Não
+A22US10O1,Education,classification; ranking; regression; representation learning; risk assessment,classification; representation learning,Não,Não
+A23US1Ge,Biology,,,Sim,Sim
+A23US2Ge,News,,,Sim,Sim
+A23US3Ge,Biology,graph mining,graph mining,Não,Não
+A23US4Ge,Biology,classification,,Não,Sim
+A23US5Ge,Biology,,,Sim,Sim
+A23US6Ge,Biology,classification; graph mining,classification,Não,Não
+A23US7Ge,Library,,,Sim,Sim
+A23US8Ge,Biology,,graph mining,Sim,Não
+A23US9Ge,Health,classification; graph diffusion; matching; pricing; regression; representation learning,classification; graph diffusion; matching; pricing; regression; representation learning,Não,Não
+A23US10Ge,Literature,,,Sim,Sim
+A23US1Ll,Medicine,classification; classification,,Não,Sim
+A23US2Ll,Literature,clustering,ranking,Não,Não
+A23US3Ll,Transportation,,,Sim,Sim
+A23US4Ll,Movies,data summarization,,Não,Sim
+A23US5Ll,Medicine,classification; classification,classification; classification,Não,Não
+A23US6Ll,Transportation,,,Sim,Sim
+A23US7Ll,Medicine,,,Sim,Sim
+A23US8Ll,Medicine,,,Sim,Sim
+A23US9Ll,Literature,,,Sim,Sim
+A23US10Ll,Medicine,,,Sim,Sim
+A23US1O1,Literature,,clustering,Sim,Não
+A23US2O1,Biology,classification,classification,Não,Não
+A23US3O1,Sport,,,Sim,Sim
+A23US4O1,News,clustering,,Não,Sim
+A23US5O1,Literature,,,Sim,Sim
+A23US6O1,Finance & Marketing,,,Sim,Sim
+A23US7O1,Finance & Marketing,anomaly detection; classification; classification; representation learning,data summarization,Não,Não
+A23US8O1,Education,,data summarization,Sim,Não
+A23US9O1,Biology,classification,,Não,Sim
+A23US10O1,Biology,,,Sim,Sim
+A24US1Ge,Medicine,,classification; classification,Sim,Não
+A24US2Ge,Information Systems,data summarization,data summarization,Não,Não
+A24US3Ge,Library,,clustering; matching,Sim,Não
+A24US4Ge,News,clustering,bias detection in word embeddings; clustering,Não,Não
+A24US5Ge,Movies,data summarization; ranking,data summarization; ranking,Não,Não
+A24US6Ge,Movies,,,Sim,Sim
+A24US7Ge,Health,classification; regression,representation learning,Não,Não
+A24US8Ge,Biology,classification,,Não,Sim
+A24US9Ge,Music,,,Sim,Sim
+A24US10Ge,Finance & Marketing,representation learning,classification; classification; representation learning,Não,Não
+A24US1Ll,Health,classification; regression,representation learning,Não,Não
+A24US2Ll,Medicine,classification; classification,classification; classification,Não,Não
+A24US3Ll,Library,,,Sim,Sim
+A24US4Ll,Health,,classification; representation learning,Sim,Não
+A24US5Ll,Health,representation learning,representation learning,Não,Não
+A24US6Ll,Biology,,classification; graph mining,Sim,Não
+A24US7Ll,Medicine,classification; classification,classification; classification,Não,Não
+A24US8Ll,Law,,,Sim,Sim
+A24US9Ll,Health,classification; matching; regression,,Não,Sim
+A24US10Ll,Biology,,,Sim,Sim
+A24US1O1,Biology,classification; graph mining,classification; graph mining,Não,Não
+A24US2O1,Computer Networks,,,Sim,Sim
+A24US3O1,Health,classification,classification,Não,Não
+A24US4O1,Education,classification; representation learning,classification; representation learning,Não,Não
+A24US5O1,Movies,representation learning,representation learning,Não,Não
+A24US6O1,Music,,,Sim,Sim
+A24US7O1,Law,classification; classification; representation learning,classification; classification; ranking; regression; representation learning; resource allocation; spatio-temporal process learning; task assignment,Não,Não
+A24US8O1,Library,,,Sim,Sim
+A24US9O1,Transportation,,graph augmentation; matching; pricing; regression,Sim,Não
+A24US10O1,Biology,,,Sim,Sim
+A25US1Ge,Biology,classification; graph mining,classification,Não,Não
+A25US2Ge,Medicine,classification; classification,classification; classification,Não,Não
+A25US3Ge,Health,classification; regression; representation learning,,Não,Sim
+A25US4Ge,Biology,,classification,Sim,Não
+A25US5Ge,Music,,,Sim,Sim
+A25US6Ge,Health,classification,graph diffusion; representation learning,Não,Não
+A25US7Ge,Finance & Marketing,resource allocation,data summarization,Não,Não
+A25US8Ge,Literature,,,Sim,Sim
+A25US9Ge,Biology,,,Sim,Sim
+A25US10Ge,Biology,,,Sim,Sim
+A25US1Ll,Medicine,,classification; classification,Sim,Não
+A25US2Ll,Movies,,data summarization; ranking; representation learning,Sim,Não
+A25US3Ll,Education,data summarization,representation learning,Não,Não
+A25US4Ll,Medicine,,classification; classification,Sim,Não
+A25US5Ll,Biology,classification,,Não,Sim
+A25US6Ll,Medicine,classification; classification,,Não,Sim
+A25US7Ll,Education,classification,classification,Não,Não
+A25US8Ll,Medicine,classification; classification,classification; classification,Não,Não
+A25US9Ll,Medicine,,,Sim,Sim
+A25US10Ll,Education,classification; regression,,Não,Sim
+A25US1O1,Biology,,,Sim,Sim
+A25US2O1,Biology,classification,classification,Não,Não
+A25US3O1,Literature,,,Sim,Sim
+A25US4O1,Literature,ranking,ranking,Não,Não
+A25US5O1,Law,classification; classification; ranking; regression; representation learning,classification; classification; ranking; regression; representation learning; resource allocation; spatio-temporal process learning; task assignment,Não,Não
+A25US6O1,Finance & Marketing,clustering,anomaly detection,Não,Não
+A25US7O1,Information Systems,classification; representation learning,,Não,Sim
+A25US8O1,Movies,,,Sim,Sim
+A25US9O1,Biology,,,Sim,Sim
+A25US10O1,Medicine,classification; classification,classification; classification,Não,Não
+A26US1Ge,Biology,,classification,Sim,Não
+A26US2Ge,Biology,classification,,Não,Sim
+A26US3Ge,Finance & Marketing,anomaly detection; clustering; data summarization; ranking; representation learning,ranking,Não,Não
+A26US4Ge,Health,,classification,Sim,Não
+A26US5Ge,Finance & Marketing,anomaly detection; clustering; data summarization; ranking; representation learning,anomaly detection; clustering; data summarization; ranking; representation learning,Não,Não
+A26US6Ge,Health,,,Sim,Sim
+A26US7Ge,Literature,,ranking,Sim,Não
+A26US8Ge,Biology,,,Sim,Sim
+A26US9Ge,Finance & Marketing,anomaly detection; classification; classification; clustering,anomaly detection; classification; classification; clustering,Não,Não
+A26US10Ge,Law,classification; classification; clustering; ranking; regression; representation learning; resource allocation; spatio-temporal process learning; subset selection; subset selection; task assignment,classification; classification; clustering; ranking; regression; representation learning; resource allocation; spatio-temporal process learning; subset selection; subset selection; task assignment,Não,Não
+A26US1Ll,Medicine,,classification; classification,Sim,Não
+A26US2Ll,Medicine,,classification; classification,Sim,Não
+A26US3Ll,Biology,classification,classification,Não,Não
+A26US4Ll,Biology,graph mining,graph mining,Não,Não
+A26US5Ll,Medicine,,,Sim,Sim
+A26US6Ll,Medicine,classification; classification,classification; classification,Não,Não
+A26US7Ll,Medicine,classification; classification,classification; classification,Não,Não
+A26US8Ll,Biology,classification,graph mining,Não,Não
+A26US9Ll,Health,classification; regression; representation learning,,Não,Sim
+A26US10Ll,Education,classification,classification,Não,Não
+A26US1O1,Movies,data summarization,representation learning,Não,Não
+A26US2O1,Computer Networks,,,Sim,Sim
+A26US3O1,Health,classification; regression; representation learning,classification; regression; representation learning,Não,Não
+A26US4O1,Movies,data summarization,data summarization,Não,Não
+A26US5O1,Literature,,,Sim,Sim
+A26US6O1,Computer Networks,,,Sim,Sim
+A26US7O1,Biology,classification,classification,Não,Não
+A26US8O1,Biology,classification; graph mining,classification; graph mining,Não,Não
+A26US9O1,Biology,,classification,Sim,Não
+A26US10O1,Education,classification; regression,classification,Não,Não
+A27US1Ge,Biology,,,Sim,Sim
+A27US2Ge,Medicine,classification; classification,classification; classification,Não,Não
+A27US3Ge,Biology,,,Sim,Sim
+A27US4Ge,Music,,,Sim,Sim
+A27US5Ge,News,bias detection in word embeddings,bias detection in word embeddings,Não,Não
+A27US6Ge,Health,representation learning,representation learning,Não,Não
+A27US7Ge,Finance & Marketing,anomaly detection; clustering; data summarization; ranking; representation learning,anomaly detection; clustering; data summarization; ranking; representation learning,Não,Não
+A27US8Ge,Health,classification; regression,classification; regression; representation learning,Não,Não
+A27US9Ge,Literature,clustering,,Não,Sim
+A27US10Ge,Biology,,,Sim,Sim
+A27US1Ll,Biology,classification,classification,Não,Não
+A27US2Ll,Education,representation learning,classification; data summarization; ranking; regression; representation learning; subset selection,Não,Não
+A27US3Ll,Medicine,,,Sim,Sim
+A27US4Ll,Medicine,,,Sim,Sim
+A27US5Ll,Medicine,,,Sim,Sim
+A27US6Ll,Education,classification; data summarization; ranking; regression; representation learning; subset selection,classification; representation learning,Não,Não
+A27US7Ll,Medicine,classification; classification,,Não,Sim
+A27US8Ll,Medicine,,,Sim,Sim
+A27US9Ll,Medicine,classification; classification,classification; classification,Não,Não
+A27US10Ll,Education,classification; regression,representation learning,Não,Não
+A27US1O1,Computer Networks,,,Sim,Sim
+A27US2O1,Health,classification; graph diffusion; regression; representation learning,classification; graph diffusion; regression; representation learning,Não,Não
+A27US3O1,Literature,,,Sim,Sim
+A27US4O1,Computer Networks,clustering,clustering,Não,Não
+A27US5O1,Biology,,,Sim,Sim
+A27US6O1,Finance & Marketing,anomaly detection; classification; classification; representation learning,anomaly detection; classification; classification; representation learning,Não,Não
+A27US7O1,Literature,,,Sim,Sim
+A27US8O1,Finance & Marketing,anomaly detection; classification; classification; ranking; representation learning,anomaly detection,Não,Não
+A27US9O1,Biology,,classification,Sim,Não
+A27US10O1,Computer Networks,,,Sim,Sim
+A28US1Ge,Health,classification; regression; representation learning,,Não,Sim
+A28US2Ge,Movies,,,Sim,Sim
+A28US3Ge,Health,representation learning,,Não,Sim
+A28US4Ge,Biology,classification,classification,Não,Não
+A28US5Ge,Health,classification; graph diffusion; matching; pricing; regression; representation learning,classification; matching; regression,Não,Não
+A28US6Ge,Transportation,,,Sim,Sim
+A28US7Ge,Psychology,classification,,Não,Sim
+A28US8Ge,Biology,classification; graph mining,,Não,Sim
+A28US9Ge,Transportation,,,Sim,Sim
+A28US10Ge,Health,,classification; regression; representation learning,Sim,Não
+A28US1Ll,Transportation,,,Sim,Sim
+A28US2Ll,Movies,ranking; representation learning,representation learning,Não,Não
+A28US3Ll,Music,,,Sim,Sim
+A28US4Ll,Transportation,,,Sim,Sim
+A28US5Ll,Biology,,,Sim,Sim
+A28US6Ll,Literature,,,Sim,Sim
+A28US7Ll,Medicine,classification; classification,classification; classification,Não,Não
+A28US8Ll,Transportation,matching,matching,Não,Não
+A28US9Ll,Biology,classification,classification,Não,Não
+A28US10Ll,Transportation,,regression,Sim,Não
+A28US1O1,Transportation,regression,,Não,Sim
+A28US2O1,Biology,,,Sim,Sim
+A28US3O1,Health,,,Sim,Sim
+A28US4O1,Transportation,graph augmentation; matching; regression,graph augmentation; matching; regression,Não,Não
+A28US5O1,Computer Networks,,,Sim,Sim
+A28US6O1,Biology,,,Sim,Sim
+A28US7O1,Finance & Marketing,anomaly detection,anomaly detection,Não,Não
+A28US8O1,Biology,,,Sim,Sim
+A28US9O1,Literature,clustering,clustering,Não,Não
+A28US10O1,Dermatology,,,Sim,Sim
+A29US1Ge,Movies,data summarization; ranking; representation learning,,Não,Sim
+A29US2Ge,Health,classification; representation learning,classification; representation learning,Não,Não
+A29US3Ge,Sociology,,,Sim,Sim
+A29US4Ge,Demography,,,Sim,Sim
+A29US5Ge,Biology,classification; graph mining,classification; graph mining,Não,Não
+A29US6Ge,News,bias detection in word embeddings; clustering; ranking,bias detection in word embeddings; clustering; ranking,Não,Não
+A29US7Ge,Finance & Marketing,advertising; anomaly detection; classification; classification; clustering; data summarization; pricing; ranking; representation learning; resource allocation,advertising; anomaly detection; classification; classification; clustering; data summarization; pricing; ranking; representation learning; resource allocation,Não,Não
+A29US8Ge,Biology,,classification,Sim,Não
+A29US9Ge,Library,,,Sim,Sim
+A29US10Ge,Transportation,regression,regression,Não,Não
+A29US1Ll,Movies,representation learning,representation learning,Não,Não
+A29US2Ll,Medicine,,classification; classification,Sim,Não
+A29US3Ll,Biology,,classification; graph mining,Sim,Não
+A29US4Ll,Biology,classification,,Não,Sim
+A29US5Ll,Medicine,classification; classification,classification; classification,Não,Não
+A29US6Ll,Transportation,regression,graph augmentation; regression,Não,Não
+A29US7Ll,Biology,,classification; graph mining,Sim,Não
+A29US8Ll,Health,classification; matching; regression; representation learning,graph diffusion; regression,Não,Não
+A29US9Ll,Biology,,,Sim,Sim
+A29US10Ll,Movies,representation learning,,Não,Sim
+A29US1O1,Movies,data summarization; ranking; representation learning,,Não,Sim
+A29US2O1,Health,classification; representation learning,classification; regression; representation learning,Não,Não
+A29US3O1,Cardiology,classification,classification; ranking,Não,Não
+A29US4O1,Biology,classification; graph mining,classification; graph mining,Não,Não
+A29US5O1,Literature,ranking,ranking,Não,Não
+A29US6O1,Education,classification; regression; representation learning,classification; regression; representation learning,Não,Não
+A29US7O1,Finance & Marketing,anomaly detection; classification; classification; ranking; representation learning,anomaly detection; classification; classification; representation learning,Não,Não
+A29US8O1,Computer Networks,,,Sim,Sim
+A29US9O1,Education,representation learning,data summarization,Não,Não
+A29US10O1,Biology,classification,classification,Não,Não
+A30US1Ge,Health,classification; representation learning,classification; representation learning,Não,Não
+A30US2Ge,Biology,classification,,Não,Sim
+A30US3Ge,Computer Networks,,,Sim,Sim
+A30US4Ge,Social Work,clustering,clustering,Não,Não
+A30US5Ge,Health,graph diffusion; representation learning,classification; graph diffusion; matching; regression; representation learning,Não,Não
+A30US6Ge,Health,classification,classification; representation learning,Não,Não
+A30US7Ge,Biology,classification; graph mining,classification; graph mining,Não,Não
+A30US8Ge,Demography,,,Sim,Sim
+A30US9Ge,Finance & Marketing,anomaly detection; classification; classification; ranking,classification; classification,Não,Não
+A30US10Ge,Music,,,Sim,Sim
+A30US1Ll,Literature,,,Sim,Sim
+A30US2Ll,Health,classification; graph diffusion; matching; pricing; regression; representation learning,representation learning,Não,Não
+A30US3Ll,Health,,classification; representation learning,Sim,Não
+A30US4Ll,Sociology,,,Sim,Sim
+A30US5Ll,Biology,classification,classification,Não,Não
+A30US6Ll,Biology,,classification,Sim,Não
+A30US7Ll,Biology,graph mining,graph mining,Não,Não
+A30US8Ll,Biology,classification,classification,Não,Não
+A30US9Ll,Biology,,classification,Sim,Não
+A30US10Ll,Social Media,,,Sim,Sim
+A30US1O1,Biology,classification,classification; graph mining,Não,Não
+A30US2O1,Biology,,,Sim,Sim
+A30US3O1,Biology,classification,classification,Não,Não
+A30US4O1,Finance & Marketing,anomaly detection; classification; classification; data summarization; ranking; representation learning; resource allocation,anomaly detection; classification; classification; representation learning,Não,Não
+A30US5O1,Literature,,,Sim,Sim
+A30US6O1,Biology,classification,classification,Não,Não
+A30US7O1,Biology,,classification,Sim,Não
+A30US8O1,Information Systems,,,Sim,Sim
+A30US9O1,Biology,classification,,Não,Sim
+A30US10O1,Law,classification; classification; ranking; regression; representation learning; risk assessment; task assignment,classification; classification; ranking; regression; representation learning; risk assessment; task assignment,Não,Não
+A31US1Ge,Literature,,clustering,Sim,Não
+A31US2Ge,Literature,,,Sim,Sim
+A31US3Ge,Biology,classification,classification,Não,Não
+A31US4Ge,Psychology,classification,classification,Não,Não
+A31US5Ge,Biology,,,Sim,Sim
+A31US6Ge,Literature,clustering; ranking,clustering; ranking,Não,Não
+A31US7Ge,Finance & Marketing,anomaly detection; classification; classification; data summarization; ranking; representation learning; resource allocation,anomaly detection; classification; classification; data summarization; ranking; representation learning; resource allocation,Não,Não
+A31US8Ge,Medicine,classification; classification,classification; classification,Não,Não
+A31US9Ge,Music,,ranking,Sim,Não
+A31US10Ge,Literature,,,Sim,Sim
+A31US1Ll,Transportation,,,Sim,Sim
+A31US2Ll,Medicine,,classification; classification,Sim,Não
+A31US3Ll,Medicine,classification; classification,classification; classification,Não,Não
+A31US4Ll,Music,,,Sim,Sim
+A31US5Ll,Biology,,,Sim,Sim
+A31US6Ll,Education,data summarization,data summarization,Não,Não
+A31US7Ll,Finance & Marketing,anomaly detection,advertising; anomaly detection; classification; classification; clustering; data summarization; pricing; ranking; representation learning,Não,Não
+A31US8Ll,Transportation,matching; regression,,Não,Sim
+A31US9Ll,Biology,classification,classification,Não,Não
+A31US10Ll,Medicine,,,Sim,Sim
+A31US1O1,Literature,clustering,clustering,Não,Não
+A31US2O1,Urban Studies,,,Sim,Sim
+A31US3O1,Literature,,clustering; ranking,Sim,Não
+A31US4O1,Education,,,Sim,Sim
+A31US5O1,Computer Networks,,,Sim,Sim
+A31US6O1,Medicine,,,Sim,Sim
+A31US7O1,Health,,,Sim,Sim
+A31US8O1,Literature,,,Sim,Sim
+A31US9O1,Biology,classification; graph mining,classification; graph mining,Não,Não
+A31US10O1,Health,classification; representation learning,classification; representation learning,Não,Não
+A32US1Ge,Social Media,bias detection in language models; classification; sentiment analysis; speech recognition,bias detection in language models; bias detection in word embeddings; sentiment analysis; speech recognition,Não,Não
+A32US2Ge,Literature,,clustering,Sim,Não
+A32US3Ge,News,,,Sim,Sim
+A32US4Ge,Health,classification,classification,Não,Não
+A32US5Ge,Social Media,bias detection in language models; sentiment analysis; speech recognition,classification; sentiment analysis,Não,Não
+A32US6Ge,Literature,clustering; ranking,clustering; ranking,Não,Não
+A32US7Ge,Health,classification; regression; representation learning,classification; regression; representation learning,Não,Não
+A32US8Ge,Linguistics,sentiment analysis; sentiment analysis; sentiment analysis,sentiment analysis; sentiment analysis; sentiment analysis,Não,Não
+A32US9Ge,Transportation,,,Sim,Sim
+A32US10Ge,Law,classification; classification; regression; representation learning,classification; classification; regression; representation learning,Não,Não
+A32US1Ll,Social Media,,bias detection in language models; bias detection in word embeddings; classification; ranking; sentiment analysis; speech recognition,Sim,Não
+A32US2Ll,Biology,,,Sim,Sim
+A32US3Ll,Literature,,,Sim,Sim
+A32US4Ll,Sport,,,Sim,Sim
+A32US5Ll,Literature,,,Sim,Sim
+A32US6Ll,Biology,classification,classification,Não,Não
+A32US7Ll,Literature,ranking,ranking,Não,Não
+A32US8Ll,Biology,classification,classification,Não,Não
+A32US9Ll,Biology,classification,classification,Não,Não
+A32US10Ll,Literature,,,Sim,Sim
+A32US1O1,Biology,classification,,Não,Sim
+A32US2O1,Health,classification; regression; representation learning,classification; representation learning,Não,Não
+A32US3O1,Social Media,,,Sim,Sim
+A32US4O1,Biology,classification,classification; graph mining,Não,Não
+A32US5O1,Computer Networks,clustering,clustering,Não,Não
+A32US6O1,Education,classification; regression,classification; regression,Não,Não
+A32US7O1,Literature,clustering,clustering,Não,Não
+A32US8O1,Linguistics,sentiment analysis; sentiment analysis; sentiment analysis,entity resolution; sentiment analysis; sentiment analysis; sentiment analysis,Não,Não
+A32US9O1,Finance & Marketing,anomaly detection,advertising; anomaly detection; classification; classification; data summarization; pricing; representation learning,Não,Não
+A32US10O1,Health,classification; matching,,Não,Sim
+A33US1Ge,News,bias detection in word embeddings; clustering,bias detection in word embeddings; clustering,Não,Não
+A33US2Ge,Health,,,Sim,Sim
+A33US3Ge,News,clustering,clustering,Não,Não
+A33US4Ge,Library,,clustering,Sim,Não
+A33US5Ge,Biology,classification; graph mining,classification,Não,Não
+A33US6Ge,Health,classification; graph diffusion; matching; pricing; regression; representation learning,classification; regression; representation learning,Não,Não
+A33US7Ge,Health,,,Sim,Sim
+A33US8Ge,Computer Networks,,,Sim,Sim
+A33US9Ge,Biology,graph mining,graph mining,Não,Não
+A33US10Ge,Literature,,,Sim,Sim
+A33US1Ll,News,bias detection in word embeddings,,Não,Sim
+A33US2Ll,News,bias detection in word embeddings; clustering; ranking,clustering,Não,Não
+A33US3Ll,Medicine,classification; classification,classification; classification,Não,Não
+A33US4Ll,Biology,classification,graph mining,Não,Não
+A33US5Ll,News,clustering,clustering,Não,Não
+A33US6Ll,News,clustering,clustering,Não,Não
+A33US7Ll,Biology,,graph mining,Sim,Não
+A33US8Ll,Medicine,classification; classification,classification; classification,Não,Não
+A33US9Ll,News,bias detection in word embeddings; clustering; ranking,bias detection in word embeddings; clustering; ranking,Não,Não
+A33US10Ll,News,bias detection in word embeddings,bias detection in word embeddings,Não,Não
+A33US1O1,News,bias detection in word embeddings; clustering,bias detection in word embeddings; clustering,Não,Não
+A33US2O1,News,clustering,,Não,Sim
+A33US3O1,Literature,clustering,clustering,Não,Não
+A33US4O1,Biology,graph mining,graph mining,Não,Não
+A33US5O1,Biology,classification,,Não,Sim
+A33US6O1,News,,,Sim,Sim
+A33US7O1,Literature,clustering; ranking,clustering; ranking,Não,Não
+A33US8O1,Biology,classification; graph mining,graph mining,Não,Não
+A33US9O1,Library,,,Sim,Sim
+A33US10O1,Biology,,,Sim,Sim
+A34US1Ge,Biology,classification,classification,Não,Não
+A34US2Ge,Biology,graph mining,classification,Não,Não
+A34US3Ge,Biology,graph mining,graph mining,Não,Não
+A34US4Ge,Literature,,,Sim,Sim
+A34US5Ge,Biology,,,Sim,Sim
+A34US6Ge,Computer Networks,clustering,,Não,Sim
+A34US7Ge,Biology,classification; graph mining,classification; graph mining,Não,Não
+A34US8Ge,Health,representation learning,classification; graph diffusion; matching; representation learning,Não,Não
+A34US9Ge,Biology,,,Sim,Sim
+A34US10Ge,Law,classification; classification; regression; representation learning,classification; classification; representation learning,Não,Não
+A34US1Ll,Biology,,,Sim,Sim
+A34US2Ll,Finance & Marketing,data summarization,anomaly detection,Não,Não
+A34US3Ll,Biology,classification,,Não,Sim
+A34US4Ll,Biology,classification,graph mining,Não,Não
+A34US5Ll,Biology,classification,,Não,Sim
+A34US6Ll,Medicine,classification; classification,classification; classification,Não,Não
+A34US7Ll,Biology,classification; graph mining,graph mining,Não,Não
+A34US8Ll,Finance & Marketing,anomaly detection; classification; classification; representation learning,anomaly detection; classification; classification; representation learning,Não,Não
+A34US9Ll,Biology,classification; graph mining,,Não,Sim
+A34US10Ll,Plant Science,,,Sim,Sim
+A34US1O1,Biology,classification,classification,Não,Não
+A34US2O1,Health,graph diffusion; matching; representation learning,classification; graph diffusion; pricing; regression; representation learning,Não,Não
+A34US3O1,Computer Networks,,,Sim,Sim
+A34US4O1,Finance & Marketing,anomaly detection; classification; classification; data summarization; ranking; representation learning; resource allocation,classification; classification; ranking,Não,Não
+A34US5O1,Biology,classification,classification,Não,Não
+A34US6O1,Biology,classification,classification,Não,Não
+A34US7O1,Literature,,,Sim,Sim
+A34US8O1,Education,classification,classification; representation learning,Não,Não
+A34US9O1,Biology,classification,,Não,Sim
+A34US10O1,Biology,classification,graph mining,Não,Não
+A35US1Ge,Biology,classification; graph mining,classification; graph mining,Não,Não
+A35US2Ge,Biology,classification; graph mining,classification; graph mining,Não,Não
+A35US3Ge,Finance & Marketing,anomaly detection; classification; classification; data summarization; ranking; representation learning; resource allocation,anomaly detection; classification; classification; data summarization; ranking; representation learning; resource allocation,Não,Não
+A35US4Ge,Biology,graph mining,classification; graph mining,Não,Não
+A35US5Ge,Biology,classification; graph mining,classification; graph mining,Não,Não
+A35US6Ge,Biology,classification; graph mining,classification; graph mining,Não,Não
+A35US7Ge,Biology,classification,classification,Não,Não
+A35US8Ge,Biology,classification,classification; graph mining,Não,Não
+A35US9Ge,Finance & Marketing,classification; classification,anomaly detection; resource allocation,Não,Não
+A35US10Ge,Biology,classification,classification,Não,Não
+A35US1Ll,Plant Science,,,Sim,Sim
+A35US2Ll,Finance & Marketing,anomaly detection; classification; classification; ranking; representation learning,anomaly detection; classification; classification; clustering; representation learning,Não,Não
+A35US3Ll,Literature,,clustering,Sim,Não
+A35US4Ll,Computer Vision,anomaly detection; classification; data summarization; representation learning,anomaly detection; classification; data summarization; representation learning,Não,Não
+A35US5Ll,Biology,classification,classification,Não,Não
+A35US6Ll,Literature,,clustering; ranking,Sim,Não
+A35US7Ll,Literature,ranking,ranking,Não,Não
+A35US8Ll,Finance & Marketing,,anomaly detection; classification; classification; ranking,Sim,Não
+A35US9Ll,Movies,,,Sim,Sim
+A35US10Ll,Information Systems,classification; matching; ranking; representation learning,classification; matching; ranking; representation learning,Não,Não
+A35US1O1,Literature,ranking,ranking,Não,Não
+A35US2O1,Biology,classification; graph mining,classification,Não,Não
+A35US3O1,Biology,graph mining,classification; graph mining,Não,Não
+A35US4O1,Biology,classification; graph mining,,Não,Sim
+A35US5O1,Movies,,,Sim,Sim
+A35US6O1,Finance & Marketing,anomaly detection; classification; classification; ranking; representation learning,anomaly detection; classification; classification; data summarization; ranking; representation learning; resource allocation,Não,Não
+A35US7O1,Medicine,classification; classification,classification; classification,Não,Não
+A35US8O1,Finance & Marketing,anomaly detection; classification; classification; data summarization; ranking; representation learning; resource allocation,anomaly detection; classification; classification; data summarization; ranking; representation learning; resource allocation,Não,Não
+A35US9O1,Computer Networks,,,Sim,Sim
+A35US10O1,Movies,data summarization; ranking; representation learning,data summarization; ranking; representation learning,Não,Não
+A36US1Ge,Literature,,,Sim,Sim
+A36US2Ge,Movies,,,Sim,Sim
+A36US3Ge,Health,classification; graph diffusion; matching; representation learning,classification; graph diffusion; matching; representation learning,Não,Não
+A36US4Ge,Transportation,,,Sim,Sim
+A36US5Ge,Biology,graph mining,classification; graph mining,Não,Não
+A36US6Ge,Biology,classification; graph mining,classification; graph mining,Não,Não
+A36US7Ge,Computer Networks,,,Sim,Sim
+A36US8Ge,Biology,classification,,Não,Sim
+A36US9Ge,Medicine,,,Sim,Sim
+A36US10Ge,Law,classification; classification; clustering; representation learning,,Não,Sim
+A36US1Ll,Medicine,classification; classification,classification; classification,Não,Não
+A36US2Ll,Biology,,classification,Sim,Não
+A36US3Ll,Biology,,,Sim,Sim
+A36US4Ll,Biology,classification,classification,Não,Não
+A36US5Ll,Medicine,classification; classification,classification; classification,Não,Não
+A36US6Ll,Biology,classification; graph mining,classification; graph mining,Não,Não
+A36US7Ll,Medicine,,classification; classification,Sim,Não
+A36US8Ll,Literature,,,Sim,Sim
+A36US9Ll,Medicine,,classification; classification,Sim,Não
+A36US10Ll,Medicine,,classification; classification,Sim,Não
+A36US1O1,Transportation,,,Sim,Sim
+A36US2O1,Biology,graph mining,graph mining,Não,Não
+A36US3O1,Computer Networks,,,Sim,Sim
+A36US4O1,Biology,classification,classification,Não,Não
+A36US5O1,Biology,graph mining,classification,Não,Não
+A36US6O1,Urban Studies,,,Sim,Sim
+A36US7O1,Biology,classification,classification,Não,Não
+A36US8O1,Finance & Marketing,anomaly detection; classification; classification,anomaly detection; clustering; data summarization,Não,Não
+A36US9O1,Medicine,classification; classification,classification; classification,Não,Não
+A36US10O1,Literature,ranking,ranking,Não,Não
+A37US1Ge,Biology,,,Sim,Sim
+A37US2Ge,Sociology,,,Sim,Sim
+A37US3Ge,Cardiology,,classification,Sim,Não
+A37US4Ge,Finance & Marketing,anomaly detection; clustering; data summarization; representation learning,anomaly detection; clustering; data summarization; representation learning,Não,Não
+A37US5Ge,Finance & Marketing,clustering,clustering,Não,Não
+A37US6Ge,Finance & Marketing,,advertising; anomaly detection; classification; classification; data summarization; pricing,Sim,Não
+A37US7Ge,Sport,,,Sim,Sim
+A37US8Ge,Sport,,,Sim,Sim
+A37US9Ge,Finance & Marketing,classification; classification,resource allocation,Não,Não
+A37US10Ge,Law,resource allocation; task assignment,classification; classification; clustering; regression; representation learning,Não,Não
+A37US1Ll,Cardiology,classification,classification,Não,Não
+A37US2Ll,Computer Networks,clustering,clustering,Não,Não
+A37US3Ll,Cardiology,classification; ranking,classification,Não,Não
+A37US4Ll,Computer Networks,clustering,clustering,Não,Não
+A37US5Ll,Cardiology,classification; ranking,,Não,Sim
+A37US6Ll,Computer Networks,,clustering,Sim,Não
+A37US7Ll,Cardiology,classification; ranking,classification; ranking,Não,Não
+A37US8Ll,Computer Networks,,,Sim,Sim
+A37US9Ll,Cardiology,classification; ranking,classification,Não,Não
+A37US10Ll,Computer Networks,,clustering,Sim,Não
+A37US1O1,Cardiology,,classification,Sim,Não
+A37US2O1,Health,classification,classification,Não,Não
+A37US3O1,Sport,,,Sim,Sim
+A37US4O1,Sport,,,Sim,Sim
+A37US5O1,Computer Networks,,,Sim,Sim
+A37US6O1,Literature,clustering,,Não,Sim
+A37US7O1,Finance & Marketing,,classification; classification,Sim,Não
+A37US8O1,Education,classification; regression,classification,Não,Não
+A37US9O1,Transportation,regression,regression,Não,Não
+A37US10O1,Biology,classification,classification,Não,Não
+A38US1Ge,Finance & Marketing,data summarization,data summarization,Não,Não
+A38US2Ge,Finance & Marketing,data summarization,anomaly detection; classification; classification; clustering; representation learning,Não,Não
+A38US3Ge,Plant Science,,clustering,Sim,Não
+A38US4Ge,Health,classification; regression; representation learning,classification; regression; representation learning,Não,Não
+A38US5Ge,Health,classification; regression,classification; graph diffusion; regression; representation learning,Não,Não
+A38US6Ge,Medicine,,,Sim,Sim
+A38US7Ge,Psychology,classification,,Não,Sim
+A38US8Ge,Law,classification; classification; clustering; ranking; representation learning; subset selection; subset selection,classification; classification; clustering; ranking; representation learning; subset selection; subset selection,Não,Não
+A38US9Ge,Biology,,,Sim,Sim
+A38US10Ge,Law,clustering,regression,Não,Não
+A38US1Ll,Biology,,,Sim,Sim
+A38US2Ll,Biology,classification,,Não,Sim
+A38US3Ll,Finance & Marketing,classification; classification,anomaly detection; classification; classification; clustering; data summarization; ranking; representation learning,Não,Não
+A38US4Ll,Plant Science,clustering,,Não,Sim
+A38US5Ll,Finance & Marketing,anomaly detection,anomaly detection,Não,Não
+A38US6Ll,News,bias detection in word embeddings; clustering; ranking,bias detection in word embeddings; clustering; ranking,Não,Não
+A38US7Ll,Literature,clustering; ranking,clustering,Não,Não
+A38US8Ll,Biology,,,Sim,Sim
+A38US9Ll,Biology,,,Sim,Sim
+A38US10Ll,Movies,,data summarization; ranking; representation learning,Sim,Não
+A38US1O1,Finance & Marketing,anomaly detection; classification; classification; data summarization; representation learning,anomaly detection; classification; classification; data summarization; representation learning,Não,Não
+A38US2O1,Plant Science,clustering,,Não,Sim
+A38US3O1,Literature,,,Sim,Sim
+A38US4O1,Health,classification; regression,representation learning,Não,Não
+A38US5O1,News,bias detection in word embeddings; clustering; ranking,,Não,Sim
+A38US6O1,Literature,,,Sim,Sim
+A38US7O1,Law,classification; classification; clustering; ranking; regression; representation learning; subset selection; subset selection,classification; classification,Não,Não
+A38US8O1,Plant Science,,,Sim,Sim
+A38US9O1,News,bias detection in word embeddings; clustering; ranking,bias detection in word embeddings; clustering; ranking,Não,Não
+A38US10O1,Sport,,,Sim,Sim
+A39US1Ge,Music,,ranking,Sim,Não
+A39US2Ge,Music,,,Sim,Sim
+A39US3Ge,Music,,,Sim,Sim
+A39US4Ge,Music,,,Sim,Sim
+A39US5Ge,Music,,,Sim,Sim
+A39US6Ge,Music,,,Sim,Sim
+A39US7Ge,Biology,classification,,Não,Sim
+A39US8Ge,Music,ranking,ranking,Não,Não
+A39US9Ge,Biology,classification; graph mining,classification; graph mining,Não,Não
+A39US10Ge,Literature,clustering; ranking,clustering; ranking,Não,Não
+A39US1Ll,Music,ranking,ranking,Não,Não
+A39US2Ll,Music,ranking,ranking,Não,Não
+A39US3Ll,Health,classification; regression; representation learning,,Não,Sim
+A39US4Ll,Music,,,Sim,Sim
+A39US5Ll,Music,,,Sim,Sim
+A39US6Ll,Transportation,,,Sim,Sim
+A39US7Ll,Music,,,Sim,Sim
+A39US8Ll,Music,,,Sim,Sim
+A39US9Ll,Biology,,,Sim,Sim
+A39US10Ll,Music,,,Sim,Sim
+A39US1O1,Music,,ranking,Sim,Não
+A39US2O1,Finance & Marketing,anomaly detection; classification; classification,anomaly detection; classification; classification,Não,Não
+A39US3O1,Health,classification; regression,classification; regression,Não,Não
+A39US4O1,Finance & Marketing,anomaly detection; clustering; data summarization; representation learning,data summarization,Não,Não
+A39US5O1,Music,,,Sim,Sim
+A39US6O1,Literature,ranking,ranking,Não,Não
+A39US7O1,Transportation,,matching; pricing; regression,Sim,Não
+A39US8O1,Education,data summarization,data summarization,Não,Não
+A39US9O1,Literature,,,Sim,Sim
+A39US10O1,Music,ranking,ranking,Não,Não
+A40US1Ge,Social Networks,,,Sim,Sim
+A40US2Ge,Finance & Marketing,,,Sim,Sim
+A40US3Ge,Biology,classification,classification,Não,Não
+A40US4Ge,Sport,,,Sim,Sim
+A40US5Ge,Biology,,,Sim,Sim
+A40US6Ge,Health,,,Sim,Sim
+A40US7Ge,Biology,,,Sim,Sim
+A40US8Ge,Biology,graph mining,,Não,Sim
+A40US9Ge,Information Systems,data summarization,,Não,Sim
+A40US10Ge,Biology,,,Sim,Sim
+A40US1Ll,Social Networks,clustering,clustering,Não,Não
+A40US2Ll,Social Networks,,,Sim,Sim
+A40US3Ll,Finance & Marketing,anomaly detection; classification; classification; clustering; ranking,anomaly detection; classification; classification; representation learning,Não,Não
+A40US4Ll,Social Networks,,,Sim,Sim
+A40US5Ll,Finance & Marketing,data summarization,anomaly detection; classification; classification; data summarization; ranking; representation learning; resource allocation,Não,Não
+A40US6Ll,Social Networks,,,Sim,Sim
+A40US7Ll,Finance & Marketing,classification; classification,anomaly detection; classification; classification,Não,Não
+A40US8Ll,Social Networks,,,Sim,Sim
+A40US9Ll,Finance & Marketing,anomaly detection; classification; classification,anomaly detection; classification; classification,Não,Não
+A40US10Ll,Social Networks,clustering; data summarization,clustering; data summarization,Não,Não
+A40US1O1,Social Networks,,data summarization,Sim,Não
+A40US2O1,Biology,,,Sim,Sim
+A40US3O1,Biology,classification,,Não,Sim
+A40US4O1,Biology,classification,,Não,Sim
+A40US5O1,Literature,ranking,ranking,Não,Não
+A40US6O1,Biology,,,Sim,Sim
+A40US7O1,Literature,,,Sim,Sim
+A40US8O1,Transportation,,,Sim,Sim
+A40US9O1,Biology,,,Sim,Sim
+A40US10O1,Biology,classification,classification,Não,Não
+A41US1Ge,Medicine,,classification; classification,Sim,Não
+A41US2Ge,Biology,,,Sim,Sim
+A41US3Ge,Education,,classification; regression,Sim,Não
+A41US4Ge,Transportation,,,Sim,Sim
+A41US5Ge,Biology,classification,classification,Não,Não
+A41US6Ge,News,bias detection in word embeddings,bias detection in word embeddings,Não,Não
+A41US7Ge,Transportation,,matching; regression,Sim,Não
+A41US8Ge,Medicine,classification; classification,classification; classification,Não,Não
+A41US9Ge,Medicine,,,Sim,Sim
+A41US10Ge,Transportation,matching; regression,,Não,Sim
+A41US1Ll,Biology,,classification,Sim,Não
+A41US2Ll,Biology,classification,classification; graph mining,Não,Não
+A41US3Ll,Transportation,,matching; pricing; regression,Sim,Não
+A41US4Ll,Literature,,clustering; ranking,Sim,Não
+A41US5Ll,Medicine,classification; classification,classification; classification,Não,Não
+A41US6Ll,Biology,classification,,Não,Sim
+A41US7Ll,Transportation,regression,regression,Não,Não
+A41US8Ll,Medicine,classification; classification,,Não,Sim
+A41US9Ll,Biology,classification,classification,Não,Não
+A41US10Ll,Transportation,,,Sim,Sim
+A41US1O1,Biology,,,Sim,Sim
+A41US2O1,Biology,classification,classification,Não,Não
+A41US3O1,Biology,,,Sim,Sim
+A41US4O1,Computer Vision,,anomaly detection,Sim,Não
+A41US5O1,Health,classification; graph diffusion; matching; pricing; regression; representation learning,representation learning,Não,Não
+A41US6O1,Biology,classification,classification,Não,Não
+A41US7O1,Biology,classification,classification,Não,Não
+A41US8O1,Biology,classification; graph mining,classification,Não,Não
+A41US9O1,Biology,,classification,Sim,Não
+A41US10O1,Biology,classification,classification; graph mining,Não,Não
+A42US1Ge,Health,,,Sim,Sim
+A42US2Ge,Biology,classification,classification,Não,Não
+A42US3Ge,Biology,,,Sim,Sim
+A42US4Ge,Biology,,classification,Sim,Não
+A42US5Ge,Biology,classification,,Não,Sim
+A42US6Ge,Health,,,Sim,Sim
+A42US7Ge,Biology,,,Sim,Sim
+A42US8Ge,Biology,,,Sim,Sim
+A42US9Ge,Biology,,classification,Sim,Não
+A42US10Ge,Law,,,Sim,Sim
+A42US1Ll,Health,,,Sim,Sim
+A42US2Ll,Finance & Marketing,anomaly detection; classification; classification,clustering; data summarization; representation learning,Não,Não
+A42US3Ll,Health,representation learning,classification; regression; representation learning,Não,Não
+A42US4Ll,Finance & Marketing,clustering,anomaly detection; classification; classification; clustering,Não,Não
+A42US5Ll,Health,representation learning,,Não,Sim
+A42US6Ll,Medicine,,,Sim,Sim
+A42US7Ll,Health,classification; matching; regression; representation learning,classification; matching; regression; representation learning,Não,Não
+A42US8Ll,Health,classification; regression; representation learning,classification; regression; representation learning,Não,Não
+A42US9Ll,Music,,,Sim,Sim
+A42US10Ll,Finance & Marketing,anomaly detection; classification; classification; representation learning,anomaly detection; classification; classification; representation learning,Não,Não
+A42US1O1,Biology,,classification,Sim,Não
+A42US2O1,Health,representation learning,representation learning,Não,Não
+A42US3O1,Finance & Marketing,clustering,anomaly detection,Não,Não
+A42US4O1,Biology,,,Sim,Sim
+A42US5O1,Biology,,,Sim,Sim
+A42US6O1,Health,classification; regression; representation learning,,Não,Sim
+A42US7O1,Urban Studies,,,Sim,Sim
+A42US8O1,Biology,classification,,Não,Sim
+A42US9O1,Finance & Marketing,anomaly detection,,Não,Sim
+A42US10O1,Biology,classification,graph mining,Não,Não
