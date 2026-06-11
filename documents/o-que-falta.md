@@ -24,9 +24,9 @@
 ### A) Métricas e análises automatizáveis (dá pra fazer agora — sklearn já instalado)
 
 - [ ] **Métricas formais do Estágio 1** (o plano pede, só tenho accuracy + confusão):
-  Macro-F1, Weighted-F1, precisão/revocação por domínio — **restrito aos 25 domínios cobertos** pelo UStAI.
+  F1-Score, precisão/revocação por domínio — **restrito aos 25 domínios cobertos** pelo UStAI.
 - [ ] **Métricas formais do Estágio 2** (hoje só tenho "overlap", fraco p/ multi-label):
-  Micro-F1, Macro-F1, **Hamming loss**, **Subset accuracy (exact-match)**, precisão/revocação por label.
+  F1-Score, **Hamming loss**, **Subset accuracy (exact-match)**, precisão/revocação por label.
 - [ ] **Estratificação por LLM** (Gemini 1.5 × Llama 3.1 × O1-mini) nos estágios 1 e 2 — o plano pede explicitamente (Seção 7, passo 12).
 - [ ] **Análise de erros end-to-end formal:** por US, classificar a causa da falha do estágio 3 (erro de domínio / erro de task / limitação do mapping).
 - [ ] **Métricas só sobre os 25 domínios cobertos** (declarar que 9 dos 34 não têm US no UStAI e não são testados).
