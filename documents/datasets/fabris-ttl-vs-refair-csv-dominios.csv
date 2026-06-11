@@ -1,0 +1,26 @@
+dominio,features_fabris_ttl_norm,features_refair_csv,so_no_fabris,so_no_refair
+cardiology,age; race; sex,age; race; sex,,
+computer networks,,,,
+computer vision,age; disability; gender; geography; race; religion; sexual orientation; skin tone; weight,age; disability; gender; geography; jersey color (athletes); race; skin color; skin tone; skin type; weight,religion; sexual orientation,jersey color (athletes); skin color; skin type
+demography,age; citizenship; geography; race; sex,,age; citizenship; geography; race; sex,
+economics,age; disability; gender; geography; nationality; race; sex,age; birthplace; disability; family size; gender; geography; nationality; race; sex,,birthplace; family size
+endocrinology,age; gender; geography; race,age; gender; race,geography,
+finance & marketing,activity; age; ethnicity; gender; geography; race; sex,activity; age; gender; geography; race; sex,ethnicity,
+health,age; ethnicity; gender; geography; race; sex,age; blood type; ethnicity; gender; geography; sex,race,blood type
+information systems,age; artist; author; ethnicity; gender; geography; race; sex; skin tone,age; artist; brand ownership; demographics of people featured in entities and their relations; ethnic group; gay-friendliness; gender; geography; geography and their relations; news provider; ownership; race; record label; sex; skin tone; spoken language; textual references to people and their demographics; tour availability; user age,author; ethnicity,brand ownership; demographics of people featured in entities and their relations; ethnic group; gay-friendliness; geography and their relations; news provider; ownership; record label; spoken language; textual references to people and their demographics; tour availability; user age
+law,age; ethnicity; gender; geography; race; sex,age; ethnicity; gender; geography; race; sex,,
+library,age; author; gender,author,age; gender,
+linguistics,age; gender; geography; race; religion; sex; skin tone,business size; dialect; dialect (related to race); gender; geography; political leaning; profession; race; race and religion; religion; sex; textual references to people and their demographics,age; skin tone,business size; dialect; dialect (related to race); political leaning; profession; race and religion; textual references to people and their demographics
+medicine,age; ethnicity; gender; race; sex,age; ethnicity; gender; race; sex,,
+music,age; artist; gender; geography,artist; gender; geography; record label; user age,age,record label; user age
+news,author; geography,author; geography; news provider; textual references to people and their demographics,,news provider; textual references to people and their demographics
+pediatrics,age; ethnicity; gender,age (maternal); ethnicity; race,age; gender,age (maternal); race
+pharmacology,age; ethnicity; sex,age; ethnicity; sex,,
+political science,age; ethnicity; gender; geography; race; sex,age; education; ethnicity; gender; geography; political affiliation (representation in different precincts); race; urban/rural,sex,education; political affiliation (representation in different precincts); urban/rural
+psychology,age; ethnicity; gender; geography,age; ethnicity; gender; geography,,
+radiology,age; ethnicity; gender; race; sex,age; age (of patient); ethnicity; race; sex,gender,age (of patient)
+social media,age; disability; ethnicity; gender; geography; race; religion; sex; sexual orientation; skin tone,age; dialect (related to race); disability; gender; geography; political leaning; political orientation; race; race/ethnicity; religion; sexual orientation; textual references to people and their demographics,ethnicity; sex; skin tone,dialect (related to race); political leaning; political orientation; race/ethnicity; textual references to people and their demographics
+social networks,age; ethnicity; gender; geography; sex; sexual orientation,age; ethnicity; gender; geography; sex,sexual orientation,
+social work,age; ethnicity; gender; geography; race; sex; sexual orientation,age; ethnicity; gender; gender of child; geography; race; race and ethnicity; sex; sexual orientation,,gender of child; race and ethnicity
+sport,age; gender; geography; sex,age; football conference; geography; sex,gender,football conference
+transportation,gender; geography; race,geography; race,gender,

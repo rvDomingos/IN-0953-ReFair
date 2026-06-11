@@ -52,6 +52,9 @@
 
 ### D) Itens que precisam de pessoas (não automatizável)
 
+> 📋 **Passo a passo detalhado deste item:** [estagio3-passo-a-passo.md](estagio3-passo-a-passo.md) — fluxo completo (amostra → anotação → κ → métricas → painel), com scripts prontos, para a pessoa responsável não se perder.
+> 📊 **Contexto das features:** [resumo-features-fabris-3fontes.md](resumo-features-fabris-3fontes.md) — por que o `.ttl` do Fabris não vira ground truth melhor.
+
 - [ ] **Estágio 3 rigoroso** — o plano diz que **não há ground truth pronto** (Seção 6):
   anotação **manual** de *sensitive features* de uma **amostra estratificada** (~100–150 US, balanceada por domínio e `domain_confidence`).
   > O gabarito do estágio 3 que geramos é um *proxy* (derivado do código), serve de apoio, **não substitui** a anotação manual.
