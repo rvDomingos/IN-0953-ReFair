@@ -1,8 +1,24 @@
 # O que falta — Experimento ReFAIR × UStAI e entrega do projeto
 
-**Data:** 2026-06-09
+**Data:** 2026-06-12
 **Base:** checklist (Seção 10) e métricas (Seção 8) do [validade-externa-refair-ustai.md](validade-externa-refair-ustai.md).
 **O que este doc é:** o estado atual do experimento e a lista **completa e priorizada** do que falta para **fechar o experimento** e **entregar o projeto**.
+
+---
+
+## 📍 Resumo do progresso (bater o olho)
+
+| Bloco | Estado |
+|---|---|
+| **A — Métricas formais** (F1-Score, Hamming, subset, por LLM, causa de erro) | ✅ **Feito** |
+| **B — Rodada oficial sem patch + decisão patched×unpatched** | ✅ **Feito** |
+| **C — Validação cross-platform (Windows)** | 🟡 **Scripts prontos, falta rodar no Windows** |
+| **D — Estágio 3 (anotação humana + painel + κ)** | 🔴 **Falta** (precisa de pessoas) |
+| **E — Limpeza: 2 ids duplicados + README dos artefatos** | 🔴 **Falta** (rápido) |
+| **Decisão com o professor — limiar "funciona/não funciona"** | 🔴 **Falta** (combinar) |
+| **Relatório final** | 🔴 **Falta** (escrever) |
+
+**Em uma frase:** o **núcleo quantitativo está fechado** (A+B); falta **validar no Windows** (C — só executar), a **avaliação humana do estágio 3** (D), pequenas **limpezas** (E), **combinar o limiar com o professor** e **escrever o relatório**.
 
 ---
 
@@ -21,34 +37,34 @@
 
 ## 🔴 Falta no EXPERIMENTO
 
-### A) Métricas e análises automatizáveis (dá pra fazer agora — sklearn já instalado)
+### A) Métricas e análises automatizáveis (dá pra fazer agora — sklearn já instalado) ✅ FEITO
 
-- [ ] **Métricas formais do Estágio 1** (o plano pede, só tenho accuracy + confusão):
-  F1-Score, precisão/revocação por domínio — **restrito aos 25 domínios cobertos** pelo UStAI.
-- [ ] **Métricas formais do Estágio 2** (hoje só tenho "overlap", fraco p/ multi-label):
-  F1-Score, **Hamming loss**, **Subset accuracy (exact-match)**, precisão/revocação por label.
-- [ ] **Estratificação por LLM** (Gemini 1.5 × Llama 3.1 × O1-mini) nos estágios 1 e 2 — o plano pede explicitamente (Seção 7, passo 12).
-- [ ] **Análise de erros end-to-end formal:** por US, classificar a causa da falha do estágio 3 (erro de domínio / erro de task / limitação do mapping).
-- [ ] **Métricas só sobre os 25 domínios cobertos** (declarar que 9 dos 34 não têm US no UStAI e não são testados).
+> ✅ **Concluído.** Resultados em [metricas-formais-item-a.md](metricas-formais-item-a.md); script reproduzível em [datasets/calcular_metricas.py](datasets/calcular_metricas.py). Resumo: domínio F1-Score **0,125** / ML task F1-Score **0,127** (vs ~0,98 e ~0,90 do paper); **90,6% das falhas nascem no estágio 1 (domínio)**; desempenho igualmente ruim nos 3 LLMs.
+
+- [x] **Métricas formais do Estágio 1**: accuracy 0,094, F1-Score 0,125 + precisão/revocação/F1 por domínio (25 cobertos).
+- [x] **Métricas formais do Estágio 2**: F1-Score 0,127, Hamming loss 0,223, Subset accuracy 0,039 + precisão/revocação por label.
+- [x] **Estratificação por LLM** (Gemini × Llama × O1) nos estágios 1 e 2.
+- [x] **Análise de erros end-to-end formal** (causa: domínio / task / mapping) — 90,6% / 7,0% / 2,4%.
+- [x] **Métricas só sobre os 25 domínios cobertos** (9 dos 34 declarados como não testados).
 
 ### B) Decisões metodológicas a tomar (antes de fechar os números)
 
-- [ ] **Definir qual é a rodada "oficial": com ou sem o patch do GloVe.**
-  O plano testa o ReFAIR **como caixa-preta congelada** (Seção 2). O patch **modifica** o estágio 2. Decisão recomendada:
-  - **Números oficiais de validade externa = ReFAIR ORIGINAL (sem patch).**
-  - O patch entra como **sub-experimento de melhoria** ("e se corrigirmos o GloVe?").
-  > ⚠️ Hoje o `refair-resultados.csv` está **com patch**. Os domínios são idênticos (o patch só toca o estágio 2), mas as **ML tasks/features oficiais** precisam vir da versão **sem** patch (já temos os dados em `ustai-impacto-patch-glove.csv`, coluna `*_SEM_patch`). Gerar um `refair-resultados-oficial.csv` sem patch para os números do relatório.
+- [x] **Definido: rodada oficial = ReFAIR ORIGINAL (sem patch).** ✅
+  O plano testa o ReFAIR **como caixa-preta congelada** (Seção 2). Gerado [datasets/refair-resultados-oficial.csv](datasets/refair-resultados-oficial.csv) (via `gerar_resultado_oficial.py`), e as métricas canônicas (`metricas-*.csv`) agora vêm dele.
+  - **Resultado:** oficial × com patch ficou **praticamente idêntico** — domínio F1-Score **0,125** (igual, o patch não toca o estágio 1); ML task F1-Score **0,127** nos dois. O patch só muda casas decimais (ML task vazia 557→535; subset 0,037→0,039). **Conclusão: o patch não altera o veredito.**
+  - O patch fica registrado como **sub-experimento de melhoria** (ver `ustai-impacto-patch-glove.csv`).
 - [ ] **Acordar com o professor o limiar "funciona/não funciona"** *antes* de concluir (Seção 8) — para não parecer escolhido depois do resultado.
 
-### C) Validação de reprodutibilidade / cross-platform (Windows) ⭐ novo
+### C) Validação de reprodutibilidade / cross-platform (Windows) — 🟡 scripts prontos, falta executar
 
-> Rodamos no **macOS + Python 3.11** com as libs recém-instaladas. O ambiente original do ReFAIR é **Windows + Python 3.9** (o `env/` empacotado no repo). Diferenças de SO / builds de BERT, XGBoost e GloVe podem, em princípio, deslocar algumas predições. Para os números entrarem no relatório com segurança, validar que a saída é a mesma entre plataformas.
+> Rodamos no **macOS + Python 3.11**. O ambiente original do ReFAIR é **Windows + Python 3.9**. Diferenças de SO / builds de BERT, XGBoost e GloVe podem, em princípio, deslocar predições. Validar que a saída é a mesma entre plataformas.
+> 📋 **Tudo pronto pra executar:** passo a passo em [como-rodar-no-windows.md](como-rodar-no-windows.md); scripts versionados `gerar_resultado_oficial.py` (refair-server) e `comparar_plataformas.py` (documents/datasets).
 
-- [ ] **Re-rodar o `run_refair_batch.py` no ambiente original (Windows / Python 3.9)** e comparar `refair-resultados.csv` com o gerado no macOS.
-- [ ] **Conferir igualdade das predições** (domínio e ML task) entre macOS e Windows — idealmente diff = 0; se houver divergência, quantificar e declarar como ameaça à validade.
-- [ ] **Confirmar o mesmo GloVe** (`glove.6B.100d.txt`) e o mesmo `bert-base-uncased` (mesmo hash/origem) nas duas máquinas.
-- [ ] **Registrar no relatório o ambiente de execução** (SO, versão do Python, versões das libs) — exigência de reprodutibilidade.
-- [ ] *(Opcional, mais robusto)* rodar via **Docker** (`docker-compose.yml` do projeto) para um ambiente único e reprodutível, eliminando a variável SO.
+- [ ] **Rodar `run_refair_batch.py` no Windows / Python 3.9** → gera `refair-resultados-windows.csv` (passo 4 do guia).
+- [ ] **Rodar `comparar_plataformas.py`** → confere diff de domínio e ML task contra o macOS (idealmente **0 / 0**). Se divergir, ele gera `diferencas-plataformas.csv`; quantificar e declarar como ameaça à validade.
+- [ ] **Confirmar o mesmo GloVe** (`glove.6B.100d.txt`) e o mesmo `bert-base-uncased` nas duas máquinas.
+- [ ] **Registrar no relatório o ambiente de execução** (SO, versão do Python, versões das libs).
+- [ ] *(Opcional, mais robusto)* rodar via **Docker** (`docker-compose.yml`) para eliminar a variável SO.
 
 ### D) Itens que precisam de pessoas (não automatizável)
 
@@ -79,9 +95,9 @@
 
 ## 🎯 Ordem sugerida
 
-1. **(agora)** Métricas formais estágios 1 e 2 + estratificação por LLM → fecha o grosso quantitativo.
-2. **Decidir patched × unpatched** e gerar o `refair-resultados-oficial.csv` (sem patch).
-3. **Validação cross-platform (Windows)** — re-rodar o batch lá e diffar com o macOS.
+1. ✅ **Métricas formais** estágios 1 e 2 + estratificação por LLM — FEITO ([metricas-formais-item-a.md](metricas-formais-item-a.md)).
+2. ✅ **Decidido patched × unpatched** + gerado `refair-resultados-oficial.csv` (sem patch) — FEITO.
+3. **(próximo)** **Validação cross-platform (Windows)** — re-rodar o batch lá e diffar com o macOS.
 4. Preparar **amostra estratificada (~120 US) + template de anotação** do estágio 3.
 5. Acordar **limiar com o professor** e rodar o **painel** + **κ**.
 6. Escrever **relatório final** com tudo.
@@ -92,11 +108,11 @@
 ## ✔️ Definição de "experimento concluído"
 
 O experimento está fechado quando:
-- Estágios 1 e 2 têm **métricas formais** (F1/Hamming/subset), estratificadas por confiança **e por LLM**, sobre os 25 domínios cobertos.
-- A rodada **oficial (sem patch)** está definida e os números do relatório vêm dela; o patch está reportado como melhoria à parte.
-- As predições foram **validadas entre macOS e Windows** (ou rodadas via Docker), com o ambiente registrado.
-- O **estágio 3** tem ao menos a **amostra anotada + painel** (avaliação híbrida, como o plano prevê).
-- As **ameaças à validade** estão declaradas no relatório.
+- ✅ Estágios 1 e 2 têm **métricas formais** (F1-Score/Hamming/subset), estratificadas por confiança **e por LLM**, sobre os 25 domínios cobertos. **(feito — A)**
+- ✅ A rodada **oficial (sem patch)** está definida e os números do relatório vêm dela; o patch está reportado como melhoria à parte. **(feito — B)**
+- 🟡 As predições foram **validadas entre macOS e Windows** (ou rodadas via Docker), com o ambiente registrado. **(scripts prontos — C)**
+- 🔴 O **estágio 3** tem ao menos a **amostra anotada + painel** (avaliação híbrida, como o plano prevê). **(falta — D)**
+- 🔴 As **ameaças à validade** estão declaradas no relatório. **(ao escrever o relatório)**
 
 ---
 

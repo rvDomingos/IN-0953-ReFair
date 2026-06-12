@@ -1,0 +1,4 @@
+llm,n,dom_accuracy,dom_f1_score,mltask_f1_score,mltask_subset,mltask_vazias
+Gemini 1.5,419,0.081,0.110,0.141,0.041,194
+Llama 3.1,419,0.115,0.136,0.113,0.050,183
+O1-mini,420,0.086,0.120,0.126,0.021,180

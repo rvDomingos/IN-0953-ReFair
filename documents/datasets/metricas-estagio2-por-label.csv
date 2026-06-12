@@ -1,0 +1,26 @@
+ml_task,precision,recall,f1_score,support
+advertising,0.333,0.005,0.009,210
+anomaly detection,0.408,0.054,0.095,539
+bias detection in language models,1.000,0.011,0.022,359
+bias detection in word embeddings,0.038,0.005,0.009,209
+classification,0.606,0.395,0.478,719
+clustering,0.267,0.082,0.125,330
+data summarization,0.145,0.033,0.054,240
+districting,0.000,0.000,0.000,120
+entity resolution,0.000,0.000,0.000,359
+graph augmentation,0.000,0.000,0.000,120
+graph diffusion,0.211,0.027,0.047,150
+graph mining,0.230,0.052,0.085,270
+machine translation,0.000,0.000,0.000,239
+matching,0.194,0.040,0.066,150
+pricing,0.286,0.022,0.041,180
+ranking,0.236,0.062,0.098,419
+regression,0.371,0.093,0.149,418
+representation learning,0.269,0.131,0.176,360
+resource allocation,0.267,0.033,0.059,120
+risk assessment,0.000,0.000,0.000,60
+sentiment analysis,1.000,0.015,0.030,389
+spatio-temporal process learning,0.000,0.000,0.000,180
+speech recognition,1.000,0.013,0.025,239
+subset selection,0.000,0.000,0.000,210
+task assignment,0.000,0.000,0.000,120

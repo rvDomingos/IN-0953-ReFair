@@ -1,0 +1,27 @@
+dominio,precision,recall,f1_score,support
+cardiology,0.100,0.034,0.051,29
+computer networks,0.048,0.067,0.056,30
+computer vision,0.250,0.017,0.031,60
+demography,0.200,0.033,0.057,30
+economics,1.000,0.033,0.065,90
+endocrinology,0.500,0.034,0.065,29
+finance & marketing,0.116,0.144,0.129,90
+health,0.118,0.222,0.154,90
+information systems,0.091,0.008,0.015,120
+law,0.030,0.033,0.032,30
+library,0.333,0.100,0.154,30
+linguistics,0.500,0.067,0.118,30
+medicine,0.054,0.200,0.085,30
+music,0.386,0.567,0.459,30
+news,0.220,0.367,0.275,30
+pediatrics,0.500,0.033,0.062,30
+pharmacology,0.833,0.167,0.278,30
+political science,0.000,0.000,0.000,30
+psychology,0.222,0.017,0.031,120
+radiology,0.833,0.167,0.278,30
+social media,0.455,0.167,0.244,30
+social networks,0.727,0.133,0.225,60
+social work,0.000,0.000,0.000,30
+sport,0.333,0.133,0.190,30
+transportation,0.122,0.042,0.062,120
+GERAL,0.319,0.111,0.125,1258

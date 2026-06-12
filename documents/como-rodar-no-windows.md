@@ -128,50 +128,64 @@ OK -> ...\refair-resultados-windows.csv
 Colunas do CSV: `id, User Story, refair_domain, refair_ml_tasks, refair_features, refair_features_por_task, ml_task_vazio, erro`.
 
 > ⏱️ Demora alguns minutos (carrega GloVe de 347 MB + roda BERT/XGBoost/LSVC em 1260 stories).
+> Este arquivo sai **com patch** do GloVe (o `REFAIR.py` está patcheado). É esse que entra na validação cross-platform do passo 5.
+
+### 4b. (Opcional) Gerar a rodada OFICIAL (sem patch) — item B
+
+A rodada **oficial** do experimento é o ReFAIR **original, sem o patch** (caixa-preta). Para regenerá-la no Windows, ainda em `refair-server`:
+
+```bat
+python gerar_resultado_oficial.py
+```
+
+> Gera `..\..\..\..\documents\datasets\refair-resultados-oficial.csv`. Ele reaproveita os domínios (idênticos com/sem patch) e recomputa só ML task/features na versão original. É a partir dele que saem os números oficiais do relatório (ver [metricas-formais-item-a.md](metricas-formais-item-a.md)).
 
 ---
 
 ## 5. Validação cross-platform (o ponto principal de rodar no Windows)
 
-Compare o resultado do Windows com o do macOS (`refair-resultados.csv`). Idealmente **zero divergências** em domínio e ML task:
+Já existe um script versionado para isso: **[datasets/comparar_plataformas.py](datasets/comparar_plataformas.py)**. Ele compara o `refair-resultados-windows.csv` (gerado no passo 4) contra o `refair-resultados.csv` (rodada do macOS, já no repo) e reporta as divergências.
 
 ```bat
-python -c "import csv; a={r['id']:r for r in csv.DictReader(open('../../../../documents/datasets/refair-resultados.csv',encoding='utf-8'))}; b={r['id']:r for r in csv.DictReader(open('../../../../documents/datasets/refair-resultados-windows.csv',encoding='utf-8'))}; ids=set(a)&set(b); dd=sum(a[i]['refair_domain']!=b[i]['refair_domain'] for i in ids); dt=sum(a[i]['refair_ml_tasks']!=b[i]['refair_ml_tasks'] for i in ids); print(f'comparadas: {len(ids)}'); print(f'divergencias de DOMINIO: {dd}'); print(f'divergencias de ML TASK: {dt}')"
+cd "..\..\..\..\documents\datasets"
+python comparar_plataformas.py
 ```
 
-- **`divergencias de DOMINIO: 0` e `ML TASK: 0`** → as predições são iguais entre SO; pode usar qualquer rodada como oficial.
-- **Se houver divergências** → quantifique, registre **quais** stories e declare como ameaça à validade no relatório (provável causa: builds diferentes de torch/BLAS produzindo arredondamentos distintos).
+> ⚠️ Compare contra **`refair-resultados.csv`** (não o `-oficial`): os dois saem do mesmo `run_refair_batch.py` (que usa o `REFAIR.py` **com patch**). O **domínio é idêntico com/sem patch**, então é a comparação certa para reprodutibilidade.
+
+Saída esperada:
+```
+=== RESULTADO ===
+divergencias de DOMINIO : 0
+divergencias de ML TASK : 0
+
+IDENTICO entre as plataformas -> reprodutibilidade confirmada.
+```
+
+- **`DOMINIO: 0` e `ML TASK: 0`** → predições iguais entre SO; reprodutibilidade confirmada.
+- **Se houver divergências** → o script gera `diferencas-plataformas.csv` com as linhas; quantifique e declare como ameaça à validade no relatório (provável causa: builds diferentes de torch/BLAS).
 
 > Registre no relatório o **ambiente** das duas rodadas (SO, Python, versões das libs) — exigência de reprodutibilidade.
 
 ---
 
-## 6. (Opcional) Gerar as planilhas de análise no Windows
+## 6. (Opcional) Recalcular as métricas no Windows
 
-A análise (comparação com o gabarito, matriz de confusão, etc.) é **pós-processamento puro** (sem libs de ML) e roda igual em qualquer SO. Para reproduzir no Windows, salve o script abaixo como `analisar_resultados.py` em `documents\datasets\` e rode com `python analisar_resultados.py`:
+A análise é **pós-processamento puro** (só precisa de `scikit-learn`, sem torch/transformers) e roda igual em qualquer SO. Os scripts **já estão versionados** em `documents\datasets\` — não precisa colar código. Do diretório `documents\datasets\`:
 
-```python
-import csv
-from collections import Counter, defaultdict
-RES='refair-resultados-windows.csv'   # ou refair-resultados.csv
-GAB='ustai-gabarito-completo.csv'
-res={r['id']:r for r in csv.DictReader(open(RES,encoding='utf-8'))}
-gab={r['id']:r for r in csv.DictReader(open(GAB,encoding='utf-8-sig'))}
-FIX={'demograpy':'demography','psycology':'psychology'}
-nd=lambda s:(lambda x:FIX.get(x,x))(s.strip().lower())
-ids=[i for i in gab if i in res]
-ok=sum(nd(res[i]['refair_domain'])==nd(gab[i]['equivalent_domain']) for i in ids)
-vazio=sum(res[i]['ml_task_vazio']=='Sim' for i in ids)
-print(f'stories: {len(ids)}')
-print(f'DOMINIO acerto: {ok}/{len(ids)} = {100*ok/len(ids):.1f}%')
-print(f'ML task vazia : {vazio}/{len(ids)} = {100*vazio/len(ids):.1f}%')
-# matriz de confusao (long)
-conf=Counter((gab[i]['equivalent_domain'].strip(), res[i]['refair_domain'].strip()) for i in ids if nd(res[i]['refair_domain'])!=nd(gab[i]['equivalent_domain']))
-print('\nTop confusoes (gabarito -> refair):')
-for (g,r),c in conf.most_common(10): print(f'  {c:3d}  {g} -> {r}')
+```bat
+cd "<raiz-do-projeto>\documents\datasets"
+
+REM métricas formais (F1-Score, Hamming, subset, por LLM) — usa a rodada OFICIAL por padrao
+python calcular_metricas.py
+
+REM para conferir a rodada COM patch:
+python calcular_metricas.py refair-resultados.csv
 ```
 
-> O pipeline completo de análise (comparação 1-a-1, matriz de confusão em formato planilha, resumo por abstract, impacto do patch) já está versionado em `documents/datasets/` — esses arquivos são gerados a partir do `refair-resultados.csv` e independem do SO.
+> `calcular_metricas.py` precisa de `scikit-learn` — rode com o mesmo `venv_win` do passo 2 (que já tem). Gera `metricas-estagio1-por-dominio.csv`, `metricas-estagio2-por-label.csv`, `metricas-por-llm.csv`, `erro-end-to-end-causa.csv`.
+
+> O restante das planilhas (comparação 1-a-1, matriz de confusão, resumo por abstract, impacto do patch, 3 fontes de features) **já está versionado** em `documents/datasets/` e independe do SO — não precisa regerar.
 
 ---
 
@@ -210,9 +224,12 @@ Depois copie o `run_refair_batch.py` e os dados para dentro do container e rode 
 1. Python 3.9 + git + GloVe em models/
 2. venv_win + pip install (versões fixas)
 3. sanity check (modelos carregam, treino ~100%)
-4. python run_refair_batch.py ... -o refair-resultados-windows.csv
-5. diff vs refair-resultados.csv (macOS)  ← validação cross-platform
-6. (opcional) analisar_resultados.py
+4. python run_refair_batch.py ... -o refair-resultados-windows.csv   (com patch)
+   (opcional 4b) python gerar_resultado_oficial.py                    (rodada oficial, sem patch)
+5. cd documents\datasets  &&  python comparar_plataformas.py          ← validação cross-platform
+6. (opcional) python calcular_metricas.py                             (recalcular F1-Score etc.)
 ```
 
-Arquivos relacionados: [o-que-falta.md](o-que-falta.md) · [plano-de-acao-refair.md](plano-de-acao-refair.md) · [validade-externa-refair-ustai.md](validade-externa-refair-ustai.md) · [resultados-experimento-refair-ustai.md](resultados-experimento-refair-ustai.md)
+> Scripts usados: `run_refair_batch.py` e `gerar_resultado_oficial.py` (em `refair-server`); `comparar_plataformas.py` e `calcular_metricas.py` (em `documents\datasets\`).
+
+Arquivos relacionados: [o-que-falta.md](o-que-falta.md) · [metricas-formais-item-a.md](metricas-formais-item-a.md) · [plano-de-acao-refair.md](plano-de-acao-refair.md) · [validade-externa-refair-ustai.md](validade-externa-refair-ustai.md) · [resultados-experimento-refair-ustai.md](resultados-experimento-refair-ustai.md)
