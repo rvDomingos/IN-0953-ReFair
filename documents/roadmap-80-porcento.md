@@ -42,7 +42,7 @@ Domínio é **90,6%** das falhas → conserta ele primeiro. Depois: revisar o fi
 
 ### Passo 5 — Medir honesto
 - UStAI **só como teste** (held-out); split treino/validação só nos dados de treino melhorados.
-- Reusar [datasets/calcular_metricas.py](datasets/calcular_metricas.py) para reportar F1-Score / accuracy no UStAI.
+- Reusar [scripts/calcular_metricas.py](scripts/calcular_metricas.py) para reportar F1-Score / accuracy no UStAI.
 
 ---
 
@@ -72,4 +72,4 @@ Isso transforma "o ReFAIR vai mal" em **"diagnosticamos a causa e mostramos o ca
 
 ## Arquivos relacionados
 - [analise-raiz-xgboost.md](analise-raiz-xgboost.md) (diagnóstico) · [metricas-formais-item-a.md](metricas-formais-item-a.md) · [resultados-experimento-refair-ustai.md](resultados-experimento-refair-ustai.md) · [o-que-falta.md](o-que-falta.md)
-- Protótipo: [datasets/prototipo_embeddings.py](datasets/prototipo_embeddings.py)
+- Protótipo: [scripts/prototipo_embeddings.py](scripts/prototipo_embeddings.py)

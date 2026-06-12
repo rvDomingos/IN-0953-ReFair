@@ -15,7 +15,7 @@ As *sensitive features* **vêm mesmo do Fabris** — mas a tabela `domains-featu
 
 ## Tabela 1 — Proveniência: Fabris (`.ttl`) × tabela do ReFAIR
 
-**Arquivo:** [datasets/fabris-ttl-vs-refair-csv-dominios.csv](datasets/fabris-ttl-vs-refair-csv-dominios.csv) (`.xlsx` ao lado)
+**Arquivo:** [datasets/analises/fabris-ttl-vs-refair-csv-dominios.csv](datasets/analises/fabris-ttl-vs-refair-csv-dominios.csv) (`.xlsx` ao lado)
 
 Compara, por domínio, as features sensíveis extraídas da ontologia do Fabris (`fairness_databriefs_alpha_v01.ttl`) contra as da tabela que o ReFAIR usa em runtime.
 
@@ -32,7 +32,7 @@ Compara, por domínio, as features sensíveis extraídas da ontologia do Fabris 
 
 ## Tabela 2 — Comparação de 3 fontes de features, por user story
 
-**Arquivo:** [datasets/ustai-features-3fontes.csv](datasets/ustai-features-3fontes.csv) (`.xlsx` ao lado) — 1258 US
+**Arquivo:** [datasets/analises/ustai-features-3fontes.csv](datasets/analises/ustai-features-3fontes.csv) (`.xlsx` ao lado) — 1258 US
 
 | Coluna | O que é |
 |---|---|

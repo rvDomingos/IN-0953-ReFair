@@ -37,7 +37,7 @@ for f, c in Counter(roots['Feature']).most_common(10):
 # ---------- 2) carregar treino + UStAI ----------
 train = pd.read_excel(SRC + 'datasets/Synthetic User Stories.xlsx')
 train = train[['Domain', 'User Story']].dropna()
-ustai = list(csv.DictReader(open(ROOT + 'documents/datasets/ustai-gabarito-completo.csv', encoding='utf-8-sig')))
+ustai = list(csv.DictReader(open(ROOT + 'documents/datasets/essenciais/ustai-gabarito-completo.csv', encoding='utf-8-sig')))
 
 tr_pos3 = defaultdict(Counter)   # domínio -> Counter(token)
 for _, r in train.iterrows():

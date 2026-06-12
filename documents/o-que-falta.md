@@ -39,7 +39,7 @@
 
 ### A) Métricas e análises automatizáveis (dá pra fazer agora — sklearn já instalado) ✅ FEITO
 
-> ✅ **Concluído.** Resultados em [metricas-formais-item-a.md](metricas-formais-item-a.md); script reproduzível em [datasets/calcular_metricas.py](datasets/calcular_metricas.py). Resumo: domínio F1-Score **0,125** / ML task F1-Score **0,127** (vs ~0,98 e ~0,90 do paper); **90,6% das falhas nascem no estágio 1 (domínio)**; desempenho igualmente ruim nos 3 LLMs.
+> ✅ **Concluído.** Resultados em [metricas-formais-item-a.md](metricas-formais-item-a.md); script reproduzível em [scripts/calcular_metricas.py](scripts/calcular_metricas.py). Resumo: domínio F1-Score **0,125** / ML task F1-Score **0,127** (vs ~0,98 e ~0,90 do paper); **90,6% das falhas nascem no estágio 1 (domínio)**; desempenho igualmente ruim nos 3 LLMs.
 
 - [x] **Métricas formais do Estágio 1**: accuracy 0,094, F1-Score 0,125 + precisão/revocação/F1 por domínio (25 cobertos).
 - [x] **Métricas formais do Estágio 2**: F1-Score 0,127, Hamming loss 0,223, Subset accuracy 0,039 + precisão/revocação por label.
@@ -50,7 +50,7 @@
 ### B) Decisões metodológicas a tomar (antes de fechar os números)
 
 - [x] **Definido: rodada oficial = ReFAIR ORIGINAL (sem patch).** ✅
-  O plano testa o ReFAIR **como caixa-preta congelada** (Seção 2). Gerado [datasets/refair-resultados-oficial.csv](datasets/refair-resultados-oficial.csv) (via `gerar_resultado_oficial.py`), e as métricas canônicas (`metricas-*.csv`) agora vêm dele.
+  O plano testa o ReFAIR **como caixa-preta congelada** (Seção 2). Gerado [datasets/essenciais/refair-resultados-oficial.csv](datasets/essenciais/refair-resultados-oficial.csv) (via `gerar_resultado_oficial.py`), e as métricas canônicas (`metricas-*.csv`) agora vêm dele.
   - **Resultado:** oficial × com patch ficou **praticamente idêntico** — domínio F1-Score **0,125** (igual, o patch não toca o estágio 1); ML task F1-Score **0,127** nos dois. O patch só muda casas decimais (ML task vazia 557→535; subset 0,037→0,039). **Conclusão: o patch não altera o veredito.**
   - O patch fica registrado como **sub-experimento de melhoria** (ver `ustai-impacto-patch-glove.csv`).
 - [ ] **Acordar com o professor o limiar "funciona/não funciona"** *antes* de concluir (Seção 8) — para não parecer escolhido depois do resultado.

@@ -40,7 +40,7 @@ Dataset **UStAI** — `Asma/UStAI` no Hugging Face (`https://huggingface.co/data
 
 ## 4. O ativo que já temos: a equivalência pronta
 
-O passo mais caro de um estudo de validade externa — **construir o *ground truth*** — **já está feito** para os dois primeiros estágios. A equivalência em [equivalencia-dominios-ustai-synthetic.md](equivalencia-dominios-ustai-synthetic.md) / [equivalencia-ustai-synthetic.csv](datasets/equivalencia-ustai-synthetic.csv) fornece, para **cada uma das 1260 US**:
+O passo mais caro de um estudo de validade externa — **construir o *ground truth*** — **já está feito** para os dois primeiros estágios. A equivalência em [equivalencia-dominios-ustai-synthetic.md](equivalencia-dominios-ustai-synthetic.md) / [equivalencia-ustai-synthetic.csv](datasets/essenciais/equivalencia-ustai-synthetic.csv) fornece, para **cada uma das 1260 US**:
 
 | Coluna da equivalência | Serve como |
 |---|---|
@@ -107,7 +107,7 @@ Como usar a coluna mesmo assim, de forma honesta:
 
 1. **Baixar o UStAI** da Hugging Face em CSV completo (1260 linhas, **todas** as colunas, incluindo `Implied ethical needs`). Preferir o CSV da HF à extração do PDF — é mais limpo e traz todas as colunas.
 2. **Obter o ReFAIR treinado:** usar os pesos/modelos do paper original (pasta `ReFAIR/` do projeto) **ou** retreinar **apenas no dataset Synthetic**. Em nenhuma hipótese treinar no UStAI.
-3. **Consolidar o *ground truth*:** juntar (`join` pela coluna `id`) o UStAI com [equivalencia-ustai-synthetic.csv](datasets/equivalencia-ustai-synthetic.csv) → tabela única com texto da US + `equivalent_domain` + `equivalent_ml_task_labels` + `Implied ethical needs`.
+3. **Consolidar o *ground truth*:** juntar (`join` pela coluna `id`) o UStAI com [equivalencia-ustai-synthetic.csv](datasets/essenciais/equivalencia-ustai-synthetic.csv) → tabela única com texto da US + `equivalent_domain` + `equivalent_ml_task_labels` + `Implied ethical needs`.
 4. **Garantir o mesmo pré-processamento/embedding** que o ReFAIR usou no treino (mesmo tokenizador, mesmo modelo de embedding) — senão a comparação é injusta.
 
 **Execução (ReFAIR congelado)**

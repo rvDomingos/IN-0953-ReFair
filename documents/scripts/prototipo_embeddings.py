@@ -50,7 +50,7 @@ tr = pd.concat(parts)
 print(f"treino: {len(tr)} US, {tr['dom'].nunique()} domínios")
 
 # ---- UStAI (teste held-out) ----
-ustai = list(csv.DictReader(open(ROOT + 'documents/datasets/ustai-gabarito-completo.csv', encoding='utf-8-sig')))
+ustai = list(csv.DictReader(open(ROOT + 'documents/datasets/essenciais/ustai-gabarito-completo.csv', encoding='utf-8-sig')))
 us_text = [r['User Story'] for r in ustai]
 us_y = [nd(r['equivalent_domain']) for r in ustai]
 

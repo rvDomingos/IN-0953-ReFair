@@ -16,9 +16,16 @@ Gera também 'diferencas-plataformas.csv' com as linhas que divergem (se houver)
 """
 import csv
 import sys
+import os
+from pathlib import Path
 
-A = sys.argv[1] if len(sys.argv) > 1 else 'refair-resultados-windows.csv'
-B = sys.argv[2] if len(sys.argv) > 2 else 'refair-resultados.csv'
+DATA = Path(__file__).resolve().parent.parent / 'datasets'   # documents/datasets
+ESS, ANA = DATA / 'essenciais', DATA / 'analises'
+def _ess(name):
+    return name if os.path.exists(name) else str(ESS / name)
+
+A = _ess(sys.argv[1]) if len(sys.argv) > 1 else str(ESS / 'refair-resultados-windows.csv')
+B = _ess(sys.argv[2]) if len(sys.argv) > 2 else str(ESS / 'refair-resultados.csv')
 
 
 def carregar(path):
@@ -53,7 +60,7 @@ if not dom_dif and not task_dif:
     print('\nIDENTICO entre as plataformas -> reprodutibilidade confirmada.')
 else:
     print('\nHA DIVERGENCIAS -> registrar como ameaca a validade no relatorio.')
-    with open('diferencas-plataformas.csv', 'w', encoding='utf-8', newline='') as f:
+    with open(ANA / 'diferencas-plataformas.csv', 'w', encoding='utf-8', newline='') as f:
         w = csv.writer(f)
         w.writerow(['id', 'campo', 'valor_A', 'valor_B'])
         for i in dom_dif:

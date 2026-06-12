@@ -2,7 +2,7 @@
 
 **Data:** 2026-06-12
 **O que este doc é:** a prova técnica, com dump da árvore e dados sobre **todas** as US (treino × UStAI), de que o detector de domínio do ReFAIR **decora o token na posição 3 (a palavra do papel)** em vez de entender o significado. É a causa-raiz dos 9,4% de acerto.
-**Reproduzir:** [datasets/analise_raiz_xgboost.py](datasets/analise_raiz_xgboost.py) (precisa do venv do ReFAIR — xgboost/transformers).
+**Reproduzir:** [scripts/analise_raiz_xgboost.py](scripts/analise_raiz_xgboost.py) (precisa do venv do ReFAIR — xgboost/transformers).
 **Versão simples (ELI5):** [explicacao-simples-porque-o-refair-erra.md](explicacao-simples-porque-o-refair-erra.md).
 
 ---
@@ -203,4 +203,4 @@ O detector de domínio do ReFAIR **aprende a forma (qual token, em qual posiçã
 
 ## Arquivos relacionados
 - [explicacao-simples-porque-o-refair-erra.md](explicacao-simples-porque-o-refair-erra.md) (versão ELI5) · [metricas-formais-item-a.md](metricas-formais-item-a.md) · [resultados-experimento-refair-ustai.md](resultados-experimento-refair-ustai.md) · [o-que-falta.md](o-que-falta.md)
-- Script: [datasets/analise_raiz_xgboost.py](datasets/analise_raiz_xgboost.py)
+- Script: [scripts/analise_raiz_xgboost.py](scripts/analise_raiz_xgboost.py)

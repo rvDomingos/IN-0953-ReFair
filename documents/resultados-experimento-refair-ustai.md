@@ -26,7 +26,7 @@ funciona no conjunto sintético em que foi treinado?**
 ### 2.1 Dados
 - **UStAI:** 42 abstracts × 3 LLMs (Gemini 1.5, Llama 3.1 70b, O1-mini) × 10 user
   stories = **1260 user stories** (1258 após remover 2 ids duplicados).
-- **Gabarito (ground truth) — 3 estágios**, em `documents/datasets/ustai-gabarito-completo.csv`:
+- **Gabarito (ground truth) — 3 estágios**, em `documents/datasets/essenciais/ustai-gabarito-completo.csv`:
   - *Domínio* (`equivalent_domain`) e *ML task* (`equivalent_ml_task_labels`):
     classificação manual por abstract, na taxonomia do ReFAIR (re-engenharia da
     ontologia do Fabris, 34 domínios), com nível de confiança (High/Medium/Low).
@@ -36,7 +36,7 @@ funciona no conjunto sintético em que foi treinado?**
 
 ### 2.2 Execução do ReFAIR
 - Pipeline rodada de verdade nas 1260 stories via `run_refair_batch.py`, gerando
-  `documents/datasets/refair-resultados.csv`.
+  `documents/datasets/essenciais/refair-resultados.csv`.
 - **Ambiente reproduzido nas versões exatas** do `requirements.txt` (torch 2.0.0,
   transformers 4.27.1, xgboost 1.7.4, scikit-learn 1.2.2, gensim 4.3.1) →
   predições determinísticas, equivalentes ao ambiente original.
@@ -82,7 +82,7 @@ O modelo colapsa domínios distintos em poucas classes dominantes
 | 22 | Psychology → Biology |
 | 22 | Finance & Marketing → Biology |
 
-Matriz completa em `documents/datasets/ustai-matriz-confusao-dominio.csv`.
+Matriz completa em `documents/datasets/analises/ustai-matriz-confusao-dominio.csv`.
 
 ### 3.2 ML task (estágio 2) — ReFAIR **zerou 42,5%** (535/1258)
 - O gabarito tinha labels nas 1258 stories; o ReFAIR não produziu nenhuma ML task em

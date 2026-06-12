@@ -418,7 +418,7 @@ Formato: `Domínio (nº user stories)`.
 
 ## 6. O dataset de equivalência gerado
 
-Arquivo: **`documents/datasets/equivalencia-ustai-synthetic.csv`** — 1260 linhas (1 por user story).
+Arquivo: **`documents/datasets/essenciais/equivalencia-ustai-synthetic.csv`** — 1260 linhas (1 por user story).
 
 | Coluna | Descrição |
 |---|---|
@@ -442,7 +442,7 @@ A partir desse CSV é possível gerar o **PDF** e o **Excel** solicitados (mesmo
 
 Para cada um dos **25 domínios equivalentes** identificados, a tabela abaixo traz **uma user story de exemplo extraída do dataset UStAI** (`UStAI-annotated_V2.pdf`). O exemplo mostra como uma história real do UStAI se conecta ao domínio de aplicação do Synthetic User Stories. Sempre que possível, escolheu-se uma user story cujo `role_shorten` é **específico daquele domínio** (papel de domínio único — ver Seção 5.1), tornando a correspondência mais evidente.
 
-> Esses exemplos foram exportados para os arquivos **`documents/datasets/exemplos-us-por-dominio.csv`** e **`.xlsx`** (1 linha por domínio · 25 linhas), com as colunas: `equivalent_domain`, `num_user_stories_no_dominio`, `equivalent_ml_task`, `equivalent_ml_task_labels`, `num_ml_task_labels`, `domain_confidence`, `id`, `abstract`, `abstract_theme`, `llm`, `role_shorten`, `user_story`.
+> Esses exemplos foram exportados para os arquivos **`documents/datasets/analises/exemplos-us-por-dominio.csv`** e **`.xlsx`** (1 linha por domínio · 25 linhas), com as colunas: `equivalent_domain`, `num_user_stories_no_dominio`, `equivalent_ml_task`, `equivalent_ml_task_labels`, `num_ml_task_labels`, `domain_confidence`, `id`, `abstract`, `abstract_theme`, `llm`, `role_shorten`, `user_story`.
 
 | Domínio equivalente | ID (UStAI) | role_shorten | LLM | Exemplo de User Story |
 |---|---|---|---|---|

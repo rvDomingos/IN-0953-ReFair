@@ -7,19 +7,25 @@ Lê o gabarito + a saída do ReFAIR e calcula:
   - Estratificação por LLM (Gemini/Llama/O1).
   - Análise de erros end-to-end: causa da falha (domínio / task / mapping).
 
-Requer scikit-learn. Saídas: vários CSV em documents/datasets/.
-Rodar:  python calcular_metricas.py   (a partir de documents/datasets/)
+Requer scikit-learn. Lê de documents/datasets/essenciais/, escreve em .../analises/.
+Rodar de qualquer lugar:  python documents/scripts/calcular_metricas.py
 """
-import csv, re, sys
+import csv, re, sys, os
+from pathlib import Path
 from collections import defaultdict, Counter
 from sklearn.metrics import (precision_recall_fscore_support, f1_score,
                              accuracy_score, hamming_loss)
 from sklearn.preprocessing import MultiLabelBinarizer
 
-GAB = 'ustai-gabarito-completo.csv'
+DATA = Path(__file__).resolve().parent.parent / 'datasets'   # documents/datasets
+ESS, ANA = DATA / 'essenciais', DATA / 'analises'
+def _ess(name):  # resolve nome -> essenciais (ou caminho dado, se existir)
+    return name if os.path.exists(name) else str(ESS / name)
+
+GAB = str(ESS / 'ustai-gabarito-completo.csv')
 # OFICIAL = sem patch (caixa-preta). Passe outro arquivo como argumento p/ comparar
 # (ex.: refair-resultados.csv = com patch; refair-resultados-windows.csv = validação Windows).
-RES = sys.argv[1] if len(sys.argv) > 1 else 'refair-resultados-oficial.csv'
+RES = _ess(sys.argv[1]) if len(sys.argv) > 1 else str(ESS / 'refair-resultados-oficial.csv')
 print(f"[fonte: {RES}]")
 
 FIX = {'demograpy': 'demography', 'psycology': 'psychology'}
@@ -46,7 +52,7 @@ print(f"  Accuracy : {acc:.3f}")
 print(f"  F1-Score : {f1s:.3f}")
 print(f"  (sobre {len(covered)} domínios cobertos; 9 dos 34 não têm US no UStAI)\n")
 p, r, f, sup = precision_recall_fscore_support(y_true, y_pred, labels=covered, zero_division=0)
-with open('metricas-estagio1-por-dominio.csv', 'w', encoding='utf-8', newline='') as fh:
+with open(ANA / 'metricas-estagio1-por-dominio.csv', 'w', encoding='utf-8', newline='') as fh:
     w = csv.writer(fh); w.writerow(['dominio', 'precision', 'recall', 'f1_score', 'support'])
     for d, pp, rr, ff, ss in zip(covered, p, r, f, sup):
         w.writerow([d, f'{pp:.3f}', f'{rr:.3f}', f'{ff:.3f}', ss])
@@ -66,7 +72,7 @@ print(f"  F1-Score        : {f1s2:.3f}")
 print(f"  Hamming loss    : {ham:.3f}")
 print(f"  Subset accuracy : {subset:.3f}  (exact-match)\n")
 pp, rr, ff, ss = precision_recall_fscore_support(T, P, average=None, zero_division=0)
-with open('metricas-estagio2-por-label.csv', 'w', encoding='utf-8', newline='') as fh:
+with open(ANA / 'metricas-estagio2-por-label.csv', 'w', encoding='utf-8', newline='') as fh:
     w = csv.writer(fh); w.writerow(['ml_task', 'precision', 'recall', 'f1_score', 'support'])
     for lab, a, b, c, d in zip(mlb.classes_, pp, rr, ff, ss):
         w.writerow([lab, f'{a:.3f}', f'{b:.3f}', f'{c:.3f}', d])
@@ -87,13 +93,13 @@ for code, name in LLM.items():
     vazio = sum(res[i]['ml_task_vazio'] == 'Sim' for i in sub)
     print(f"  {name:11s}: acc {a1:.3f} / F1 {f1d:.3f}  |  F1 {mi:.3f} / subset {su:.3f}  (vazias {vazio}/{len(sub)})")
     rows_llm.append([name, len(sub), f'{a1:.3f}', f'{f1d:.3f}', f'{mi:.3f}', f'{su:.3f}', vazio])
-with open('metricas-por-llm.csv', 'w', encoding='utf-8', newline='') as fh:
+with open(ANA / 'metricas-por-llm.csv', 'w', encoding='utf-8', newline='') as fh:
     w = csv.writer(fh); w.writerow(['llm', 'n', 'dom_accuracy', 'dom_f1_score', 'mltask_f1_score', 'mltask_subset', 'mltask_vazias'])
     w.writerows(rows_llm)
 
 # ---------------- ERRO END-TO-END: causa ----------------
 causa = Counter()
-with open('erro-end-to-end-causa.csv', 'w', encoding='utf-8', newline='') as fh:
+with open(ANA / 'erro-end-to-end-causa.csv', 'w', encoding='utf-8', newline='') as fh:
     w = csv.writer(fh); w.writerow(['id', 'dom_ok', 'mltask_ok', 'causa_provavel'])
     for i in ids:
         dom_ok = nd(res[i]['refair_domain']) == nd(gab[i]['equivalent_domain'])

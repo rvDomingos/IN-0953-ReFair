@@ -3,7 +3,7 @@
 **Data:** 2026-06-11
 **O que este doc é:** os resultados quantitativos formais do experimento (Item A do [o-que-falta.md](o-que-falta.md)) — F1 por estágio, estratificação por LLM e análise de causa dos erros. Inclui como reproduzir e por que rodar no Windows precisa de cuidado.
 
-> Gerado por [datasets/calcular_metricas.py](datasets/calcular_metricas.py) sobre a **rodada oficial** `refair-resultados-oficial.csv` (1258 US, **ReFAIR original, SEM patch** — item B) × `ustai-gabarito-completo.csv`.
+> Gerado por [scripts/calcular_metricas.py](scripts/calcular_metricas.py) sobre a **rodada oficial** `refair-resultados-oficial.csv` (1258 US, **ReFAIR original, SEM patch** — item B) × `ustai-gabarito-completo.csv`.
 > A rodada **com patch** dá números praticamente idênticos (ver Seção 5b); o patch **não altera o veredito**.
 
 ---
@@ -15,7 +15,7 @@
 | **Accuracy** | **0,094** | — |
 | **F1-Score** | **0,125** | **F1 = 0,98** (XGBoost) |
 
-> **F1-Score** = média do F1 sobre as classes (cada domínio pesa igual). Sobre os **25 domínios cobertos** pelo UStAI (9 dos 34 não têm US e não são testados — declarar no relatório). Detalhe (precisão/revocação/F1) por domínio em [datasets/metricas-estagio1-por-dominio.csv](datasets/metricas-estagio1-por-dominio.csv).
+> **F1-Score** = média do F1 sobre as classes (cada domínio pesa igual). Sobre os **25 domínios cobertos** pelo UStAI (9 dos 34 não têm US e não são testados — declarar no relatório). Detalhe (precisão/revocação/F1) por domínio em [datasets/analises/metricas-estagio1-por-dominio.csv](datasets/analises/metricas-estagio1-por-dominio.csv).
 
 **Leitura:** queda de ~0,98 → ~0,13 de F1. O classificador de domínio **não generaliza** para fora do conjunto sintético de treino.
 
@@ -29,7 +29,7 @@
 | **Hamming loss** | 0,222 | 0,05 (paper) |
 | **Subset accuracy** (exact-match) | **0,037** | |
 
-> **F1-Score** multi-label (micro). Detalhe (precisão/revocação/F1) por label em [datasets/metricas-estagio2-por-label.csv](datasets/metricas-estagio2-por-label.csv).
+> **F1-Score** multi-label (micro). Detalhe (precisão/revocação/F1) por label em [datasets/analises/metricas-estagio2-por-label.csv](datasets/analises/metricas-estagio2-por-label.csv).
 
 **Leitura:** mesma história — queda de ~0,90 → ~0,13 de F1, Hamming loss 4× pior. Some-se a isso que o ReFAIR **zerou a ML task em 42,5%** das US.
 
@@ -43,7 +43,7 @@
 | O1-mini | 0,086 | 0,120 | 0,126 | 0,021 | 180/420 |
 | Gemini 1.5 | 0,081 | 0,110 | 0,141 | 0,041 | 194/419 |
 
-**Leitura:** desempenho **igualmente ruim nos três LLMs** (Llama um pouco menos pior). Ou seja, o problema **não é de um gerador específico** — é do ReFAIR não generalizar. Arquivo: [datasets/metricas-por-llm.csv](datasets/metricas-por-llm.csv).
+**Leitura:** desempenho **igualmente ruim nos três LLMs** (Llama um pouco menos pior). Ou seja, o problema **não é de um gerador específico** — é do ReFAIR não generalizar. Arquivo: [datasets/analises/metricas-por-llm.csv](datasets/analises/metricas-por-llm.csv).
 
 ---
 
@@ -55,7 +55,7 @@
 | Domínio ok, erro/vazio de ML task (estágio 2) | 92 | 7,3% |
 | Domínio e task ok → diferença vem do mapping (estágio 3) | 26 | 2,1% |
 
-**Leitura — a conclusão mais importante do trabalho:** **90,6% das falhas nascem no estágio 1 (domínio).** Os estágios 2 e 3 quase nunca são a causa-raiz; eles herdam o erro de domínio (**propagação**). Por US em [datasets/erro-end-to-end-causa.csv](datasets/erro-end-to-end-causa.csv).
+**Leitura — a conclusão mais importante do trabalho:** **90,6% das falhas nascem no estágio 1 (domínio).** Os estágios 2 e 3 quase nunca são a causa-raiz; eles herdam o erro de domínio (**propagação**). Por US em [datasets/analises/erro-end-to-end-causa.csv](datasets/analises/erro-end-to-end-causa.csv).
 
 ---
 

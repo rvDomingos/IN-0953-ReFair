@@ -1,6 +1,6 @@
 # Pessoa 4 — Mapeamento Domínios UStAI ↔ ReFair
 
-Mapeamento dos **roles do UStAI** (eixo de domínio do dataset) atribuídos à Pessoa 4 para os **34 domínios da ontologia ReFair Synthetic**. Fonte: `documents/datasets/equivalencia-ustai-synthetic.csv`.
+Mapeamento dos **roles do UStAI** (eixo de domínio do dataset) atribuídos à Pessoa 4 para os **34 domínios da ontologia ReFair Synthetic**. Fonte: `documents/datasets/essenciais/equivalencia-ustai-synthetic.csv`.
 
 - **Roles (UStAI) atribuídos:** 47
 - **Domínios (ReFair) cobertos:** 25 de 34
@@ -89,7 +89,7 @@ Mapeamento dos **roles do UStAI** (eixo de domínio do dataset) atribuídos à P
 
 ## 3. Como o mapeamento foi feito (e como replicar manualmente)
 
-Esta seção documenta o **método de equivalência** usado para gerar `documents/datasets/equivalencia-ustai-synthetic.csv` — o arquivo que alimenta este relatório. A fonte completa do raciocínio está em [documents/equivalencia-dominios-ustai-synthetic.md](equivalencia-dominios-ustai-synthetic.md); abaixo está o resumo prático para quem precisa **conferir, ajustar ou refazer** um mapeamento à mão.
+Esta seção documenta o **método de equivalência** usado para gerar `documents/datasets/essenciais/equivalencia-ustai-synthetic.csv` — o arquivo que alimenta este relatório. A fonte completa do raciocínio está em [documents/equivalencia-dominios-ustai-synthetic.md](equivalencia-dominios-ustai-synthetic.md); abaixo está o resumo prático para quem precisa **conferir, ajustar ou refazer** um mapeamento à mão.
 
 ### 3.1. Os dois vocabulários envolvidos
 

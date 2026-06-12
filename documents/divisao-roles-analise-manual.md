@@ -1,6 +1,6 @@
 # Divisão de Roles para Análise Manual
 
-Dataset: `documents/datasets/ustai-stories-para-refair.csv`
+Dataset: `documents/datasets/essenciais/ustai-stories-para-refair.csv`
 
 - **Total de user stories:** 1260
 - **Total de roles únicos:** 179

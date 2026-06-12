@@ -30,8 +30,8 @@ Tempo estimado: **1 a 2 dias** de trabalho de anotação para 2 pessoas + meio d
 
 | Arquivo | Para quê |
 |---|---|
-| `documents/datasets/ustai-gabarito-completo.csv` | tem `id`, `User Story`, `role_shorten`, `equivalent_domain`, `domain_confidence` |
-| `documents/datasets/refair-resultados.csv` | o que o ReFAIR recomendou (`refair_features`) — para o passo 6 |
+| `documents/datasets/essenciais/ustai-gabarito-completo.csv` | tem `id`, `User Story`, `role_shorten`, `equivalent_domain`, `domain_confidence` |
+| `documents/datasets/essenciais/refair-resultados.csv` | o que o ReFAIR recomendou (`refair_features`) — para o passo 6 |
 | UStAI completo (Hugging Face) | a coluna `Implied ethical needs` — para o passo 8 |
 
 ---

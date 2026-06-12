@@ -112,7 +112,7 @@ python -c "import warnings; warnings.filterwarnings('ignore'); import pandas as 
 Com o venv ativo, ainda em `refair-server`:
 
 ```bat
-python run_refair_batch.py "..\..\..\..\documents\datasets\ustai-stories-para-refair.csv" -o "..\..\..\..\documents\datasets\refair-resultados-windows.csv"
+python run_refair_batch.py "..\..\..\..\documents\datasets\essenciais\ustai-stories-para-refair.csv" -o "..\..\..\..\documents\datasets\essenciais\refair-resultados-windows.csv"
 ```
 
 > Use o **texto original** (`ustai-stories-para-refair.csv`) — o patch do GloVe já normaliza no estágio 2 e o BERT (estágio 1) deve receber o texto intacto. **Não** use o `glove-clean`.
@@ -144,10 +144,10 @@ python gerar_resultado_oficial.py
 
 ## 5. Validação cross-platform (o ponto principal de rodar no Windows)
 
-Já existe um script versionado para isso: **[datasets/comparar_plataformas.py](datasets/comparar_plataformas.py)**. Ele compara o `refair-resultados-windows.csv` (gerado no passo 4) contra o `refair-resultados.csv` (rodada do macOS, já no repo) e reporta as divergências.
+Já existe um script versionado para isso: **[scripts/comparar_plataformas.py](scripts/comparar_plataformas.py)**. Ele compara o `refair-resultados-windows.csv` (gerado no passo 4) contra o `refair-resultados.csv` (rodada do macOS, já no repo) e reporta as divergências.
 
 ```bat
-cd "..\..\..\..\documents\datasets"
+cd "..\..\..\..\documents\scripts"
 python comparar_plataformas.py
 ```
 
@@ -174,7 +174,7 @@ IDENTICO entre as plataformas -> reprodutibilidade confirmada.
 A análise é **pós-processamento puro** (só precisa de `scikit-learn`, sem torch/transformers) e roda igual em qualquer SO. Os scripts **já estão versionados** em `documents\datasets\` — não precisa colar código. Do diretório `documents\datasets\`:
 
 ```bat
-cd "<raiz-do-projeto>\documents\datasets"
+cd "<raiz-do-projeto>\documents\scripts"
 
 REM métricas formais (F1-Score, Hamming, subset, por LLM) — usa a rodada OFICIAL por padrao
 python calcular_metricas.py
@@ -226,10 +226,10 @@ Depois copie o `run_refair_batch.py` e os dados para dentro do container e rode 
 3. sanity check (modelos carregam, treino ~100%)
 4. python run_refair_batch.py ... -o refair-resultados-windows.csv   (com patch)
    (opcional 4b) python gerar_resultado_oficial.py                    (rodada oficial, sem patch)
-5. cd documents\datasets  &&  python comparar_plataformas.py          ← validação cross-platform
+5. cd documents\scripts  &&  python comparar_plataformas.py           ← validação cross-platform
 6. (opcional) python calcular_metricas.py                             (recalcular F1-Score etc.)
 ```
 
-> Scripts usados: `run_refair_batch.py` e `gerar_resultado_oficial.py` (em `refair-server`); `comparar_plataformas.py` e `calcular_metricas.py` (em `documents\datasets\`).
+> Scripts usados: `run_refair_batch.py` e `gerar_resultado_oficial.py` (em `refair-server`); `comparar_plataformas.py` e `calcular_metricas.py` (em `documents\scripts\`).
 
 Arquivos relacionados: [o-que-falta.md](o-que-falta.md) · [metricas-formais-item-a.md](metricas-formais-item-a.md) · [plano-de-acao-refair.md](plano-de-acao-refair.md) · [validade-externa-refair-ustai.md](validade-externa-refair-ustai.md) · [resultados-experimento-refair-ustai.md](resultados-experimento-refair-ustai.md)
