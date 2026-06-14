@@ -26,8 +26,9 @@ RUN pip install --upgrade pip \
  && pip install -r requirements.txt \
  && pip install -r refair-server-requirements.txt
 
-# Pre-download the BERT tokenizer used by REFAIR.py so containers run offline-ready
-RUN python -c "from transformers import BertTokenizer; BertTokenizer.from_pretrained('bert-base-uncased')"
+# Pre-download the BERT tokenizer AND model used by REFAIR.py (extensao: getDomain
+# usa embeddings via BertModel) so containers run offline-ready
+RUN python -c "from transformers import BertTokenizer, BertModel; BertTokenizer.from_pretrained('bert-base-uncased'); BertModel.from_pretrained('bert-base-uncased')"
 
 # Copy source last (changes here don't bust the deps layer)
 COPY . .

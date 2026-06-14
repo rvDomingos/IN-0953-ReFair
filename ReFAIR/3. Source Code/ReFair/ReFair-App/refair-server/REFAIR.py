@@ -7,6 +7,8 @@ import gensim
 import pandas as pd
 from transformers import BertTokenizer
 
+from domain_embed import embed   # extensao RQ2: vetorizacao semantica do dominio
+
 BASE_DIR = Path(__file__).resolve().parent
 DATASETS = BASE_DIR / "datasets"
 MODELS = BASE_DIR / "models"
@@ -18,7 +20,12 @@ tasks_mapping = pd.read_csv(DATASETS / "tasks-features-mapping.csv")
 
 domain_tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 with open(MODELS / "XGBClassifier.pkl", "rb") as f:
-    domain_classifier = pickle.load(f)
+    domain_classifier = pickle.load(f)          # original (input_ids) — mantido p/ fallback
+
+# extensao RQ2: classificador de dominio sobre EMBEDDINGS do BERT (treinado por
+# treinar_dominio_embeddings.py). Substitui o getDomain original no pipeline.
+with open(MODELS / "domain_embed_logreg.pkl", "rb") as f:
+    domain_embed_classifier = pickle.load(f)
 
 glove_vectors = gensim.models.KeyedVectors.load_word2vec_format(
     str(MODELS / "glove.6B.100d.txt"), binary=False, no_header=True
@@ -32,6 +39,14 @@ with open(MODELS / "LinearSVC_LabelPowerset.pkl", "rb") as f:
 
 
 def getDomain(user_story):
+    # EXTENSAO RQ2: decide pelo SIGNIFICADO (embedding do BERT), nao pela posicao
+    # do token. Recupera de ~9,4% para ~37% de acerto de dominio no UStAI.
+    emb = embed([user_story])
+    return domain_embed_classifier.predict(emb)[0]
+
+
+def getDomain_xgb(user_story):
+    # ORIGINAL do ReFAIR (input_ids por posicao) — preservado p/ comparacao/fallback.
     tokenized_data = domain_tokenizer([user_story], padding='max_length', max_length=100, truncation=True)
     traindata = []
     for msg in tokenized_data['input_ids']:
