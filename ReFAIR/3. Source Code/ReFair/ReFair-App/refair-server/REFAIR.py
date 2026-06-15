@@ -27,6 +27,15 @@ with open(MODELS / "XGBClassifier.pkl", "rb") as f:
 with open(MODELS / "domain_embed_logreg.pkl", "rb") as f:
     domain_embed_classifier = pickle.load(f)
 
+# extensao estagio 2 (CONFIG D): ML task = GloVe-media + OneVsRest + limiar + filtro
+# soft (treinar_mltask_glove.py). A ablacao (ameaca #6) mostrou que GloVe generaliza
+# melhor que embeddings no ML task (F1 0,283 vs 0,243) — embeddings ficam so no dominio.
+with open(MODELS / "mltask_glove_ovr.pkl", "rb") as f:
+    _mlt = pickle.load(f)
+    mltask_classifier = _mlt["clf"]
+    mltask_mlb = _mlt["mlb"]
+    mltask_threshold = _mlt["threshold"]
+
 glove_vectors = gensim.models.KeyedVectors.load_word2vec_format(
     str(MODELS / "glove.6B.100d.txt"), binary=False, no_header=True
 )
@@ -66,7 +75,41 @@ def _norm_token(word):
     return re.sub(r"[^a-z0-9']", '', word)
 
 
+def _allowed_tasks(domain):
+    # tarefas plausiveis p/ o dominio, segundo o mapping (Fabris/literatura)
+    return set(
+        domain_task_mapping['Task'][i].lower()
+        for i in domain_task_mapping.index
+        if domain_task_mapping['Domain'][i].lower() == str(domain).lower()
+    )
+
+
+def _glove_avg(user_story):
+    words = user_story.replace('-', ' ').replace('/', ' ').split()
+    vecs = []
+    for word in words:
+        token = _norm_token(word)
+        if token and token in glove_vectors:
+            vecs.append(glove_vectors[token])
+    return sum(vecs) / len(vecs) if vecs else [0] * 100
+
+
 def getMLTask(user_story, domain):
+    # EXTENSAO estagio 2 (CONFIG D): GloVe-media -> OneVsRest(LogReg) com LIMIAR
+    # ajustavel; filtro dominio->tarefa SOFT — se a intersecao zerar, mantem a
+    # previsao crua (evita os ~46% de saidas vazias do filtro DURO original).
+    # F1 no UStAI: 0,13 -> 0,283. GloVe generaliza melhor que embeddings aqui (ablacao #6).
+    feat = pd.DataFrame([_glove_avg(user_story)])
+    feat.columns = feat.columns.astype(str)
+    proba = mltask_classifier.predict_proba(feat.values)[0]
+    raw = [mltask_mlb.classes_[j] for j in range(len(proba)) if proba[j] >= mltask_threshold]
+    allowed = _allowed_tasks(domain)
+    filtered = [t for t in raw if t.lower() in allowed]
+    return filtered if filtered else raw
+
+
+def getMLTask_glove(user_story, domain):
+    # ORIGINAL (GloVe-media + LinearSVC LabelPowerset + filtro DURO) — preservado.
     traindata = []
     for msg in [user_story]:
         words = msg.replace('-', ' ').replace('/', ' ').split()
@@ -100,14 +143,16 @@ def feature_extraction(domain, mltasks):
 
     domain_features = []
     for index in domains_mapping.index:
-        if domains_mapping['Domain'][index].lower() == domain.lower():
-            domain_features.append(domains_mapping['Feature'][index])
+        feat = domains_mapping['Feature'][index]
+        if domains_mapping['Domain'][index].lower() == domain.lower() and isinstance(feat, str):
+            domain_features.append(feat)
 
     for task in mltasks:
         tmp = []
         for index in tasks_mapping.index:
-            if tasks_mapping['Task'][index].lower() == task.lower():
-                tmp.append(tasks_mapping['Feature'][index])
+            feat = tasks_mapping['Feature'][index]
+            if tasks_mapping['Task'][index].lower() == task.lower() and isinstance(feat, str):
+                tmp.append(feat)
         out_features[task] = intersection(tmp, domain_features)
 
     return out_features

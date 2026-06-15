@@ -74,8 +74,8 @@
 - *Fala:* "O detector de domínio não lê o **significado** — ele recebe os **IDs de token por posição**. E a feature mais importante é a **posição 3: a palavra do papel**."
 
 **Slide 14 — A prova (a parte forte)**
-- Tabela da permutação: posição 3 → **25,6%** · conteúdo → **99,7%**.
-- *Fala:* "Provamos assim: se a gente embaralha **só o papel**, o acerto despenca de 100% pra **25%**. Se embaralha o **conteúdo** da story, **não muda nada** (99,7%). Ou seja: **o modelo ignora o conteúdo e decide pelo molde**. No treino, o papel **é** o nome do domínio (Transportation→'transportation'); no UStAI, **51% dos papéis ele nunca viu** ('driver', 'parent'…). Por isso decora e não generaliza."
+- Tabela da permutação: posição 3 → **25,3%** · conteúdo → **99,4%**.
+- *Fala:* "Provamos assim: se a gente embaralha **só o papel**, o acerto despenca de ~100% pra **25%**. Se embaralha o **conteúdo** da story, **não muda nada** (99,4%). Ou seja: **o modelo ignora o conteúdo e decide pelo molde**. No treino, o papel **é** o nome do domínio (Transportation→'transportation'); no UStAI, **51% dos papéis ele nunca viu** ('driver', 'parent'…). Por isso decora e não generaliza."
 
 **Slide 15 — A correção (extensão / RQ2)**
 - Barras: 9,4% → **37%**.
@@ -87,7 +87,7 @@
 **Slide 17 — Limitações e próximos passos**
 - *Fala:* "Limitações honestas: o gabarito é nosso (vamos medir concordância), o UStAI ainda é gerado por LLM, e o estágio 3 precisa de anotação humana. Próximo passo: empurrar a correção (sentence-transformers, LLM) rumo a 80%. **Obrigado!**"
 
-> Números: **posição 3** · **25,6% vs 99,7%** (permutação) · **51% papéis nunca vistos** · **9,4%→37% (4×)**.
+> Números: **posição 3** · **25,3% vs 99,4%** (permutação) · **51% papéis nunca vistos** · **9,4%→37% (4×)**.
 
 ---
 

@@ -89,15 +89,14 @@ O `getDomain` passa pro XGBoost os **`input_ids` do BERT** — os **IDs de token
 
 **(b) Treino × UStAI.** No sintético o papel **é** o nome do domínio (Cardiology→"card", Transportation→"transportation"; pureza **93,0%**); no UStAI são papéis genéricos ("researcher", "data", "developer"; pureza **47,5%**), e **51,4% dos papéis nunca apareceram no treino**.
 
-**(c) Importância por permutação (causal) — a prova definitiva.** Embaralhando colunas e medindo o colapso da acurácia (que é 100% no treino):
+**(c) Importância por permutação (causal) — a prova definitiva.** Embaralhando colunas e medindo o colapso da acurácia (baseline 99,5% no treino):
 
 | Intervenção | Acurácia | Interpretação |
 |---|---|---|
-| baseline (nada) | 100,0% | — |
-| embaralhar **só a posição 3** (papel) | **25,6%** | depende fortemente dela |
-| embaralhar **posições 2-7** (molde) | **3,4%** | quase toda a decisão vem do molde |
-| embaralhar **posição 40** (conteúdo) | 100,0% | conteúdo é **ignorado** |
-| embaralhar **posições 40-60** (corpo) | 99,7% | conteúdo é **ignorado** |
+| baseline (nada) | 99,5% | — |
+| embaralhar **só a posição 3** (papel) | **25,3%** | depende fortemente dela |
+| embaralhar **posições 2-7** (molde) | **3,3%** | quase toda a decisão vem do molde |
+| embaralhar **posições 40-60** (conteúdo) | 99,4% | conteúdo é **ignorado** |
 
 > **Conclusão causal:** o modelo **ignora o conteúdo** da story e decide pelo **molde de abertura** ("As a [papel], I want"). No sintético o papel nomeia o domínio (decora → 100%); no UStAI o papel é novo/genérico → desaba (9,4%). **É a raiz dos 3 sintomas** (domínio errado → ML task vazia → features erradas). Reproduzível em [analise_raiz_xgboost.py](scripts/analise_raiz_xgboost.py).
 
@@ -124,11 +123,12 @@ O ReFAIR **não generaliza** para user stories de contexto real. A causa não é
 
 ## 8. Ameaças à validade
 
-- Ground truth é a **própria equivalência** (não *gold standard* independente) → mitigar com **κ** + revisão do professor.
-- **Domínio por abstract** (granularidade grossa).
-- **Cobertura parcial:** 25 dos 34 domínios.
-- **UStAI também é sintético** (gerado por LLM) → generalização comprovada é para outra **origem sintética**, não para US humanas.
-- **Estágio 3 sem ground truth humano** ([estagio3-passo-a-passo.md](estagio3-passo-a-passo.md)).
+Análise completa (4 categorias + reprodutibilidade, com gravidade/status) em **[ameacas-a-validade.md](ameacas-a-validade.md)**. As principais:
+
+- **Construto:** ground truth é a **própria equivalência** (não *gold standard*; mitigar com **κ** + professor); gabarito de ML task **permissivo**; **domínio por abstract** (granularidade grossa); estágio 3 derivado do mapping.
+- **Interna (RQ2):** o vazamento do **limiar do estágio 2** foi **corrigido** (re-sintonizado num split do sintético; F1 honesto 0,243); resta que o estágio 2 **mudou várias coisas juntas**. A causa-raiz (RQ1) e a ablação do domínio são **mitigadas** (permutação / 1 variável).
+- **Externa:** **UStAI também é gerado por LLM** → generalização comprovada é para outra **origem sintética**, não para US humanas; cobertura parcial (25/34 domínios).
+- **Conclusão:** falta **teste de significância / IC** (McNemar + bootstrap); desbalanceamento **mitigado** (micro≈macro: 9,4 vs 11,1; 37,0 vs 37,5).
 
 ---
 
