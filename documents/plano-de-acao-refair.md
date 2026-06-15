@@ -109,11 +109,11 @@ IN-0953-ReFair/
     │   ├── 1. Domain Detection/         # notebook + dados de RQ1
     │   ├── 2. Tasks Detection/          # notebook + dados de RQ2
     │   ├── 3. Features Extraction/      # notebook do mapping
-    │   └── ReFair/                      # ★ aplicação executável
+    │   └── ReFair/                      # aplicação executável
     │       ├── REFAIR.py                # CLI principal
     │       ├── Dockerfile
     │       ├── docker-compose.yml
-    │       ├── requirements.txt         # ⚠️ UTF-16 (ver §3.1)
+    │       ├── requirements.txt         # UTF-16 (ver §3.1)
     │       ├── datasets/                # CSVs do mapping + xlsx das US
     │       ├── models/                  # .pkl treinados (sem glove)
     │       └── ReFair-App/              # versão web (Flask + Vue)
