@@ -44,6 +44,42 @@ Mas o robô olha o **lugar número 3**… e vê **"driver"** (motorista), **não
 
 ---
 
+## 🟦 A cascata do erro (diagrama pro slide)
+
+O ReFAIR trabalha em **3 etapas em fila**: primeiro o domínio, depois a tarefa de ML, depois os atributos sensíveis. Cada etapa **recebe o resultado da anterior**. Então, se a **primeira** erra, o erro **escorre** por todas — uma cascata 💧.
+
+```text
++---------------------------------------+
+| USER STORY                            |
+| "As a driver, I want a car..."        |
++---------------------------------------+
+                    |
+            v  (o erro desce)
++---------------------------------------+
+| 1) DOMINIO   <- o estagio que erra    |
+| le SO a palavra do LUGAR 3            |
+| [X] ve "driver"  ->  cai em Biologia  |
++---------------------------------------+
+                    |
+            v  (o erro desce)
++---------------------------------------+
+| 2) ML TASK                            |
+| herda o dominio errado                |
+| [X] tarefa vazia ou errada            |
++---------------------------------------+
+                    |
+            v  (o erro desce)
++---------------------------------------+
+| 3) ATRIBUTOS SENSIVEIS                |
+| herda tudo errado                     |
+| [X] recomendacao final errada         |
++---------------------------------------+
+```
+
+> ⚡ **90,6% dos erros NASCEM no estágio 1** (o domínio) — os outros dois só **herdam**. Conserta o topo da cascata e o resto melhora junto.
+
+---
+
 ## Por que isso é burrice 🫏
 
 O robô **decorou a PALAVRA**, não entendeu o **ASSUNTO**.
@@ -72,6 +108,8 @@ Um robô esperto olharia o **SENTIDO**, não o lugar:
 > (não importa em que lugar da frase essas palavras aparecem)
 
 Aí ele entenderia que **"driver" e "transportation" são a mesma família** — e acertaria a nossa frase também. 🎉
+
+**E foi isso que a gente fez!** Trocamos o "olhar o lugar 3" por "olhar o sentido" (embeddings). O acerto do domínio **pulou de 9% para 37%** (4× mais), e o robô **parou de jogar tudo na caixa "Biologia"**. 🚀
 
 ---
 
