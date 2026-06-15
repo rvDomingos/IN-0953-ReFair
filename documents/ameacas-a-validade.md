@@ -52,11 +52,11 @@ Os atributos sensíveis "esperados" saem da **regra de cruzamento domínio∩tar
 
 ## 2. Validade interna — *as relações causais se sustentam?*
 
-**2.1 (RQ2) Limiar do estágio 2 ajustado no conjunto de teste (Alta — ✅ corrigida).**
+**2.1 (RQ2) Limiar do estágio 2 ajustado no conjunto de teste (Alta — corrigida).**
 Originalmente o limiar 0,15 foi escolhido **varrendo valores no próprio UStAI** (vazamento → F1 otimista, 0,268).
 → *Corrigido:* o limiar passou a ser sintonizado num **split de validação do sintético** (80/20, held-out do treino), maximizando o micro-F1 ali; o UStAI é rodado **uma única vez** com esse valor. O limiar honesto saiu **0,45** (alto, porque o classificador é confiante in-distribution) e o **F1 do UStAI ficou 0,243** (vs 0,268 com vazamento). Reprodutível em `treinar_mltask_embeddings.py`. (O domínio nunca teve esse problema — não ajustamos nada nele no UStAI.)
 
-**2.2 (RQ2) O estágio 2 mudou várias coisas ao mesmo tempo (Média-alta — ✅ mitigada por ablação).**
+**2.2 (RQ2) O estágio 2 mudou várias coisas ao mesmo tempo (Média-alta — mitigada por ablação).**
 Fizemos a **ablação variável-a-variável** (domínio constante, medida no UStAI), isolando cada contribuição ao F1:
 
 | Δ F1 | Mudança |
@@ -67,10 +67,10 @@ Fizemos a **ablação variável-a-variável** (domínio constante, medida no USt
 
 > Conclusão: o ganho do estágio 2 vem do **filtro soft + classificador**, **não** dos embeddings — que na verdade atrapalham aqui. Por isso adotamos o **config D** (GloVe + OneVsRest + soft, F1 **0,283**) e **removemos os embeddings do estágio 2** (ficam só no domínio). A atribuição agora é limpa.
 
-**2.3 (RQ1) Causa-raiz "decora a posição 3" (Baixa — mitigada). ✅**
+**2.3 (RQ1) Causa-raiz "decora a posição 3" (Baixa — mitigada). **
 Não é só correlação: a **importância por permutação** é causal — embaralhar a posição 3 derruba o acerto (99,5%→25,3%) e embaralhar o conteúdo não muda nada (99,4%). Ver [analise-raiz-xgboost.md](analise-raiz-xgboost.md).
 
-**2.4 (RQ2) Ablação do domínio mudou uma só variável (Baixa — mitigada). ✅**
+**2.4 (RQ2) Ablação do domínio mudou uma só variável (Baixa — mitigada). **
 A extensão do domínio trocou **apenas** a entrada (input_ids→embeddings), mesmo treino, mesmo teste, sem ajuste no UStAI → a atribuição causal (representação era a culpa) é **válida**. Salto 9,4%→37%.
 
 ---
@@ -101,10 +101,10 @@ Reportamos 9,4% vs 37,0% (domínio) e 0,13 vs 0,27 (ML task) sem **IC** nem **te
 **4.2 Suporte pequeno por classe (Média).**
 Domínios com 29-30 US → estimativas por domínio **ruidosas**; cuidado ao ler números por domínio isoladamente.
 
-**4.3 Desbalanceamento de classes (Baixa — mitigada). ✅**
+**4.3 Desbalanceamento de classes (Baixa — mitigada). **
 O UStAI é desbalanceado (120 US no maior domínio, 29 no menor). Mas **acurácia (micro) ≈ média por domínio (macro)**: 9,4% vs 11,1% (original) e 37,0% vs 37,5% (extensão) → o desempenho está **espalhado**, nenhuma classe grande distorce o número. Além disso, o "F1-Score" que reportamos **já é macro** (corrige o desbalanceamento). E a comparação original×extensão é imune (mesmo conjunto de teste).
 
-**4.4 Determinismo (Baixa — mitigada). ✅**
+**4.4 Determinismo (Baixa — mitigada). **
 Inferência sem aleatoriedade; predições **idênticas** em macOS e Windows → variância de execução ≈ 0.
 
 ---
@@ -113,10 +113,10 @@ Inferência sem aleatoriedade; predições **idênticas** em macOS e Windows →
 
 | Item | Situação |
 |---|---|
-| Versões fixadas (torch 2.0.0, transformers 4.27.1, xgboost 1.7.4, sklearn 1.2.2) | ✅ |
-| Inferência determinística, macOS = Windows (0 divergências) | ✅ |
-| Seeds fixos no treino da extensão (42) | ✅ |
-| Scripts e modelos versionados | ✅ |
+| Versões fixadas (torch 2.0.0, transformers 4.27.1, xgboost 1.7.4, sklearn 1.2.2) | |
+| Inferência determinística, macOS = Windows (0 divergências) | |
+| Seeds fixos no treino da extensão (42) | |
+| Scripts e modelos versionados | |
 | **Fragilidade:** modelo `.pkl` treinado em Py 3.11, container Docker em Py 3.9 | funcionou, mas re-treinar no ambiente-alvo é mais seguro |
 
 ---
@@ -134,7 +134,7 @@ Inferência sem aleatoriedade; predições **idênticas** em macOS e Windows →
 1. **κ entre anotadores** + revisão do professor (cobre 1.1, 1.3).
 2. **Critério objetivo de ML task correta** com o professor (cobre 1.2).
 3. **Anotação humana do estágio 3** (cobre 1.4).
-4. ~~Re-sintonizar o limiar do estágio 2 num split do sintético~~ ✅ **feito** (limiar 0,45, F1 honesto 0,243).
+4. ~~Re-sintonizar o limiar do estágio 2 num split do sintético~~ **feito** (limiar 0,45, F1 honesto 0,243).
 5. **McNemar + IC bootstrap** nas comparações (cobre 4.1).
 6. (Opcional) validar num conjunto pequeno de **US humanas reais** (cobre 3.1).
 

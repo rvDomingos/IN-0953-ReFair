@@ -196,7 +196,7 @@ Construímos o mapa `token da posição 3 → domínio majoritário` a partir do
 
 ---
 
-## 5.4 ⭐ A PROVA CAUSAL — importância por permutação
+## 5.4 A PROVA CAUSAL — importância por permutação
 
 As seções anteriores são *correlação*. Esta é a **prova causal** de que a decisão sai da posição 3 e **não** do conteúdo. Método: medir o acerto no treino, depois **embaralhar** grupos de posições entre as linhas (quebrando o vínculo daquela posição com o rótulo, mantendo a distribuição) e remedir.
 

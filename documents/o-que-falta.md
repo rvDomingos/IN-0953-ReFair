@@ -5,28 +5,28 @@
 
 ---
 
-## 📍 Resumo (bater o olho)
+## Resumo (bater o olho)
 
 | Bloco | Estado |
 |---|---|
-| **A — Métricas formais** (F1, Hamming, subset, por LLM, causa de erro) | ✅ Feito |
-| **B — Rodada oficial sem patch + decisão patched×unpatched** | ✅ Feito |
-| **Causa-raiz** (parser/posição-3, prova por permutação) | ✅ Feito |
-| **RQ2 — Extensão** (domínio embeddings 37% + ML task config D 0,283 + ablação) | ✅ Feito |
-| **Ameaças à validade** (doc dedicado, vazamento corrigido) | ✅ Feito |
-| **Reprodutibilidade** (Docker rodando + determinismo macOS=Windows) | ✅ Feito |
-| **C — Validação nativa no Windows** (opcional, Docker já cobre) | 🟡 Opcional |
-| **D — Estágio 3: anotação humana + painel + κ** | 🔴 Falta (precisa de pessoas) |
-| **Significância estatística** (McNemar + IC) | 🟡 Recomendado |
-| **2 ids duplicados** | 🔴 Falta (rápido) |
-| **Acordar limiar com o professor** | 🔴 Falta (combinar) |
-| **Relatório final + commit** | 🟡 Relatório pronto; falta o commit |
+| **A — Métricas formais** (F1, Hamming, subset, por LLM, causa de erro) | Feito |
+| **B — Rodada oficial sem patch + decisão patched×unpatched** | Feito |
+| **Causa-raiz** (parser/posição-3, prova por permutação) | Feito |
+| **RQ2 — Extensão** (domínio embeddings 37% + ML task config D 0,283 + ablação) | Feito |
+| **Ameaças à validade** (doc dedicado, vazamento corrigido) | Feito |
+| **Reprodutibilidade** (Docker rodando + determinismo macOS=Windows) | Feito |
+| **C — Validação nativa no Windows** (opcional, Docker já cobre) | Opcional |
+| **D — Estágio 3: anotação humana + painel + κ** | Falta (precisa de pessoas) |
+| **Significância estatística** (McNemar + IC) | Recomendado |
+| **2 ids duplicados** | Falta (rápido) |
+| **Acordar limiar com o professor** | Falta (combinar) |
+| **Relatório final + commit** | Relatório pronto; falta o commit |
 
 **Em uma frase:** o **núcleo quantitativo (RQ1 + RQ2) está fechado e defensável**; falta a **avaliação humana** (κ + painel do estágio 3), **combinar o limiar com o professor**, pequenas limpezas, e o **commit**.
 
 ---
 
-## ✅ Já está pronto
+## Já está pronto
 
 **Experimento (RQ1 — o ReFAIR não generaliza):**
 - ReFAIR rodado **congelado** nas 1260 US; ground truth dos 3 estágios.
@@ -47,7 +47,7 @@
 
 ---
 
-## 🔴 Falta de verdade
+## Falta de verdade
 
 ### 1. Avaliação humana do estágio 3 (precisa de pessoas) — maior item aberto
 Passo a passo em [estagio3-passo-a-passo.md](estagio3-passo-a-passo.md).
@@ -69,17 +69,17 @@ Passo a passo em [estagio3-passo-a-passo.md](estagio3-passo-a-passo.md).
 
 ---
 
-## 📦 Para ENTREGAR
+## Para ENTREGAR
 - [x] **Relatório final** consolidado → [RELATORIO-GERAL-experimento.md](RELATORIO-GERAL-experimento.md) (atualizado com RQ1 + RQ2 + ameaças).
 - [x] **Apresentação** → [apresentacao-3-pessoas.md](apresentacao-3-pessoas.md).
 - [ ] **Commit/empacotamento** no git (o usuário faz): relatório + scripts + modelos da extensão + planilhas (`venv_mac/` e arquivos grandes já no `.gitignore`).
 
 ---
 
-## ✔️ Definição de "concluído"
-- ✅ Estágios 1 e 2 com métricas formais, por LLM, nos 25 domínios cobertos.
-- ✅ Rodada oficial (sem patch) definida; causa-raiz provada.
-- ✅ RQ2 (extensão) medida, com ablação e sem vazamento; ameaças declaradas.
-- ✅ Reprodutibilidade (Docker + determinismo).
-- 🔴 Estágio 3 com amostra anotada + painel + κ. **(falta — precisa de pessoas)**
-- 🔴 Limiar acordado com o professor.
+## Definição de "concluído"
+- Estágios 1 e 2 com métricas formais, por LLM, nos 25 domínios cobertos.
+- Rodada oficial (sem patch) definida; causa-raiz provada.
+- RQ2 (extensão) medida, com ablação e sem vazamento; ameaças declaradas.
+- Reprodutibilidade (Docker + determinismo).
+- Estágio 3 com amostra anotada + painel + κ. **(falta — precisa de pessoas)**
+- Limiar acordado com o professor.

@@ -55,9 +55,9 @@ Compara, por domínio, as features sensíveis extraídas da ontologia do Fabris 
 
 ## O que isso fecha e o que continua aberto
 
-- ✅ **Proveniência documentada:** dá para afirmar, com tabela, que as features são do Fabris e que a tabela do ReFAIR é a curadoria dele.
-- ✅ **Comparação de 3 fontes pronta** para o relatório (ReFAIR × proxy × ontologia).
-- 🔴 **Continua aberto (item D):** o ground truth **independente** do Estágio 3 — anotação humana das US. Nem o código (`feature_extraction`) nem o `.ttl` cru substituem isso. Passo a passo em [estagio3-passo-a-passo.md](estagio3-passo-a-passo.md).
+- **Proveniência documentada:** dá para afirmar, com tabela, que as features são do Fabris e que a tabela do ReFAIR é a curadoria dele.
+- **Comparação de 3 fontes pronta** para o relatório (ReFAIR × proxy × ontologia).
+- **Continua aberto (item D):** o ground truth **independente** do Estágio 3 — anotação humana das US. Nem o código (`feature_extraction`) nem o `.ttl` cru substituem isso. Passo a passo em [estagio3-passo-a-passo.md](estagio3-passo-a-passo.md).
 
 ---
 

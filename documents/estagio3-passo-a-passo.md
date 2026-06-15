@@ -95,7 +95,7 @@ Pistas concretas:
 3. **O domínio** ajuda a calibrar — saúde puxa `age`/`sex`; crédito puxa `age`/`gender`/`race`; etc.
 4. Se a US é puramente técnica e **não envolve pessoas** → `none`.
 
-> ⚠️ Anotar pelo **contexto real da US**, **não** pelo que o ReFAIR respondeu. O anotador **não deve ver** a saída do ReFAIR nesta fase (senão enviesa).
+> Anotar pelo **contexto real da US**, **não** pelo que o ReFAIR respondeu. O anotador **não deve ver** a saída do ReFAIR nesta fase (senão enviesa).
 
 ---
 
@@ -167,7 +167,7 @@ Cada avaliador preenche separado; reportar média + desvio. Inclua o **professor
 
 ## Passo 8 — Coerência com `Implied ethical needs`
 
-> ⚠️ **`Implied ethical needs` ≠ `sensitive features`** (Seção 6 do plano). Não é ground truth direto — é vocabulário de ética (Privacy, Safety…), não de atributos demográficos.
+> **`Implied ethical needs` ≠ `sensitive features`** (Seção 6 do plano). Não é ground truth direto — é vocabulário de ética (Privacy, Safety…), não de atributos demográficos.
 
 Uso honesto:
 - **Filtro de relevância:** US cujo princípio ético é justiça/inclusão/não-discriminação são as em que o ReFAIR **deveria** recomendar features não-triviais. US só de `Privacy`/`Safety` são casos onde features são menos centrais.
@@ -190,7 +190,7 @@ Itens obrigatórios a registrar:
 
 ---
 
-## ✔️ Checklist do Item D
+## Checklist do Item D
 
 - [ ] Amostra estratificada gerada (~120 US) — `estagio3-amostra-para-anotar.csv`
 - [ ] Vocabulário fechado acordado com o professor

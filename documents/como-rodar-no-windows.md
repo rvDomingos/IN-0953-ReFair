@@ -32,7 +32,7 @@ cd IN-0953-ReFair
 git pull
 ```
 
-> ⚠️ **Garanta que o `REFAIR.py` é o patcheado** (com a função `_norm_token`) e que o `run_refair_batch.py` está presente em `refair-server`. Se clonou/puxou do mesmo repo, já vem.
+> **Garanta que o `REFAIR.py` é o patcheado** (com a função `_norm_token`) e que o `run_refair_batch.py` está presente em `refair-server`. Se clonou/puxou do mesmo repo, já vem.
 
 O modelo **GloVe** (~347 MB) não fica no Git. Baixe e coloque em `models/`:
 
@@ -127,7 +127,7 @@ OK -> ...\refair-resultados-windows.csv
 
 Colunas do CSV: `id, User Story, refair_domain, refair_ml_tasks, refair_features, refair_features_por_task, ml_task_vazio, erro`.
 
-> ⏱️ Demora alguns minutos (carrega GloVe de 347 MB + roda BERT/XGBoost/LSVC em 1260 stories).
+> ⏱ Demora alguns minutos (carrega GloVe de 347 MB + roda BERT/XGBoost/LSVC em 1260 stories).
 > Este arquivo sai **com patch** do GloVe (o `REFAIR.py` está patcheado). É esse que entra na validação cross-platform do passo 5.
 
 ### 4b. (Opcional) Gerar a rodada OFICIAL (sem patch) — item B
@@ -151,7 +151,7 @@ cd "..\..\..\..\documents\scripts"
 python comparar_plataformas.py
 ```
 
-> ⚠️ Compare contra **`refair-resultados.csv`** (não o `-oficial`): os dois saem do mesmo `run_refair_batch.py` (que usa o `REFAIR.py` **com patch**). O **domínio é idêntico com/sem patch**, então é a comparação certa para reprodutibilidade.
+> Compare contra **`refair-resultados.csv`** (não o `-oficial`): os dois saem do mesmo `run_refair_batch.py` (que usa o `REFAIR.py` **com patch**). O **domínio é idêntico com/sem patch**, então é a comparação certa para reprodutibilidade.
 
 Saída esperada:
 ```

@@ -75,7 +75,7 @@ User story claramente de **Transportation**:
 | 10 | `suggest` | 6592 |
 | 11 | `the` | 1996 |
 
-**Saída do ReFAIR:** `Domínio previsto = News` ❌ (esperado: **Transportation**).
+**Saída do ReFAIR:** `Domínio previsto = News` (esperado: **Transportation**).
 
 Por quê erra: a feature decisiva é a **posição 3** (`driver`, id 4062). No treino, nenhuma US de Transportation tinha "driver" na posição 3 (lá o papel é "transportation researcher" → token "transportation"). Como o ID 4062 não casa com o que o modelo decorou, ele cai num ramo arbitrário → "News".
 

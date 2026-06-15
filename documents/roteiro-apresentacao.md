@@ -8,7 +8,7 @@
 
 ---
 
-## 🎤 Participante 1 — Contexto e Problema (~4-5 min) · slides 1-4
+## Participante 1 — Contexto e Problema (~4-5 min) · slides 1-4
 
 **Slide 1 — Capa**
 - Título: *"O ReFAIR funciona fora do laboratório? Avaliação de validade externa em user stories reais"*. Nomes da equipe.
@@ -27,7 +27,7 @@
 
 ---
 
-## 🎤 Participante 2 — Método e Plataformas (~5 min) · slides 5-8
+## Participante 2 — Método e Plataformas (~5 min) · slides 5-8
 
 **Slide 5 — O dataset UStAI**
 - *Fala:* "Pegamos o **UStAI**: **1260 user stories** geradas por **3 LLMs** (Gemini, Llama, O1) a partir de **42 abstracts de papers reais**. Origem diferente = teste de generalização legítimo."
@@ -45,7 +45,7 @@
 
 ---
 
-## 🎤 Participante 3 — Resultados (~5 min) · slides 9-12
+## Participante 3 — Resultados (~5 min) · slides 9-12
 
 **Slide 9 — O resultado principal**
 - Gráfico de barras: **0,98 → 0,125**.
@@ -67,7 +67,7 @@
 
 ---
 
-## 🎤 Participante 4 — Causa-raiz, Extensão e Conclusão (~5 min) · slides 13-17
+## Participante 4 — Causa-raiz, Extensão e Conclusão (~5 min) · slides 13-17
 
 **Slide 13 — A causa-raiz**
 - Mostrar: a frase "As a **[papel]**, I want…" com a **posição 3** destacada.

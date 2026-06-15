@@ -91,14 +91,14 @@ Gera 4 CSVs: `metricas-estagio1-por-dominio`, `metricas-estagio2-por-label`, `me
 
 ---
 
-## 7. ⚠️ Sobre "deu o mesmo resultado no Windows" — leia com atenção
+## 7. Sobre "deu o mesmo resultado no Windows" — leia com atenção
 
 Há **dois tipos de script** e isso muda tudo:
 
 | Script | O que faz | Rodar no Windows e dar igual significa… |
 |---|---|---|
-| **`run_refair_batch.py`** | Roda os **modelos do ReFAIR** (BERT+XGBoost, GloVe+LSVC) nas 1260 US → gera `refair-resultados.csv` | ✅ **Validação real**: as predições são iguais entre SO (resultado ideal!) |
-| **`analisar_resultados.py` / `calcular_metricas.py`** | Só **lê um CSV** e compara com o gabarito (pós-processamento, sem modelo) | ❌ **Não valida nada**: se leu o mesmo CSV, o resultado é idêntico **por construção** |
+| **`run_refair_batch.py`** | Roda os **modelos do ReFAIR** (BERT+XGBoost, GloVe+LSVC) nas 1260 US → gera `refair-resultados.csv` | **Validação real**: as predições são iguais entre SO (resultado ideal!) |
+| **`analisar_resultados.py` / `calcular_metricas.py`** | Só **lê um CSV** e compara com o gabarito (pós-processamento, sem modelo) | **Não valida nada**: se leu o mesmo CSV, o resultado é idêntico **por construção** |
 
 **O que provavelmente aconteceu:** você rodou `analisar_resultados.py` apontando para o `refair-resultados.csv` que **veio do macOS** (está versionado no repo). Aí dar `9,4%` igual é **esperado e trivial** — você re-analisou o mesmo arquivo, não rodou o ReFAIR no Windows.
 

@@ -14,7 +14,7 @@ Mapear cada *user story* do dataset **UStAI** para o vocabulário do dataset **S
 | Synthetic User Stories | `Synthetic User Stories.xlsx` | `Domain` (domínio de aplicação) | 34 domínios |
 | Synthetic User Stories | `Synthetic User Stories.xlsx` | `Machine Learning Task` | 367 ML tasks |
 
-> ⚠️ **Ressalva importante.** O PDF `Synthetic-User-Stories.pdf` entregue contém, na verdade, a lista das **367 ML Tasks** (coluna `Machine Learning Task` / aba *ML Dictionary*) — **não** a coluna de domínio. A coluna `Domain` real do dataset Synthetic está na aba *Dataset* do `.xlsx` e tem **34 domínios de aplicação**. Por isso a equivalência foi feita para **os dois eixos** (domínio de aplicação **e** ML task), conforme combinado.
+> **Ressalva importante.** O PDF `Synthetic-User-Stories.pdf` entregue contém, na verdade, a lista das **367 ML Tasks** (coluna `Machine Learning Task` / aba *ML Dictionary*) — **não** a coluna de domínio. A coluna `Domain` real do dataset Synthetic está na aba *Dataset* do `.xlsx` e tem **34 domínios de aplicação**. Por isso a equivalência foi feita para **os dois eixos** (domínio de aplicação **e** ML task), conforme combinado.
 
 Os **34 domínios** do Synthetic (ontologia de Fabris et al., reusada pelo ReFAIR):
 

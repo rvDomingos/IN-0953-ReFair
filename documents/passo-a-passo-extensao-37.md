@@ -103,7 +103,7 @@ acc = accuracy_score(us_y, pred); f1 = f1_score(us_y, pred, average='macro', ...
 
 ---
 
-## 4. Integração no ReFAIR — ✅ FEITA na `main` (estágio 1)
+## 4. Integração no ReFAIR — FEITA na `main` (estágio 1)
 
 A extensão **já está integrada** no ReFAIR que você roda (o `refair-server`). Quando você roda a pipeline no UStAI, o `getDomain` agora decide por **significado** (embedding), e o estágio 2 mantém o patch do GloVe.
 
@@ -141,7 +141,7 @@ Rodando a pipeline completa no UStAI **com a extensão**:
 
 | Métrica | Original | **Extensão (BERT)** |
 |---|---|---|
-| **Domínio correto ("US validada")** | 118 (9,4%) | **466 (37,0%)** ⬆ **+348 US** |
+| **Domínio correto ("US validada")** | 118 (9,4%) | **466 (37,0%)** ↑ **+348 US** |
 | Features — match exato | ~2,1% | **9,6%** |
 | Features — overlap parcial | ~32,4% | **45,8%** |
 | Colapso em "Biology" | 354 US | **64 US** (deixou de colapsar) |
@@ -150,7 +150,7 @@ Rodando a pipeline completa no UStAI **com a extensão**:
 
 ---
 
-## 4c. Estágio 2 (ML task) — também estendido ✅ (CONFIG D)
+## 4c. Estágio 2 (ML task) — também estendido (CONFIG D)
 
 Diagnóstico: o classificador de ML task **nunca** previa vazio (0%); quem zerava era o **filtro domínio→tarefa duro** (interseção contra uma lista minúscula → 46% vazias). Config D = três mudanças:
 

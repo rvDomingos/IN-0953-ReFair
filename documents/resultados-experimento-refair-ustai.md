@@ -56,15 +56,15 @@ funciona no conjunto sintético em que foi treinado?**
 
 | Confiança do gabarito | Acerto |
 |---|---|
-| High   | 14,6% (109/748) |
+| High | 14,6% (109/748) |
 | Medium | 1,5% (5/330) |
-| Low    | 2,2% (4/180) |
+| Low | 2,2% (4/180) |
 
 **Teste decisivo (descarta bug):** o `getDomain` acerta **100% (200/200)** nas stories
 de **treino** (sintéticas), mas **9,4%** no UStAI. Como acerta perfeitamente o treino,
 ficam descartados bug de mapeamento de índice ou de carregamento dos modelos.
 
-➡️ **Conclusão: o detector de domínio está superajustado (overfit) ao conjunto
+→ **Conclusão: o detector de domínio está superajustado (overfit) ao conjunto
 sintético e não generaliza para user stories reais.**
 
 #### Efeito "Biology" — top confusões (gabarito → ReFair)
