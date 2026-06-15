@@ -1,4 +1,4 @@
-# Por que o ReFAIR erra — explicado para uma criança de 5 anos 🧒🫏
+# Por que o ReFAIR erra
 
 > A versão difícil está em [analise-raiz-xgboost.md] / [metricas-formais-item-a.md](metricas-formais-item-a.md).
 > Aqui é a versão **MUITO simples**. Prometido.
