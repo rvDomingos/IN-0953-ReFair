@@ -1,6 +1,6 @@
 # Relatório geral — Avaliação de validade externa do ReFAIR no UStAI
 
-**Data:** 2026-06-12
+**Data:** 2026-06-15
 **Projeto:** IN-0953-ReFair
 **O que este doc é:** a **explicação final consolidada** do experimento, com rigor técnico — método, plataformas, resultados, causa-raiz (re-verificada) e extensão. Reúne e substitui a leitura dispersa dos docs de apoio (listados no fim).
 
@@ -8,7 +8,7 @@
 
 ## 0. Sumário executivo
 
-Avaliamos o **ReFAIR** (recomendador de *sensitive features* para fairness, ICSE'24) em **user stories de contexto real** (dataset **UStAI**), como teste de **validade externa** — rodando a ferramenta **congelada, sem retreino**. O ReFAIR, que reporta F1 = 0,98 em domínio no seu conjunto sintético, **desaba para F1 = 0,125 (9,4% de acerto)** no UStAI. Abrindo a caixa-preta, **diagnosticamos a causa**: o detector de domínio aprende **padrões posicionais de token** (o molde "As a [papel], I want…"), não o **significado** da story. Um **estudo de ablação** (trocar a representação por embeddings) **quadruplica** o acerto (9,4% → 37%), confirmando a representação como causa-raiz.
+Avaliamos o **ReFAIR** (recomendador de *sensitive features* para fairness, ICSE'24) em **user stories de contexto real** (dataset **UStAI**), como teste de **validade externa** — rodando a ferramenta **congelada, sem retreino**. O ReFAIR, que reporta F1 = 0,98 em domínio no seu conjunto sintético, **desaba para F1 = 0,125 (9,4% de acerto)** no UStAI. Abrindo a caixa-preta, **diagnosticamos a causa**: o detector de domínio aprende **padrões posicionais de token** (o molde "As a [papel], I want…"), não o **significado** da story. Como **extensão (RQ2)**, corrigimos a pipeline: trocar a representação do domínio por embeddings **quadruplica** o acerto (9,4% → 37%); e uma reforma do estágio 2 (filtro soft + classificador, "config D") leva o ML task de **F1 0,13 → 0,28** e quase zera as saídas vazias (54% → 99,8% não-vazias).
 
 | | Domínio (estágio 1) | ML task (estágio 2) | Features (estágio 3) |
 |---|---|---|---|
@@ -108,16 +108,40 @@ O ReFAIR **não generaliza** para user stories de contexto real. A causa não é
 
 ---
 
-## 7. Extensão — corrigindo a representação (RQ2)
+## 7. Extensão — corrigindo a pipeline (RQ2)
 
-**Estudo de ablação controlado:** trocamos **uma única variável** — a entrada `input_ids` → **embeddings médios do BERT** — treinando no sintético e testando no UStAI *held-out* (`prototipo_embeddings.py`):
+Implementada e **integrada no ReFAIR** (rodando em Docker; o original preservado como fallback). Passo a passo em [passo-a-passo-extensao-37.md](passo-a-passo-extensao-37.md).
+
+### 7.1 Estágio 1 — Domínio: `input_ids` → embeddings do BERT
+**Ablação limpa** (uma única variável, sem ajuste no teste): treina no sintético, testa no UStAI *held-out*.
 
 | Modelo | Acerto (UStAI) | F1-Score |
 |---|---|---|
 | ReFAIR original (XGBoost sobre `input_ids`) | 9,4% | 0,125 |
-| **Protótipo (BERT mean-pool + LogReg)** | **37,0%** | **0,386** |
+| **Embeddings (BERT mean-pool + LogReg)** | **37,0%** | **0,386** |
 
-**4× melhor**, mudando só a representação. Isso **isola a representação como causa** (refuta "o UStAI é difícil demais") e indica o caminho do conserto. É **limite inferior** (BERT cru, 100 US/domínio); sentence-transformers + data augmentation + fine-tune/LLM tendem a ir além. Roteiro completo em [roadmap-80-porcento.md](roadmap-80-porcento.md).
+**4×**, mudando só a representação → **isola a representação como causa** (refuta "o UStAI é difícil demais"). Parou de colapsar em "Biology" (354→64).
+
+### 7.2 Estágio 2 — ML task: "config D" (GloVe + OneVsRest + filtro soft + limiar)
+O classificador **nunca** previa vazio; quem zerava 46% das saídas era o **filtro domínio→tarefa duro**. Correção + ablação (segurando o domínio constante, medida no UStAI):
+
+| Mudança | Δ F1 |
+|---|---|
+| filtro **soft** (mantém a previsão se a interseção zerar) | **+0,11** (lever dominante) |
+| classificador LabelPowerset → **OneVsRest** (+ limiar sintonizado no sintético) | +0,05 |
+| GloVe → embeddings | **−0,03** (pioram aqui → removidos) |
+
+Resultado: **F1 0,132 → 0,283**, não-vazio 54% → 99,8%. **Achado:** no ML task o **GloVe generaliza melhor** que o mean-pool do BERT (a tarefa depende de palavras-chave de ação) — por isso a arquitetura final é **embeddings no domínio + GloVe no ML task**.
+
+### 7.3 Efeito end-to-end (1260 US)
+| Métrica | Original | Extensão |
+|---|---|---|
+| Domínio correto | 9,4% | **37,0%** |
+| ML task F1 | 0,132 | **0,283** |
+| ML task não-vazio | 54% | **99,8%** |
+| Features (overlap parcial) | 32,4% | **84,3%** |
+
+É **limite inferior** (BERT cru, 100 US/domínio); sentence-transformers / augmentation / LLM tendem a ir além ([roadmap-80-porcento.md](roadmap-80-porcento.md)).
 
 ---
 
@@ -126,7 +150,7 @@ O ReFAIR **não generaliza** para user stories de contexto real. A causa não é
 Análise completa (4 categorias + reprodutibilidade, com gravidade/status) em **[ameacas-a-validade.md](ameacas-a-validade.md)**. As principais:
 
 - **Construto:** ground truth é a **própria equivalência** (não *gold standard*; mitigar com **κ** + professor); gabarito de ML task **permissivo**; **domínio por abstract** (granularidade grossa); estágio 3 derivado do mapping.
-- **Interna (RQ2):** o vazamento do **limiar do estágio 2** foi **corrigido** (re-sintonizado num split do sintético; F1 honesto 0,243); resta que o estágio 2 **mudou várias coisas juntas**. A causa-raiz (RQ1) e a ablação do domínio são **mitigadas** (permutação / 1 variável).
+- **Interna (RQ2):** o vazamento do **limiar do estágio 2** foi **corrigido** (re-sintonizado no sintético) e a contribuição de cada mudança foi **isolada por ablação** (filtro soft +0,11; classificador +0,05; embeddings −0,03). A causa-raiz (RQ1) e a ablação do domínio são **mitigadas** (permutação / 1 variável). **Sem ameaças internas abertas.**
 - **Externa:** **UStAI também é gerado por LLM** → generalização comprovada é para outra **origem sintética**, não para US humanas; cobertura parcial (25/34 domínios).
 - **Conclusão:** falta **teste de significância / IC** (McNemar + bootstrap); desbalanceamento **mitigado** (micro≈macro: 9,4 vs 11,1; 37,0 vs 37,5).
 
@@ -134,7 +158,7 @@ Análise completa (4 categorias + reprodutibilidade, com gravidade/status) em **
 
 ## 9. O que falta
 
-Estado em [o-que-falta.md](o-que-falta.md). Núcleo quantitativo fechado (métricas + rodada oficial + cross-platform). Falta: anotação humana do estágio 3 + painel + κ, limiar com o professor, e o texto final.
+Estado completo em [o-que-falta.md](o-que-falta.md). **Núcleo quantitativo fechado** (RQ1 + RQ2: métricas, rodada oficial, causa-raiz, extensão, ameaças, Docker). **Falta** (precisa de pessoas/decisão): anotação humana do estágio 3 + painel + **κ**; **acordar o limiar com o professor**; *(recomendado)* McNemar + IC; investigar os 2 ids duplicados; e o **commit**.
 
 ---
 
@@ -142,6 +166,10 @@ Estado em [o-que-falta.md](o-que-falta.md). Núcleo quantitativo fechado (métri
 
 **Dados/resultados (`documents/datasets/`):** `ustai-gabarito-completo`, `refair-resultados-oficial` (oficial), `refair-resultados` (com patch), `ustai-comparacao-refair-vs-gabarito`, `ustai-matriz-confusao-dominio`, `ustai-resumo-por-abstract`, `ustai-impacto-patch-glove`, `ustai-features-3fontes`, `fabris-ttl-vs-refair-csv-dominios`, `metricas-*`, `erro-end-to-end-causa`.
 
-**Scripts:** `run_refair_batch.py`, `gerar_resultado_oficial.py` (refair-server) · `calcular_metricas.py`, `analise_raiz_xgboost.py`, `comparar_plataformas.py`, `prototipo_embeddings.py`, `csv_para_xlsx.py` (datasets).
+Gabarito colorido de domínio: `ustai-dominio-acerto-config-d` (texto original — verde=correto/vermelho=errado).
+
+**Scripts (análise, `documents/scripts/`):** `calcular_metricas.py`, `analise_raiz_xgboost.py`, `comparar_plataformas.py`, `prototipo_embeddings.py`, `csv_para_xlsx.py`.
+
+**Extensão (RQ2, `refair-server/`):** `domain_embed.py` + `treinar_dominio_embeddings.py` + `models/domain_embed_logreg.pkl` (domínio); `treinar_mltask_glove.py` + `models/mltask_glove_ovr.pkl` (ML task config D); `REFAIR.py` modificado (`getDomain`/`getMLTask` novos, originais preservados como `_xgb`/`_glove`); runners `run_refair_batch.py`, `gerar_resultado_oficial.py`; `Dockerfile`/`docker-compose.yml`.
 
 **Docs de apoio:** [resultados-experimento-refair-ustai.md](resultados-experimento-refair-ustai.md) · [metricas-formais-item-a.md](metricas-formais-item-a.md) · [analise-raiz-xgboost.md](analise-raiz-xgboost.md) · [explicacao-simples-porque-o-refair-erra.md](explicacao-simples-porque-o-refair-erra.md) · [roadmap-80-porcento.md](roadmap-80-porcento.md) · [como-rodar-no-windows.md](como-rodar-no-windows.md) · [estagio3-passo-a-passo.md](estagio3-passo-a-passo.md) · [resumo-features-fabris-3fontes.md](resumo-features-fabris-3fontes.md) · [validade-externa-refair-ustai.md](validade-externa-refair-ustai.md) · [plano-de-acao-refair.md](plano-de-acao-refair.md) · [o-que-falta.md](o-que-falta.md)
