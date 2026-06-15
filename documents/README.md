@@ -12,7 +12,7 @@ Dados em [datasets/](datasets/) (ver [datasets/README.md](datasets/README.md)); 
 | [ameacas-a-validade.md](ameacas-a-validade.md) | Ameaças à validade (4 categorias + status). |
 | [o-que-falta.md](o-que-falta.md) | Estado atual e o que falta para entregar. |
 | [mapa-do-projeto-e-divisao-4-pessoas.md](mapa-do-projeto-e-divisao-4-pessoas.md) | Tudo que foi feito (bullets) + divisão de trabalho para 4 pessoas. |
-| [apresentacao-3-pessoas.md](apresentacao-3-pessoas.md) | Roteiro de apresentação (3 pessoas, baseado no artigo). |
+
 
 ## Experimento (RQ1 — o ReFAIR não generaliza)
 | Doc | O que é |
