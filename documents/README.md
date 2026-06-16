@@ -10,6 +10,7 @@ Dados em [datasets/](datasets/) (ver [datasets/README.md](datasets/README.md)); 
 |---|---|
 | **[RELATORIO-GERAL-experimento.md](RELATORIO-GERAL-experimento.md)** | **Relatório final** consolidado — método, resultados (RQ1), extensão (RQ2), causa-raiz, ameaças. |
 | [ameacas-a-validade.md](ameacas-a-validade.md) | Ameaças à validade (4 categorias + status). |
+| [explicacao-projeto.md](explicacao-projeto.md) | Resumo de 1 página (contexto → problema → solução → resultados → conclusões). |
 | [o-que-falta.md](o-que-falta.md) | Estado atual e o que falta para entregar. |
 | [mapa-do-projeto-e-divisao-4-pessoas.md](mapa-do-projeto-e-divisao-4-pessoas.md) | Tudo que foi feito (bullets) + divisão de trabalho para 4 pessoas. |
 
@@ -41,6 +42,7 @@ Dados em [datasets/](datasets/) (ver [datasets/README.md](datasets/README.md)); 
 | Doc | O que é |
 |---|---|
 | [equivalencia-dominios-ustai-synthetic.md](equivalencia-dominios-ustai-synthetic.md) | Equivalência UStAI ↔ Synthetic (fonte do gabarito). |
+| [slide-mapeamento-dominios.md](slide-mapeamento-dominios.md) | Versão **slide** do mapeamento de domínios (cobertura 25/34, ilustrativo). |
 | [pessoa4-mapeamento-dominios.md](pessoa4-mapeamento-dominios.md) | Fatia de mapeamento da Pessoa 4 (artefato de divisão de trabalho). |
 | [divisao-roles-analise-manual.md](divisao-roles-analise-manual.md) | Divisão dos roles entre as 4 pessoas para anotação. |
 
