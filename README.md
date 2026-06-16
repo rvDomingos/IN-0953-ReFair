@@ -33,6 +33,8 @@ docker compose build && docker compose up      # API em http://localhost:5001
 ```
 Guia completo: [SETUP.md](documents/SETUP.md) · Relatório final: [RELATORIO-GERAL-experimento.md](documents/RELATORIO-GERAL-experimento.md)  · Explicação resumida: [explicacao-projeto.md](documents/explicacao-projeto.md).
 
+Link da apresentação: https://docs.google.com/presentation/d/1mX1sMZ-AfnaPP0IS93FgGUqlxbDOEDLa/edit?slide=id.g3ec2a985286_1_128&authuser=1#slide=id.g3ec2a985286_1_128
+
 ---
 
 > A seguir, o **README original do ReFAIR** (estrutura do repositório e instalação da ferramenta-base).
